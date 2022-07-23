@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ugzuzg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://me.jaryk.xyz
+  * I am ugzuzg (https://keybase.io/ugzuzg) on keybase.
+  * I have a public key ASBkS5of92YiVD2pyJpKOPaVGpIP7mWn2TMLAo-zyY1h0wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b42fe2ed13c271e590d7e987c97d2f5c34a3788de6e3409d58e55ce849e556610a",
+      "host": "keybase.io",
+      "kid": "0120644b9a1ff76622543da9c89a4a38f6951a920fee65a7d9330b028fb3c98d61d30a",
+      "uid": "dc4e4237b0a541cca78e096923c89419",
+      "username": "ugzuzg"
+    },
+    "merkle_root": {
+      "ctime": 1595010471,
+      "hash": "578cff83667248e57f4996f24d0f8bca28bf3d5c9ad76ddc35d5fad63563944d8f27fea526875ce3ce1dd03da955ec6bdaa08fe0d141646767d46a11222e14e5",
+      "hash_meta": "f6bf3504351ac976ae048ebf5d2182b9257111e258615a60629189374d226d53",
+      "seqno": 16999354
+    },
+    "service": {
+      "entropy": "rRBUhA9KoaqzSMyFijAFTXFf",
+      "hostname": "me.jaryk.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1595010481,
+  "expire_in": 504576000,
+  "prev": "221d5b35c529d653891d3b9a555680460246888b1b6ccfb75711aba415886769",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZEuaH/dmIlQ9qciaSjj2lRqSD+5lp9kzCwKPs8mNYdMKp3BheWxvYWTESpcCFMQgIh1bNcUp1lOJHTuaVVaARgJGiIsbbM+3VxGrpBWIZ2nEIEuTFSjynqO0wZ6NCbJV8naE6CNhPZbEc5CdT/2XcWonAgHCo3NpZ8RA33xapfpeRQemeOvmzacF0ohEGKDTDr82fIzJDhYga3+42gOYAWvxRQhwRiC0YhrDNqG1fdByveAIzj8MceghC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAvSjnjDQkrI0mIzp6SHX1o0nBXOFeAuiM3MFQAO4yhzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ugzuzg
+
+==================================================================
