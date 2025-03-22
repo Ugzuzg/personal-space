@@ -25,6 +25,7 @@ export function Bar({ data }) {
       fy: 'parent_name',
       fill: 'type',
     },
+    /*
     {
       name: 'By route setter',
       y: 'difficulty',
@@ -33,6 +34,7 @@ export function Bar({ data }) {
       fill: 'type',
       sort: { fy: '-x', reduce: 'count' },
     },
+    */
   ];
 
   return (
@@ -51,6 +53,9 @@ export function Bar({ data }) {
               },
               width: 1500,
               y: { type: 'band', reverse: true },
+              ...(grouping.fy && {
+                fy: { tickRotate: -90, tickPadding: 30 },
+              }),
               style: {
                 fontFamily: 'Inter',
                 fontSize: 'var(--step--1)',
