@@ -53,9 +53,11 @@ export function Bar({ data }) {
               y: { type: 'band', reverse: true },
               style: {
                 fontFamily: 'Inter',
+                fontSize: 'var(--step--1)',
               },
-              marginLeft: 100,
+              marginLeft: 80,
               marginRight: 100,
+              marginBottom: 50,
               marks: [
                 Plot.frame(),
                 Plot.barX(

@@ -6,14 +6,16 @@ import { createElement as h, ReactElement } from 'react';
 
 export default function PlotFigure({ options }: { options: Plot.PlotOptions }) {
   return (
-    <>
-      {(
-        Plot.plot({
-          ...options,
-          document: new ServerDocument() as unknown as Document,
-        }) as unknown as ServerElement
-      ).toReactElement()}
-    </>
+    <div style={{ overflow: 'auto' }}>
+      <div style={{ minWidth: 'calc(var(--max-viewport) - 100px)' }}>
+        {(
+          Plot.plot({
+            ...options,
+            document: new ServerDocument() as unknown as Document,
+          }) as unknown as ServerElement
+        ).toReactElement()}
+      </div>
+    </div>
   );
 }
 

@@ -130,6 +130,8 @@ async function Deferred() {
 
   return (
     <div>
+      <h1>Climbing</h1>
+      <p>Some climbing data to look at.</p>
       <h2>Timeline</h2>
       <Timeline data={timeline} />
       <h2>Poor man's CPR</h2>
