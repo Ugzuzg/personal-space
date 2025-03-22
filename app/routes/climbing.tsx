@@ -110,8 +110,12 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       )
       .toRecords();
 
+    const bar = detailedAscents
+      .select('difficulty', 'year', 'type', 'parent_name')
+      .toRecords();
+
     return {
-      detailedAscents: detailedAscents.toRecords(),
+      bar,
       cpr,
       timeline,
     };
@@ -126,7 +130,7 @@ export const Route = createFileRoute('/climbing')({
 });
 
 async function Deferred() {
-  const { cpr, timeline, detailedAscents } = Route.useLoaderData();
+  const { cpr, timeline, bar } = Route.useLoaderData();
 
   return (
     <div>
@@ -137,7 +141,7 @@ async function Deferred() {
       <h2>Poor man's CPR</h2>
       <Cpr data={cpr} />
       <h2>Bar</h2>
-      <Bar data={detailedAscents} />
+      <Bar data={bar} />
     </div>
   );
 }
