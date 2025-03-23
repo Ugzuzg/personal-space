@@ -34,6 +34,49 @@ const getAccessToken = async () => {
   return await response.json();
 };
 
+const fetchBoulder = async (token: string, id: number) => {
+  const response = await fetch(
+    `https://vlcapi.vertical-life.info/gym_boulders/${id}`,
+    {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    console.log(await response.json());
+    throw new Error('Failed to get gym boulder');
+  }
+
+  const result = await response.json();
+  return result;
+};
+
+const fetchBoulders = async (token: string, ids: number[]) => {
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    process.stdout?.clearLine?.();
+    process.stdout?.cursorTo?.(0);
+    process.stdout.write(`Progress: ${i + 1} / ${ids.length}`);
+
+    const gymBoulderPath = `./data/gym_boulders/${id}.json`;
+
+    if (await fileExists(gymBoulderPath)) {
+      const boulder = JSON.parse(await fs.readFile(gymBoulderPath, 'utf-8'));
+      if (boulder.archived) {
+        return boulder;
+      }
+    }
+
+    const gymBoulder = await fetchBoulder(token, id);
+
+    await fs.writeFile(gymBoulderPath, JSON.stringify(gymBoulder, null, 2));
+  }
+  process.stdout.write('\n');
+};
+
 (async () => {
   const newToken = await getAccessToken();
   await fs.writeFile('token.json', JSON.stringify(newToken, null, 2));
@@ -66,43 +109,42 @@ const getAccessToken = async () => {
   }
   ascentsStream.close();
 
-  for (let i = 0; i < ascents.length; i++) {
-    const ascent = ascents[i];
-    process.stdout?.clearLine?.();
-    process.stdout?.cursorTo?.(0);
-    process.stdout.write(`Progress: ${i + 1} / ${ascents.length}`);
+  await fetchBoulders(
+    newToken.access_token,
+    ascents.map((a) => a.ascendable_id),
+  );
 
-    const gymBoulder = await (async () => {
-      const gymBoulderPath = `./data/gym_boulders/${ascent.ascendable_id}.json`;
-      if (await fileExists(gymBoulderPath)) {
-        return JSON.parse(await fs.readFile(gymBoulderPath, 'utf-8'));
-      }
-      const response = await fetch(
-        `https://vlcapi.vertical-life.info/gym_boulders/${ascent.ascendable_id}`,
-        {
-          method: 'GET',
-          headers: {
-            Authorization: `Bearer ${newToken.access_token}`,
-          },
+  await (async () => {
+    const response = await fetch(
+      `https://vlcapi.vertical-life.info/gyms/69/zlaggables?zlaggable_type=GymBoulder`,
+      {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${newToken.access_token}`,
         },
-      );
-      if (!response.ok) {
-        console.log(await response.json());
-        throw new Error('Failed to get gym boulder');
-      }
-
-      const result = await response.json();
-      await fs.writeFile(gymBoulderPath, JSON.stringify(result, null, 2));
-
-      return result;
-    })();
-  }
+      },
+    );
+    if (!response.ok) {
+      console.log(await response.json());
+      throw new Error('Failed to get gym boulder');
+    }
+    const result = await response.json();
+    await fetchBoulders(
+      newToken.access_token,
+      result.map((b) => b.id),
+    );
+  })();
 
   const bouldersStream = fsSync.createWriteStream('./data/gym_boulders.jsonl');
   for (const p of await fs.readdir('./data/gym_boulders')) {
-    const gymBoulder = JSON.parse(
+    let gymBoulder = JSON.parse(
       await fs.readFile(path.join('./data/gym_boulders', p), 'utf8'),
     );
+
+    if (!gymBoulder.archived) {
+      gymBoulder = await fetchBoulder(newToken.access_token, gymBoulder.id);
+    }
+
     bouldersStream.write(JSON.stringify(gymBoulder));
     bouldersStream.write('\n');
   }
