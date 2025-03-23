@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import pl from 'nodejs-polars';
 import { Bar } from '~/components/Bar';
+import { Completion } from '~/components/Completion';
 import { Cpr } from '~/components/Cpr';
 import { Timeline } from '~/components/Timeline';
 
@@ -51,6 +52,12 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
           .cast(pl.Datetime('ms')),
         ascents.getColumn('ascendable_type').cast(pl.Categorical),
         ascents.getColumn('grading_system').cast(pl.Categorical),
+        pl
+          .col('difficulty')
+          .replace({ old: gradeToNumber })
+          .cast(pl.Float32)
+          .alias('numberDifficulty'),
+        pl.col('type').replace(['f', 'rp'], ['flash', 'redpoint']),
       )
       .withColumns(pl.col('created_at').date.year().alias('year'))
       // remove repeat ascents
@@ -76,14 +83,6 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
         rightOn: 'nid',
       })
       .sort(pl.col('created_at'));
-    detailedAscents = detailedAscents.withColumns(
-      pl
-        .col('difficulty')
-        .replace({ old: gradeToNumber })
-        .cast(pl.Float32)
-        .alias('numberDifficulty'),
-      pl.col('type').replace(['f', 'rp'], ['flash', 'redpoint']),
-    );
 
     const cpr = detailedAscents
       .groupBy(
@@ -114,10 +113,31 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       .select('difficulty', 'year', 'type', 'parent_name')
       .toRecords();
 
+    const completion = boulders
+      .filter(pl.col('archived').eq(pl.lit(false)))
+      .join(ascents, {
+        how: 'left',
+        leftOn: 'nid',
+        rightOn: 'ascendable_id',
+      })
+      .groupBy('difficulty')
+      .agg(
+        pl.col('type').count().alias('sent'),
+        pl.col('id').count().alias('all'),
+        pl
+          .col('type')
+          .count()
+          .cast(pl.Float64)
+          .div(pl.col('id').count())
+          .alias('completion'),
+      )
+      .toRecords();
+
     return {
       bar,
       cpr,
       timeline,
+      completion,
     };
   },
 );
@@ -130,7 +150,7 @@ export const Route = createFileRoute('/climbing')({
 });
 
 async function Deferred() {
-  const { cpr, timeline, bar } = Route.useLoaderData();
+  const { cpr, timeline, bar, completion } = Route.useLoaderData();
 
   return (
     <div>
@@ -140,6 +160,8 @@ async function Deferred() {
       <Timeline data={timeline} />
       <h2>Poor man's CPR</h2>
       <Cpr data={cpr} />
+      <h2>Completion rate of current Solna boulders</h2>
+      <Completion data={completion} />
       <h2>Bar</h2>
       <Bar data={bar} />
     </div>
