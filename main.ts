@@ -65,8 +65,11 @@ const fetchBoulders = async (token: string, ids: number[]) => {
 
     if (await fileExists(gymBoulderPath)) {
       const boulder = JSON.parse(await fs.readFile(gymBoulderPath, 'utf-8'));
-      if (boulder.archived) {
-        return boulder;
+
+      const stats = await fs.stat(gymBoulderPath);
+
+      if (boulder.archived || Date.now() - stats.mtimeMs < 20 * 60 * 1000) {
+        continue;
       }
     }
 
@@ -136,13 +139,21 @@ const fetchBoulders = async (token: string, ids: number[]) => {
   })();
 
   const bouldersStream = fsSync.createWriteStream('./data/gym_boulders.jsonl');
-  for (const p of await fs.readdir('./data/gym_boulders')) {
-    let gymBoulder = JSON.parse(
-      await fs.readFile(path.join('./data/gym_boulders', p), 'utf8'),
-    );
+  const allBoulderFiles = await fs.readdir('./data/gym_boulders');
+  for (const [i, p] of allBoulderFiles.entries()) {
+    process.stdout?.clearLine?.();
+    process.stdout?.cursorTo?.(0);
+    process.stdout.write(`Progress: ${i + 1} / ${allBoulderFiles.length}`);
 
-    if (!gymBoulder.archived) {
+    const gymBoulderPath = path.join('./data/gym_boulders', p);
+    let gymBoulder = JSON.parse(await fs.readFile(gymBoulderPath, 'utf8'));
+
+    const stats = await fs.stat(gymBoulderPath);
+
+    if (!gymBoulder.archived && Date.now() - stats.mtimeMs > 20 * 60 * 1000) {
       gymBoulder = await fetchBoulder(newToken.access_token, gymBoulder.id);
+
+      await fs.writeFile(gymBoulderPath, JSON.stringify(gymBoulder, null, 2));
     }
 
     bouldersStream.write(JSON.stringify(gymBoulder));
