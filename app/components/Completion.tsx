@@ -9,12 +9,12 @@ export function Completion({ data }) {
     <>
       {`${allSent} / ${allBoulders} (${Number(allSent / allBoulders).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 })})`}
       <PlotFigure
+        width={400}
         options={{
           figure: true,
           grid: true,
-          width: 1500,
+          width: 400,
           marginLeft: 80,
-          marginRight: 100,
           marginBottom: 50,
           x: {
             percent: true,

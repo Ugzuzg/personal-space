@@ -32,6 +32,7 @@ export function Cpr({ data }) {
 
   return (
     <PlotFigure
+      width={1200}
       options={{
         figure: true,
         grid: true,
@@ -40,7 +41,7 @@ export function Cpr({ data }) {
           type: 'categorical',
           ...ascentTypeColorDomain,
         },
-        width: 1500,
+        width: 1200,
         x: {
           label: null,
         },

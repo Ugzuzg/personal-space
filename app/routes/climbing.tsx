@@ -103,6 +103,9 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       .groupBy(pl.col('created_at').date.strftime('%Y-%U').alias('grouped'))
       .agg(
         pl.col('created_at').first().cast(pl.Date).alias('date'),
+        pl.col('created_at').first().date.year().alias('year'),
+        pl.col('created_at').first().date.week().alias('week'),
+        pl.col('created_at').first().date.month().alias('month'),
         pl.col('numberDifficulty').sum().alias('totalNumberDifficulty'),
         pl.col('created_at').count().alias('count'),
         pl.col('difficulty'),
