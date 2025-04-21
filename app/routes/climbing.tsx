@@ -75,6 +75,22 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
           .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
           .cast(pl.Datetime('ms')),
         pl.col('id').alias('nid'),
+        pl
+          .col('created_at')
+          .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
+          .cast(pl.Datetime('ms'))
+          .alias('boulder_created_at'),
+        /**
+         * Boulder's archived datetime can be computed from the updated_at datetime,
+         * as it's the last time it was updated before becoming archived.
+         */
+        pl
+          .when(pl.col('archived'))
+          .then(pl.col('updated_at'))
+          .otherwise(pl.lit(null))
+          .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
+          .cast(pl.Datetime('ms'))
+          .alias('boulder_archived_at'),
       );
 
     let detailedAscents = ascents
