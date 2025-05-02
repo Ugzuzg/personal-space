@@ -35,7 +35,7 @@ const gradeToNumber = boulderScores.reduce((acc, grade) => {
 
 const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
   async () => {
-    let ascents = pl.readJSON('./data/ascents_230474.jsonl', {
+    let ascents = pl.readJSON('../data/ascents_230474.jsonl', {
       inferSchemaLength: null,
       format: 'lines',
     });
@@ -64,7 +64,7 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       .unique({ subset: 'ascendable_id', keep: 'first' });
 
     let boulders = pl
-      .readJSON('./data/gym_boulders.jsonl', {
+      .readJSON('../data/gym_boulders.jsonl', {
         inferSchemaLength: null,
         format: 'lines',
       })
