@@ -1,9 +1,9 @@
 {
-  "id": 589717,
-  "name": "Blue",
+  "id": 596283,
+  "name": "Dark Green",
   "notes": null,
-  "difficulty": "6C",
-  "grade": "vl-21",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,38 +123,70 @@
       "8C+"
     ]
   ],
-  "steepness": 3,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2025-03-31 15:55:27 +0000",
-  "created_at": "2025-03-31 15:55:27 +0000",
-  "set_at": "2025-03-31 15:55:10 +0000",
+  "updated_at": "2025-05-03 10:23:27 +0000",
+  "created_at": "2025-05-03 10:23:27 +0000",
+  "set_at": "2025-05-02 12:00:00 +0000",
   "expiration_date": null,
   "path": [
     [
-      39,
-      175
+      31,
+      186
     ],
     [
-      422,
-      183
+      17,
+      521
     ],
     [
-      456,
-      589
+      142,
+      506
     ],
     [
-      77,
-      584
+      268,
+      496
     ],
     [
-      40,
-      175
+      335,
+      500
+    ],
+    [
+      336,
+      420
+    ],
+    [
+      335,
+      392
+    ],
+    [
+      327,
+      340
+    ],
+    [
+      346,
+      253
+    ],
+    [
+      312,
+      177
+    ],
+    [
+      217,
+      180
+    ],
+    [
+      86,
+      191
+    ],
+    [
+      31,
+      187
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.6",
-  "color_1": "#0000ff",
+  "line_number": 8,
+  "topo_num": "41798.8.4",
+  "color_1": "#008000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -163,17 +195,17 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 4,
+    "rating": 3,
+    "ratings_count": 1,
     "redpoint": 1,
     "onsight": 0,
-    "flash": 7,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -314,12 +346,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/03fa09100389ec182b945807c5c988f7",
-  "route_card_label": "B6.6",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/13e1d28921488e4fb6fbd3b09fd58eeb",
+  "route_card_label": "A8.4",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Anton Cuevas",
+  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "route_setter": "David Höglund",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
