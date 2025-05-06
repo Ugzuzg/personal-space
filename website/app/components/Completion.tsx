@@ -16,9 +16,6 @@ export function Completion({ data }) {
           width: 400,
           marginLeft: 80,
           marginBottom: 50,
-          x: {
-            percent: true,
-          },
           color: { scheme: 'YlGn' },
           style: {
             fontFamily: 'Inter',
@@ -28,7 +25,14 @@ export function Completion({ data }) {
             Plot.frame(),
             Plot.barX(data, {
               y: 'difficulty',
-              x: 'completion',
+              x: 'all',
+              title: (v) =>
+                `${v.sent} / ${v.all} (${Number(v.completion).toLocaleString(undefined, { style: 'percent' })})`,
+              fill: '#dddddd',
+            }),
+            Plot.barX(data, {
+              y: 'difficulty',
+              x: 'sent',
               title: (v) =>
                 `${v.sent} / ${v.all} (${Number(v.completion).toLocaleString(undefined, { style: 'percent' })})`,
               fill: 'completion',
