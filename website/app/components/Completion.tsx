@@ -28,14 +28,14 @@ export function Completion({ data }) {
               x: 'all',
               title: (v) =>
                 `${v.sent} / ${v.all} (${Number(v.completion).toLocaleString(undefined, { style: 'percent' })})`,
-              fill: '#dddddd',
+              fill: 'rgba(169, 169, 169, 0.5)',
             }),
             Plot.barX(data, {
               y: 'difficulty',
               x: 'sent',
               title: (v) =>
                 `${v.sent} / ${v.all} (${Number(v.completion).toLocaleString(undefined, { style: 'percent' })})`,
-              fill: 'completion',
+              fill: 1,
             }),
           ],
           y: { type: 'band', reverse: true },
