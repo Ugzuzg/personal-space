@@ -1,0 +1,24 @@
+:root {
+  --color-main: #2c002c;
+  --color-background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-main: #fff;
+    --color-background: #1b001b;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-main);
+}
+
+a {
+  color: var(--color-main);
+}
+
+hr {
+  color: var(--color-main);
+}
