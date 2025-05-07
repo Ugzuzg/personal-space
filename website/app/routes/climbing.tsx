@@ -179,7 +179,7 @@ async function Deferred() {
       <Timeline data={timeline} />
       <h2>Poor man's CPR</h2>
       <Cpr data={cpr} />
-      <h2>Completion rate of current Solna boulders</h2>
+      <h2>Boulder progress at Klättercentret Solna</h2>
       <Completion data={completion} />
       <h2>Bar</h2>
       <Bar data={bar} />
