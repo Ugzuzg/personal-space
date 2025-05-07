@@ -1,9 +1,9 @@
 {
-  "id": 594975,
-  "name": "Magenta",
+  "id": 596870,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "3",
-  "grade": "vl-4",
+  "difficulty": "7B",
+  "grade": "vl-25",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,46 +123,70 @@
       "8C+"
     ]
   ],
-  "steepness": 3,
-  "style": null,
-  "updated_at": "2025-04-28 13:58:20 +0000",
-  "created_at": "2025-04-28 13:58:20 +0000",
-  "set_at": "2025-04-28 13:58:08 +0000",
+  "steepness": 7,
+  "style": "af",
+  "updated_at": "2025-05-06 13:46:30 +0000",
+  "created_at": "2025-05-06 13:46:00 +0000",
+  "set_at": "2025-05-06 13:45:49 +0000",
   "expiration_date": null,
   "path": [
     [
-      508,
-      187
-    ],
-    [
-      689,
-      184
-    ],
-    [
-      847,
-      182
-    ],
-    [
-      931,
-      514
-    ],
-    [
-      470,
-      491
-    ],
-    [
-      515,
-      312
-    ],
-    [
-      508,
+      31,
       186
+    ],
+    [
+      17,
+      521
+    ],
+    [
+      142,
+      506
+    ],
+    [
+      268,
+      496
+    ],
+    [
+      335,
+      500
+    ],
+    [
+      336,
+      420
+    ],
+    [
+      335,
+      392
+    ],
+    [
+      327,
+      340
+    ],
+    [
+      346,
+      253
+    ],
+    [
+      312,
+      177
+    ],
+    [
+      217,
+      180
+    ],
+    [
+      86,
+      191
+    ],
+    [
+      31,
+      187
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41800.3.9",
-  "color_1": "#f912f3",
+  "line_number": 8,
+  "topo_num": "41798.8.13",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -171,17 +195,17 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 0,
+    "rating": 3,
+    "ratings_count": 1,
+    "redpoint": 1,
     "onsight": 0,
-    "flash": 6,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -190,7 +214,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 0,
+    "soft_count": 1,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -209,7 +233,7 @@
       "64": 0
     },
     "t": 0,
-    "f": 0,
+    "f": 1,
     "b": 0,
     "e": 0,
     "c": 0,
@@ -322,12 +346,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/8d8faa8c9b5a36c5f160ea00b95e96d4",
-  "route_card_label": "B3.9",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/c6c2d285b784cf45f4ba8d8d2b8c329d",
+  "route_card_label": "A8.13",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e6411c2ffc69fdad028b8408b295e45c",
-  "route_setter": "Silver Breiktopf",
+  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "route_setter": "Robert  Rundin ",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
