@@ -175,12 +175,12 @@ async function Deferred() {
     <div>
       <h1>Climbing</h1>
       <p>Some climbing data to look at.</p>
-      <h2>Timeline</h2>
-      <Timeline data={timeline} />
-      <h2>Poor man's CPR</h2>
-      <Cpr data={cpr} />
       <h2>Boulder progress at Klättercentret Solna</h2>
       <Completion data={completion} />
+      <h2>Poor man's CPR</h2>
+      <Cpr data={cpr} />
+      <h2>Timeline</h2>
+      <Timeline data={timeline} />
       <h2>Bar</h2>
       <Bar data={bar} />
     </div>
