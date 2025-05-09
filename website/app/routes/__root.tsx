@@ -73,12 +73,12 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
       <body>
-        <div>
+        <nav>
           <Link
             to="/"
             activeProps={{ className: 'font-bold' }}
@@ -88,10 +88,16 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           </Link>{' '}
           <Link to="/climbing" activeProps={{ className: 'font-bold' }}>
             Climbing
-          </Link>{' '}
-        </div>
-        <hr />
-        {children}
+          </Link>
+          <hr />
+        </nav>
+        <main>{children}</main>
+        <footer>
+          <hr />
+          <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
+            Source
+          </a>
+        </footer>
         <TanStackRouterDevtools position="bottom-right" />
         <Scripts />
       </body>
