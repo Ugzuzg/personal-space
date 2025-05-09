@@ -38,43 +38,46 @@ export function Bar({ data }) {
   ];
 
   return (
-    <>
+    <article>
+      <h2>Bar</h2>
       {groupings.map((grouping) => (
-        <>
+        <section>
           <h3>{grouping.name}</h3>
-          <PlotFigure
-            width={480}
-            options={{
-              figure: true,
-              grid: true,
-              color: {
-                legend: true,
-                type: 'categorical',
-                ...ascentTypeColorDomain,
-              },
-              width: 480,
-              y: { type: 'band', reverse: true },
-              ...(grouping.fy && {
-                fy: { reverse: true },
-              }),
-              style: {
-                fontFamily: 'Inter',
-                fontSize: 'var(--step--1)',
-              },
-              marginLeft: 80,
-              marginRight: 80,
-              marginBottom: 50,
-              marks: [
-                Plot.frame(),
-                Plot.barX(
-                  data,
-                  Plot.groupY({ x: 'count' }, { ...grouping, title: 'count' }),
-                ),
-              ],
-            }}
-          />
-        </>
+          <p>
+            <PlotFigure
+              width={480}
+              options={{
+                figure: true,
+                grid: true,
+                color: {
+                  legend: true,
+                  type: 'categorical',
+                  ...ascentTypeColorDomain,
+                },
+                width: 480,
+                y: { type: 'band', reverse: true },
+                ...(grouping.fy && {
+                  fy: { reverse: true },
+                }),
+                style: {
+                  fontFamily: 'Inter',
+                  fontSize: 'var(--step--1)',
+                },
+                marginLeft: 80,
+                marginRight: 80,
+                marginBottom: 50,
+                marks: [
+                  Plot.frame(),
+                  Plot.barX(
+                    data,
+                    Plot.groupY({ x: 'count' }, { ...grouping, title: 'type' }),
+                  ),
+                ],
+              }}
+            />
+          </p>
+        </section>
       ))}
-    </>
+    </article>
   );
 }

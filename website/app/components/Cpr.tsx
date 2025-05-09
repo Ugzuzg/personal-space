@@ -31,55 +31,61 @@ export function Cpr({ data }) {
   };
 
   return (
-    <PlotFigure
-      width={1200}
-      options={{
-        figure: true,
-        grid: true,
-        color: {
-          legend: true,
-          type: 'categorical',
-          ...ascentTypeColorDomain,
-        },
-        width: 1200,
-        x: {
-          label: null,
-        },
-        y: {
-          ticks: boulderScores
-            .filter((grade) => grade.font <= '7B')
-            .map((grade) => grade.score),
-          tickFormat: (v) =>
-            boulderScores.find(({ score }) => v === score)?.font,
-          label: null,
-        },
-        style: {
-          fontFamily: 'Inter',
-          fontSize: 'var(--step--1)',
-        },
-        marginLeft: 80,
-        marginRight: 100,
-        marginBottom: 50,
-        marks: [
-          Plot.frame(),
-          Plot.rectY(data, {
-            interval: 'week',
-            x: 'created_at',
-
-            y1: 'numberDifficultyMin',
-            y2: 'numberDifficultyMax',
-            fill: 'type',
-
-            title: (d) => {
-              if (d.difficultyMin === d.difficultyMax) return d.difficultyMin;
-              return `${d.difficultyMin} - ${d.difficultyMax}`;
+    <article>
+      <h2>Poor man's CPR</h2>
+      <p>
+        <PlotFigure
+          width={1200}
+          options={{
+            figure: true,
+            grid: true,
+            color: {
+              legend: true,
+              type: 'categorical',
+              ...ascentTypeColorDomain,
             },
+            width: 1200,
+            x: {
+              label: null,
+            },
+            y: {
+              ticks: boulderScores
+                .filter((grade) => grade.font <= '7B')
+                .map((grade) => grade.score),
+              tickFormat: (v) =>
+                boulderScores.find(({ score }) => v === score)?.font,
+              label: null,
+            },
+            style: {
+              fontFamily: 'Inter',
+              fontSize: 'var(--step--1)',
+            },
+            marginLeft: 80,
+            marginRight: 100,
+            marginBottom: 50,
+            marks: [
+              Plot.frame(),
+              Plot.rectY(data, {
+                interval: 'week',
+                x: 'created_at',
 
-            inset: 1,
-            mixBlendMode: 'color-dodge',
-          }),
-        ],
-      }}
-    />
+                y1: 'numberDifficultyMin',
+                y2: 'numberDifficultyMax',
+                fill: 'type',
+
+                title: (d) => {
+                  if (d.difficultyMin === d.difficultyMax)
+                    return d.difficultyMin;
+                  return `${d.difficultyMin} - ${d.difficultyMax}`;
+                },
+
+                inset: 1,
+                mixBlendMode: 'color-dodge',
+              }),
+            ],
+          }}
+        />
+      </p>
+    </article>
   );
 }

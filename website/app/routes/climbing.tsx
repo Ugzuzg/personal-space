@@ -129,7 +129,7 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       .toRecords();
 
     const bar = detailedAscents
-      .select('difficulty', 'year', 'type', 'parent_name')
+      .select('difficulty', 'year', 'type', 'parent_name', 'route_setter')
       .toRecords();
 
     const completion = boulders
@@ -172,17 +172,13 @@ function Climbing() {
   const { cpr, timeline, bar, completion } = Route.useLoaderData();
 
   return (
-    <>
+    <section>
       <h1>Climbing</h1>
       <p>Some climbing data to look at.</p>
-      <h2>Boulder progress at Klättercentret Solna</h2>
       <Completion data={completion} />
-      <h2>Poor man's CPR</h2>
       <Cpr data={cpr} />
-      <h2>Timeline</h2>
       <Timeline data={timeline} />
-      <h2>Bar</h2>
       <Bar data={bar} />
-    </>
+    </section>
   );
 }
