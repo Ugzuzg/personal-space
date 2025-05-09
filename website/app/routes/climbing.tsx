@@ -165,14 +165,14 @@ export const Route = createFileRoute('/climbing')({
   loader: async () => {
     return await readDataFrameServerFn();
   },
-  component: Deferred,
+  component: Climbing,
 });
 
-async function Deferred() {
+function Climbing() {
   const { cpr, timeline, bar, completion } = Route.useLoaderData();
 
   return (
-    <div>
+    <>
       <h1>Climbing</h1>
       <p>Some climbing data to look at.</p>
       <h2>Boulder progress at Klättercentret Solna</h2>
@@ -183,6 +183,6 @@ async function Deferred() {
       <Timeline data={timeline} />
       <h2>Bar</h2>
       <Bar data={bar} />
-    </div>
+    </>
   );
 }
