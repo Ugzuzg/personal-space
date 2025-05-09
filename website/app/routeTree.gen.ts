@@ -12,7 +12,10 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as ClimbingImport } from './routes/climbing'
+import { Route as LangImport } from './routes/$lang'
 import { Route as IndexImport } from './routes/index'
+import { Route as LangIndexImport } from './routes/$lang/index'
+import { Route as LangClimbingImport } from './routes/$lang/climbing'
 
 // Create/Update Routes
 
@@ -22,10 +25,28 @@ const ClimbingRoute = ClimbingImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const LangRoute = LangImport.update({
+  id: '/$lang',
+  path: '/$lang',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const IndexRoute = IndexImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRoute,
+} as any)
+
+const LangIndexRoute = LangIndexImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LangRoute,
+} as any)
+
+const LangClimbingRoute = LangClimbingImport.update({
+  id: '/climbing',
+  path: '/climbing',
+  getParentRoute: () => LangRoute,
 } as any)
 
 // Populate the FileRoutesByPath interface
@@ -39,6 +60,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/$lang': {
+      id: '/$lang'
+      path: '/$lang'
+      fullPath: '/$lang'
+      preLoaderRoute: typeof LangImport
+      parentRoute: typeof rootRoute
+    }
     '/climbing': {
       id: '/climbing'
       path: '/climbing'
@@ -46,43 +74,79 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ClimbingImport
       parentRoute: typeof rootRoute
     }
+    '/$lang/climbing': {
+      id: '/$lang/climbing'
+      path: '/climbing'
+      fullPath: '/$lang/climbing'
+      preLoaderRoute: typeof LangClimbingImport
+      parentRoute: typeof LangImport
+    }
+    '/$lang/': {
+      id: '/$lang/'
+      path: '/'
+      fullPath: '/$lang/'
+      preLoaderRoute: typeof LangIndexImport
+      parentRoute: typeof LangImport
+    }
   }
 }
 
 // Create and export the route tree
 
+interface LangRouteChildren {
+  LangClimbingRoute: typeof LangClimbingRoute
+  LangIndexRoute: typeof LangIndexRoute
+}
+
+const LangRouteChildren: LangRouteChildren = {
+  LangClimbingRoute: LangClimbingRoute,
+  LangIndexRoute: LangIndexRoute,
+}
+
+const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
+
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
   '/climbing': typeof ClimbingRoute
+  '/$lang/climbing': typeof LangClimbingRoute
+  '/$lang/': typeof LangIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/climbing': typeof ClimbingRoute
+  '/$lang/climbing': typeof LangClimbingRoute
+  '/$lang': typeof LangIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
   '/climbing': typeof ClimbingRoute
+  '/$lang/climbing': typeof LangClimbingRoute
+  '/$lang/': typeof LangIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/climbing'
+  fullPaths: '/' | '/$lang' | '/climbing' | '/$lang/climbing' | '/$lang/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/climbing'
-  id: '__root__' | '/' | '/climbing'
+  to: '/' | '/climbing' | '/$lang/climbing' | '/$lang'
+  id: '__root__' | '/' | '/$lang' | '/climbing' | '/$lang/climbing' | '/$lang/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LangRoute: typeof LangRouteWithChildren
   ClimbingRoute: typeof ClimbingRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LangRoute: LangRouteWithChildren,
   ClimbingRoute: ClimbingRoute,
 }
 
@@ -97,14 +161,30 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/$lang",
         "/climbing"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
+    "/$lang": {
+      "filePath": "$lang.tsx",
+      "children": [
+        "/$lang/climbing",
+        "/$lang/"
+      ]
+    },
     "/climbing": {
       "filePath": "climbing.tsx"
+    },
+    "/$lang/climbing": {
+      "filePath": "$lang/climbing.tsx",
+      "parent": "/$lang"
+    },
+    "/$lang/": {
+      "filePath": "$lang/index.tsx",
+      "parent": "/$lang"
     }
   }
 }

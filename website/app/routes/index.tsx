@@ -1,13 +1,24 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { Link, Navigate, createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
-  component: Home,
+  component: RouteComponent,
 });
 
-function Home() {
+function RouteComponent() {
   return (
-    <div>
-      <h1>Hallo!</h1>
-    </div>
+    <>
+      <ul>
+        <li>
+          <Link to="/$lang" params={{ lang: 'en' }}>
+            English
+          </Link>
+        </li>
+        <li>
+          <Link to="/$lang" params={{ lang: 'be' }}>
+            Беларуская
+          </Link>
+        </li>
+      </ul>
+    </>
   );
 }

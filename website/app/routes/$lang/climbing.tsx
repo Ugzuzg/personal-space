@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import pl from 'nodejs-polars';
+import { Trans } from '@lingui/react/macro';
+
 import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
 import { Cpr } from '~/components/Cpr';
@@ -168,7 +170,7 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
   },
 );
 
-export const Route = createFileRoute('/climbing')({
+export const Route = createFileRoute('/$lang/climbing')({
   loader: async () => {
     return await readDataFrameServerFn();
   },
@@ -180,7 +182,9 @@ function Climbing() {
 
   return (
     <section>
-      <h1>Climbing</h1>
+      <h1>
+        <Trans>Climbing</Trans>
+      </h1>
       <p>Some climbing data to look at.</p>
       <Completion data={completion} />
       <Cpr data={cpr} />
