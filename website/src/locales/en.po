@@ -40,7 +40,7 @@ msgid "By year"
 msgstr "By year"
 
 #: src/routes/$lang.tsx:152
-#: src/routes/$lang/climbing/$userId.tsx:207
+#: src/routes/$lang/climbing/$userId.tsx:245
 msgid "Climbing"
 msgstr "Climbing"
 
@@ -85,6 +85,10 @@ msgstr "Shipped there on {0}"
 #: src/routes/$lang/resoling.tsx:105
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
+
+#: src/components/CompletionHistory.tsx:9
+msgid "Solna completion history"
+msgstr "Solna completion history"
 
 #: src/routes/$lang.tsx:174
 msgid "Source"

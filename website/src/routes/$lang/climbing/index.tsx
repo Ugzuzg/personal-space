@@ -10,9 +10,16 @@ export const Route = createFileRoute('/$lang/climbing/')({
 });
 
 function ClimbingIndex() {
-  const { cpr, timeline, bar, completion } = Route.useLoaderData();
+  const { cpr, timeline, bar, completion, completionHistory } =
+    Route.useLoaderData();
 
   return (
-    <Climbing cpr={cpr} timeline={timeline} bar={bar} completion={completion} />
+    <Climbing
+      cpr={cpr}
+      timeline={timeline}
+      bar={bar}
+      completion={completion}
+      completionHistory={completionHistory}
+    />
   );
 }
