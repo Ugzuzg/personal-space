@@ -3,6 +3,7 @@ import { createServerFn } from '@tanstack/react-start';
 import pl from 'nodejs-polars';
 import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
+import { CompletionHistory } from '~/components/CompletionHistory';
 import { Cpr } from '~/components/Cpr';
 import { Timeline } from '~/components/Timeline';
 
@@ -159,11 +160,46 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       )
       .toRecords();
 
+    const start = new Date(2025, 2, 1);
+    const completionHistory = solnaBoulders
+      .filter(pl.col('gym_id').eq(pl.lit(69)))
+      .join(ascents, {
+        how: 'left',
+        leftOn: 'nid',
+        rightOn: 'ascendable_id',
+      });
+
+    const now = new Date();
+    const completionHistoryRecords = [];
+    for (let d = new Date(start); d <= now; d.setDate(d.getDate() + 1)) {
+      const activeBoulders = completionHistory.filter(
+        pl
+          .col('boulder_created_at')
+          .ltEq(pl.lit(d))
+          .and(
+            pl
+              .col('boulder_archived_at')
+              .gtEq(pl.lit(d))
+              .or(pl.col('boulder_archived_at').isNull()),
+          ),
+      );
+      const totalOnTheDay = activeBoulders.shape.height;
+      const sentToTheDay = activeBoulders.filter(
+        pl.col('sent_at').ltEq(pl.lit(d)),
+      ).shape.height;
+      completionHistoryRecords.push({
+        date: new Date(d),
+        totalOnTheDay,
+        sentToTheDay,
+      });
+    }
+
     return {
       bar,
       cpr,
       timeline,
       completion,
+      completionHistory: completionHistoryRecords,
     };
   },
 );
@@ -176,13 +212,15 @@ export const Route = createFileRoute('/climbing')({
 });
 
 function Climbing() {
-  const { cpr, timeline, bar, completion } = Route.useLoaderData();
+  const { cpr, timeline, bar, completion, completionHistory } =
+    Route.useLoaderData();
 
   return (
     <section>
       <h1>Climbing</h1>
       <p>Some climbing data to look at.</p>
       <Completion data={completion} />
+      <CompletionHistory data={completionHistory} />
       <Cpr data={cpr} />
       <Timeline data={timeline} />
       <Bar data={bar} />
