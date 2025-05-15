@@ -15,7 +15,7 @@ msgstr ""
 
 #. placeholder {0}: languages.length
 #: src/routes/$lang.tsx:56
-msgid "{0, plural, one {# lanaguage} other {# languages}}"
+msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0språk} other {#\\u00A0språk}}"
 
 #: src/components/Bar.tsx:15
@@ -40,7 +40,7 @@ msgid "By year"
 msgstr "Per år"
 
 #: src/routes/$lang.tsx:152
-#: src/routes/$lang/climbing/$userId.tsx:31
+#: src/routes/$lang/climbing/$userId.tsx:34
 msgid "Climbing"
 msgstr "Klättring"
 
@@ -85,6 +85,10 @@ msgstr "Skickades dit {0}"
 #: src/routes/$lang/resoling.tsx:48
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Skor insamlade: <0>{shoesCollected} / {shoesToSend}</0>"
+
+#: src/components/CompletionHistory.tsx:9
+msgid "Solna completion history"
+msgstr "Historik över avklarade problem i Solna"
 
 #: src/routes/$lang.tsx:174
 msgid "Source"

@@ -15,7 +15,7 @@ msgstr ""
 
 #. placeholder {0}: languages.length
 #: src/routes/$lang.tsx:56
-msgid "{0, plural, one {# lanaguage} other {# languages}}"
+msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0мова} few {#\\u00A0мовы} many {#\\u00A0моў} other {#\\u00A0мовы}}"
 
 #: src/components/Bar.tsx:15
@@ -40,7 +40,7 @@ msgid "By year"
 msgstr "Па гадах"
 
 #: src/routes/$lang.tsx:152
-#: src/routes/$lang/climbing/$userId.tsx:31
+#: src/routes/$lang/climbing/$userId.tsx:34
 msgid "Climbing"
 msgstr "Скалалажанне"
 
@@ -86,6 +86,10 @@ msgstr "Адпраўлена туды {0}"
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Сабрана абутку: <0>{shoesCollected} / {shoesToSend}</0>"
 
+#: src/components/CompletionHistory.tsx:9
+msgid "Solna completion history"
+msgstr "Гісторыя праходжання ў Сольне"
+
 #: src/routes/$lang.tsx:174
 msgid "Source"
 msgstr "Зыходны код"
@@ -96,7 +100,7 @@ msgstr "Храналогія"
 
 #: src/routes/$lang/resoling.tsx:39
 msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
-msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўкі.} one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
+msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўкі.} one {У нас ёсць # пара абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
 #: src/components/Bar.tsx:22
 msgid "year"

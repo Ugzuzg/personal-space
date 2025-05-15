@@ -5,6 +5,7 @@ import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
 import { Cpr } from '~/components/Cpr';
 import { Timeline } from '~/components/Timeline';
+import { CompletionHistory } from '~/components/CompletionHistory';
 import { readDataFrame } from '~/utils/readDataFrame.functions';
 
 export const Route = createFileRoute('/$lang/climbing/$userId')({
@@ -19,11 +20,13 @@ export function Climbing({
   timeline,
   bar,
   completion,
+  completionHistory,
 }: {
   cpr: any;
   timeline: any;
   bar: any;
   completion: any;
+  completionHistory: any;
 }) {
   return (
     <section>
@@ -31,6 +34,7 @@ export function Climbing({
         <Trans>Climbing</Trans>
       </h1>
       <Completion data={completion} />
+      <CompletionHistory data={completionHistory} />
       <Cpr data={cpr} />
       <Timeline data={timeline} />
       <Bar data={bar} />
@@ -39,9 +43,16 @@ export function Climbing({
 }
 
 function RouteClimbing() {
-  const { cpr, timeline, bar, completion } = Route.useLoaderData();
+  const { cpr, timeline, bar, completion, completionHistory } =
+    Route.useLoaderData();
 
   return (
-    <Climbing cpr={cpr} timeline={timeline} bar={bar} completion={completion} />
+    <Climbing
+      cpr={cpr}
+      timeline={timeline}
+      bar={bar}
+      completion={completion}
+      completionHistory={completionHistory}
+    />
   );
 }
