@@ -8,6 +8,7 @@ import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
 import { Cpr } from '~/components/Cpr';
 import { Timeline } from '~/components/Timeline';
+import { CompletionHistory } from '~/components/CompletionHistory';
 
 const boulderScores = [
   { score: 12, v: 'VB', font: '2' },
@@ -175,11 +176,46 @@ export const readDataFrame = createServerFn({ method: 'GET' })
       )
       .toRecords();
 
+    const start = new Date(2025, 2, 1);
+    const completionHistory = solnaBoulders
+      .filter(pl.col('gym_id').eq(pl.lit(69)))
+      .join(ascents, {
+        how: 'left',
+        leftOn: 'nid',
+        rightOn: 'ascendable_id',
+      });
+
+    const now = new Date();
+    const completionHistoryRecords = [];
+    for (let d = new Date(start); d <= now; d.setDate(d.getDate() + 1)) {
+      const activeBoulders = completionHistory.filter(
+        pl
+          .col('boulder_created_at')
+          .ltEq(pl.lit(d))
+          .and(
+            pl
+              .col('boulder_archived_at')
+              .gtEq(pl.lit(d))
+              .or(pl.col('boulder_archived_at').isNull()),
+          ),
+      );
+      const totalOnTheDay = activeBoulders.shape.height;
+      const sentToTheDay = activeBoulders.filter(
+        pl.col('sent_at').ltEq(pl.lit(d)),
+      ).shape.height;
+      completionHistoryRecords.push({
+        date: new Date(d),
+        totalOnTheDay,
+        sentToTheDay,
+      });
+    }
+
     return {
       bar,
       cpr,
       timeline,
       completion,
+      completionHistory: completionHistoryRecords,
     };
   });
 
@@ -195,11 +231,13 @@ export function Climbing({
   timeline,
   bar,
   completion,
+  completionHistory,
 }: {
   cpr: any;
   timeline: any;
   bar: any;
   completion: any;
+  completionHistory: any;
 }) {
   return (
     <section>
@@ -207,6 +245,7 @@ export function Climbing({
         <Trans>Climbing</Trans>
       </h1>
       <Completion data={completion} />
+      <CompletionHistory data={completionHistory} />
       <Cpr data={cpr} />
       <Timeline data={timeline} />
       <Bar data={bar} />
@@ -215,9 +254,16 @@ export function Climbing({
 }
 
 function RouteClimbing() {
-  const { cpr, timeline, bar, completion } = Route.useLoaderData();
+  const { cpr, timeline, bar, completion, completionHistory } =
+    Route.useLoaderData();
 
   return (
-    <Climbing cpr={cpr} timeline={timeline} bar={bar} completion={completion} />
+    <Climbing
+      cpr={cpr}
+      timeline={timeline}
+      bar={bar}
+      completion={completion}
+      completionHistory={completionHistory}
+    />
   );
 }
