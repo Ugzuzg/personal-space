@@ -36,7 +36,7 @@ msgid "By year"
 msgstr "By year"
 
 #: app/routes/$lang.tsx:149
-#: app/routes/$lang/climbing/$userId.tsx:205
+#: app/routes/$lang/climbing/$userId.tsx:243
 msgid "Climbing"
 msgstr "Climbing"
 
@@ -68,7 +68,11 @@ msgstr "Overall progress: {0} / {1} ({2})"
 msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
-#: app/routes/$lang.tsx:171
+#: app/components/CompletionHistory.tsx:9
+msgid "Solna completion history"
+msgstr "Solna completion history"
+
+#: app/routes/$lang.tsx:162
 msgid "Source"
 msgstr "Source"
 
