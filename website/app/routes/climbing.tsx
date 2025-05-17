@@ -50,6 +50,11 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
           .getColumn('updated_at')
           .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
           .cast(pl.Datetime('ms')),
+        ascents
+          .getColumn('date')
+          .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
+          .cast(pl.Datetime('ms'))
+          .alias('sent_at'),
         ascents.getColumn('ascendable_type').cast(pl.Categorical),
         ascents.getColumn('grading_system').cast(pl.Categorical),
         pl
@@ -132,7 +137,9 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       .select('difficulty', 'year', 'type', 'parent_name', 'route_setter')
       .toRecords();
 
-    const completion = boulders
+    const solnaBoulders = boulders.filter(pl.col('gym_id').eq(pl.lit(69)));
+
+    const completion = solnaBoulders
       .filter(pl.col('archived').eq(pl.lit(false)))
       .join(ascents, {
         how: 'left',
