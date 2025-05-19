@@ -1,9 +1,9 @@
 {
-  "id": 590650,
-  "name": "White",
+  "id": 599693,
+  "name": "Orange",
   "notes": null,
-  "difficulty": "7B+",
-  "grade": "vl-26",
+  "difficulty": "3+",
+  "grade": "vl-5",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,56 +125,44 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-04-03 13:30:17 +0000",
-  "created_at": "2025-04-03 13:30:17 +0000",
-  "set_at": "2025-04-03 13:30:06 +0000",
+  "updated_at": "2025-05-19 13:59:47 +0000",
+  "created_at": "2025-05-19 13:59:47 +0000",
+  "set_at": "2025-05-19 13:59:33 +0000",
   "expiration_date": null,
   "path": [
     [
-      291,
-      182
+      49,
+      118
     ],
     [
-      302,
-      300
+      163,
+      579
     ],
     [
-      294,
-      520
+      162,
+      638
     ],
     [
-      382,
-      504
+      511,
+      651
     ],
     [
-      507,
-      502
+      513,
+      588
     ],
     [
-      721,
-      526
+      512,
+      71
     ],
     [
-      720,
-      489
-    ],
-    [
-      733,
-      183
-    ],
-    [
-      565,
-      180
-    ],
-    [
-      291,
-      182
+      51,
+      120
     ]
   ],
   "reference_width": 971,
-  "line_number": 2,
-  "topo_num": "41797.2.17",
-  "color_1": "#FFFFFF",
+  "line_number": 5,
+  "topo_num": "41799.5.5",
+  "color_1": "#ffa500",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -187,13 +175,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 0,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -334,12 +322,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/6e3da699b38954c8c32b788e30602a40",
-  "route_card_label": "A2.17",
+  "share_url": "https://zlag.vertical-life.info/en/routes/586e594c936edd9b9eee174e7c9a03d9",
+  "route_card_label": "A5.5",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Anton Cuevas",
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "Silver Breiktopf",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
