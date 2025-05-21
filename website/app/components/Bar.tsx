@@ -1,19 +1,23 @@
 import * as Plot from '@observablehq/plot';
+import { useLingui } from '@lingui/react/macro';
+
 import PlotFigure from './PlotFigure';
 
 export function Bar({ data }) {
+  const { i18n, t } = useLingui();
+
   const ascentTypeColorDomain = {
     domain: ['flash', 'redpoint'],
     range: ['#ffd800', '#ff5151'],
   };
   let groupings = [
     {
-      name: 'All time',
+      name: t`All time`,
       y: 'difficulty',
       fill: 'type',
     },
     {
-      name: 'By year',
+      name: t`By year`,
       y: 'difficulty',
       fy: 'year',
       fill: 'type',
@@ -55,9 +59,19 @@ export function Bar({ data }) {
                   ...ascentTypeColorDomain,
                 },
                 width: 480,
-                y: { type: 'band', reverse: true },
+                y: {
+                  type: 'band',
+                  reverse: true,
+                },
                 ...(grouping.fy && {
-                  fy: { reverse: true },
+                  fy: {
+                    reverse: true,
+                    tickFormat: (v) => {
+                      return i18n.date(new Date(Date.UTC(v)), {
+                        year: 'numeric',
+                      });
+                    },
+                  },
                 }),
                 style: {
                   fontFamily: 'Inter',

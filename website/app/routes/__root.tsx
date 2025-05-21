@@ -1,11 +1,13 @@
 import {
   HeadContent,
-  Link,
   Outlet,
   Scripts,
   createRootRoute,
+  redirect,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
+import { createServerFn } from '@tanstack/react-start';
+import { getWebRequest } from '@tanstack/react-start/server';
 import * as React from 'react';
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary';
 import { NotFound } from '~/components/NotFound';
@@ -13,7 +15,18 @@ import appCss from '~/styles/app.css?url';
 import schemeCss from '~/styles/scheme.css?url';
 import { seo } from '~/utils/seo';
 
+export const getServerTime = createServerFn({}).handler(async () => {
+  const request = getWebRequest();
+  console.log('headers', request?.headers.get('accept-language'));
+  throw redirect({ to: '/$lang', params: { lang: 'en' } });
+});
+
 export const Route = createRootRoute({
+  loader: async (options) => {
+    if (options.location.pathname === '/') {
+      await getServerTime();
+    }
+  },
   head: () => ({
     meta: [
       {

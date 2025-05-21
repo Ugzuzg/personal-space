@@ -1,4 +1,9 @@
-import { Link, Outlet, createFileRoute } from '@tanstack/react-router';
+import {
+  Link,
+  Outlet,
+  createFileRoute,
+  notFound,
+} from '@tanstack/react-router';
 import { setI18n } from '@lingui/react/server';
 import { Trans } from '@lingui/react/macro';
 
@@ -10,6 +15,11 @@ import be from '~/img/be-gpt.png?url';
 
 export const Route = createFileRoute('/$lang')({
   component: Home,
+  loader: (options) => {
+    if (!['en', 'be'].includes(options.params.lang)) {
+      throw notFound();
+    }
+  },
 });
 
 function LanguagePicker() {
@@ -102,7 +112,7 @@ export function Home() {
       <footer>
         <hr />
         <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
-          Source
+          <Trans>Source</Trans>
         </a>
       </footer>
     </LinguiClientProvider>

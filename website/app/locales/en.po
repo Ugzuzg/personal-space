@@ -13,8 +13,30 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/routes/$lang.tsx:35
-#: app/routes/$lang/climbing.tsx:179
+#. js-lingui-explicit-id
+#: app/components/Bar.tsx:14
+#~ msgid "All time"
+#~ msgstr "All time"
+
+#. js-lingui-explicit-id
+#: app/components/Bar.tsx:19
+#~ msgid "By year"
+#~ msgstr "By year"
+
+#: app/components/Bar.tsx:15
+msgid "All time"
+msgstr "All time"
+
+#: app/components/Completion.tsx:15
+msgid "Boulder progress at Klättercentret Solna"
+msgstr "Boulder progress at Klättercentret Solna"
+
+#: app/components/Bar.tsx:20
+msgid "By year"
+msgstr "By year"
+
+#: app/routes/$lang.tsx:102
+#: app/routes/$lang/climbing.tsx:186
 msgid "Climbing"
 msgstr "Climbing"
 
@@ -22,6 +44,25 @@ msgstr "Climbing"
 msgid "Hallo!"
 msgstr "Hallo!"
 
-#: app/routes/$lang.tsx:32
+#: app/routes/$lang.tsx:93
 msgid "Home"
 msgstr "Home"
+
+#. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
+#. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
+#. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
+#: app/components/Completion.tsx:18
+msgid "Overall progress: {0} / {1} ({2})"
+msgstr "Overall progress: {0} / {1} ({2})"
+
+#: app/components/Cpr.tsx:38
+msgid "Poor man's CPR"
+msgstr "Poor man's CPR"
+
+#: app/routes/$lang.tsx:115
+msgid "Source"
+msgstr "Source"
+
+#: app/components/Timeline.tsx:10
+msgid "Timeline"
+msgstr "Timeline"

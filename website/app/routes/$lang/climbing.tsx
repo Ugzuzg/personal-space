@@ -185,7 +185,6 @@ function Climbing() {
       <h1>
         <Trans>Climbing</Trans>
       </h1>
-      <p>Some climbing data to look at.</p>
       <Completion data={completion} />
       <Cpr data={cpr} />
       <Timeline data={timeline} />

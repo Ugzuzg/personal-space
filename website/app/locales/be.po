@@ -13,8 +13,20 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/routes/$lang.tsx:35
-#: app/routes/$lang/climbing.tsx:179
+#: app/components/Bar.tsx:15
+msgid "All time"
+msgstr "За ўвесь час"
+
+#: app/components/Completion.tsx:15
+msgid "Boulder progress at Klättercentret Solna"
+msgstr "Валуны ў Klättercentret Solna"
+
+#: app/components/Bar.tsx:20
+msgid "By year"
+msgstr "Па гадах"
+
+#: app/routes/$lang.tsx:102
+#: app/routes/$lang/climbing.tsx:186
 msgid "Climbing"
 msgstr "Скалалажанне"
 
@@ -22,6 +34,25 @@ msgstr "Скалалажанне"
 msgid "Hallo!"
 msgstr "Вітаю!"
 
-#: app/routes/$lang.tsx:32
+#: app/routes/$lang.tsx:93
 msgid "Home"
 msgstr "Галоўная"
+
+#. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
+#. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
+#. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
+#: app/components/Completion.tsx:18
+msgid "Overall progress: {0} / {1} ({2})"
+msgstr "Агульны прагрэс: {0} / {1} ({2})"
+
+#: app/components/Cpr.tsx:38
+msgid "Poor man's CPR"
+msgstr "Жабрацкі рэйтынг скалалаза"
+
+#: app/routes/$lang.tsx:115
+msgid "Source"
+msgstr "Зыходны код"
+
+#: app/components/Timeline.tsx:10
+msgid "Timeline"
+msgstr "Храналогія"
