@@ -50,7 +50,7 @@ export function Cpr({ data }) {
             },
             y: {
               ticks: boulderScores
-                .filter((grade) => grade.font <= '7B')
+                .filter((grade) => grade.font <= '7C')
                 .map((grade) => grade.score),
               tickFormat: (v) =>
                 boulderScores.find(({ score }) => v === score)?.font,
