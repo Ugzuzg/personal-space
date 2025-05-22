@@ -25,7 +25,7 @@ msgstr "Валуны ў Klättercentret Solna"
 msgid "By year"
 msgstr "Па гадах"
 
-#: app/routes/$lang.tsx:102
+#: app/routes/$lang.tsx:109
 #: app/routes/$lang/climbing.tsx:186
 msgid "Climbing"
 msgstr "Скалалажанне"
@@ -34,7 +34,7 @@ msgstr "Скалалажанне"
 msgid "Hallo!"
 msgstr "Вітаю!"
 
-#: app/routes/$lang.tsx:93
+#: app/routes/$lang.tsx:100
 msgid "Home"
 msgstr "Галоўная"
 
@@ -45,14 +45,14 @@ msgstr "Галоўная"
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Агульны прагрэс: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:38
+#: app/components/Cpr.tsx:39
 msgid "Poor man's CPR"
 msgstr "Жабрацкі рэйтынг скалалаза"
 
-#: app/routes/$lang.tsx:115
+#: app/routes/$lang.tsx:122
 msgid "Source"
 msgstr "Зыходны код"
 
-#: app/components/Timeline.tsx:10
+#: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Храналогія"

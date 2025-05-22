@@ -7,7 +7,7 @@ import {
 import { setI18n } from '@lingui/react/server';
 import { Trans } from '@lingui/react/macro';
 
-import { getI18nInstance } from '~/localething';
+import { getI18nInstance } from '~/catalogs';
 import { LinguiClientProvider } from '~/components/LinguiClientProvider';
 
 import en from '~/img/en-gpt.png?url';
@@ -68,7 +68,7 @@ function LanguagePicker() {
 export function Home() {
   const { lang } = Route.useParams();
 
-  const i18n = getI18nInstance(lang); // get a ready-made i18n instance for the given locale
+  const i18n = getI18nInstance(lang);
   setI18n(i18n);
 
   return (

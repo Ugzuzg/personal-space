@@ -1,8 +1,10 @@
 import { defineConfig } from '@lingui/cli';
 
+import { locales } from './locales';
+
 export default defineConfig({
   sourceLocale: 'en',
-  locales: ['en', 'be'],
+  locales: locales as unknown as string[],
   catalogs: [
     {
       path: '<rootDir>/app/locales/{locale}',

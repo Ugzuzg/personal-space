@@ -1,7 +1,7 @@
-// import linguiConfig from '../lingui.config';
 import { I18n, Messages, setupI18n } from '@lingui/core';
 
-const locales = ['en', 'be'] as const;
+import { locales } from '../locales';
+
 type SupportedLocales = (typeof locales)[number];
 
 async function loadCatalog(locale: SupportedLocales): Promise<{
@@ -30,7 +30,7 @@ export const allI18nInstances: AllI18nInstances = locales.reduce(
     });
     return { ...acc, [locale]: i18n };
   },
-  {},
+  {} as AllI18nInstances,
 );
 
 export const getI18nInstance = (locale: SupportedLocales): I18n => {

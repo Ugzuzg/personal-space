@@ -3,7 +3,7 @@
 import { I18nProvider } from '@lingui/react';
 import { type Messages, setupI18n } from '@lingui/core';
 import { useEffect, useState } from 'react';
-import { allMessages } from '../localething';
+import { allMessages } from '../catalogs';
 
 export function LinguiClientProvider({
   children,

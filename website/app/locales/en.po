@@ -35,7 +35,7 @@ msgstr "Boulder progress at Klättercentret Solna"
 msgid "By year"
 msgstr "By year"
 
-#: app/routes/$lang.tsx:102
+#: app/routes/$lang.tsx:109
 #: app/routes/$lang/climbing.tsx:186
 msgid "Climbing"
 msgstr "Climbing"
@@ -44,7 +44,7 @@ msgstr "Climbing"
 msgid "Hallo!"
 msgstr "Hallo!"
 
-#: app/routes/$lang.tsx:93
+#: app/routes/$lang.tsx:100
 msgid "Home"
 msgstr "Home"
 
@@ -55,14 +55,14 @@ msgstr "Home"
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Overall progress: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:38
+#: app/components/Cpr.tsx:39
 msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
-#: app/routes/$lang.tsx:115
+#: app/routes/$lang.tsx:122
 msgid "Source"
 msgstr "Source"
 
-#: app/components/Timeline.tsx:10
+#: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Timeline"
