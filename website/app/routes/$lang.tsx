@@ -12,6 +12,7 @@ import { LinguiClientProvider } from '~/components/LinguiClientProvider';
 
 import en from '~/img/en-gpt.png?url';
 import be from '~/img/be-gpt.png?url';
+import { useState } from 'react';
 
 export const Route = createFileRoute('/$lang')({
   component: Home,
@@ -23,8 +24,10 @@ export const Route = createFileRoute('/$lang')({
 });
 
 function LanguagePicker() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <details>
+    <details open={isOpen} onToggle={(e) => setIsOpen(e.currentTarget.open)}>
       <summary>🌐</summary>
       <ul
         style={{
@@ -32,6 +35,7 @@ function LanguagePicker() {
           right: 0,
           listStyleType: 'none',
           padding: 0,
+          background: 'var(--color-background)',
         }}
       >
         <li>
@@ -39,6 +43,7 @@ function LanguagePicker() {
             to="."
             params={{ lang: 'en' }}
             style={{ display: 'flex', alignItems: 'center' }}
+            onClick={() => setIsOpen(false)}
           >
             <img src={en} style={{ height: '4em', width: 'auto' }} />
             English
@@ -49,6 +54,7 @@ function LanguagePicker() {
             to="."
             params={{ lang: 'be' }}
             style={{ display: 'flex', alignItems: 'center' }}
+            onClick={() => setIsOpen(false)}
           >
             <img src={be} style={{ height: '4em', width: 'auto' }} />
             Беларуская
