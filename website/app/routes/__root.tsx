@@ -15,16 +15,19 @@ import appCss from '~/styles/app.css?url';
 import schemeCss from '~/styles/scheme.css?url';
 import { seo } from '~/utils/seo';
 
-export const getServerTime = createServerFn({}).handler(async () => {
+export const navigateToLang = createServerFn({}).handler(async () => {
   const request = getWebRequest();
-  console.log('headers', request?.headers.get('accept-language'));
+  const acceptLanguage = request?.headers.get('accept-language') ?? 'en';
+  if (acceptLanguage.includes('be') || acceptLanguage.includes('ru')) {
+    throw redirect({ to: '/$lang', params: { lang: 'be' } });
+  }
   throw redirect({ to: '/$lang', params: { lang: 'en' } });
 });
 
 export const Route = createRootRoute({
   loader: async (options) => {
     if (options.location.pathname === '/') {
-      await getServerTime();
+      await navigateToLang();
     }
   },
   head: () => ({
