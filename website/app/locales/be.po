@@ -26,7 +26,7 @@ msgstr "За ўвесь час"
 msgid "Boulder progress at Klättercentret Solna"
 msgstr "Валуны ў Klättercentret Solna"
 
-#: app/components/Bar.tsx:20
+#: app/components/Bar.tsx:19
 msgid "By year"
 msgstr "Па гадах"
 
@@ -35,6 +35,15 @@ msgstr "Па гадах"
 msgid "Climbing"
 msgstr "Скалалажанне"
 
+#: app/components/Bar.tsx:62
+msgid "count"
+msgstr "колькасць"
+
+#: app/components/Completion.tsx:66
+#: app/components/Bar.tsx:65
+msgid "difficulty"
+msgstr "цяжкасць"
+
 #: app/routes/$lang/index.tsx:11
 msgid "Hallo!"
 msgstr "Вітаю!"
@@ -42,10 +51,6 @@ msgstr "Вітаю!"
 #: app/routes/$lang.tsx:123
 msgid "Home"
 msgstr "Галоўная"
-
-#: app/routes/$lang.tsx:55
-#~ msgid "Language"
-#~ msgstr ""
 
 #. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
 #. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
@@ -65,3 +70,7 @@ msgstr "Зыходны код"
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Храналогія"
+
+#: app/components/Bar.tsx:22
+msgid "year"
+msgstr "год"

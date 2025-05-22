@@ -1,11 +1,11 @@
 import * as Plot from '@observablehq/plot';
 import { Trans } from '@lingui/react/macro';
-import { useLingui } from '@lingui/react';
+import { useLingui } from '@lingui/react/macro';
 
 import PlotFigure from './PlotFigure';
 
 export function Completion({ data }) {
-  const { i18n } = useLingui();
+  const { i18n, t } = useLingui();
   const allSent = data.map((v) => v.sent).reduce((a, b) => a + b, 0);
   const allBoulders = data.map((v) => v.all).reduce((a, b) => a + b, 0);
 
@@ -62,7 +62,11 @@ export function Completion({ data }) {
                 fill: 1,
               }),
             ],
-            y: { type: 'band', reverse: true },
+            y: {
+              label: t`difficulty`,
+              type: 'band',
+              reverse: true,
+            },
           }}
         />
       </p>

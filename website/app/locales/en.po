@@ -26,7 +26,7 @@ msgstr "All time"
 msgid "Boulder progress at Klättercentret Solna"
 msgstr "Boulder progress at Klättercentret Solna"
 
-#: app/components/Bar.tsx:20
+#: app/components/Bar.tsx:19
 msgid "By year"
 msgstr "By year"
 
@@ -34,6 +34,15 @@ msgstr "By year"
 #: app/routes/$lang/climbing.tsx:186
 msgid "Climbing"
 msgstr "Climbing"
+
+#: app/components/Bar.tsx:62
+msgid "count"
+msgstr "count"
+
+#: app/components/Completion.tsx:66
+#: app/components/Bar.tsx:65
+msgid "difficulty"
+msgstr "difficulty"
 
 #: app/routes/$lang/index.tsx:11
 msgid "Hallo!"
@@ -61,3 +70,7 @@ msgstr "Source"
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Timeline"
+
+#: app/components/Bar.tsx:22
+msgid "year"
+msgstr "year"

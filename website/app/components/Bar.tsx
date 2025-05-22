@@ -13,14 +13,13 @@ export function Bar({ data }) {
   let groupings = [
     {
       name: t`All time`,
-      y: 'difficulty',
       fill: 'type',
     },
     {
       name: t`By year`,
-      y: 'difficulty',
       fy: 'year',
       fill: 'type',
+      label: t`year`,
     },
     /*
     {
@@ -59,12 +58,17 @@ export function Bar({ data }) {
                   ...ascentTypeColorDomain,
                 },
                 width: 480,
+                x: {
+                  label: t`count`,
+                },
                 y: {
+                  label: t`difficulty`,
                   type: 'band',
                   reverse: true,
                 },
                 ...(grouping.fy && {
                   fy: {
+                    label: grouping.label,
                     reverse: true,
                     tickFormat: (v) => {
                       return i18n.date(new Date(Date.UTC(v)), {
@@ -84,7 +88,10 @@ export function Bar({ data }) {
                   Plot.frame(),
                   Plot.barX(
                     data,
-                    Plot.groupY({ x: 'count' }, { ...grouping, title: 'type' }),
+                    Plot.groupY(
+                      { x: 'count' },
+                      { ...grouping, y: 'difficulty', title: 'type' },
+                    ),
                   ),
                 ],
               }}
