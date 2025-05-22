@@ -46,7 +46,7 @@ function LanguagePicker() {
             onClick={() => setIsOpen(false)}
           >
             <img src={en} style={{ height: '4em', width: 'auto' }} />
-            English
+            <span lang="en">English</span>
           </Link>
         </li>
         <li>
@@ -57,7 +57,7 @@ function LanguagePicker() {
             onClick={() => setIsOpen(false)}
           >
             <img src={be} style={{ height: '4em', width: 'auto' }} />
-            Беларуская
+            <span lang="be">Беларуская</span>
           </Link>
         </li>
       </ul>
@@ -73,54 +73,56 @@ export function Home() {
 
   return (
     <LinguiClientProvider locale={lang} initialMessages={i18n.messages}>
-      <nav
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          position: 'relative',
-        }}
-      >
-        <ul
+      <div lang={lang}>
+        <nav
           style={{
             display: 'flex',
-            margin: 0,
-            padding: 0,
-            listStyleType: 'none',
-            gap: '8px',
+            justifyContent: 'space-between',
+            position: 'relative',
           }}
         >
-          <li>
-            <Link
-              to="/$lang"
-              params={{ lang }}
-              activeProps={{ className: 'font-bold' }}
-              activeOptions={{ exact: true }}
-            >
-              <Trans>Home</Trans>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/$lang/climbing"
-              params={{ lang }}
-              activeProps={{ className: 'font-bold' }}
-            >
-              <Trans>Climbing</Trans>
-            </Link>
-          </li>
-        </ul>
-        <LanguagePicker />
-      </nav>
-      <hr />
-      <main>
-        <Outlet />
-      </main>
-      <footer>
+          <ul
+            style={{
+              display: 'flex',
+              margin: 0,
+              padding: 0,
+              listStyleType: 'none',
+              gap: '8px',
+            }}
+          >
+            <li>
+              <Link
+                to="/$lang"
+                params={{ lang }}
+                activeProps={{ className: 'font-bold' }}
+                activeOptions={{ exact: true }}
+              >
+                <Trans>Home</Trans>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/$lang/climbing"
+                params={{ lang }}
+                activeProps={{ className: 'font-bold' }}
+              >
+                <Trans>Climbing</Trans>
+              </Link>
+            </li>
+          </ul>
+          <LanguagePicker />
+        </nav>
         <hr />
-        <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
-          <Trans>Source</Trans>
-        </a>
-      </footer>
+        <main>
+          <Outlet />
+        </main>
+        <footer>
+          <hr />
+          <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
+            <Trans>Source</Trans>
+          </a>
+        </footer>
+      </div>
     </LinguiClientProvider>
   );
 }

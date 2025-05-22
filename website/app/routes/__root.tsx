@@ -3,11 +3,8 @@ import {
   Outlet,
   Scripts,
   createRootRoute,
-  redirect,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
-import { createServerFn } from '@tanstack/react-start';
-import { getWebRequest } from '@tanstack/react-start/server';
 import * as React from 'react';
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary';
 import { NotFound } from '~/components/NotFound';
@@ -15,22 +12,7 @@ import appCss from '~/styles/app.css?url';
 import schemeCss from '~/styles/scheme.css?url';
 import { seo } from '~/utils/seo';
 
-export const navigateToLang = createServerFn({}).handler(async () => {
-  const request = getWebRequest();
-  const acceptLanguage = request?.headers.get('accept-language') ?? 'en';
-  if (acceptLanguage.includes('be') || acceptLanguage.includes('ru')) {
-    throw redirect({ to: '/$lang', params: { lang: 'be' } });
-  }
-  throw redirect({ to: '/$lang', params: { lang: 'en' } });
-});
-
 export const Route = createRootRoute({
-  beforeLoad: async (options) => {
-    console.log('beforeLoad', options.location);
-    if (options.location.pathname === '/') {
-      await navigateToLang();
-    }
-  },
   head: () => ({
     meta: [
       {
