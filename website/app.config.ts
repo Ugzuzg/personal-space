@@ -22,7 +22,7 @@ export default defineConfig({
       options: { target: 'es2022' },
     },
     prerender: {
-      routes: ['/'],
+      routes: ['/', '/en', '/be'],
       crawlLinks: true,
     },
   },
