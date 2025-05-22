@@ -1,4 +1,6 @@
 import * as Plot from '@observablehq/plot';
+import { Trans, useLingui } from '@lingui/react/macro';
+
 import PlotFigure from './PlotFigure';
 
 const boulderScores = [
@@ -25,6 +27,7 @@ const boulderScores = [
 ].map((grade) => ({ ...grade, font: grade.font.toUpperCase() }));
 
 export function Cpr({ data }) {
+  const { i18n } = useLingui();
   const ascentTypeColorDomain = {
     domain: ['flash', 'redpoint'],
     range: ['#ffd800', '#ff5151'],
@@ -32,7 +35,9 @@ export function Cpr({ data }) {
 
   return (
     <article>
-      <h2>Poor man's CPR</h2>
+      <h2>
+        <Trans>Poor man's CPR</Trans>
+      </h2>
       <p>
         <PlotFigure
           width={1200}
@@ -47,6 +52,16 @@ export function Cpr({ data }) {
             width: 1200,
             x: {
               label: null,
+              tickFormat: (d: Date, i) => {
+                return i18n
+                  .date(d, {
+                    month: 'short',
+                    ...(i === 0 || d.getUTCMonth() === 0
+                      ? { year: 'numeric' }
+                      : {}),
+                  })
+                  .replace(/\s+/g, '\n');
+              },
             },
             y: {
               ticks: boulderScores

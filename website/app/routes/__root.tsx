@@ -1,6 +1,5 @@
 import {
   HeadContent,
-  Link,
   Outlet,
   Scripts,
   createRootRoute,
@@ -78,26 +77,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <nav>
-          <Link
-            to="/"
-            activeProps={{ className: 'font-bold' }}
-            activeOptions={{ exact: true }}
-          >
-            Home
-          </Link>{' '}
-          <Link to="/climbing" activeProps={{ className: 'font-bold' }}>
-            Climbing
-          </Link>
-          <hr />
-        </nav>
-        <main>{children}</main>
-        <footer>
-          <hr />
-          <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
-            Source
-          </a>
-        </footer>
+        {children}
         <TanStackRouterDevtools position="bottom-right" />
         <Scripts />
       </body>

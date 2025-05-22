@@ -1,11 +1,15 @@
 import * as Plot from '@observablehq/plot';
+import { Trans, useLingui } from '@lingui/react/macro';
+
 import PlotFigure from './PlotFigure';
-import * as d3 from 'd3';
 
 export function Timeline({ data }) {
+  const { i18n } = useLingui();
   return (
     <article>
-      <h2>Timeline</h2>
+      <h2>
+        <Trans>Timeline</Trans>
+      </h2>
       <p>
         <PlotFigure
           width={600}
@@ -18,14 +22,19 @@ export function Timeline({ data }) {
               fontSize: 'var(--step--1)',
             },
 
+            x: {
+              tickFormat: (d: Date, i) => {
+                return i18n
+                  .date(d, {
+                    month: 'short',
+                    ...(i === 0 || d.getUTCMonth() === 0
+                      ? { year: 'numeric' }
+                      : {}),
+                  })
+                  .replace(/\s+/g, '\n');
+              },
+            },
             /*
-        x: {
-          tickFormat: (d) =>
-            Intl.DateTimeFormat('en', { month: 'long' }).format(
-              new Date(String(d)),
-            ),
-          tickRotate: 45,
-        },
         y: { tickFormat: null, tickSize: 0 },
         fy: { reverse: true },
         marginLeft: 0,
@@ -68,7 +77,6 @@ export function Timeline({ data }) {
                   Object.entries(
                     d.difficulty.reduce((acc, grade) => {
                       if (!acc[grade]) {
-                        <h2>Bar</h2>;
                         acc[grade] = 0;
                       }
                       acc[grade] += 1;

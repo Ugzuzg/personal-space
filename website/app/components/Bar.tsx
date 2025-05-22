@@ -1,22 +1,25 @@
 import * as Plot from '@observablehq/plot';
+import { useLingui } from '@lingui/react/macro';
+
 import PlotFigure from './PlotFigure';
 
 export function Bar({ data }) {
+  const { i18n, t } = useLingui();
+
   const ascentTypeColorDomain = {
     domain: ['flash', 'redpoint'],
     range: ['#ffd800', '#ff5151'],
   };
   let groupings = [
     {
-      name: 'All time',
-      y: 'difficulty',
+      name: t`All time`,
       fill: 'type',
     },
     {
-      name: 'By year',
-      y: 'difficulty',
+      name: t`By year`,
       fy: 'year',
       fill: 'type',
+      label: t`year`,
     },
     /*
     {
@@ -55,9 +58,24 @@ export function Bar({ data }) {
                   ...ascentTypeColorDomain,
                 },
                 width: 480,
-                y: { type: 'band', reverse: true },
+                x: {
+                  label: t`count`,
+                },
+                y: {
+                  label: t`difficulty`,
+                  type: 'band',
+                  reverse: true,
+                },
                 ...(grouping.fy && {
-                  fy: { reverse: true },
+                  fy: {
+                    label: grouping.label,
+                    reverse: true,
+                    tickFormat: (v) => {
+                      return i18n.date(new Date(Date.UTC(v)), {
+                        year: 'numeric',
+                      });
+                    },
+                  },
                 }),
                 style: {
                   fontFamily: 'Inter',
@@ -70,7 +88,10 @@ export function Bar({ data }) {
                   Plot.frame(),
                   Plot.barX(
                     data,
-                    Plot.groupY({ x: 'count' }, { ...grouping, title: 'type' }),
+                    Plot.groupY(
+                      { x: 'count' },
+                      { ...grouping, y: 'difficulty', title: 'type' },
+                    ),
                   ),
                 ],
               }}
