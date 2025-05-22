@@ -25,7 +25,8 @@ export const navigateToLang = createServerFn({}).handler(async () => {
 });
 
 export const Route = createRootRoute({
-  loader: async (options) => {
+  beforeLoad: async (options) => {
+    console.log('beforeLoad', options.location);
     if (options.location.pathname === '/') {
       await navigateToLang();
     }
