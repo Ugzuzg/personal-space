@@ -33,6 +33,14 @@ export function Cpr({ data }) {
     range: ['#ffd800', '#ff5151'],
   };
 
+  const maxDifficulty = data.reduce(
+    (currentMax, datapoint) =>
+      datapoint.difficultyMax > currentMax
+        ? datapoint.difficultyMax
+        : currentMax,
+    '2',
+  );
+
   return (
     <article>
       <h2>
@@ -65,7 +73,7 @@ export function Cpr({ data }) {
             },
             y: {
               ticks: boulderScores
-                .filter((grade) => grade.font <= '7C')
+                .filter((grade) => grade.font <= maxDifficulty)
                 .map((grade) => grade.score),
               tickFormat: (v) =>
                 boulderScores.find(({ score }) => v === score)?.font,

@@ -4,7 +4,6 @@ import path from 'node:path';
 
 const me = 230474;
 const wilhelm = 56689;
-const user = me;
 
 const fileExists = async (path) => {
   try {
@@ -80,7 +79,7 @@ const fetchBoulders = async (token: string, ids: number[]) => {
   process.stdout.write('\n');
 };
 
-(async () => {
+async function fetchDataForUser(user: number) {
   const newToken = await getAccessToken();
   await fs.writeFile('token.json', JSON.stringify(newToken, null, 2));
 
@@ -162,4 +161,9 @@ const fetchBoulders = async (token: string, ids: number[]) => {
 
   bouldersStream.close();
   process.stdout.write('\n');
+}
+
+(async () => {
+  await fetchDataForUser(me);
+  await fetchDataForUser(wilhelm);
 })();
