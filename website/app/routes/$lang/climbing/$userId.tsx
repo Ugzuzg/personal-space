@@ -1,7 +1,8 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, notFound } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import pl from 'nodejs-polars';
 import { Trans } from '@lingui/react/macro';
+import fs from 'node:fs/promises';
 
 import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
@@ -35,9 +36,18 @@ const gradeToNumber = boulderScores.reduce((acc, grade) => {
   return acc;
 }, {});
 
-const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
-  async () => {
-    let ascents = pl.readJSON('../data/ascents_230474.jsonl', {
+export const readDataFrame = createServerFn({ type: 'static' })
+  .validator((userId: number) => userId)
+  .handler(async (ctx) => {
+    const ascentsPath = `../data/ascents_${ctx.data}.jsonl`;
+
+    try {
+      await fs.stat(ascentsPath);
+    } catch (e) {
+      throw notFound();
+    }
+
+    let ascents = pl.readJSON(`../data/ascents_${ctx.data}.jsonl`, {
       inferSchemaLength: null,
       format: 'lines',
     });
@@ -68,7 +78,9 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       )
       .withColumns(pl.col('created_at').date.year().alias('year'))
       // remove repeat ascents
-      .unique({ subset: 'ascendable_id', keep: 'first' });
+      .unique({ subset: 'ascendable_id', keep: 'first' })
+      // remove colored grades
+      .filter(pl.col('difficulty').str.contains('tejp').not());
 
     let boulders = pl
       .readJSON('../data/gym_boulders.jsonl', {
@@ -167,19 +179,26 @@ const readDataFrameServerFn = createServerFn({ type: 'static' }).handler(
       timeline,
       completion,
     };
-  },
-);
+  });
 
-export const Route = createFileRoute('/$lang/climbing')({
-  loader: async () => {
-    return await readDataFrameServerFn();
+export const Route = createFileRoute('/$lang/climbing/$userId')({
+  loader: async (options) => {
+    return await readDataFrame({ data: +options.params.userId });
   },
-  component: Climbing,
+  component: RouteClimbing,
 });
 
-function Climbing() {
-  const { cpr, timeline, bar, completion } = Route.useLoaderData();
-
+export function Climbing({
+  cpr,
+  timeline,
+  bar,
+  completion,
+}: {
+  cpr: any;
+  timeline: any;
+  bar: any;
+  completion: any;
+}) {
   return (
     <section>
       <h1>
@@ -190,5 +209,13 @@ function Climbing() {
       <Timeline data={timeline} />
       <Bar data={bar} />
     </section>
+  );
+}
+
+function RouteClimbing() {
+  const { cpr, timeline, bar, completion } = Route.useLoaderData();
+
+  return (
+    <Climbing cpr={cpr} timeline={timeline} bar={bar} completion={completion} />
   );
 }
