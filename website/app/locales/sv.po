@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-05-09 21:50+0200\n"
+"POT-Creation-Date: 2025-05-23 15:35+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: be\n"
+"Language: sv\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: \n"
@@ -16,61 +16,61 @@ msgstr ""
 #. placeholder {0}: locales.length
 #: app/routes/$lang.tsx:53
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
-msgstr "{0, plural, one {# мова} few {# мовы} many {# моў} other {# мовы}}"
+msgstr "{0, plural, one {# språk} other {# språk}}"
 
 #: app/components/Bar.tsx:15
 msgid "All time"
-msgstr "За ўвесь час"
+msgstr "Total"
 
 #: app/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
-msgstr "Валуны ў Klättercentret Solna"
+msgstr "Boulders på Klättercentret Solna"
 
 #: app/components/Bar.tsx:19
 msgid "By year"
-msgstr "Па гадах"
+msgstr "Per år"
 
 #: app/routes/$lang.tsx:149
 #: app/routes/$lang/climbing/$userId.tsx:205
 msgid "Climbing"
-msgstr "Скалалажанне"
+msgstr "Klättring"
 
 #: app/components/Bar.tsx:62
 msgid "count"
-msgstr "колькасць"
+msgstr "antal"
 
 #: app/components/Completion.tsx:66
 #: app/components/Bar.tsx:65
 msgid "difficulty"
-msgstr "цяжкасць"
+msgstr "svårighetsgrad"
 
 #: app/routes/$lang/index.tsx:11
 msgid "Hallo!"
-msgstr "Вітаю!"
+msgstr "Hej!"
 
 #: app/routes/$lang.tsx:140
 msgid "Home"
-msgstr "Галоўная"
+msgstr "Hem"
 
 #. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
 #. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
 #. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
 #: app/components/Completion.tsx:18
 msgid "Overall progress: {0} / {1} ({2})"
-msgstr "Агульны прагрэс: {0} / {1} ({2})"
+msgstr "Andel avklarat: {0} / {1} ({2})"
 
 #: app/components/Cpr.tsx:47
 msgid "Poor man's CPR"
-msgstr "Жабрацкі рэйтынг скалалаза"
+msgstr "Fattigmans CPR"
 
 #: app/routes/$lang.tsx:162
 msgid "Source"
-msgstr "Зыходны код"
+msgstr "Källkod"
 
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
-msgstr "Храналогія"
+msgstr "Tidslinje"
 
 #: app/components/Bar.tsx:22
 msgid "year"
-msgstr "год"
+msgstr "år"

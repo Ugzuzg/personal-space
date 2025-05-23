@@ -6,19 +6,22 @@ import {
 } from '@tanstack/react-router';
 import { setI18n } from '@lingui/react/server';
 import { Trans, useLingui } from '@lingui/react/macro';
+import { useState } from 'react';
+import { defineMessage, plural } from '@lingui/core/macro';
 
 import { getI18nInstance } from '~/catalogs';
 import { LinguiClientProvider } from '~/components/LinguiClientProvider';
 
 import en from '~/img/en-gpt.png?url';
 import be from '~/img/be-gpt.png?url';
-import { useState } from 'react';
-import { defineMessage, plural } from '@lingui/core/macro';
+import sv from '~/img/sv-gpt.png?url';
+
+import { locales } from '../../locales';
 
 export const Route = createFileRoute('/$lang')({
   component: Home,
   loader: (options) => {
-    if (!['en', 'be'].includes(options.params.lang)) {
+    if (!locales.includes(options.params.lang as any)) {
       throw notFound();
     }
   },
@@ -48,7 +51,10 @@ function LanguagePicker() {
         <LanguageIcon />
         {i18n._(
           defineMessage({
-            message: plural(2, { one: '# lanaguage', other: '# languages' }),
+            message: plural(locales.length, {
+              one: '# lanaguage',
+              other: '# languages',
+            }),
           }),
         )}
       </summary>
@@ -83,6 +89,17 @@ function LanguagePicker() {
             <span lang="be">Беларуская</span>
           </Link>
         </li>
+        <li>
+          <Link
+            to="."
+            params={{ lang: 'sv' }}
+            style={{ display: 'inline-flex', alignItems: 'center' }}
+            onClick={() => setIsOpen(false)}
+          >
+            <img src={sv} style={{ height: '4em', width: 'auto' }} />
+            <span lang="sv">Svenska</span>
+          </Link>
+        </li>
       </ul>
     </details>
   );
@@ -91,7 +108,7 @@ function LanguagePicker() {
 export function Home() {
   const { lang } = Route.useParams();
 
-  const i18n = getI18nInstance(lang);
+  const i18n = getI18nInstance(lang as (typeof locales)[number]);
   setI18n(i18n);
 
   return (
