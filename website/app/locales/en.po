@@ -13,8 +13,8 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. placeholder {0}: 2
-#: app/routes/$lang.tsx:50
+#. placeholder {0}: locales.length
+#: app/routes/$lang.tsx:53
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
 msgstr "{0, plural, one {# lanaguage} other {# languages}}"
 
@@ -30,7 +30,7 @@ msgstr "Boulder progress at Klättercentret Solna"
 msgid "By year"
 msgstr "By year"
 
-#: app/routes/$lang.tsx:132
+#: app/routes/$lang.tsx:149
 #: app/routes/$lang/climbing/$userId.tsx:205
 msgid "Climbing"
 msgstr "Climbing"
@@ -48,7 +48,7 @@ msgstr "difficulty"
 msgid "Hallo!"
 msgstr "Hallo!"
 
-#: app/routes/$lang.tsx:123
+#: app/routes/$lang.tsx:140
 msgid "Home"
 msgstr "Home"
 
@@ -63,7 +63,7 @@ msgstr "Overall progress: {0} / {1} ({2})"
 msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
-#: app/routes/$lang.tsx:145
+#: app/routes/$lang.tsx:162
 msgid "Source"
 msgstr "Source"
 
