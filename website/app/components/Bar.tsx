@@ -85,7 +85,6 @@ export function Bar({ data }) {
                 marginRight: 80,
                 marginBottom: 50,
                 marks: [
-                  Plot.frame(),
                   Plot.barX(
                     data,
                     Plot.groupY(
@@ -93,6 +92,7 @@ export function Bar({ data }) {
                       { ...grouping, y: 'difficulty', title: 'type' },
                     ),
                   ),
+                  Plot.frame(),
                 ],
               }}
             />
