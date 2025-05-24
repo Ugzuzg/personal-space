@@ -46,7 +46,6 @@ export function Completion({ data }) {
               fontSize: 'var(--step--1)',
             },
             marks: [
-              Plot.frame(),
               Plot.barX(data, {
                 y: 'difficulty',
                 x: 'all',
@@ -61,6 +60,7 @@ export function Completion({ data }) {
                   `${v.sent} / ${v.all} (${Number(v.completion).toLocaleString(undefined, { style: 'percent' })})`,
                 fill: 1,
               }),
+              Plot.frame(),
             ],
             y: {
               label: t`difficulty`,

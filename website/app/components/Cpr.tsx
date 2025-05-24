@@ -84,10 +84,9 @@ export function Cpr({ data }) {
               fontSize: 'var(--step--1)',
             },
             marginLeft: 80,
-            marginRight: 100,
+            marginRight: 80,
             marginBottom: 50,
             marks: [
-              Plot.frame(),
               Plot.rectY(data, {
                 interval: 'week',
                 x: 'created_at',
@@ -105,6 +104,7 @@ export function Cpr({ data }) {
                 inset: 1,
                 mixBlendMode: 'color-dodge',
               }),
+              Plot.frame(),
             ],
           }}
         />
