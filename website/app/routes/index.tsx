@@ -8,6 +8,9 @@ export const navigateToLang = createServerFn({}).handler(async () => {
   if (acceptLanguage.includes('be') || acceptLanguage.includes('ru')) {
     throw redirect({ to: '/$lang', params: { lang: 'be' } });
   }
+  if (acceptLanguage.includes('sv')) {
+    throw redirect({ to: '/$lang', params: { lang: 'sv' } });
+  }
   throw redirect({ to: '/$lang', params: { lang: 'en' } });
 });
 
@@ -19,20 +22,5 @@ export const Route = createFileRoute('/')({
 });
 
 function RouteComponent() {
-  return (
-    <>
-      <ul>
-        <li>
-          <Link to="/$lang" params={{ lang: 'en' }}>
-            English
-          </Link>
-        </li>
-        <li>
-          <Link to="/$lang" params={{ lang: 'be' }}>
-            Беларуская
-          </Link>
-        </li>
-      </ul>
-    </>
-  );
+  return <></>;
 }
