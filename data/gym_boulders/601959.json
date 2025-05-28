@@ -1,9 +1,9 @@
 {
-  "id": 593538,
-  "name": "Magenta",
+  "id": 601959,
+  "name": "Black low",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "6B",
+  "grade": "vl-18",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,58 +123,46 @@
       "8C+"
     ]
   ],
-  "steepness": 7,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2025-04-17 14:23:39 +0000",
-  "created_at": "2025-04-17 14:23:39 +0000",
-  "set_at": "2025-04-17 14:23:03 +0000",
+  "updated_at": "2025-05-28 11:01:48 +0000",
+  "created_at": "2025-05-28 11:01:48 +0000",
+  "set_at": "2025-05-28 11:01:35 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      170
+      383,
+      192
     ],
     [
-      7,
-      544
+      640,
+      178
     ],
     [
-      86,
-      526
+      715,
+      568
     ],
     [
-      225,
-      516
+      676,
+      545
     ],
     [
-      295,
-      519
+      504,
+      520
     ],
     [
-      296,
-      482
+      385,
+      542
     ],
     [
-      302,
-      300
-    ],
-    [
-      290,
-      181
-    ],
-    [
-      179,
-      183
-    ],
-    [
-      31,
-      170
+      383,
+      193
     ]
   ],
   "reference_width": 971,
   "line_number": 1,
-  "topo_num": "41797.1.6",
-  "color_1": "#c106ae",
+  "topo_num": "41801.1.8",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -183,15 +171,15 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 5,
-    "redpoint": 5,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 1,
     "toprope": 0,
@@ -202,7 +190,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 2,
+    "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -334,12 +322,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/889a263326a614defef307d6e374d7c9",
-  "route_card_label": "A1.6",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/3aa0100ddc98c0a31647a2442b86c8c5",
+  "route_card_label": "B1.8",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Sebastian Dahlgren ",
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
