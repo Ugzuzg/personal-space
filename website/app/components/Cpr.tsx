@@ -1,5 +1,6 @@
 import * as Plot from '@observablehq/plot';
 import { Trans, useLingui } from '@lingui/react/macro';
+import { useEffect, useState } from 'react';
 
 import PlotFigure from './PlotFigure';
 
@@ -26,6 +27,23 @@ const boulderScores = [
   { score: 126, v: 'V10', font: '7c+' },
 ].map((grade) => ({ ...grade, font: grade.font.toUpperCase() }));
 
+const useMediaQuery = (query) => {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    setMatches(media.matches);
+
+    const listener = () => setMatches(media.matches);
+    window.addEventListener('resize', listener);
+    return () => {
+      window.removeEventListener('resize', listener);
+    };
+  }, [query]);
+
+  return matches;
+};
+
 export function Cpr({ data }) {
   const { i18n } = useLingui();
   const ascentTypeColorDomain = {
@@ -41,6 +59,8 @@ export function Cpr({ data }) {
     '2',
   );
 
+  const isSmallScreen = useMediaQuery('(max-width: 768px)');
+
   return (
     <article>
       <h2>
@@ -48,7 +68,7 @@ export function Cpr({ data }) {
       </h2>
       <p>
         <PlotFigure
-          width={1200}
+          width={isSmallScreen ? undefined : 1200}
           options={{
             figure: true,
             grid: true,
@@ -57,8 +77,8 @@ export function Cpr({ data }) {
               type: 'categorical',
               ...ascentTypeColorDomain,
             },
-            width: 1200,
-            x: {
+            [isSmallScreen ? 'height' : 'width']: 1200,
+            [isSmallScreen ? 'y' : 'x']: {
               label: null,
               tickFormat: (d: Date, i) => {
                 return i18n
@@ -70,29 +90,32 @@ export function Cpr({ data }) {
                   })
                   .replace(/\s+/g, '\n');
               },
+              reverse: isSmallScreen,
+              tickRotate: isSmallScreen ? 90 : 0,
             },
-            y: {
+            [isSmallScreen ? 'x' : 'y']: {
               ticks: boulderScores
                 .filter((grade) => grade.font <= maxDifficulty)
                 .map((grade) => grade.score),
               tickFormat: (v) =>
                 boulderScores.find(({ score }) => v === score)?.font,
               label: null,
+              tickRotate: isSmallScreen ? 90 : 0,
             },
             style: {
               fontFamily: 'Inter',
               fontSize: 'var(--step--1)',
             },
-            marginLeft: 80,
-            marginRight: 80,
+            marginLeft: 50,
+            marginRight: 50,
             marginBottom: 50,
             marks: [
-              Plot.rectY(data, {
+              Plot[isSmallScreen ? 'rectX' : 'rectY'](data, {
                 interval: 'week',
-                x: 'created_at',
+                [isSmallScreen ? 'y' : 'x']: 'created_at',
 
-                y1: 'numberDifficultyMin',
-                y2: 'numberDifficultyMax',
+                [isSmallScreen ? 'x1' : 'y1']: 'numberDifficultyMin',
+                [isSmallScreen ? 'x2' : 'y2']: 'numberDifficultyMax',
                 fill: 'type',
 
                 title: (d) => {
