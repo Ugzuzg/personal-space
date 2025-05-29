@@ -8,7 +8,7 @@ export default function PlotFigure({
   width,
   options,
 }: {
-  width: number;
+  width: number | null;
   options: Plot.PlotOptions;
 }) {
   return (
