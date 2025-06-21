@@ -1,9 +1,9 @@
 {
-  "id": 598206,
-  "name": "Orange",
+  "id": 606300,
+  "name": "Yellow low",
   "notes": null,
-  "difficulty": "7C",
-  "grade": "vl-27",
+  "difficulty": "8B",
+  "grade": "vl-31",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,50 +123,58 @@
       "8C+"
     ]
   ],
-  "steepness": 3,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2025-05-12 15:18:49 +0000",
-  "created_at": "2025-05-12 15:18:49 +0000",
-  "set_at": "2025-05-12 15:18:40 +0000",
+  "updated_at": "2025-06-19 14:04:34 +0000",
+  "created_at": "2025-06-19 14:04:34 +0000",
+  "set_at": "2025-06-19 14:04:18 +0000",
   "expiration_date": null,
   "path": [
     [
-      423,
-      185
+      291,
+      182
     ],
     [
-      697,
-      176
+      302,
+      300
     ],
     [
-      944,
-      165
+      294,
+      520
     ],
     [
-      884,
-      385
+      382,
+      504
     ],
     [
-      782,
-      584
+      507,
+      502
     ],
     [
-      585,
-      582
+      721,
+      526
     ],
     [
-      456,
-      589
+      720,
+      489
     ],
     [
-      423,
-      186
+      733,
+      183
+    ],
+    [
+      565,
+      180
+    ],
+    [
+      291,
+      182
     ]
   ],
   "reference_width": 971,
-  "line_number": 5,
-  "topo_num": "41802.5.6",
-  "color_1": "#ffa500",
+  "line_number": 2,
+  "topo_num": "41797.2.12",
+  "color_1": "#ffd700",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -175,15 +183,15 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -326,11 +334,11 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/2e9e7e2c5bbb7f042c53f0c344f1a13a",
-  "route_card_label": "B5.6",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/5f51527f04b506b697f588ad07bd234e",
+  "route_card_label": "A2.12",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
+  "topo": "e56970f2e4e002f62f72f0061adfa987",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
