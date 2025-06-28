@@ -1,9 +1,9 @@
 {
-  "id": 607588,
+  "id": 607755,
   "name": "Orange",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "6C",
+  "grade": "vl-21",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,68 +125,64 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-06-26 12:31:58 +0000",
-  "created_at": "2025-06-25 15:34:26 +0000",
-  "set_at": "2025-06-25 15:34:18 +0000",
+  "updated_at": "2025-06-26 12:31:32 +0000",
+  "created_at": "2025-06-26 12:31:32 +0000",
+  "set_at": "2025-06-26 12:31:05 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      186
+      313,
+      177
     ],
     [
-      17,
-      521
+      348,
+      252
     ],
     [
-      142,
-      506
+      328,
+      339
     ],
     [
-      268,
-      496
-    ],
-    [
-      335,
-      500
+      336,
+      391
     ],
     [
       336,
       420
     ],
     [
-      335,
-      392
+      337,
+      500
     ],
     [
-      327,
-      340
+      418,
+      506
     ],
     [
-      346,
-      253
+      464,
+      508
     ],
     [
-      312,
+      465,
+      471
+    ],
+    [
+      538,
+      302
+    ],
+    [
+      474,
+      188
+    ],
+    [
+      314,
       177
-    ],
-    [
-      217,
-      180
-    ],
-    [
-      86,
-      191
-    ],
-    [
-      31,
-      187
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41798.8.12",
-  "color_1": "#ffa500",
+  "line_number": 7,
+  "topo_num": "41798.7.11",
+  "color_1": "#ff8c00",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -199,11 +195,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 3,
-    "ratings_count": 3,
-    "redpoint": 3,
+    "ratings_count": 1,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 1,
     "toprope": 0,
@@ -333,7 +329,7 @@
     "created_at": "2018-06-21 09:50:35 +0000",
     "boulder_count": 129,
     "route_count": 107,
-    "ascent_count": 59697,
+    "ascent_count": 59699,
     "categories": 24,
     "logo": "ce68d672c98919d65f4311f9c9d9bb47",
     "sponsor_logo": null,
@@ -346,8 +342,8 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/39fd0a2d7c6be9dffb7fbe96307222a5",
-  "route_card_label": "A8.12",
+  "share_url": "https://zlag.vertical-life.info/en/routes/fba5bba65df9de19bbd05612c4666aea",
+  "route_card_label": "A7.11",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
   "topo": "5c34763248de2c434a96e3fd1bd72118",

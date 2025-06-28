@@ -1,9 +1,9 @@
 {
-  "id": 607588,
-  "name": "Orange",
+  "id": 607749,
+  "name": "Bright Pink",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "6A+",
+  "grade": "vl-17",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,68 +125,60 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-06-26 12:31:58 +0000",
-  "created_at": "2025-06-25 15:34:26 +0000",
-  "set_at": "2025-06-25 15:34:18 +0000",
+  "updated_at": "2025-06-26 12:30:36 +0000",
+  "created_at": "2025-06-26 12:30:36 +0000",
+  "set_at": "2025-06-26 12:30:26 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      186
+      475,
+      188
     ],
     [
-      17,
-      521
+      538,
+      302
     ],
     [
-      142,
-      506
+      466,
+      472
     ],
     [
-      268,
-      496
+      465,
+      507
     ],
     [
-      335,
-      500
+      524,
+      501
     ],
     [
-      336,
-      420
+      756,
+      526
     ],
     [
-      335,
-      392
+      755,
+      487
     ],
     [
-      327,
-      340
+      738,
+      372
     ],
     [
-      346,
-      253
-    ],
-    [
-      312,
+      715,
       177
     ],
     [
-      217,
-      180
+      624,
+      177
     ],
     [
-      86,
-      191
-    ],
-    [
-      31,
-      187
+      476,
+      188
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41798.8.12",
-  "color_1": "#ffa500",
+  "line_number": 6,
+  "topo_num": "41798.6.4",
+  "color_1": "#ff00a9",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -199,13 +191,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 3,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 3,
-    "redpoint": 3,
+    "rating": 3.5,
+    "ratings_count": 2,
+    "redpoint": 1,
     "onsight": 0,
-    "flash": 1,
+    "flash": 2,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -214,7 +206,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 0,
+    "soft_count": 1,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -333,7 +325,7 @@
     "created_at": "2018-06-21 09:50:35 +0000",
     "boulder_count": 129,
     "route_count": 107,
-    "ascent_count": 59697,
+    "ascent_count": 59699,
     "categories": 24,
     "logo": "ce68d672c98919d65f4311f9c9d9bb47",
     "sponsor_logo": null,
@@ -346,12 +338,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/39fd0a2d7c6be9dffb7fbe96307222a5",
-  "route_card_label": "A8.12",
+  "share_url": "https://zlag.vertical-life.info/en/routes/876da936f0b11a1a281d178a474a17bd",
+  "route_card_label": "A6.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
   "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Anton Cuevas",
+  "route_setter": "Silver Breiktopf",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
