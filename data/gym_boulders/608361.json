@@ -1,0 +1,362 @@
+{
+  "id": 608361,
+  "name": "Orange",
+  "notes": null,
+  "difficulty": "6B+",
+  "grade": "vl-19",
+  "grading_system": "font",
+  "grade_proposals": [
+    [
+      "vl-1",
+      "2"
+    ],
+    [
+      "vl-2",
+      "2+"
+    ],
+    [
+      "vl-3",
+      "3-"
+    ],
+    [
+      "vl-4",
+      "3"
+    ],
+    [
+      "vl-5",
+      "3+"
+    ],
+    [
+      "vl-6",
+      "4-"
+    ],
+    [
+      "vl-7",
+      "4"
+    ],
+    [
+      "vl-8",
+      "4+"
+    ],
+    [
+      "vl-9",
+      "5-"
+    ],
+    [
+      "vl-12",
+      "5"
+    ],
+    [
+      "vl-14",
+      "5+"
+    ],
+    [
+      "vl-16",
+      "6A"
+    ],
+    [
+      "vl-17",
+      "6A+"
+    ],
+    [
+      "vl-18",
+      "6B"
+    ],
+    [
+      "vl-19",
+      "6B+"
+    ],
+    [
+      "vl-21",
+      "6C"
+    ],
+    [
+      "vl-22",
+      "6C+"
+    ],
+    [
+      "vl-23",
+      "7A"
+    ],
+    [
+      "vl-24",
+      "7A+"
+    ],
+    [
+      "vl-25",
+      "7B"
+    ],
+    [
+      "vl-26",
+      "7B+"
+    ],
+    [
+      "vl-27",
+      "7C"
+    ],
+    [
+      "vl-28",
+      "7C+"
+    ],
+    [
+      "vl-29",
+      "8A"
+    ],
+    [
+      "vl-30",
+      "8A+"
+    ],
+    [
+      "vl-31",
+      "8B"
+    ],
+    [
+      "vl-32",
+      "8B+"
+    ],
+    [
+      "vl-33",
+      "8C"
+    ],
+    [
+      "vl-34",
+      "8C+"
+    ]
+  ],
+  "steepness": 7,
+  "style": null,
+  "updated_at": "2025-06-30 14:27:46 +0000",
+  "created_at": "2025-06-30 14:27:46 +0000",
+  "set_at": "2025-06-30 14:27:38 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      115,
+      207
+    ],
+    [
+      107,
+      529
+    ],
+    [
+      119,
+      534
+    ],
+    [
+      217,
+      525
+    ],
+    [
+      425,
+      516
+    ],
+    [
+      536,
+      507
+    ],
+    [
+      534,
+      403
+    ],
+    [
+      476,
+      371
+    ],
+    [
+      451,
+      301
+    ],
+    [
+      492,
+      232
+    ],
+    [
+      526,
+      201
+    ],
+    [
+      296,
+      193
+    ],
+    [
+      164,
+      190
+    ],
+    [
+      114,
+      207
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 1,
+  "topo_num": "41861.1.4",
+  "color_1": "#ff9d00",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 222,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 745,
+  "gym_wall_name": "Balkongen, A Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 11,
+    "comment_count": 0,
+    "rating": 2.7,
+    "ratings_count": 3,
+    "redpoint": 2,
+    "onsight": 0,
+    "flash": 9,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 68,
+    "name": "Klättercentret Telefonplan",
+    "town": "Hägersten",
+    "country": "Sweden",
+    "difficulties": {
+      "vl-1": 0,
+      "vl-2": 0,
+      "vl-3": 0,
+      "vl-4": 2,
+      "vl-5": 0,
+      "vl-6": 2,
+      "vl-7": 2,
+      "vl-8": 6,
+      "vl-9": 11,
+      "vl-10": 0,
+      "vl-11": 0,
+      "vl-12": 15,
+      "vl-13": 0,
+      "vl-14": 19,
+      "vl-15": 0,
+      "vl-16": 16,
+      "vl-17": 18,
+      "vl-18": 21,
+      "vl-19": 22,
+      "vl-20": 0,
+      "vl-21": 11,
+      "vl-22": 12,
+      "vl-23": 10,
+      "vl-24": 10,
+      "vl-25": 5,
+      "vl-26": 6,
+      "vl-27": 5,
+      "vl-28": 7,
+      "vl-29": 8,
+      "vl-30": 3,
+      "vl-31": 0,
+      "vl-32": 3,
+      "vl-33": 1,
+      "vl-34": 0,
+      "vl-35": 0,
+      "vl-36": 0,
+      "vl-37": 0,
+      "vl-38": 0,
+      "vl-39": 0
+    },
+    "difficulties_bouldering": {
+      "vl-1": 0,
+      "vl-2": 0,
+      "vl-3": 0,
+      "vl-4": 7,
+      "vl-5": 8,
+      "vl-6": 0,
+      "vl-7": 12,
+      "vl-8": 13,
+      "vl-9": 0,
+      "vl-10": 0,
+      "vl-11": 0,
+      "vl-12": 17,
+      "vl-13": 0,
+      "vl-14": 14,
+      "vl-15": 0,
+      "vl-16": 26,
+      "vl-17": 29,
+      "vl-18": 27,
+      "vl-19": 21,
+      "vl-20": 0,
+      "vl-21": 28,
+      "vl-22": 24,
+      "vl-23": 14,
+      "vl-24": 17,
+      "vl-25": 12,
+      "vl-26": 19,
+      "vl-27": 6,
+      "vl-28": 10,
+      "vl-29": 5,
+      "vl-30": 5,
+      "vl-31": 1,
+      "vl-32": 0,
+      "vl-33": 0,
+      "vl-34": 0
+    },
+    "item_type": "gym",
+    "cover": "9d82416a89f3a76ae6bad993b43ae38b",
+    "share_url": "https://zlag.vertical-life.info/en/gyms/klattercentret-telefonplan",
+    "latitude": 59.2991,
+    "longitude": 17.9916,
+    "sportclimbing_grading_system": "french",
+    "bouldering_grading_system": "font",
+    "updated_at": "2025-05-15 09:40:02 +0000",
+    "published_at": "2018-08-31 07:00:00 +0000",
+    "created_at": "2018-06-21 09:48:56 +0000",
+    "boulder_count": 315,
+    "route_count": 215,
+    "ascent_count": 162309,
+    "categories": 24,
+    "logo": "ce68d672c98919d65f4311f9c9d9bb47",
+    "sponsor_logo": null,
+    "elegible_for_boulder_training": true,
+    "virtual": false,
+    "gym_status": {
+      "checkins_enabled": false,
+      "temporarily_closed": false
+    },
+    "published": true
+  },
+  "gym_id": 68,
+  "share_url": "https://zlag.vertical-life.info/en/routes/235fa348b22aa25a347c2da56b2398e9",
+  "route_card_label": "A1.4",
+  "parent_name": "Bouldering, Balkongen, A Sektionen",
+  "virtual": false,
+  "topo": "41bff721eb09592dd98ded3a8bdd6882",
+  "route_setter": "anton linden",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": []
+}
