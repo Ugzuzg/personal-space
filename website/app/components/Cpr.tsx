@@ -109,7 +109,8 @@ export function Cpr({ data }) {
             },
             marginLeft: 50,
             marginRight: 50,
-            marginBottom: 50,
+            ...(!isSmallScreen && { marginBottom: 50 }),
+            ...(isSmallScreen && { marginTop: 50 }),
             marks: [
               Plot[isSmallScreen ? 'rectX' : 'rectY'](data, {
                 interval: 'week',
