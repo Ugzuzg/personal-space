@@ -101,6 +101,7 @@ export function Cpr({ data }) {
                 boulderScores.find(({ score }) => v === score)?.font,
               label: null,
               tickRotate: isSmallScreen ? 90 : 0,
+              ...(isSmallScreen && { axis: 'top' }),
             },
             style: {
               fontFamily: 'Inter',
