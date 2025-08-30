@@ -1,9 +1,9 @@
 {
-  "id": 616589,
-  "name": "Red-Green-yellow sit ",
+  "id": 620736,
+  "name": "Grey",
   "notes": null,
-  "difficulty": "6C+",
-  "grade": "vl-22",
+  "difficulty": "3+",
+  "grade": "vl-5",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,57 +125,45 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-08-08 10:09:30 +0000",
-  "created_at": "2025-08-08 10:09:30 +0000",
-  "set_at": "2025-08-08 10:09:10 +0000",
+  "updated_at": "2025-08-29 20:36:14 +0000",
+  "created_at": "2025-08-29 20:36:14 +0000",
+  "set_at": "2025-08-29 20:35:56 +0000",
   "expiration_date": null,
   "path": [
     [
-      291,
-      182
+      513,
+      71
     ],
     [
-      302,
-      300
+      513,
+      587
     ],
     [
-      294,
-      520
+      513,
+      650
     ],
     [
-      382,
-      504
+      879,
+      639
     ],
     [
-      507,
-      502
+      878,
+      580
     ],
     [
-      721,
-      526
+      919,
+      108
     ],
     [
-      720,
-      489
-    ],
-    [
-      733,
-      183
-    ],
-    [
-      565,
-      180
-    ],
-    [
-      291,
-      182
+      514,
+      70
     ]
   ],
   "reference_width": 971,
-  "line_number": 2,
-  "topo_num": "41797.2.18",
-  "color_1": "#ff0000",
-  "color_2": "#32cd32",
+  "line_number": 4,
+  "topo_num": "41799.4.1",
+  "color_1": "#808080",
+  "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
@@ -187,13 +175,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 2.3,
-    "ratings_count": 3,
-    "redpoint": 4,
+    "rating": 1,
+    "ratings_count": 1,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 2,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -334,12 +322,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/32de1a0a659fa282e9a6386ac504764b",
-  "route_card_label": "A2.18",
+  "share_url": "https://zlag.vertical-life.info/en/routes/84fb4f3b3bc6bac8c1058af4bb3a2be7",
+  "route_card_label": "A4.1",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Anton Cuevas",
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
