@@ -1,9 +1,9 @@
 {
-  "id": 616414,
+  "id": 621345,
   "name": "Dark Green",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "6B",
+  "grade": "vl-18",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,43 +125,63 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-08-07 14:27:17 +0000",
-  "created_at": "2025-08-07 14:10:45 +0000",
-  "set_at": "2025-08-07 14:10:29 +0000",
+  "updated_at": "2025-09-02 14:55:37 +0000",
+  "created_at": "2025-09-02 14:55:37 +0000",
+  "set_at": "2025-09-02 14:55:19 +0000",
   "expiration_date": null,
   "path": [
     [
-      734,
-      183
+      313,
+      177
     ],
     [
-      721,
-      489
+      348,
+      252
     ],
     [
-      723,
-      527
+      328,
+      339
     ],
     [
-      916,
-      553
+      336,
+      391
     ],
     [
-      915,
-      509
+      336,
+      420
     ],
     [
-      915,
-      165
+      337,
+      500
     ],
     [
-      734,
-      184
+      418,
+      506
+    ],
+    [
+      464,
+      508
+    ],
+    [
+      465,
+      471
+    ],
+    [
+      538,
+      302
+    ],
+    [
+      474,
+      188
+    ],
+    [
+      314,
+      177
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41797.3.4",
+  "line_number": 7,
+  "topo_num": "41798.7.5",
   "color_1": "#008000",
   "color_2": null,
   "two_start_holds": null,
@@ -175,13 +195,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 0,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -322,12 +342,12 @@
     "published": true
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b0de1d4586477c52bd0f394f1526a41e",
-  "route_card_label": "A3.4",
+  "share_url": "https://zlag.vertical-life.info/en/routes/a7d2426c6feea51ef7f9063fa2c68588",
+  "route_card_label": "A7.5",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Sophie Machaczek",
+  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
