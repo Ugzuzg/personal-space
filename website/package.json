@@ -10,12 +10,13 @@
     "extract": "lingui extract"
   },
   "dependencies": {
+    "@googleapis/sheets": "^11.1.0",
     "@lingui/core": "^5.3.1",
     "@lingui/react": "^5.3.1",
     "@observablehq/plot": "^0.6.17",
-    "@tanstack/react-router": "^1.119.0",
-    "@tanstack/react-router-devtools": "^1.119.0",
-    "@tanstack/react-start": "^1.119.0",
+    "@tanstack/react-router": "1.119.0",
+    "@tanstack/react-router-devtools": "1.119.0",
+    "@tanstack/react-start": "1.119.0",
     "d3": "^7.9.0",
     "nodejs-polars": "^0.18.0",
     "react": "^19.1.0",

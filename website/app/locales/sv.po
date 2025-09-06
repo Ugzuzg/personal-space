@@ -16,11 +16,16 @@ msgstr ""
 #. placeholder {0}: locales.length
 #: app/routes/$lang.tsx:53
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
-msgstr "{0, plural, one {# språk} other {# språk}}"
+msgstr "{0, plural, one {#\\u00A0språk} other {#\\u00A0språk}}"
 
 #: app/components/Bar.tsx:15
 msgid "All time"
 msgstr "Total"
+
+#: app/routes/$lang.tsx:158
+#: app/routes/$lang/resoling.tsx:61
+msgid "Are we resoling yet?"
+msgstr "Sular vi om än?"
 
 #: app/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
@@ -59,17 +64,21 @@ msgstr "Hem"
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Andel avklarat: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:47
+#: app/components/Cpr.tsx:67
 msgid "Poor man's CPR"
 msgstr "Fattigmans CPR"
 
-#: app/routes/$lang.tsx:162
+#: app/routes/$lang.tsx:171
 msgid "Source"
 msgstr "Källkod"
 
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Tidslinje"
+
+#: app/routes/$lang/resoling.tsx:64
+msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har # par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
 
 #: app/components/Bar.tsx:22
 msgid "year"

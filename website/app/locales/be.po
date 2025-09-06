@@ -16,11 +16,16 @@ msgstr ""
 #. placeholder {0}: locales.length
 #: app/routes/$lang.tsx:53
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
-msgstr "{0, plural, one {# мова} few {# мовы} many {# моў} other {# мовы}}"
+msgstr "{0, plural, one {#\\u00A0мова} few {#\\u00A0мовы} many {#\\u00A0моў} other {#\\u00A0мовы}}"
 
 #: app/components/Bar.tsx:15
 msgid "All time"
 msgstr "За ўвесь час"
+
+#: app/routes/$lang.tsx:158
+#: app/routes/$lang/resoling.tsx:61
+msgid "Are we resoling yet?"
+msgstr "Ці мы ўжо мяняем падэшвы?"
 
 #: app/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
@@ -59,17 +64,26 @@ msgstr "Галоўная"
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Агульны прагрэс: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:47
+#: app/components/Cpr.tsx:67
 msgid "Poor man's CPR"
 msgstr "Жабрацкі рэйтынг скалалаза"
 
-#: app/routes/$lang.tsx:162
+#: app/routes/$lang.tsx:171
 msgid "Source"
 msgstr "Зыходны код"
 
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Храналогія"
+
+#: app/routes/$lang/resoling.tsx:64
+msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural,"
+" =0 {У нас няма абутку для адпраўкі.}"
+" one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
+" few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
+" many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
+" other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
 #: app/components/Bar.tsx:22
 msgid "year"

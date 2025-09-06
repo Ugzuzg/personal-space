@@ -16,11 +16,16 @@ msgstr ""
 #. placeholder {0}: locales.length
 #: app/routes/$lang.tsx:53
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
-msgstr "{0, plural, one {# lanaguage} other {# languages}}"
+msgstr "{0, plural, one {#\\u00A0lanaguage} other {#\\u00A0languages}}"
 
 #: app/components/Bar.tsx:15
 msgid "All time"
 msgstr "All time"
+
+#: app/routes/$lang.tsx:158
+#: app/routes/$lang/resoling.tsx:61
+msgid "Are we resoling yet?"
+msgstr "Are we resoling yet?"
 
 #: app/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
@@ -59,17 +64,21 @@ msgstr "Home"
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Overall progress: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:47
+#: app/components/Cpr.tsx:67
 msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
-#: app/routes/$lang.tsx:162
+#: app/routes/$lang.tsx:171
 msgid "Source"
 msgstr "Source"
 
 #: app/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Timeline"
+
+#: app/routes/$lang/resoling.tsx:64
+msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural, =0 {We have no shoes to send.} one {We have # pair of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way.} other {We have # pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way.}}"
 
 #: app/components/Bar.tsx:22
 msgid "year"

@@ -14,6 +14,7 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as LangImport } from './routes/$lang'
 import { Route as IndexImport } from './routes/index'
 import { Route as LangIndexImport } from './routes/$lang/index'
+import { Route as LangResolingImport } from './routes/$lang/resoling'
 import { Route as LangClimbingIndexImport } from './routes/$lang/climbing/index'
 import { Route as LangClimbingUserIdImport } from './routes/$lang/climbing/$userId'
 
@@ -34,6 +35,12 @@ const IndexRoute = IndexImport.update({
 const LangIndexRoute = LangIndexImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => LangRoute,
+} as any)
+
+const LangResolingRoute = LangResolingImport.update({
+  id: '/resoling',
+  path: '/resoling',
   getParentRoute: () => LangRoute,
 } as any)
 
@@ -67,6 +74,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangImport
       parentRoute: typeof rootRoute
     }
+    '/$lang/resoling': {
+      id: '/$lang/resoling'
+      path: '/resoling'
+      fullPath: '/$lang/resoling'
+      preLoaderRoute: typeof LangResolingImport
+      parentRoute: typeof LangImport
+    }
     '/$lang/': {
       id: '/$lang/'
       path: '/'
@@ -94,12 +108,14 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 interface LangRouteChildren {
+  LangResolingRoute: typeof LangResolingRoute
   LangIndexRoute: typeof LangIndexRoute
   LangClimbingUserIdRoute: typeof LangClimbingUserIdRoute
   LangClimbingIndexRoute: typeof LangClimbingIndexRoute
 }
 
 const LangRouteChildren: LangRouteChildren = {
+  LangResolingRoute: LangResolingRoute,
   LangIndexRoute: LangIndexRoute,
   LangClimbingUserIdRoute: LangClimbingUserIdRoute,
   LangClimbingIndexRoute: LangClimbingIndexRoute,
@@ -110,6 +126,7 @@ const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/resoling': typeof LangResolingRoute
   '/$lang/': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
   '/$lang/climbing': typeof LangClimbingIndexRoute
@@ -117,6 +134,7 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$lang/resoling': typeof LangResolingRoute
   '/$lang': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
   '/$lang/climbing': typeof LangClimbingIndexRoute
@@ -126,6 +144,7 @@ export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/$lang/resoling': typeof LangResolingRoute
   '/$lang/': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
   '/$lang/climbing/': typeof LangClimbingIndexRoute
@@ -136,15 +155,22 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/$lang'
+    | '/$lang/resoling'
     | '/$lang/'
     | '/$lang/climbing/$userId'
     | '/$lang/climbing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$lang' | '/$lang/climbing/$userId' | '/$lang/climbing'
+  to:
+    | '/'
+    | '/$lang/resoling'
+    | '/$lang'
+    | '/$lang/climbing/$userId'
+    | '/$lang/climbing'
   id:
     | '__root__'
     | '/'
     | '/$lang'
+    | '/$lang/resoling'
     | '/$lang/'
     | '/$lang/climbing/$userId'
     | '/$lang/climbing/'
@@ -181,10 +207,15 @@ export const routeTree = rootRoute
     "/$lang": {
       "filePath": "$lang.tsx",
       "children": [
+        "/$lang/resoling",
         "/$lang/",
         "/$lang/climbing/$userId",
         "/$lang/climbing/"
       ]
+    },
+    "/$lang/resoling": {
+      "filePath": "$lang/resoling.tsx",
+      "parent": "/$lang"
     },
     "/$lang/": {
       "filePath": "$lang/index.tsx",
