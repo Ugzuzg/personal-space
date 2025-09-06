@@ -24,6 +24,7 @@ export default defineConfig({
     prerender: {
       routes: ['/en', '/be', '/en/climbing/56689'],
       crawlLinks: true,
+      ignore: ['/en/resoling', '/be/resoling', '/sv/resoling'],
     },
   },
   react: {
