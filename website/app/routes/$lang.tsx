@@ -149,6 +149,15 @@ export function Home() {
                 <Trans>Climbing</Trans>
               </Link>
             </li>
+            <li>
+              <Link
+                to="/$lang/resoling"
+                params={{ lang }}
+                activeProps={{ className: 'font-bold' }}
+              >
+                <Trans>Are we resoling yet?</Trans>
+              </Link>
+            </li>
           </ul>
           <LanguagePicker />
         </nav>
