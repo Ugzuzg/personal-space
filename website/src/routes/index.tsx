@@ -1,9 +1,9 @@
 import { createFileRoute, Link, redirect } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
-import { getWebRequest } from '@tanstack/react-start/server';
+import { getRequest } from '@tanstack/react-start/server';
 
 export const navigateToLang = createServerFn({}).handler(async () => {
-  const request = getWebRequest();
+  const request = getRequest();
   const acceptLanguage = request?.headers.get('accept-language') ?? 'en';
   if (acceptLanguage.includes('be') || acceptLanguage.includes('ru')) {
     throw redirect({ to: '/$lang', params: { lang: 'be' } });

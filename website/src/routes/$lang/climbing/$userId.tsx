@@ -1,5 +1,6 @@
 import { createFileRoute, notFound } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
+import { staticFunctionMiddleware } from '@tanstack/start-static-server-functions';
 import pl from 'nodejs-polars';
 import { Trans } from '@lingui/react/macro';
 import fs from 'node:fs/promises';
@@ -36,8 +37,9 @@ const gradeToNumber = boulderScores.reduce((acc, grade) => {
   return acc;
 }, {});
 
-export const readDataFrame = createServerFn({ type: 'static' })
-  .validator((userId: number) => userId)
+export const readDataFrame = createServerFn({ method: 'GET' })
+  .middleware([staticFunctionMiddleware])
+  .inputValidator((userId: number) => userId)
   .handler(async (ctx) => {
     const ascentsPath = `../data/ascents_${ctx.data}.jsonl`;
 
