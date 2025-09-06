@@ -108,7 +108,7 @@ function LanguagePicker() {
   );
 }
 
-export function Home() {
+function Home() {
   const { lang } = Route.useParams();
 
   const i18n = getI18nInstance(lang as (typeof languages)[number]);

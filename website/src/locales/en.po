@@ -14,90 +14,90 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. placeholder {0}: languages.length
-#: app/routes/$lang.tsx:56
+#: src/routes/$lang.tsx:56
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0lanaguage} other {#\\u00A0languages}}"
 
-#: app/components/Bar.tsx:15
+#: src/components/Bar.tsx:15
 msgid "All time"
 msgstr "All time"
 
-#: app/routes/$lang.tsx:161
-#: app/routes/$lang/resoling.tsx:93
+#: src/routes/$lang.tsx:161
+#: src/routes/$lang/resoling.tsx:93
 msgid "Are we resoling yet?"
 msgstr "Are we resoling yet?"
 
-#: app/routes/$lang/resoling.tsx:115
+#: src/routes/$lang/resoling.tsx:115
 msgid "Awaiting to be shipped."
 msgstr "Awaiting to be shipped."
 
-#: app/components/Completion.tsx:15
+#: src/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
 msgstr "Boulder progress at Klättercentret Solna"
 
-#: app/components/Bar.tsx:19
+#: src/components/Bar.tsx:19
 msgid "By year"
 msgstr "By year"
 
-#: app/routes/$lang.tsx:152
-#: app/routes/$lang/climbing/$userId.tsx:205
+#: src/routes/$lang.tsx:152
+#: src/routes/$lang/climbing/$userId.tsx:207
 msgid "Climbing"
 msgstr "Climbing"
 
-#: app/components/Bar.tsx:62
+#: src/components/Bar.tsx:62
 msgid "count"
 msgstr "count"
 
-#: app/components/Completion.tsx:66
-#: app/components/Bar.tsx:65
+#: src/components/Bar.tsx:65
+#: src/components/Completion.tsx:66
 msgid "difficulty"
 msgstr "difficulty"
 
-#: app/routes/$lang/index.tsx:11
+#: src/routes/$lang/index.tsx:11
 msgid "Hallo!"
 msgstr "Hallo!"
 
-#: app/routes/$lang.tsx:143
+#: src/routes/$lang.tsx:143
 msgid "Home"
 msgstr "Home"
 
 #. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
 #. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
 #. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
-#: app/components/Completion.tsx:18
+#: src/components/Completion.tsx:18
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Overall progress: {0} / {1} ({2})"
 
-#: app/components/Cpr.tsx:67
+#: src/components/Cpr.tsx:67
 msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
 #. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
-#: app/routes/$lang/resoling.tsx:127
+#: src/routes/$lang/resoling.tsx:127
 msgid "Shipped back on {0}"
 msgstr "Shipped back on {0}"
 
 #. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
-#: app/routes/$lang/resoling.tsx:120
+#: src/routes/$lang/resoling.tsx:120
 msgid "Shipped there on {0}"
 msgstr "Shipped there on {0}"
 
-#: app/routes/$lang/resoling.tsx:105
+#: src/routes/$lang/resoling.tsx:105
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 
-#: app/routes/$lang.tsx:174
+#: src/routes/$lang.tsx:174
 msgid "Source"
 msgstr "Source"
 
-#: app/components/Timeline.tsx:11
+#: src/components/Timeline.tsx:11
 msgid "Timeline"
 msgstr "Timeline"
 
-#: app/routes/$lang/resoling.tsx:96
+#: src/routes/$lang/resoling.tsx:96
 msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {We have no shoes to send.} one {We have # pair of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.} other {We have # pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.}}"
 
-#: app/components/Bar.tsx:22
+#: src/components/Bar.tsx:22
 msgid "year"
 msgstr "year"
