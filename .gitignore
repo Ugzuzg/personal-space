@@ -5,13 +5,14 @@ node_modules
 .env
 .vercel
 .output
-.vinxi
+.nitro
+.tanstack
+dist
 
 /build/
 /api/
 /server/build
 /public/build
-.vinxi
 # Sentry Config File
 .env.sentry-build-plugin
 /test-results/

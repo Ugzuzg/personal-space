@@ -4,7 +4,7 @@ import sheets from '@googleapis/sheets';
 import { createServerFn } from '@tanstack/react-start';
 import { useLingui } from '@lingui/react';
 
-const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
+const readTheSheet = createServerFn({ method: 'GET' }).handler(async () => {
   const googleAuth = new sheets.auth.GoogleAuth({
     credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT!),
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],

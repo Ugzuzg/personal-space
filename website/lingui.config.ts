@@ -7,8 +7,8 @@ export default defineConfig({
   locales: locales as unknown as string[],
   catalogs: [
     {
-      path: '<rootDir>/app/locales/{locale}',
-      include: ['app'],
+      path: '<rootDir>/src/locales/{locale}',
+      include: ['src'],
     },
   ],
 });
