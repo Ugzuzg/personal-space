@@ -77,7 +77,7 @@ msgid "Timeline"
 msgstr "Tidslinje"
 
 #: app/routes/$lang/resoling.tsx:64
-msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way."
+msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har # par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
 
 #: app/components/Bar.tsx:22

@@ -64,8 +64,8 @@ function RouteComponent() {
         <Trans>
           We have {shoesToSend} pairs of shoes to send, with a total weight of{' '}
           {totalWeight} and an estimated shipping cost of{' '}
-          {estimatedShippingCost}, which averages to a {costPerPair} per pair
-          one way.
+          {estimatedShippingCost}, which averages to {costPerPair} per pair one
+          way.
         </Trans>
       </p>
     </section>

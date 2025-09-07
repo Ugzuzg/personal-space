@@ -77,7 +77,7 @@ msgid "Timeline"
 msgstr "Храналогія"
 
 #: app/routes/$lang/resoling.tsx:64
-msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to a {costPerPair} per pair one way."
+msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural,"
 " =0 {У нас няма абутку для адпраўкі.}"
 " one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
