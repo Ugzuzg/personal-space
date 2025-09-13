@@ -23,7 +23,7 @@ msgid "All time"
 msgstr "Total"
 
 #: app/routes/$lang.tsx:158
-#: app/routes/$lang/resoling.tsx:61
+#: app/routes/$lang/resoling.tsx:67
 msgid "Are we resoling yet?"
 msgstr "Sular vi om än?"
 
@@ -68,6 +68,10 @@ msgstr "Andel avklarat: {0} / {1} ({2})"
 msgid "Poor man's CPR"
 msgstr "Fattigmans CPR"
 
+#: app/routes/$lang/resoling.tsx:79
+msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
+msgstr "Skor insamlade: <0>{shoesCollected} / {shoesToSend}</0>"
+
 #: app/routes/$lang.tsx:171
 msgid "Source"
 msgstr "Källkod"
@@ -76,7 +80,7 @@ msgstr "Källkod"
 msgid "Timeline"
 msgstr "Tidslinje"
 
-#: app/routes/$lang/resoling.tsx:64
+#: app/routes/$lang/resoling.tsx:70
 msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har # par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
 

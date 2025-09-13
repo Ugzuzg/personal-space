@@ -10,11 +10,13 @@ const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
   });
   const client = sheets.sheets({ version: 'v4', auth: googleAuth });
-  const a = await client.spreadsheets.values.batchGet({
+  const sheetsValues = await client.spreadsheets.values.batchGet({
     spreadsheetId: '1zE6HX-JQ6jF729X_WHkya4bt8PYpD5shgcjm48u-7kg',
     ranges: [
       // To send?
       'All Shoes!E:E',
+      // Collected?
+      'All Shoes!F:F',
       // Total weight to ship
       'All Shoes!N4',
       // Estimated shipping cost
@@ -24,11 +26,17 @@ const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
   });
   return {
     shoesToSend:
-      a.data.valueRanges?.[0].values?.flat().filter((v) => v === true).length ??
-      0,
-    totalWeight: (a.data.valueRanges?.[1].values?.[0]?.[0] as number) ?? 0,
+      sheetsValues.data.valueRanges?.[0].values
+        ?.flat()
+        .filter((v) => v === true).length ?? 0,
+    shoesCollected:
+      sheetsValues.data.valueRanges?.[1]?.values
+        ?.flat()
+        .filter((v) => v === true).length ?? 0,
+    totalWeight:
+      (sheetsValues.data.valueRanges?.[2].values?.[0]?.[0] as number) ?? 0,
     estimatedShippingCost:
-      (a.data.valueRanges?.[2].values?.[0]?.[0] as number) ?? 0,
+      (sheetsValues.data.valueRanges?.[3].values?.[0]?.[0] as number) ?? 0,
   };
 });
 
@@ -38,7 +46,7 @@ export const Route = createFileRoute('/$lang/resoling')({
 });
 
 function RouteComponent() {
-  const { shoesToSend, ...data } = Route.useLoaderData();
+  const { shoesToSend, shoesCollected, ...data } = Route.useLoaderData();
   const { i18n } = useLingui();
 
   // lingui doesn't support skeletons in ICU messages yet, preformat the numbers manually
@@ -67,6 +75,16 @@ function RouteComponent() {
           {estimatedShippingCost}, which averages to {costPerPair} per pair one
           way.
         </Trans>
+      </p>
+      <p>
+        <label>
+          <Trans>
+            Shoes collected:{' '}
+            <progress max={shoesToSend} value={shoesCollected}>
+              {shoesCollected} / {shoesToSend}
+            </progress>
+          </Trans>
+        </label>
       </p>
     </section>
   );

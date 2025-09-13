@@ -23,7 +23,7 @@ msgid "All time"
 msgstr "За ўвесь час"
 
 #: app/routes/$lang.tsx:158
-#: app/routes/$lang/resoling.tsx:61
+#: app/routes/$lang/resoling.tsx:67
 msgid "Are we resoling yet?"
 msgstr "Ці мы ўжо мяняем падэшвы?"
 
@@ -68,6 +68,10 @@ msgstr "Агульны прагрэс: {0} / {1} ({2})"
 msgid "Poor man's CPR"
 msgstr "Жабрацкі рэйтынг скалалаза"
 
+#: app/routes/$lang/resoling.tsx:79
+msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
+msgstr "Сабрана абутку: <0>{shoesCollected} / {shoesToSend}</0>"
+
 #: app/routes/$lang.tsx:171
 msgid "Source"
 msgstr "Зыходны код"
@@ -76,14 +80,9 @@ msgstr "Зыходны код"
 msgid "Timeline"
 msgstr "Храналогія"
 
-#: app/routes/$lang/resoling.tsx:64
+#: app/routes/$lang/resoling.tsx:70
 msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
-msgstr "{shoesToSend, plural,"
-" =0 {У нас няма абутку для адпраўкі.}"
-" one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
-" few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
-" many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}"
-" other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
+msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўкі.} one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
 #: app/components/Bar.tsx:22
 msgid "year"
