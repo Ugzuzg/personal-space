@@ -6,7 +6,7 @@ import { useLingui } from '@lingui/react';
 
 const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
   const googleAuth = new sheets.auth.GoogleAuth({
-    credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT),
+    credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT!),
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
   });
   const client = sheets.sheets({ version: 'v4', auth: googleAuth });
@@ -14,11 +14,11 @@ const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
     spreadsheetId: '1zE6HX-JQ6jF729X_WHkya4bt8PYpD5shgcjm48u-7kg',
     ranges: [
       // To send?
-      'All Shoes!D:D',
+      'All Shoes!E:E',
       // Total weight to ship
-      'All Shoes!M4',
+      'All Shoes!N4',
       // Estimated shipping cost
-      'All Shoes!M5',
+      'All Shoes!N5',
     ],
     valueRenderOption: 'UNFORMATTED_VALUE',
   });
