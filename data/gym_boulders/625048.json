@@ -1,9 +1,9 @@
 {
-  "id": 620931,
-  "name": "Magenta",
+  "id": 625048,
+  "name": "Yellow",
   "notes": null,
-  "difficulty": "6C+",
-  "grade": "vl-22",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,64 +125,44 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-09-01 14:01:18 +0000",
-  "created_at": "2025-09-01 14:01:18 +0000",
-  "set_at": "2025-09-01 14:01:07 +0000",
+  "updated_at": "2025-09-18 18:54:04 +0000",
+  "created_at": "2025-09-18 18:54:04 +0000",
+  "set_at": "2025-09-18 18:53:55 +0000",
   "expiration_date": null,
   "path": [
     [
-      313,
-      177
+      734,
+      183
     ],
     [
-      348,
-      252
+      721,
+      489
     ],
     [
-      328,
-      339
+      723,
+      527
     ],
     [
-      336,
-      391
+      916,
+      553
     ],
     [
-      336,
-      420
+      915,
+      509
     ],
     [
-      337,
-      500
+      915,
+      165
     ],
     [
-      418,
-      506
-    ],
-    [
-      464,
-      508
-    ],
-    [
-      465,
-      471
-    ],
-    [
-      538,
-      302
-    ],
-    [
-      474,
-      188
-    ],
-    [
-      314,
-      177
+      734,
+      184
     ]
   ],
   "reference_width": 971,
-  "line_number": 7,
-  "topo_num": "41798.7.3",
-  "color_1": "#f912f3",
+  "line_number": 3,
+  "topo_num": "41797.3.7",
+  "color_1": "#ffd700",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -195,13 +175,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2.3,
-    "ratings_count": 3,
-    "redpoint": 3,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -343,11 +323,11 @@
     "slug": "klattercentret-solna"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/8249b997747db1955c094dba1ca4f2a6",
-  "route_card_label": "A7.3",
+  "share_url": "https://zlag.vertical-life.info/en/routes/7e6f26bbf473a040bfc3fd56a475ce59",
+  "route_card_label": "A3.7",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "topo": "e56970f2e4e002f62f72f0061adfa987",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
