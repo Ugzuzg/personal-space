@@ -1,9 +1,9 @@
 {
-  "id": 615191,
-  "name": "Blue",
+  "id": 626082,
+  "name": "Black",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,56 +125,56 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-07-31 14:11:56 +0000",
-  "created_at": "2025-07-31 14:11:56 +0000",
-  "set_at": "2025-07-31 14:11:47 +0000",
+  "updated_at": "2025-09-24 13:58:17 +0000",
+  "created_at": "2025-09-24 13:58:17 +0000",
+  "set_at": "2025-09-24 13:58:04 +0000",
   "expiration_date": null,
   "path": [
     [
-      291,
-      182
+      31,
+      170
+    ],
+    [
+      7,
+      544
+    ],
+    [
+      86,
+      526
+    ],
+    [
+      225,
+      516
+    ],
+    [
+      295,
+      519
+    ],
+    [
+      296,
+      482
     ],
     [
       302,
       300
     ],
     [
-      294,
-      520
+      290,
+      181
     ],
     [
-      382,
-      504
-    ],
-    [
-      507,
-      502
-    ],
-    [
-      721,
-      526
-    ],
-    [
-      720,
-      489
-    ],
-    [
-      733,
+      179,
       183
     ],
     [
-      565,
-      180
-    ],
-    [
-      291,
-      182
+      31,
+      170
     ]
   ],
   "reference_width": 971,
-  "line_number": 2,
-  "topo_num": "41797.2.2",
-  "color_1": "#0000ff",
+  "line_number": 1,
+  "topo_num": "41797.1.4",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -187,13 +187,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 13,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3.3,
-    "ratings_count": 4,
-    "redpoint": 3,
+    "rating": 3,
+    "ratings_count": 1,
+    "redpoint": 1,
     "onsight": 0,
-    "flash": 10,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -202,7 +202,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 1,
+    "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -335,12 +335,12 @@
     "slug": "klattercentret-solna"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/f18e1faa613ad9f87e7d5622f55e694b",
-  "route_card_label": "A2.2",
+  "share_url": "https://zlag.vertical-life.info/en/routes/90ce90c8c275b2777cb8a5b0e627cd06",
+  "route_card_label": "A1.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
   "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Sophie Machaczek",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
