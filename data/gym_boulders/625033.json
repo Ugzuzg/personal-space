@@ -1,9 +1,9 @@
 {
-  "id": 617380,
-  "name": "Orange",
+  "id": 625033,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "6C",
+  "grade": "vl-21",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -125,56 +125,48 @@
   ],
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-08-13 14:36:19 +0000",
-  "created_at": "2025-08-13 14:36:19 +0000",
-  "set_at": "2025-08-13 14:36:11 +0000",
+  "updated_at": "2025-09-18 17:55:05 +0000",
+  "created_at": "2025-09-18 17:55:05 +0000",
+  "set_at": "2025-09-18 17:54:51 +0000",
   "expiration_date": null,
   "path": [
     [
-      680,
-      542
+      478,
+      484
     ],
     [
-      680,
-      511
+      482,
+      484
     ],
     [
-      676,
-      415
+      480,
+      456
     ],
     [
-      663,
-      179
+      446,
+      221
     ],
     [
-      802,
-      182
+      638,
+      225
     ],
     [
-      908,
-      173
+      583,
+      453
     ],
     [
-      931,
-      535
+      584,
+      482
     ],
     [
-      934,
-      569
-    ],
-    [
-      849,
-      543
-    ],
-    [
-      681,
-      540
+      483,
+      485
     ]
   ],
   "reference_width": 971,
-  "line_number": 7,
-  "topo_num": "41865.7.7",
-  "color_1": "#ff9d00",
+  "line_number": 5,
+  "topo_num": "41862.5.3",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -183,17 +175,17 @@
   "sector_id": 222,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 747,
-  "gym_wall_name": "Tävlingsväggen, B Sektionen",
+  "gym_wall_id": 745,
+  "gym_wall_name": "Balkongen, A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 9,
+    "zlag_count": 8,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 1,
+    "rating": 3.7,
+    "ratings_count": 3,
+    "redpoint": 2,
     "onsight": 0,
-    "flash": 8,
+    "flash": 6,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -335,12 +327,12 @@
     "slug": "klattercentret-telefonplan"
   },
   "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/en/routes/ae9f79725d396f133e8e60893db38579",
-  "route_card_label": "B7.7",
-  "parent_name": "Bouldering, Tävlingsväggen, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/b00b0462d7ddf5f36579ffae78bcb655",
+  "route_card_label": "A5.3",
+  "parent_name": "Bouldering, Balkongen, A Sektionen",
   "virtual": false,
-  "topo": "e6cfbc42d224cf9694fc0e20aa2dc58b",
-  "route_setter": "Benjamin Schlobohm",
+  "topo": "66ac89a5e360c075886aa000dd12591e",
+  "route_setter": "Felipe Ignacio Palma Hernandez",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []

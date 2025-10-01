@@ -1,9 +1,9 @@
 {
-  "id": 617380,
-  "name": "Orange",
+  "id": 623658,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,58 +123,42 @@
       "8C+"
     ]
   ],
-  "steepness": 7,
+  "steepness": 9,
   "style": null,
-  "updated_at": "2025-08-13 14:36:19 +0000",
-  "created_at": "2025-08-13 14:36:19 +0000",
-  "set_at": "2025-08-13 14:36:11 +0000",
+  "updated_at": "2025-09-12 13:47:29 +0000",
+  "created_at": "2025-09-12 13:47:29 +0000",
+  "set_at": "2025-09-12 13:47:05 +0000",
   "expiration_date": null,
   "path": [
     [
-      680,
-      542
+      268,
+      474
     ],
     [
-      680,
-      511
+      242,
+      340
     ],
     [
-      676,
-      415
+      255,
+      212
     ],
     [
-      663,
-      179
+      521,
+      216
     ],
     [
-      802,
-      182
+      488,
+      439
     ],
     [
-      908,
-      173
-    ],
-    [
-      931,
-      535
-    ],
-    [
-      934,
-      569
-    ],
-    [
-      849,
-      543
-    ],
-    [
-      681,
-      540
+      409,
+      446
     ]
   ],
   "reference_width": 971,
-  "line_number": 7,
-  "topo_num": "41865.7.7",
-  "color_1": "#ff9d00",
+  "line_number": 1,
+  "topo_num": "89193.1.12",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -183,17 +167,17 @@
   "sector_id": 222,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 747,
-  "gym_wall_name": "Tävlingsväggen, B Sektionen",
+  "gym_wall_id": 6515,
+  "gym_wall_name": "Garaget, D Sektionen",
   "stats": {
     "video_count": 0,
     "zlag_count": 9,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 1,
+    "rating": 2.5,
+    "ratings_count": 2,
+    "redpoint": 3,
     "onsight": 0,
-    "flash": 8,
+    "flash": 6,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -335,12 +319,12 @@
     "slug": "klattercentret-telefonplan"
   },
   "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/en/routes/ae9f79725d396f133e8e60893db38579",
-  "route_card_label": "B7.7",
-  "parent_name": "Bouldering, Tävlingsväggen, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/ddc0fe8c07f89566457744107157b35f",
+  "route_card_label": "D4.12",
+  "parent_name": "Bouldering, Garaget, D Sektionen",
   "virtual": false,
-  "topo": "e6cfbc42d224cf9694fc0e20aa2dc58b",
-  "route_setter": "Benjamin Schlobohm",
+  "topo": "78a9b7f87c749f6d48d0e70409474c94",
+  "route_setter": "Felipe Ignacio Palma Hernandez",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []
