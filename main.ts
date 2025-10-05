@@ -50,7 +50,15 @@ const fetchBoulder = async (token: string, id: number) => {
   }
 
   const result = await response.json();
-  return result;
+  return {
+    ...result,
+    gym: {
+      id: result.id,
+      name: result.name,
+      town: result.town,
+      country: result.country,
+    },
+  };
 };
 
 const fetchBoulders = async (token: string, ids: number[]) => {
