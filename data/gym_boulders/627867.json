@@ -187,11 +187,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -228,10 +228,8 @@
     "s": 0
   },
   "gym": {
-    "id": 69,
-    "name": "Klättercentret Solna",
-    "town": "Solna",
-    "country": "Sweden"
+    "id": 627867,
+    "name": "Bright Pink"
   },
   "gym_id": 69,
   "share_url": "https://zlag.vertical-life.info/en/routes/f9cb79d4561b2427121b58c3a637d7af",

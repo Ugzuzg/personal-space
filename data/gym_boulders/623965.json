@@ -167,11 +167,11 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 0,
+    "rating": 3,
+    "ratings_count": 1,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -208,10 +208,8 @@
     "s": 0
   },
   "gym": {
-    "id": 69,
-    "name": "Klättercentret Solna",
-    "town": "Solna",
-    "country": "Sweden"
+    "id": 623965,
+    "name": "White stand"
   },
   "gym_id": 69,
   "share_url": "https://zlag.vertical-life.info/en/routes/8a6c15273d9fcf7a1e0e843e2fe53426",

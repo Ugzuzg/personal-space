@@ -171,7 +171,7 @@
   "gym_wall_name": "Garaget, D Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 3,
     "comment_count": 0,
     "rating": 2,
     "ratings_count": 1,
@@ -179,7 +179,7 @@
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
-    "go": 0,
+    "go": 1,
     "safety": 0,
     "slab": 0,
     "vertical": 0,
@@ -212,10 +212,8 @@
     "s": 0
   },
   "gym": {
-    "id": 68,
-    "name": "Klättercentret Telefonplan",
-    "town": "Hägersten",
-    "country": "Sweden"
+    "id": 623647,
+    "name": "Dark Green"
   },
   "gym_id": 68,
   "share_url": "https://zlag.vertical-life.info/en/routes/14a63c739ca435df43a1618a9eda2fdf",

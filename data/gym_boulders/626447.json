@@ -195,13 +195,13 @@
   "gym_wall_name": "Tävlingsväggen, B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 10,
+    "zlag_count": 13,
     "comment_count": 0,
     "rating": 4,
-    "ratings_count": 1,
+    "ratings_count": 3,
     "redpoint": 2,
     "onsight": 0,
-    "flash": 8,
+    "flash": 11,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -236,10 +236,8 @@
     "s": 0
   },
   "gym": {
-    "id": 68,
-    "name": "Klättercentret Telefonplan",
-    "town": "Hägersten",
-    "country": "Sweden"
+    "id": 626447,
+    "name": "Purple"
   },
   "gym_id": 68,
   "share_url": "https://zlag.vertical-life.info/en/routes/9c3635abd9cfb1b2fc0bc4009b090acc",

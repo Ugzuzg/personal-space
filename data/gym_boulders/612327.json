@@ -175,13 +175,13 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 9,
+    "zlag_count": 10,
     "comment_count": 0,
-    "rating": 4,
-    "ratings_count": 2,
+    "rating": 4.3,
+    "ratings_count": 3,
     "redpoint": 0,
     "onsight": 1,
-    "flash": 8,
+    "flash": 9,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -216,10 +216,8 @@
     "s": 0
   },
   "gym": {
-    "id": 69,
-    "name": "Klättercentret Solna",
-    "town": "Solna",
-    "country": "Sweden"
+    "id": 612327,
+    "name": "Yellow"
   },
   "gym_id": 69,
   "share_url": "https://zlag.vertical-life.info/en/routes/8ea4f38dedbe722c69709aaf7ef53d9e",

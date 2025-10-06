@@ -187,13 +187,13 @@
   "gym_wall_name": "Balkongen, A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 13,
+    "zlag_count": 14,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
+    "rating": 2.5,
+    "ratings_count": 2,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 13,
+    "flash": 14,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -228,10 +228,8 @@
     "s": 0
   },
   "gym": {
-    "id": 68,
-    "name": "Klättercentret Telefonplan",
-    "town": "Hägersten",
-    "country": "Sweden"
+    "id": 625100,
+    "name": "Orange"
   },
   "gym_id": 68,
   "share_url": "https://zlag.vertical-life.info/en/routes/f58626496c8b139fdbc7be1f35c4bba5",
