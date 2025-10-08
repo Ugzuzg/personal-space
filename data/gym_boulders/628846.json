@@ -1,9 +1,9 @@
 {
-  "id": 626464,
+  "id": 628846,
   "name": "Yellow",
   "notes": null,
-  "difficulty": "3",
-  "grade": "vl-4",
+  "difficulty": "5",
+  "grade": "vl-12",
   "grading_system": "font",
   "grade_proposals": [
     [
@@ -123,45 +123,45 @@
       "8C+"
     ]
   ],
-  "steepness": 7,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2025-09-25 13:29:06 +0000",
-  "created_at": "2025-09-25 13:29:06 +0000",
-  "set_at": "2025-09-25 13:28:41 +0000",
+  "updated_at": "2025-10-07 14:07:08 +0000",
+  "created_at": "2025-10-07 14:07:08 +0000",
+  "set_at": "2025-10-07 14:07:00 +0000",
   "expiration_date": null,
   "path": [
     [
-      513,
-      71
+      4,
+      150
     ],
     [
-      513,
-      587
+      164,
+      170
     ],
     [
-      513,
-      650
+      381,
+      190
     ],
     [
-      879,
-      639
+      383,
+      542
     ],
     [
-      878,
-      580
+      219,
+      571
     ],
     [
-      919,
-      108
+      2,
+      609
     ],
     [
-      514,
-      70
+      6,
+      152
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41799.4.6",
+  "line_number": 2,
+  "topo_num": "41801.2.2",
   "color_1": "#ffd700",
   "color_2": null,
   "two_start_holds": null,
@@ -171,17 +171,17 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 4,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 2,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -216,16 +216,16 @@
     "s": 0
   },
   "gym": {
-    "id": 626464,
+    "id": 628846,
     "name": "Yellow"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/c202737eef6e05059e5d0a7b2a7ee4f4",
-  "route_card_label": "A4.6",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/6f83a48a0c0cebcfb5df8b336a20f661",
+  "route_card_label": "B2.2",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
-  "route_setter": "Silver Breiktopf",
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": []

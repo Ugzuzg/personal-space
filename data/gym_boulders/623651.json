@@ -171,7 +171,7 @@
   "gym_wall_name": "Garaget, D Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 8,
     "comment_count": 0,
     "rating": 3,
     "ratings_count": 2,
@@ -179,7 +179,7 @@
     "onsight": 0,
     "flash": 2,
     "toprope": 0,
-    "go": 0,
+    "go": 4,
     "safety": 0,
     "slab": 0,
     "vertical": 0,
