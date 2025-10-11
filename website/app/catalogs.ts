@@ -1,8 +1,8 @@
 import { I18n, Messages, setupI18n } from '@lingui/core';
 
-import { locales } from '../locales';
+import { languages } from '../locales';
 
-type SupportedLocales = (typeof locales)[number];
+type SupportedLocales = (typeof languages)[number];
 
 async function loadCatalog(locale: SupportedLocales): Promise<{
   [k: string]: Messages;
@@ -12,7 +12,7 @@ async function loadCatalog(locale: SupportedLocales): Promise<{
     [locale]: messages,
   };
 }
-const catalogs = await Promise.all(locales.map(loadCatalog));
+const catalogs = await Promise.all(languages.map(loadCatalog));
 
 // transform array of catalogs into a single object
 export const allMessages = catalogs.reduce((acc, oneCatalog) => {
@@ -21,7 +21,7 @@ export const allMessages = catalogs.reduce((acc, oneCatalog) => {
 
 type AllI18nInstances = { [K in SupportedLocales]: I18n };
 
-export const allI18nInstances: AllI18nInstances = locales.reduce(
+export const allI18nInstances: AllI18nInstances = languages.reduce(
   (acc, locale) => {
     const messages = allMessages[locale] ?? {};
     const i18n = setupI18n({

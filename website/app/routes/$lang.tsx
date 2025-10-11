@@ -16,12 +16,15 @@ import en from '~/img/en-gpt.png?url';
 import be from '~/img/be-gpt.png?url';
 import sv from '~/img/sv-gpt.png?url';
 
-import { locales } from '../../locales';
+import { languages, languageToLocale } from '../../locales';
 
 export const Route = createFileRoute('/$lang')({
+  head: (ctx) => ({
+    meta: [{ name: 'og:locale', content: languageToLocale[ctx.params.lang] }],
+  }),
   component: Home,
   loader: (options) => {
-    if (!locales.includes(options.params.lang as any)) {
+    if (!languages.includes(options.params.lang as any)) {
       throw notFound();
     }
   },
@@ -51,7 +54,7 @@ function LanguagePicker() {
         <LanguageIcon />
         {i18n._(
           defineMessage({
-            message: plural(locales.length, {
+            message: plural(languages.length, {
               one: '# lanaguage',
               other: '# languages',
             }),
@@ -108,7 +111,7 @@ function LanguagePicker() {
 export function Home() {
   const { lang } = Route.useParams();
 
-  const i18n = getI18nInstance(lang as (typeof locales)[number]);
+  const i18n = getI18nInstance(lang as (typeof languages)[number]);
   setI18n(i18n);
 
   return (
