@@ -187,11 +187,11 @@
   "gym_wall_name": "Gallerian, C Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 11,
+    "zlag_count": 12,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 11,
     "toprope": 0,
