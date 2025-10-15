@@ -1,3 +1,4 @@
+#!/usr/bin/env -S node --experimental-strip-types
 import fsSync from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
