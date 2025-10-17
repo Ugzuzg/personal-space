@@ -4,6 +4,9 @@ import { languages } from './locales';
 
 export default defineConfig({
   sourceLocale: 'en',
+  fallbackLocales: {
+    en: 'en-GB',
+  },
   locales: languages as unknown as string[],
   catalogs: [
     {

@@ -3,6 +3,17 @@ import { Trans } from '@lingui/react/macro';
 import sheets from '@googleapis/sheets';
 import { createServerFn } from '@tanstack/react-start';
 import { useLingui } from '@lingui/react';
+import { languageToLocale } from 'locales';
+
+function optional<A, T>(fn: (a: A) => T): (a: A) => T | null {
+  return (a: A | null | undefined) => {
+    if (!a) return null;
+    return fn(a);
+  };
+}
+const excelDateToJsDate = (date: number): Date => {
+  return new Date((date - 25569) * 86400 * 1000);
+};
 
 const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
   const googleAuth = new sheets.auth.GoogleAuth({
@@ -21,6 +32,10 @@ const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
       'All Shoes!N4',
       // Estimated shipping cost
       'All Shoes!N5',
+      // Shipped there on
+      'All Shoes!N8',
+      // Shipped back on
+      'All Shoes!N9',
     ],
     valueRenderOption: 'UNFORMATTED_VALUE',
   });
@@ -37,6 +52,12 @@ const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
       (sheetsValues.data.valueRanges?.[2].values?.[0]?.[0] as number) ?? 0,
     estimatedShippingCost:
       (sheetsValues.data.valueRanges?.[3].values?.[0]?.[0] as number) ?? 0,
+    shippedThereOn: optional(excelDateToJsDate)(
+      sheetsValues.data.valueRanges?.[4].values?.[0]?.[0],
+    ),
+    shippedBackOn: optional(excelDateToJsDate)(
+      sheetsValues.data.valueRanges?.[5].values?.[0]?.[0],
+    ),
   };
 });
 
@@ -48,20 +69,23 @@ export const Route = createFileRoute('/$lang/resoling')({
 function RouteComponent() {
   const { shoesToSend, shoesCollected, ...data } = Route.useLoaderData();
   const { i18n } = useLingui();
+  const locale = languageToLocale[i18n.locale] ?? i18n.locale;
 
   // lingui doesn't support skeletons in ICU messages yet, preformat the numbers manually
-  const totalWeight = data.totalWeight.toLocaleString(i18n.locale, {
+  const totalWeight = data.totalWeight.toLocaleString(locale, {
     style: 'unit',
     unit: 'gram',
   });
   const estimatedShippingCost = data.estimatedShippingCost.toLocaleString(
-    i18n.locale,
+    locale,
     { style: 'currency', currency: 'SEK' },
   );
   const costPerPair = (data.estimatedShippingCost / shoesToSend).toLocaleString(
-    i18n.locale,
+    locale,
     { style: 'currency', currency: 'SEK' },
   );
+
+  const allCollected = shoesCollected >= shoesToSend;
 
   return (
     <section>
@@ -86,6 +110,25 @@ function RouteComponent() {
           </Trans>
         </label>
       </p>
+      {allCollected && !data.shippedThereOn && (
+        <p>
+          <Trans>Awaiting to be shipped.</Trans>
+        </p>
+      )}
+      {data.shippedThereOn && (
+        <p>
+          <Trans>
+            Shipped there on {data.shippedThereOn.toLocaleDateString(locale)}
+          </Trans>
+        </p>
+      )}
+      {data.shippedBackOn && (
+        <p>
+          <Trans>
+            Shipped back on {data.shippedBackOn.toLocaleDateString(locale)}
+          </Trans>
+        </p>
+      )}
     </section>
   );
 }

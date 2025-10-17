@@ -13,8 +13,8 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. placeholder {0}: locales.length
-#: app/routes/$lang.tsx:53
+#. placeholder {0}: languages.length
+#: app/routes/$lang.tsx:56
 msgid "{0, plural, one {# lanaguage} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0мова} few {#\\u00A0мовы} many {#\\u00A0моў} other {#\\u00A0мовы}}"
 
@@ -22,10 +22,14 @@ msgstr "{0, plural, one {#\\u00A0мова} few {#\\u00A0мовы} many {#\\u00A0
 msgid "All time"
 msgstr "За ўвесь час"
 
-#: app/routes/$lang.tsx:158
-#: app/routes/$lang/resoling.tsx:67
+#: app/routes/$lang.tsx:161
+#: app/routes/$lang/resoling.tsx:93
 msgid "Are we resoling yet?"
 msgstr "Ці мы ўжо мяняем падэшвы?"
+
+#: app/routes/$lang/resoling.tsx:115
+msgid "Awaiting to be shipped."
+msgstr "Чакае адпраўкі."
 
 #: app/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
@@ -35,7 +39,7 @@ msgstr "Валуны ў Klättercentret Solna"
 msgid "By year"
 msgstr "Па гадах"
 
-#: app/routes/$lang.tsx:149
+#: app/routes/$lang.tsx:152
 #: app/routes/$lang/climbing/$userId.tsx:205
 msgid "Climbing"
 msgstr "Скалалажанне"
@@ -53,7 +57,7 @@ msgstr "цяжкасць"
 msgid "Hallo!"
 msgstr "Вітаю!"
 
-#: app/routes/$lang.tsx:140
+#: app/routes/$lang.tsx:143
 msgid "Home"
 msgstr "Галоўная"
 
@@ -68,11 +72,21 @@ msgstr "Агульны прагрэс: {0} / {1} ({2})"
 msgid "Poor man's CPR"
 msgstr "Жабрацкі рэйтынг скалалаза"
 
-#: app/routes/$lang/resoling.tsx:79
+#. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
+#: app/routes/$lang/resoling.tsx:127
+msgid "Shipped back on {0}"
+msgstr "Адпраўлена назад {0}"
+
+#. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
+#: app/routes/$lang/resoling.tsx:120
+msgid "Shipped there on {0}"
+msgstr "Адпраўлена туды {0}"
+
+#: app/routes/$lang/resoling.tsx:105
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Сабрана абутку: <0>{shoesCollected} / {shoesToSend}</0>"
 
-#: app/routes/$lang.tsx:171
+#: app/routes/$lang.tsx:174
 msgid "Source"
 msgstr "Зыходны код"
 
@@ -80,7 +94,7 @@ msgstr "Зыходны код"
 msgid "Timeline"
 msgstr "Храналогія"
 
-#: app/routes/$lang/resoling.tsx:70
+#: app/routes/$lang/resoling.tsx:96
 msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўкі.} one {У нас ёсць # парa абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
