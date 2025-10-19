@@ -175,11 +175,11 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 5,
     "comment_count": 0,
     "rating": 3.3,
-    "ratings_count": 3,
-    "redpoint": 3,
+    "ratings_count": 4,
+    "redpoint": 4,
     "onsight": 0,
     "flash": 1,
     "toprope": 0,
@@ -190,7 +190,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 1,
+    "soft_count": 2,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
