@@ -5,6 +5,104 @@
   "difficulty": "6A+",
   "grade": "vl-17",
   "grading_system": "font",
+  "steepness": 3,
+  "style": null,
+  "updated_at": "2025-09-15 13:30:41 +0000",
+  "created_at": "2025-09-15 13:30:41 +0000",
+  "set_at": "2025-09-15 13:30:32 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      39,
+      175
+    ],
+    [
+      422,
+      183
+    ],
+    [
+      456,
+      589
+    ],
+    [
+      77,
+      584
+    ],
+    [
+      40,
+      175
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 6,
+  "topo_num": "41802.6.6",
+  "color_1": "#ffa500",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 219,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 7,
+    "comment_count": 0,
+    "rating": 3.7,
+    "ratings_count": 3,
+    "redpoint": 1,
+    "onsight": 0,
+    "flash": 6,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 623961,
+    "name": "Orange"
+  },
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/en/routes/d2ffef343970f7cd807b07dba38c8987",
+  "route_card_label": "B6.6",
+  "parent_name": "Bouldering, B Sektionen",
+  "virtual": false,
+  "topo": "abd490d1d42d11879845d640b480b7b2",
+  "route_setter": "James Thanawat",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
   "grade_proposals": [
     [
       "vl-1",
@@ -122,103 +220,5 @@
       "vl-34",
       "8C+"
     ]
-  ],
-  "steepness": 3,
-  "style": null,
-  "updated_at": "2025-09-15 13:30:41 +0000",
-  "created_at": "2025-09-15 13:30:41 +0000",
-  "set_at": "2025-09-15 13:30:32 +0000",
-  "expiration_date": null,
-  "path": [
-    [
-      39,
-      175
-    ],
-    [
-      422,
-      183
-    ],
-    [
-      456,
-      589
-    ],
-    [
-      77,
-      584
-    ],
-    [
-      40,
-      175
-    ]
-  ],
-  "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.6",
-  "color_1": "#ffa500",
-  "color_2": null,
-  "two_start_holds": null,
-  "sit_down_start": null,
-  "traverse": false,
-  "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": false,
-  "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
-  "stats": {
-    "video_count": 0,
-    "zlag_count": 7,
-    "comment_count": 0,
-    "rating": 3.7,
-    "ratings_count": 3,
-    "redpoint": 1,
-    "onsight": 0,
-    "flash": 6,
-    "toprope": 0,
-    "go": 0,
-    "safety": 0,
-    "slab": 0,
-    "vertical": 0,
-    "overhanging": 0,
-    "roof": 0,
-    "hard_count": 0,
-    "soft_count": 0,
-    "zlaggable_height_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0
-    },
-    "safety_issues_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0,
-      "64": 0
-    },
-    "t": 0,
-    "f": 0,
-    "b": 0,
-    "e": 0,
-    "c": 0,
-    "s": 0
-  },
-  "gym": {
-    "id": 623961,
-    "name": "Orange"
-  },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/d2ffef343970f7cd807b07dba38c8987",
-  "route_card_label": "B6.6",
-  "parent_name": "Bouldering, B Sektionen",
-  "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "James Thanawat",
-  "display_route_setter": true,
-  "item_type": "gym_boulder",
-  "gallery": []
+  ]
 }

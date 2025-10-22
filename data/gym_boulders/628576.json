@@ -5,6 +5,124 @@
   "difficulty": "6A",
   "grade": "vl-16",
   "grading_system": "font",
+  "steepness": 7,
+  "style": null,
+  "updated_at": "2025-10-06 20:49:04 +0000",
+  "created_at": "2025-10-06 20:49:01 +0000",
+  "set_at": "2025-10-06 20:48:45 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      31,
+      170
+    ],
+    [
+      7,
+      544
+    ],
+    [
+      86,
+      526
+    ],
+    [
+      225,
+      516
+    ],
+    [
+      295,
+      519
+    ],
+    [
+      296,
+      482
+    ],
+    [
+      302,
+      300
+    ],
+    [
+      290,
+      181
+    ],
+    [
+      179,
+      183
+    ],
+    [
+      31,
+      170
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 1,
+  "topo_num": "41797.1.6",
+  "color_1": "#ffffff",
+  "color_2": "#ffa500",
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 219,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 4,
+    "comment_count": 0,
+    "rating": 4,
+    "ratings_count": 1,
+    "redpoint": 0,
+    "onsight": 0,
+    "flash": 4,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 628576,
+    "name": "White orange"
+  },
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/en/routes/e53657c2124d391f17f200418b239b35",
+  "route_card_label": "A1.6",
+  "parent_name": "Bouldering, A Sektionen",
+  "virtual": false,
+  "topo": "e56970f2e4e002f62f72f0061adfa987",
+  "route_setter": "James Thanawat",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
   "grade_proposals": [
     [
       "vl-1",
@@ -122,123 +240,5 @@
       "vl-34",
       "8C+"
     ]
-  ],
-  "steepness": 7,
-  "style": null,
-  "updated_at": "2025-10-06 20:49:01 +0000",
-  "created_at": "2025-10-06 20:49:01 +0000",
-  "set_at": "2025-10-06 20:48:45 +0000",
-  "expiration_date": null,
-  "path": [
-    [
-      31,
-      170
-    ],
-    [
-      7,
-      544
-    ],
-    [
-      86,
-      526
-    ],
-    [
-      225,
-      516
-    ],
-    [
-      295,
-      519
-    ],
-    [
-      296,
-      482
-    ],
-    [
-      302,
-      300
-    ],
-    [
-      290,
-      181
-    ],
-    [
-      179,
-      183
-    ],
-    [
-      31,
-      170
-    ]
-  ],
-  "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41797.1.6",
-  "color_1": "#ffffff",
-  "color_2": "#ffa500",
-  "two_start_holds": null,
-  "sit_down_start": null,
-  "traverse": false,
-  "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": false,
-  "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
-  "stats": {
-    "video_count": 0,
-    "zlag_count": 4,
-    "comment_count": 0,
-    "rating": 4,
-    "ratings_count": 1,
-    "redpoint": 0,
-    "onsight": 0,
-    "flash": 4,
-    "toprope": 0,
-    "go": 0,
-    "safety": 0,
-    "slab": 0,
-    "vertical": 0,
-    "overhanging": 0,
-    "roof": 0,
-    "hard_count": 0,
-    "soft_count": 0,
-    "zlaggable_height_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0
-    },
-    "safety_issues_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0,
-      "64": 0
-    },
-    "t": 0,
-    "f": 0,
-    "b": 0,
-    "e": 0,
-    "c": 0,
-    "s": 0
-  },
-  "gym": {
-    "id": 628576,
-    "name": "White orange"
-  },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/e53657c2124d391f17f200418b239b35",
-  "route_card_label": "A1.6",
-  "parent_name": "Bouldering, A Sektionen",
-  "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "James Thanawat",
-  "display_route_setter": true,
-  "item_type": "gym_boulder",
-  "gallery": []
+  ]
 }

@@ -1,10 +1,116 @@
 {
   "id": 626463,
-  "name": "Purple",
+  "name": "Magenta",
   "notes": null,
   "difficulty": "6B+",
   "grade": "vl-19",
   "grading_system": "font",
+  "steepness": 7,
+  "style": null,
+  "updated_at": "2025-10-22 15:21:14 +0000",
+  "created_at": "2025-09-25 13:28:38 +0000",
+  "set_at": "2025-09-25 13:28:25 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      513,
+      71
+    ],
+    [
+      513,
+      587
+    ],
+    [
+      513,
+      650
+    ],
+    [
+      879,
+      639
+    ],
+    [
+      878,
+      580
+    ],
+    [
+      919,
+      108
+    ],
+    [
+      514,
+      70
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 4,
+  "topo_num": "41799.4.5",
+  "color_1": "#f912f3",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 219,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 7,
+    "comment_count": 0,
+    "rating": 2,
+    "ratings_count": 1,
+    "redpoint": 2,
+    "onsight": 0,
+    "flash": 5,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 626463,
+    "name": "Magenta"
+  },
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/en/routes/e699c1e0b03c27baf1cd29c2df91f93e",
+  "route_card_label": "A4.5",
+  "parent_name": "Bouldering, A Sektionen",
+  "virtual": false,
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "Sophie Machaczek",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
   "grade_proposals": [
     [
       "vl-1",
@@ -122,111 +228,5 @@
       "vl-34",
       "8C+"
     ]
-  ],
-  "steepness": 7,
-  "style": null,
-  "updated_at": "2025-09-25 13:28:38 +0000",
-  "created_at": "2025-09-25 13:28:38 +0000",
-  "set_at": "2025-09-25 13:28:25 +0000",
-  "expiration_date": null,
-  "path": [
-    [
-      513,
-      71
-    ],
-    [
-      513,
-      587
-    ],
-    [
-      513,
-      650
-    ],
-    [
-      879,
-      639
-    ],
-    [
-      878,
-      580
-    ],
-    [
-      919,
-      108
-    ],
-    [
-      514,
-      70
-    ]
-  ],
-  "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41799.4.5",
-  "color_1": "#7a00ae",
-  "color_2": null,
-  "two_start_holds": null,
-  "sit_down_start": null,
-  "traverse": false,
-  "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": false,
-  "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
-  "stats": {
-    "video_count": 0,
-    "zlag_count": 7,
-    "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
-    "redpoint": 2,
-    "onsight": 0,
-    "flash": 5,
-    "toprope": 0,
-    "go": 0,
-    "safety": 0,
-    "slab": 0,
-    "vertical": 0,
-    "overhanging": 0,
-    "roof": 0,
-    "hard_count": 0,
-    "soft_count": 0,
-    "zlaggable_height_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0
-    },
-    "safety_issues_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0,
-      "64": 0
-    },
-    "t": 0,
-    "f": 0,
-    "b": 0,
-    "e": 0,
-    "c": 0,
-    "s": 0
-  },
-  "gym": {
-    "id": 626463,
-    "name": "Purple"
-  },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/cad5cf1fbe8c9059642d286e17f125c0",
-  "route_card_label": "A4.5",
-  "parent_name": "Bouldering, A Sektionen",
-  "virtual": false,
-  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
-  "route_setter": "Sophie Machaczek",
-  "display_route_setter": true,
-  "item_type": "gym_boulder",
-  "gallery": []
+  ]
 }

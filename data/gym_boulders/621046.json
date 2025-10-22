@@ -5,6 +5,124 @@
   "difficulty": "6A+",
   "grade": "vl-17",
   "grading_system": "font",
+  "steepness": 15,
+  "style": null,
+  "updated_at": "2025-10-21 15:13:42 +0000",
+  "created_at": "2025-09-02 07:00:56 +0000",
+  "set_at": "2025-09-02 07:00:41 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      671,
+      437
+    ],
+    [
+      855,
+      449
+    ],
+    [
+      904,
+      467
+    ],
+    [
+      936,
+      470
+    ],
+    [
+      929,
+      309
+    ],
+    [
+      913,
+      267
+    ],
+    [
+      895,
+      177
+    ],
+    [
+      589,
+      191
+    ],
+    [
+      614,
+      330
+    ],
+    [
+      676,
+      417
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 3,
+  "topo_num": "101079.3.",
+  "color_1": "#9400d3",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 222,
+  "archived": true,
+  "hold_manufacturer": null,
+  "gym_wall_id": 6962,
+  "gym_wall_name": "Gallerian, C Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 13,
+    "comment_count": 0,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 1,
+    "onsight": 0,
+    "flash": 12,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 621046,
+    "name": "Purple"
+  },
+  "gym_id": 68,
+  "share_url": "https://zlag.vertical-life.info/en/routes/6def942697d59e37ddc536226973b19d",
+  "route_card_label": "C11.",
+  "parent_name": "Bouldering, Gallerian, C Sektionen",
+  "virtual": false,
+  "topo": "22b42eaac0ec3030184faa6744f697c6",
+  "route_setter": "N.N.",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
   "grade_proposals": [
     [
       "vl-1",
@@ -122,123 +240,5 @@
       "vl-34",
       "8C+"
     ]
-  ],
-  "steepness": 15,
-  "style": null,
-  "updated_at": "2025-09-02 07:00:56 +0000",
-  "created_at": "2025-09-02 07:00:56 +0000",
-  "set_at": "2025-09-02 07:00:41 +0000",
-  "expiration_date": null,
-  "path": [
-    [
-      671,
-      437
-    ],
-    [
-      855,
-      449
-    ],
-    [
-      904,
-      467
-    ],
-    [
-      936,
-      470
-    ],
-    [
-      929,
-      309
-    ],
-    [
-      913,
-      267
-    ],
-    [
-      895,
-      177
-    ],
-    [
-      589,
-      191
-    ],
-    [
-      614,
-      330
-    ],
-    [
-      676,
-      417
-    ]
-  ],
-  "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "101079.3.4",
-  "color_1": "#9400d3",
-  "color_2": null,
-  "two_start_holds": null,
-  "sit_down_start": null,
-  "traverse": false,
-  "sector_name": "Bouldering",
-  "sector_id": 222,
-  "archived": false,
-  "hold_manufacturer": null,
-  "gym_wall_id": 6962,
-  "gym_wall_name": "Gallerian, C Sektionen",
-  "stats": {
-    "video_count": 0,
-    "zlag_count": 13,
-    "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 1,
-    "onsight": 0,
-    "flash": 12,
-    "toprope": 0,
-    "go": 0,
-    "safety": 0,
-    "slab": 0,
-    "vertical": 0,
-    "overhanging": 0,
-    "roof": 0,
-    "hard_count": 0,
-    "soft_count": 0,
-    "zlaggable_height_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0
-    },
-    "safety_issues_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0,
-      "64": 0
-    },
-    "t": 0,
-    "f": 0,
-    "b": 0,
-    "e": 0,
-    "c": 0,
-    "s": 0
-  },
-  "gym": {
-    "id": 621046,
-    "name": "Purple"
-  },
-  "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/en/routes/6def942697d59e37ddc536226973b19d",
-  "route_card_label": "C11.4",
-  "parent_name": "Bouldering, Gallerian, C Sektionen",
-  "virtual": false,
-  "topo": "22b42eaac0ec3030184faa6744f697c6",
-  "route_setter": "N.N.",
-  "display_route_setter": true,
-  "item_type": "gym_boulder",
-  "gallery": []
+  ]
 }

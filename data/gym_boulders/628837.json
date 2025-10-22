@@ -5,6 +5,112 @@
   "difficulty": "6A",
   "grade": "vl-16",
   "grading_system": "font",
+  "steepness": 3,
+  "style": null,
+  "updated_at": "2025-10-07 14:06:06 +0000",
+  "created_at": "2025-10-07 14:06:03 +0000",
+  "set_at": "2025-10-07 14:05:54 +0000",
+  "expiration_date": null,
+  "path": [
+    [
+      383,
+      192
+    ],
+    [
+      640,
+      178
+    ],
+    [
+      715,
+      568
+    ],
+    [
+      676,
+      545
+    ],
+    [
+      504,
+      520
+    ],
+    [
+      385,
+      542
+    ],
+    [
+      383,
+      193
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 1,
+  "topo_num": "41801.1.2",
+  "color_1": "#87ccc6",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 219,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 5,
+    "comment_count": 0,
+    "rating": 5,
+    "ratings_count": 1,
+    "redpoint": 1,
+    "onsight": 0,
+    "flash": 4,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 628837,
+    "name": "Turquoise"
+  },
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/en/routes/3f58109c01843e2a6698fe39f350795a",
+  "route_card_label": "B1.2",
+  "parent_name": "Bouldering, B Sektionen",
+  "virtual": false,
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "Sebastian Dahlgren ",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
   "grade_proposals": [
     [
       "vl-1",
@@ -122,111 +228,5 @@
       "vl-34",
       "8C+"
     ]
-  ],
-  "steepness": 3,
-  "style": null,
-  "updated_at": "2025-10-07 14:06:03 +0000",
-  "created_at": "2025-10-07 14:06:03 +0000",
-  "set_at": "2025-10-07 14:05:54 +0000",
-  "expiration_date": null,
-  "path": [
-    [
-      383,
-      192
-    ],
-    [
-      640,
-      178
-    ],
-    [
-      715,
-      568
-    ],
-    [
-      676,
-      545
-    ],
-    [
-      504,
-      520
-    ],
-    [
-      385,
-      542
-    ],
-    [
-      383,
-      193
-    ]
-  ],
-  "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41801.1.2",
-  "color_1": "#87ccc6",
-  "color_2": null,
-  "two_start_holds": null,
-  "sit_down_start": null,
-  "traverse": false,
-  "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": false,
-  "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
-  "stats": {
-    "video_count": 0,
-    "zlag_count": 5,
-    "comment_count": 0,
-    "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 1,
-    "onsight": 0,
-    "flash": 4,
-    "toprope": 0,
-    "go": 0,
-    "safety": 0,
-    "slab": 0,
-    "vertical": 0,
-    "overhanging": 0,
-    "roof": 0,
-    "hard_count": 0,
-    "soft_count": 0,
-    "zlaggable_height_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0
-    },
-    "safety_issues_count": {
-      "1": 0,
-      "2": 0,
-      "4": 0,
-      "8": 0,
-      "16": 0,
-      "32": 0,
-      "64": 0
-    },
-    "t": 0,
-    "f": 0,
-    "b": 0,
-    "e": 0,
-    "c": 0,
-    "s": 0
-  },
-  "gym": {
-    "id": 628837,
-    "name": "Turquoise"
-  },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/3f58109c01843e2a6698fe39f350795a",
-  "route_card_label": "B1.2",
-  "parent_name": "Bouldering, B Sektionen",
-  "virtual": false,
-  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
-  "route_setter": "Sebastian Dahlgren ",
-  "display_route_setter": true,
-  "item_type": "gym_boulder",
-  "gallery": []
+  ]
 }
