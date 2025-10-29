@@ -1,50 +1,54 @@
 {
-  "id": 632246,
-  "name": "Turquoise",
+  "id": 633433,
+  "name": "Blue",
   "notes": null,
   "difficulty": "6A",
   "grade": "vl-16",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2025-10-21 19:46:16 +0000",
-  "created_at": "2025-10-21 19:46:16 +0000",
-  "set_at": "2025-10-21 19:46:07 +0000",
+  "updated_at": "2025-10-28 15:35:38 +0000",
+  "created_at": "2025-10-28 15:35:38 +0000",
+  "set_at": "2025-10-28 15:35:30 +0000",
   "expiration_date": null,
   "path": [
     [
-      508,
-      187
+      423,
+      185
     ],
     [
-      689,
-      184
+      697,
+      176
     ],
     [
-      847,
-      182
+      944,
+      165
     ],
     [
-      931,
-      514
+      884,
+      385
     ],
     [
-      470,
-      491
+      782,
+      584
     ],
     [
-      515,
-      312
+      585,
+      582
     ],
     [
-      508,
+      456,
+      589
+    ],
+    [
+      423,
       186
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41800.3.5",
-  "color_1": "#87ccc6",
+  "line_number": 5,
+  "topo_num": "41802.5.9",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -57,13 +61,13 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 2,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,15 +102,15 @@
     "s": 0
   },
   "gym": {
-    "id": 632246,
-    "name": "Turquoise"
+    "id": 633433,
+    "name": "Blue"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/cf261aab9f414677d40da44924b115cd",
-  "route_card_label": "B3.5",
+  "share_url": "https://zlag.vertical-life.info/en/routes/0a59ee89fda8df6b81c5f1e648bac337",
+  "route_card_label": "B5.9",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "e6411c2ffc69fdad028b8408b295e45c",
+  "topo": "abd490d1d42d11879845d640b480b7b2",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
