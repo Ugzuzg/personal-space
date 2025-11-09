@@ -36,7 +36,7 @@
     "nitro": "npm:nitro-nightly@3.0.1-20251108-185438-04c7fe99",
     "postcss": "^8.5.6",
     "typescript": "^5.9.2",
-    "vite": "^7.1.7",
+    "vite": "^7.1.11",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
