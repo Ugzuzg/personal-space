@@ -15,7 +15,7 @@ const excelDateToJsDate = (date: number): Date => {
   return new Date((date - 25569) * 86400 * 1000);
 };
 
-const readTheSheet = createServerFn({ type: 'dynamic' }).handler(async () => {
+const readTheSheet = createServerFn({ method: 'GET' }).handler(async () => {
   const googleAuth = new sheets.auth.GoogleAuth({
     credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT!),
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],

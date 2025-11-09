@@ -1,2 +1,11 @@
 packages:
   - 'website'
+
+publicHoistPattern:
+  # nitro-nightly imports itself as nitro
+  # forces me to hoist it
+  - 'nitro-nightly'
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - 'esbuild'
