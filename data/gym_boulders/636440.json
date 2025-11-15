@@ -1,81 +1,69 @@
 {
-  "id": 634629,
-  "name": "Orange",
+  "id": 636440,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "4",
+  "grade": "vl-7",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2025-11-04 16:23:16 +0000",
-  "created_at": "2025-11-04 16:23:16 +0000",
-  "set_at": "2025-11-04 16:21:46 +0000",
+  "updated_at": "2025-11-13 15:33:52 +0000",
+  "created_at": "2025-11-13 15:33:52 +0000",
+  "set_at": "2025-11-13 15:33:43 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
+      4,
+      150
+    ],
+    [
+      164,
       170
     ],
     [
-      7,
-      544
+      381,
+      190
     ],
     [
-      86,
-      526
+      383,
+      542
     ],
     [
-      225,
-      516
+      219,
+      571
     ],
     [
-      295,
-      519
+      2,
+      609
     ],
     [
-      296,
-      482
-    ],
-    [
-      302,
-      300
-    ],
-    [
-      290,
-      181
-    ],
-    [
-      179,
-      183
-    ],
-    [
-      31,
-      170
+      6,
+      152
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41797.1.1",
-  "color_1": "#ffa500",
+  "line_number": 2,
+  "topo_num": "41801.2.4",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
-  "sit_down_start": null,
+  "sit_down_start": true,
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 2,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -110,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 634629,
-    "name": "Orange"
+    "id": 636440,
+    "name": "Blue"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/785d7ac1af8df1096d468bb64f58029d",
-  "route_card_label": "A1.1",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/d4dfc15857feacb9feb3bf1fec4b6268",
+  "route_card_label": "B2.4",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Sophie Machaczek",
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "Jonas Wahlgren",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
