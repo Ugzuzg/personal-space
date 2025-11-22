@@ -1,50 +1,66 @@
 {
-  "id": 635703,
-  "name": "Orange",
+  "id": 638061,
+  "name": "Magenta",
   "notes": null,
   "difficulty": "6C+",
   "grade": "vl-22",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2025-11-21 00:26:02 +0000",
-  "created_at": "2025-11-10 16:18:30 +0000",
-  "set_at": "2025-11-10 16:18:20 +0000",
+  "updated_at": "2025-11-20 16:55:45 +0000",
+  "created_at": "2025-11-20 16:55:45 +0000",
+  "set_at": "2025-11-20 16:55:31 +0000",
   "expiration_date": null,
   "path": [
     [
-      383,
-      192
+      475,
+      188
     ],
     [
-      640,
-      178
+      538,
+      302
+    ],
+    [
+      466,
+      472
+    ],
+    [
+      465,
+      507
+    ],
+    [
+      524,
+      501
+    ],
+    [
+      756,
+      526
+    ],
+    [
+      755,
+      487
+    ],
+    [
+      738,
+      372
     ],
     [
       715,
-      568
+      177
     ],
     [
-      676,
-      545
+      624,
+      177
     ],
     [
-      504,
-      520
-    ],
-    [
-      385,
-      542
-    ],
-    [
-      383,
-      193
+      476,
+      188
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41801.1.4",
-  "color_1": "#ffa500",
+  "line_number": 6,
+  "topo_num": "41798.6.5",
+  "color_1": "#f912f3",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -53,15 +69,15 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 2.7,
-    "ratings_count": 3,
-    "redpoint": 4,
+    "rating": 4,
+    "ratings_count": 1,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -71,7 +87,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -98,16 +114,16 @@
     "s": 0
   },
   "gym": {
-    "id": 635703,
-    "name": "Orange"
+    "id": 638061,
+    "name": "Magenta"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/6a0c1d90186a50afda39958f1194ef38",
-  "route_card_label": "B1.4",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/38b4662a207f337dfb6948bab42c8c02",
+  "route_card_label": "A6.5",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "route_setter": "Sophie Machaczek",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
