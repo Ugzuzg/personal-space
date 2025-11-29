@@ -1,81 +1,69 @@
 {
-  "id": 632238,
-  "name": "Dark Green",
+  "id": 639654,
+  "name": "White",
   "notes": null,
-  "difficulty": "6C",
-  "grade": "vl-21",
+  "difficulty": "7B",
+  "grade": "vl-25",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2025-11-27 20:19:35 +0000",
-  "created_at": "2025-10-21 19:44:42 +0000",
-  "set_at": "2025-10-21 19:44:34 +0000",
+  "updated_at": "2025-11-27 20:21:15 +0000",
+  "created_at": "2025-11-27 20:21:15 +0000",
+  "set_at": "2025-11-27 20:21:04 +0000",
   "expiration_date": null,
   "path": [
     [
-      121,
-      188
+      508,
+      187
     ],
     [
-      232,
-      182
-    ],
-    [
-      444,
-      185
-    ],
-    [
-      506,
+      689,
       184
     ],
     [
-      514,
-      311
+      847,
+      182
+    ],
+    [
+      931,
+      514
     ],
     [
       470,
-      489
+      491
     ],
     [
-      235,
-      479
+      515,
+      312
     ],
     [
-      138,
-      504
-    ],
-    [
-      143,
-      350
-    ],
-    [
-      121,
-      189
+      508,
+      186
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41800.4.",
-  "color_1": "#008000",
+  "line_number": 3,
+  "topo_num": "41800.3.6",
+  "color_1": "#ffffff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 219,
-  "archived": true,
+  "archived": false,
   "hold_manufacturer": null,
   "gym_wall_id": 734,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 7,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
-    "redpoint": 4,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 3,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -83,7 +71,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 2,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -110,12 +98,12 @@
     "s": 0
   },
   "gym": {
-    "id": 632238,
-    "name": "Dark Green"
+    "id": 639654,
+    "name": "White"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/8269fa56dd20b58a1fe2ee648dd291cf",
-  "route_card_label": "B4.",
+  "share_url": "https://zlag.vertical-life.info/en/routes/802cc8bd4fd7a407ba4d1b7a1e639123",
+  "route_card_label": "B3.6",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
   "topo": "e6411c2ffc69fdad028b8408b295e45c",
