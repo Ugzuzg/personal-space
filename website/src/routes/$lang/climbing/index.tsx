@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 
-import { Climbing, readDataFrame } from './$userId';
+import { Climbing } from './$userId';
+import { readDataFrame } from '~/utils/readDataFrame.functions';
 
 export const Route = createFileRoute('/$lang/climbing/')({
   loader: async () => {

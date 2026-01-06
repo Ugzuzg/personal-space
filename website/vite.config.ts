@@ -22,6 +22,7 @@ export default defineConfig({
       prerender: {
         enabled: true,
         crawlLinks: true,
+        failOnError: true,
       },
       pages: [{ path: '/en' }, { path: '/en/climbing/56689' }],
       sitemap: {
@@ -34,16 +35,14 @@ export default defineConfig({
       },
     }),
     nitro({
-      config: {
-        preset: 'vercel',
-        publicAssets: [
-          // this is a temporary fix to https://github.com/TanStack/router/issues/5368
-          {
-            dir: 'dist/client/__tsr',
-            baseURL: '/__tsr',
-          },
-        ],
-      },
+      publicAssets: [
+        // this is a temporary fix to https://github.com/TanStack/router/issues/5368
+        {
+          maxAge: 60_000,
+          dir: 'dist/client/__tsr',
+          baseURL: '/__tsr',
+        },
+      ],
     }),
   ],
 });

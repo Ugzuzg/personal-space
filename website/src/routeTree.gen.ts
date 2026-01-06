@@ -53,7 +53,7 @@ export interface FileRoutesByFullPath {
   '/$lang/resoling': typeof LangResolingRoute
   '/$lang/': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
-  '/$lang/climbing': typeof LangClimbingIndexRoute
+  '/$lang/climbing/': typeof LangClimbingIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -79,7 +79,7 @@ export interface FileRouteTypes {
     | '/$lang/resoling'
     | '/$lang/'
     | '/$lang/climbing/$userId'
-    | '/$lang/climbing'
+    | '/$lang/climbing/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -135,7 +135,7 @@ declare module '@tanstack/react-router' {
     '/$lang/climbing/': {
       id: '/$lang/climbing/'
       path: '/climbing'
-      fullPath: '/$lang/climbing'
+      fullPath: '/$lang/climbing/'
       preLoaderRoute: typeof LangClimbingIndexRouteImport
       parentRoute: typeof LangRoute
     }
