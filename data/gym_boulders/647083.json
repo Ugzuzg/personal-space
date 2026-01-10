@@ -1,62 +1,74 @@
 {
-  "id": 643141,
-  "name": "Dark Green",
+  "id": 647083,
+  "name": "Blue stand",
   "notes": null,
-  "difficulty": "6C",
-  "grade": "vl-21",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
   "steepness": 7,
   "style": null,
-  "updated_at": "2025-12-15 16:03:32 +0000",
-  "created_at": "2025-12-15 16:03:32 +0000",
-  "set_at": "2025-12-15 16:02:47 +0000",
+  "updated_at": "2026-01-08 16:04:37 +0000",
+  "created_at": "2026-01-08 16:04:37 +0000",
+  "set_at": "2026-01-08 16:03:58 +0000",
   "expiration_date": null,
   "path": [
     [
       31,
-      170
+      186
     ],
     [
-      7,
-      544
+      17,
+      521
+    ],
+    [
+      142,
+      506
+    ],
+    [
+      268,
+      496
+    ],
+    [
+      335,
+      500
+    ],
+    [
+      336,
+      420
+    ],
+    [
+      335,
+      392
+    ],
+    [
+      327,
+      340
+    ],
+    [
+      346,
+      253
+    ],
+    [
+      312,
+      177
+    ],
+    [
+      217,
+      180
     ],
     [
       86,
-      526
-    ],
-    [
-      225,
-      516
-    ],
-    [
-      295,
-      519
-    ],
-    [
-      296,
-      482
-    ],
-    [
-      302,
-      300
-    ],
-    [
-      290,
-      181
-    ],
-    [
-      179,
-      183
+      191
     ],
     [
       31,
-      170
+      187
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41797.1.7",
-  "color_1": "#008000",
+  "line_number": 8,
+  "topo_num": "41798.8.4",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -69,13 +81,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 3,
+    "zlag_count": 2,
     "comment_count": 0,
     "rating": 2,
     "ratings_count": 1,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
-    "flash": 3,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -110,16 +122,16 @@
     "s": 0
   },
   "gym": {
-    "id": 643141,
-    "name": "Dark Green"
+    "id": 647083,
+    "name": "Blue stand"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/10880bea8cedd22d8024f2bd692f8441",
-  "route_card_label": "A1.7",
+  "share_url": "https://zlag.vertical-life.info/en/routes/52d100dd5934f6d5f5299fa60e839d9c",
+  "route_card_label": "A8.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Sebastian Dahlgren ",
+  "topo": "5c34763248de2c434a96e3fd1bd72118",
+  "route_setter": "Jonas Wahlgren",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
