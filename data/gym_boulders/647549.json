@@ -1,74 +1,50 @@
 {
-  "id": 647089,
-  "name": "Black",
+  "id": 647549,
+  "name": "Magenta",
   "notes": null,
-  "difficulty": "7A+",
-  "grade": "vl-24",
+  "difficulty": "8A",
+  "grade": "vl-29",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2026-01-08 16:06:24 +0000",
-  "created_at": "2026-01-08 16:06:24 +0000",
-  "set_at": "2026-01-08 16:06:02 +0000",
+  "updated_at": "2026-01-12 16:24:24 +0000",
+  "created_at": "2026-01-12 16:24:24 +0000",
+  "set_at": "2026-01-12 16:24:14 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      186
+      383,
+      192
     ],
     [
-      17,
-      521
+      640,
+      178
     ],
     [
-      142,
-      506
+      715,
+      568
     ],
     [
-      268,
-      496
+      676,
+      545
     ],
     [
-      335,
-      500
+      504,
+      520
     ],
     [
-      336,
-      420
+      385,
+      542
     ],
     [
-      335,
-      392
-    ],
-    [
-      327,
-      340
-    ],
-    [
-      346,
-      253
-    ],
-    [
-      312,
-      177
-    ],
-    [
-      217,
-      180
-    ],
-    [
-      86,
-      191
-    ],
-    [
-      31,
-      187
+      383,
+      193
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41798.8.10",
-  "color_1": "#000000",
+  "line_number": 1,
+  "topo_num": "41801.1.8",
+  "color_1": "#f912f3",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -77,15 +53,15 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2.8,
-    "ratings_count": 4,
-    "redpoint": 4,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -122,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 647089,
-    "name": "Black"
+    "id": 647549,
+    "name": "Magenta"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b545f59aa2ffaf163202561c35dbd533",
-  "route_card_label": "A8.10",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/ac952b837d6a38d5fcf367c1b4fb1854",
+  "route_card_label": "B1.8",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
