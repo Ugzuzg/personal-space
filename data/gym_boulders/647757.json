@@ -1,50 +1,50 @@
 {
-  "id": 647540,
-  "name": "Yellow",
+  "id": 647757,
+  "name": "Magenta",
   "notes": null,
-  "difficulty": "6B+",
-  "grade": "vl-19",
+  "difficulty": "4+",
+  "grade": "vl-8",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2026-01-12 16:22:44 +0000",
-  "created_at": "2026-01-12 16:22:44 +0000",
-  "set_at": "2026-01-12 16:21:50 +0000",
+  "updated_at": "2026-01-13 14:27:03 +0000",
+  "created_at": "2026-01-13 14:27:03 +0000",
+  "set_at": "2026-01-13 14:26:53 +0000",
   "expiration_date": null,
   "path": [
     [
+      4,
+      150
+    ],
+    [
+      164,
+      170
+    ],
+    [
+      381,
+      190
+    ],
+    [
       383,
-      192
-    ],
-    [
-      640,
-      178
-    ],
-    [
-      715,
-      568
-    ],
-    [
-      676,
-      545
-    ],
-    [
-      504,
-      520
-    ],
-    [
-      385,
       542
     ],
     [
-      383,
-      193
+      219,
+      571
+    ],
+    [
+      2,
+      609
+    ],
+    [
+      6,
+      152
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41801.1.2",
-  "color_1": "#ead45d",
+  "line_number": 2,
+  "topo_num": "41801.2.4",
+  "color_1": "#f912f3",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -59,7 +59,7 @@
     "video_count": 0,
     "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3,
+    "rating": 1,
     "ratings_count": 1,
     "redpoint": 0,
     "onsight": 0,
@@ -98,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 647540,
-    "name": "Yellow"
+    "id": 647757,
+    "name": "Magenta"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b64fe8cc288d3907650412bc349120ac",
-  "route_card_label": "B1.2",
+  "share_url": "https://zlag.vertical-life.info/en/routes/b17910da698ee23af0bf9bdf5ae5f8e8",
+  "route_card_label": "B2.4",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
   "topo": "1e2bd49546a1ab26033e6eca6a575fad",
-  "route_setter": "Jonas Wahlgren",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
