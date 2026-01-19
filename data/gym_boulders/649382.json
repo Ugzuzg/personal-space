@@ -1,62 +1,50 @@
 {
-  "id": 645117,
-  "name": "Black",
+  "id": 649382,
+  "name": "Dark Green",
   "notes": null,
-  "difficulty": "6B+",
-  "grade": "vl-19",
+  "difficulty": "4+",
+  "grade": "vl-8",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2025-12-22 19:52:36 +0000",
-  "created_at": "2025-12-22 19:52:36 +0000",
-  "set_at": "2025-12-22 19:52:27 +0000",
+  "updated_at": "2026-01-19 20:31:10 +0000",
+  "created_at": "2026-01-19 20:31:10 +0000",
+  "set_at": "2026-01-19 20:30:44 +0000",
   "expiration_date": null,
   "path": [
     [
-      121,
-      188
+      49,
+      118
     ],
     [
-      232,
-      182
+      163,
+      579
     ],
     [
-      444,
-      185
+      162,
+      638
     ],
     [
-      506,
-      184
+      511,
+      651
     ],
     [
-      514,
-      311
+      513,
+      588
     ],
     [
-      470,
-      489
+      512,
+      71
     ],
     [
-      235,
-      479
-    ],
-    [
-      138,
-      504
-    ],
-    [
-      143,
-      350
-    ],
-    [
-      121,
-      189
+      51,
+      120
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41800.4.6",
-  "color_1": "#000000",
+  "line_number": 5,
+  "topo_num": "41799.5.4",
+  "color_1": "#008000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -65,17 +53,17 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 7,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 2,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -110,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 645117,
-    "name": "Black"
+    "id": 649382,
+    "name": "Dark Green"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/d1682e3def061895ef419f1248d0adcf",
-  "route_card_label": "B4.6",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/38b9caffa3aedafbca7ece20eacfc1d9",
+  "route_card_label": "A5.4",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e6411c2ffc69fdad028b8408b295e45c",
-  "route_setter": "Anton Cuevas",
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
