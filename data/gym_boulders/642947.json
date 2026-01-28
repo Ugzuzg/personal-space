@@ -69,11 +69,11 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 10,
+    "zlag_count": 11,
     "comment_count": 0,
     "rating": 3.5,
     "ratings_count": 2,
-    "redpoint": 5,
+    "redpoint": 6,
     "onsight": 0,
     "flash": 5,
     "toprope": 0,
