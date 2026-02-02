@@ -1,51 +1,43 @@
 {
-  "id": 647758,
-  "name": "White orange",
+  "id": 652083,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "4+",
+  "grade": "vl-8",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2026-01-13 14:27:39 +0000",
-  "created_at": "2026-01-13 14:27:21 +0000",
-  "set_at": "2026-01-13 14:27:11 +0000",
+  "updated_at": "2026-02-02 15:41:59 +0000",
+  "created_at": "2026-02-02 15:41:59 +0000",
+  "set_at": "2026-02-02 15:41:48 +0000",
   "expiration_date": null,
   "path": [
     [
-      383,
-      192
+      39,
+      175
     ],
     [
-      640,
-      178
+      422,
+      183
     ],
     [
-      715,
-      568
+      456,
+      589
     ],
     [
-      676,
-      545
+      77,
+      584
     ],
     [
-      504,
-      520
-    ],
-    [
-      385,
-      542
-    ],
-    [
-      383,
-      193
+      40,
+      175
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41801.1.11",
-  "color_1": "#FFFFFF",
-  "color_2": "#ffa500",
+  "line_number": 6,
+  "topo_num": "41802.6.1",
+  "color_1": "#0000ff",
+  "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
@@ -57,13 +49,13 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2.3,
-    "ratings_count": 4,
-    "redpoint": 3,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,15 +90,15 @@
     "s": 0
   },
   "gym": {
-    "id": 647758,
-    "name": "White orange"
+    "id": 652083,
+    "name": "Blue"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b3c2aa72dd0f9906a3aa8b9b2cc2db0d",
-  "route_card_label": "B1.11",
+  "share_url": "https://zlag.vertical-life.info/en/routes/0cbfbb97fe04ced07c585f51cde651ca",
+  "route_card_label": "B6.1",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "topo": "abd490d1d42d11879845d640b480b7b2",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
