@@ -1,49 +1,41 @@
 {
-  "id": 650149,
+  "id": 652356,
   "name": "Black",
   "notes": null,
-  "difficulty": "6A",
-  "grade": "vl-16",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2026-01-22 15:34:57 +0000",
-  "created_at": "2026-01-22 15:34:57 +0000",
-  "set_at": "2026-01-22 15:34:47 +0000",
+  "updated_at": "2026-02-03 15:22:08 +0000",
+  "created_at": "2026-02-03 15:22:08 +0000",
+  "set_at": "2026-02-03 15:21:58 +0000",
   "expiration_date": null,
   "path": [
     [
-      513,
-      71
+      39,
+      175
     ],
     [
-      513,
-      587
+      422,
+      183
     ],
     [
-      513,
-      650
+      456,
+      589
     ],
     [
-      879,
-      639
+      77,
+      584
     ],
     [
-      878,
-      580
-    ],
-    [
-      919,
-      108
-    ],
-    [
-      514,
-      70
+      40,
+      175
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41799.4.8",
+  "line_number": 6,
+  "topo_num": "41802.6.8",
   "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
@@ -53,17 +45,17 @@
   "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 3,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 8,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -72,7 +64,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 1,
+    "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -98,15 +90,15 @@
     "s": 0
   },
   "gym": {
-    "id": 650149,
+    "id": 652356,
     "name": "Black"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/9c1fc1754c3ea8696af198dd45018aaa",
-  "route_card_label": "A4.8",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/en/routes/d1e2933fc017b1dfa959fd125baab9ef",
+  "route_card_label": "B6.8",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "topo": "abd490d1d42d11879845d640b480b7b2",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
