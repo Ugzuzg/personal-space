@@ -1,0 +1,49 @@
+diff --git a/dist/esm/staticFunctionMiddleware.js b/dist/esm/staticFunctionMiddleware.js
+index 5f3853087059a6cde9923e66bc2fec7abef02587..5467a65ee5e0d203c3aa24e4a9d0daa0a80b5645 100644
+--- a/dist/esm/staticFunctionMiddleware.js
++++ b/dist/esm/staticFunctionMiddleware.js
+@@ -51,15 +51,22 @@ const fetchItem = async ({
+ }) => {
+   const hash = jsonToFilenameSafeString(data);
+   const url = await getStaticCacheUrl({ functionId, hash });
+-  let result = staticClientCache?.get(url);
+-  result = await fetch(url, {
+-    method: "GET"
+-  }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
+-  return result;
++  if (typeof document !== "undefined") {
++    let result = staticClientCache?.get(url);
++    result = await fetch(url, {
++      method: "GET"
++    }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
++    return result;
++  } else {
++    try {
++      return await fs.readFile(path.join('./public', url), 'utf-8').then(v => JSON.parse(v)).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
++    } catch {
++      return null;
++    }
++  }
+ };
+ const staticFunctionMiddleware = createMiddleware({ type: "function" }).client(async (ctx) => {
+-  if (process.env.NODE_ENV === "production" && // do not run this during SSR on the server
+-  typeof document !== "undefined") {
++  if (process.env.NODE_ENV === "production") {
+     const response = await fetchItem({
+       functionId: ctx.serverFnMeta.id,
+       data: ctx.data
+diff --git a/src/staticFunctionMiddleware.ts b/src/staticFunctionMiddleware.ts
+index 818d2ec0d345de939ea850ce54649c23273f2eed..bed5472679d9eff1a3383e3619c1692ffec68e9b 100644
+--- a/src/staticFunctionMiddleware.ts
++++ b/src/staticFunctionMiddleware.ts
+@@ -128,9 +128,7 @@ const fetchItem = async ({
+ export const staticFunctionMiddleware = createMiddleware({ type: 'function' })
+   .client(async (ctx) => {
+     if (
+-      process.env.NODE_ENV === 'production' &&
+-      // do not run this during SSR on the server
+-      typeof document !== 'undefined'
++      process.env.NODE_ENV === 'production'
+     ) {
+       const response = await fetchItem({
+         functionId: ctx.serverFnMeta.id,
