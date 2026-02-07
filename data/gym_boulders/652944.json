@@ -1,49 +1,49 @@
 {
-  "id": 647757,
+  "id": 652944,
   "name": "Magenta",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2026-01-13 14:27:03 +0000",
-  "created_at": "2026-01-13 14:27:03 +0000",
-  "set_at": "2026-01-13 14:26:53 +0000",
+  "updated_at": "2026-02-05 16:42:31 +0000",
+  "created_at": "2026-02-05 16:42:31 +0000",
+  "set_at": "2026-02-05 16:42:11 +0000",
   "expiration_date": null,
   "path": [
     [
-      4,
-      150
+      508,
+      187
     ],
     [
-      164,
-      170
+      689,
+      184
     ],
     [
-      381,
-      190
+      847,
+      182
     ],
     [
-      383,
-      542
+      931,
+      514
     ],
     [
-      219,
-      571
+      470,
+      491
     ],
     [
-      2,
-      609
+      515,
+      312
     ],
     [
-      6,
-      152
+      508,
+      186
     ]
   ],
   "reference_width": 971,
-  "line_number": 2,
-  "topo_num": "41801.2.4",
+  "line_number": 3,
+  "topo_num": "41800.3.4",
   "color_1": "#f912f3",
   "color_2": null,
   "two_start_holds": null,
@@ -57,13 +57,13 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 3,
     "comment_count": 0,
-    "rating": 2.5,
-    "ratings_count": 2,
-    "redpoint": 0,
+    "rating": 2.3,
+    "ratings_count": 3,
+    "redpoint": 3,
     "onsight": 0,
-    "flash": 8,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -72,7 +72,7 @@
     "overhanging": 0,
     "roof": 0,
     "hard_count": 0,
-    "soft_count": 0,
+    "soft_count": 1,
     "zlaggable_height_count": {
       "1": 0,
       "2": 0,
@@ -98,15 +98,15 @@
     "s": 0
   },
   "gym": {
-    "id": 647757,
+    "id": 652944,
     "name": "Magenta"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b17910da698ee23af0bf9bdf5ae5f8e8",
-  "route_card_label": "B2.4",
+  "share_url": "https://zlag.vertical-life.info/en/routes/128e89708375f046fb4d0162d05e3622",
+  "route_card_label": "B3.4",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "topo": "e6411c2ffc69fdad028b8408b295e45c",
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
