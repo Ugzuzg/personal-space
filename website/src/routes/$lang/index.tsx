@@ -9,6 +9,7 @@ function RouteComponent() {
   return (
     <h1>
       <Trans>Hallo!</Trans>
+      test
     </h1>
   );
 }
