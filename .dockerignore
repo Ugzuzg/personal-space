@@ -1,0 +1,7 @@
+node_modules
+token.json
+.git
+.github
+.jj
+.vscode
+website/Dockerfile
