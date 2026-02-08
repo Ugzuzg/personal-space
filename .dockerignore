@@ -5,3 +5,6 @@ token.json
 .jj
 .vscode
 website/Dockerfile
+.env
+dist
+.output

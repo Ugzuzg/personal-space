@@ -45,14 +45,14 @@ RUN find . -name package.json -exec slim-manifest {} \;
 FROM base AS build
 WORKDIR /usr/src
 COPY --from=manifests /usr/src ./
-RUN --mount=type=secret,id=npm,target=/app/.npmrc --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install \
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install \
   --prefer-offline \
   --frozen-lockfile \
   --filter=dependency-references \
   --filter=website...
 COPY . ./
 
-RUN cd website && pnpm build
+RUN --mount=type=secret,id=env,target=/usr/src/website/.env cd website && pnpm build
 
 # =============================================================================
 # RELEASE STAGE
