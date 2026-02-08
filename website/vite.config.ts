@@ -20,7 +20,7 @@ export default defineConfig({
     lingui(),
     tanstackStart({
       prerender: {
-        enabled: true,
+        enabled: process.env.PRERENDER === 'true',
         crawlLinks: true,
         failOnError: true,
       },

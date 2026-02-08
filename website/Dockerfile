@@ -52,7 +52,11 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install \
   --filter=website...
 COPY . ./
 
-RUN --mount=type=secret,id=env,target=/usr/src/website/.env cd website && pnpm build
+RUN --mount=type=secret,id=env,target=/usr/src/website/.env cd website && \
+  # the same bug causes the prerenderd pages not to be copied into the output by nitro
+  PRERENDER=true pnpm build && \
+  # rebuild after prerendering to ensure the prerendered pages are included in the output
+  PRERENDER=false pnpm build
 
 # =============================================================================
 # RELEASE STAGE
