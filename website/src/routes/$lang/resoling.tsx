@@ -1,8 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { Trans } from '@lingui/react/macro';
+import { Plural, Trans } from '@lingui/react/macro';
 import { useLingui } from '@lingui/react';
 import { languageToLocale } from 'locales';
 import { readTheSheet } from '~/utils/readTheSheet.functions';
+import { defineMessage, plural } from '@lingui/core/macro';
 
 export const Route = createFileRoute('/$lang/resoling')({
   loader: async () => await readTheSheet(),
@@ -28,7 +29,7 @@ function RouteComponent() {
     { style: 'currency', currency: 'SEK' },
   );
 
-  const allCollected = shoesCollected >= shoesToSend;
+  const allCollected = shoesToSend > 0 && shoesCollected >= shoesToSend;
 
   return (
     <section>
@@ -37,10 +38,15 @@ function RouteComponent() {
       </h1>
       <p>
         <Trans>
-          We have {shoesToSend} pairs of shoes to send, with a total weight of{' '}
-          {totalWeight} and an estimated shipping cost of{' '}
-          {estimatedShippingCost}, which averages to {costPerPair} per pair one
-          way.
+          We have{' '}
+          <Plural
+            value={shoesToSend}
+            one="# pair of shoes"
+            other="# pairs of shoes"
+          />{' '}
+          to send, with a total weight of {totalWeight} and an estimated
+          shipping cost of {estimatedShippingCost}, which averages to{' '}
+          {costPerPair} per pair one way.
         </Trans>
       </p>
       <p>

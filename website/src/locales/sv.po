@@ -20,20 +20,20 @@ msgstr "{0, plural, one {#\\u00A0språk} other {#\\u00A0språk}}"
 
 #: src/components/Bar.tsx:15
 msgid "All time"
-msgstr "Total"
+msgstr "Genom tiderna"
 
 #: src/routes/$lang.tsx:161
-#: src/routes/$lang/resoling.tsx:36
+#: src/routes/$lang/resoling.tsx:37
 msgid "Are we resoling yet?"
 msgstr "Sular vi om än?"
 
-#: src/routes/$lang/resoling.tsx:58
+#: src/routes/$lang/resoling.tsx:64
 msgid "Awaiting to be shipped."
 msgstr "Väntar på att skickas."
 
 #: src/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
-msgstr "Boulders på Klättercentret Solna"
+msgstr "Avklarade problem på Klättercentret Solna"
 
 #: src/components/Bar.tsx:19
 msgid "By year"
@@ -66,23 +66,23 @@ msgstr "Hem"
 #. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
 #: src/components/Completion.tsx:18
 msgid "Overall progress: {0} / {1} ({2})"
-msgstr "Andel avklarat: {0} / {1} ({2})"
+msgstr "Övergripande framsteg: {0} / {1} ({2})"
 
 #: src/components/Cpr.tsx:67
 msgid "Poor man's CPR"
 msgstr "Fattigmans CPR"
 
 #. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:70
+#: src/routes/$lang/resoling.tsx:76
 msgid "Shipped back on {0}"
 msgstr "Skickades tillbaka {0}"
 
 #. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:63
+#: src/routes/$lang/resoling.tsx:69
 msgid "Shipped there on {0}"
 msgstr "Skickades dit {0}"
 
-#: src/routes/$lang/resoling.tsx:48
+#: src/routes/$lang/resoling.tsx:54
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Skor insamlade: <0>{shoesCollected} / {shoesToSend}</0>"
 
@@ -98,9 +98,9 @@ msgstr "Källkod"
 msgid "Timeline"
 msgstr "Tidslinje"
 
-#: src/routes/$lang/resoling.tsx:39
-msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
-msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har # par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
+#: src/routes/$lang/resoling.tsx:40
+msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har #\\u00A0par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
 
 #: src/components/Bar.tsx:22
 msgid "year"

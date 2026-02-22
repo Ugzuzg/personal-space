@@ -23,13 +23,13 @@ msgid "All time"
 msgstr "За ўвесь час"
 
 #: src/routes/$lang.tsx:161
-#: src/routes/$lang/resoling.tsx:36
+#: src/routes/$lang/resoling.tsx:37
 msgid "Are we resoling yet?"
 msgstr "Ці мы ўжо мяняем падэшвы?"
 
-#: src/routes/$lang/resoling.tsx:58
+#: src/routes/$lang/resoling.tsx:64
 msgid "Awaiting to be shipped."
-msgstr "Чакае адпраўкі."
+msgstr "Чакае адпраўлення."
 
 #: src/components/Completion.tsx:15
 msgid "Boulder progress at Klättercentret Solna"
@@ -73,16 +73,16 @@ msgid "Poor man's CPR"
 msgstr "Жабрацкі рэйтынг скалалаза"
 
 #. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:70
+#: src/routes/$lang/resoling.tsx:76
 msgid "Shipped back on {0}"
 msgstr "Адпраўлена назад {0}"
 
 #. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:63
+#: src/routes/$lang/resoling.tsx:69
 msgid "Shipped there on {0}"
 msgstr "Адпраўлена туды {0}"
 
-#: src/routes/$lang/resoling.tsx:48
+#: src/routes/$lang/resoling.tsx:54
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Сабрана абутку: <0>{shoesCollected} / {shoesToSend}</0>"
 
@@ -98,9 +98,9 @@ msgstr "Зыходны код"
 msgid "Timeline"
 msgstr "Храналогія"
 
-#: src/routes/$lang/resoling.tsx:39
-msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
-msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўкі.} one {У нас ёсць # пара абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць # пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць # пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
+#: src/routes/$lang/resoling.tsx:40
+msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўлення.} one {У нас ёсць #\\u00A0пара абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць #\\u00A0пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць #\\u00A0пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць #\\u00A0пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
 #: src/components/Bar.tsx:22
 msgid "year"

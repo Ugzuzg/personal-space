@@ -18,16 +18,20 @@ msgstr ""
 msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0language} other {#\\u00A0languages}}"
 
+#: src/routes/$lang/resoling.tsx:47
+#~ msgid "{shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}}"
+#~ msgstr "{shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}}"
+
 #: src/components/Bar.tsx:15
 msgid "All time"
 msgstr "All time"
 
 #: src/routes/$lang.tsx:161
-#: src/routes/$lang/resoling.tsx:36
+#: src/routes/$lang/resoling.tsx:37
 msgid "Are we resoling yet?"
 msgstr "Are we resoling yet?"
 
-#: src/routes/$lang/resoling.tsx:58
+#: src/routes/$lang/resoling.tsx:64
 msgid "Awaiting to be shipped."
 msgstr "Awaiting to be shipped."
 
@@ -73,16 +77,16 @@ msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
 #. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:70
+#: src/routes/$lang/resoling.tsx:76
 msgid "Shipped back on {0}"
 msgstr "Shipped back on {0}"
 
 #. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:63
+#: src/routes/$lang/resoling.tsx:69
 msgid "Shipped there on {0}"
 msgstr "Shipped there on {0}"
 
-#: src/routes/$lang/resoling.tsx:48
+#: src/routes/$lang/resoling.tsx:54
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 
@@ -98,9 +102,9 @@ msgstr "Source"
 msgid "Timeline"
 msgstr "Timeline"
 
-#: src/routes/$lang/resoling.tsx:39
-msgid "We have {shoesToSend} pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
-msgstr "{shoesToSend, plural, =0 {We have no shoes to send.} one {We have # pair of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.} other {We have # pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.}}"
+#: src/routes/$lang/resoling.tsx:40
+msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
+msgstr "{shoesToSend, plural, =0 {We have no shoes to send.} one {We have #\\u00A0pair of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.} other {We have #\\u00A0pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.}}"
 
 #: src/components/Bar.tsx:22
 msgid "year"
