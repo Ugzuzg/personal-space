@@ -55,7 +55,7 @@ function LanguagePicker() {
         {i18n._(
           defineMessage({
             message: plural(languages.length, {
-              one: '# lanaguage',
+              one: '# language',
               other: '# languages',
             }),
           }),
