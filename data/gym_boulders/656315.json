@@ -1,93 +1,89 @@
 {
-  "id": 647084,
-  "name": "Blue low",
+  "id": 656315,
+  "name": "White",
   "notes": null,
-  "difficulty": "6C",
-  "grade": "vl-21",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
   "steepness": 7,
   "style": null,
-  "updated_at": "2026-02-23 15:39:40 +0000",
-  "created_at": "2026-01-08 16:04:55 +0000",
-  "set_at": "2026-01-08 16:04:25 +0000",
+  "updated_at": "2026-02-23 15:42:25 +0000",
+  "created_at": "2026-02-23 15:42:25 +0000",
+  "set_at": "2026-02-23 15:42:03 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      186
+      313,
+      177
     ],
     [
-      17,
-      521
+      348,
+      252
     ],
     [
-      142,
-      506
+      328,
+      339
     ],
     [
-      268,
-      496
-    ],
-    [
-      335,
-      500
+      336,
+      391
     ],
     [
       336,
       420
     ],
     [
-      335,
-      392
+      337,
+      500
     ],
     [
-      327,
-      340
+      418,
+      506
     ],
     [
-      346,
-      253
+      464,
+      508
     ],
     [
-      312,
+      465,
+      471
+    ],
+    [
+      538,
+      302
+    ],
+    [
+      474,
+      188
+    ],
+    [
+      314,
       177
-    ],
-    [
-      217,
-      180
-    ],
-    [
-      86,
-      191
-    ],
-    [
-      31,
-      187
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41798.8.",
-  "color_1": "#0000ff",
+  "line_number": 7,
+  "topo_num": "41798.7.4",
+  "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 219,
-  "archived": true,
+  "archived": false,
   "hold_manufacturer": null,
   "gym_wall_id": 733,
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2.5,
-    "ratings_count": 2,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 3,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -122,16 +118,16 @@
     "s": 0
   },
   "gym": {
-    "id": 647084,
-    "name": "Blue low"
+    "id": 656315,
+    "name": "White"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/400f55056c7008bfaeda5749619c133f",
-  "route_card_label": "A8.",
+  "share_url": "https://zlag.vertical-life.info/en/routes/d73dd59e9183dde1b3a30512fec23457",
+  "route_card_label": "A7.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
   "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Jonas Wahlgren",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
