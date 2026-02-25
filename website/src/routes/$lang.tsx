@@ -49,7 +49,11 @@ function LanguagePicker() {
   const { i18n } = useLingui();
 
   return (
-    <details open={isOpen} onToggle={(e) => setIsOpen(e.currentTarget.open)}>
+    <details
+      open={isOpen}
+      onToggle={(e) => setIsOpen(e.currentTarget.open)}
+      style={{ cursor: 'pointer' }}
+    >
       <summary style={{ display: 'inline-flex', alignItems: 'center' }}>
         <LanguageIcon />
         {i18n._(
