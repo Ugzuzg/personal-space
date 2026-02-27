@@ -174,7 +174,11 @@ function Home() {
         </main>
         <footer>
           <hr />
-          <a href="https://github.com/Ugzuzg/personal-space" target="_blank">
+          <a
+            href="https://github.com/Ugzuzg/personal-space"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Trans>Source</Trans>
           </a>
         </footer>
