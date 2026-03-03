@@ -81,13 +81,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 6,
     "comment_count": 0,
     "rating": 2.3,
     "ratings_count": 3,
     "redpoint": 1,
     "onsight": 0,
-    "flash": 4,
+    "flash": 5,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -134,7 +134,18 @@
   "route_setter": "Sebastian Dahlgren ",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 59870,
+      "user_id": 430540,
+      "user_name": "Katarina -",
+      "date": "2026-03-03 20:10:39 +0000",
+      "item_type": "ascent",
+      "item_id": 8412535,
+      "item_name": "Klättercentret Solna, Bouldering • Orange (6A+)",
+      "path": "b31d0124c1e5d628efa2f5889ef5fbaf"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
