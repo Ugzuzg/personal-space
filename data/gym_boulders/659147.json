@@ -1,61 +1,73 @@
 {
-  "id": 652355,
-  "name": "Orange",
+  "id": 659147,
+  "name": "Yellow",
   "notes": null,
-  "difficulty": "6B",
-  "grade": "vl-18",
+  "difficulty": "7A+",
+  "grade": "vl-24",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2026-03-09 10:13:28 +0000",
-  "created_at": "2026-02-03 15:21:54 +0000",
-  "set_at": "2026-02-03 15:21:45 +0000",
+  "updated_at": "2026-03-09 16:42:00 +0000",
+  "created_at": "2026-03-09 16:42:00 +0000",
+  "set_at": "2026-03-09 16:41:51 +0000",
   "expiration_date": null,
   "path": [
     [
-      39,
-      175
+      423,
+      185
     ],
     [
-      422,
-      183
+      697,
+      176
+    ],
+    [
+      944,
+      165
+    ],
+    [
+      884,
+      385
+    ],
+    [
+      782,
+      584
+    ],
+    [
+      585,
+      582
     ],
     [
       456,
       589
     ],
     [
-      77,
-      584
-    ],
-    [
-      40,
-      175
+      423,
+      186
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.",
-  "color_1": "#ffa500",
+  "line_number": 5,
+  "topo_num": "41802.5.4",
+  "color_1": "#ffd700",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 219,
-  "archived": true,
+  "archived": false,
   "hold_manufacturer": null,
   "gym_wall_id": 734,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 11,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.2,
-    "ratings_count": 5,
-    "redpoint": 3,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 8,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -90,12 +102,12 @@
     "s": 0
   },
   "gym": {
-    "id": 652355,
-    "name": "Orange"
+    "id": 659147,
+    "name": "Yellow"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/c6d0f554af751ef1c961f95724b7c56a",
-  "route_card_label": "B6.",
+  "share_url": "https://zlag.vertical-life.info/en/routes/36c4635f094c35c73f1373e2bce3e00f",
+  "route_card_label": "B5.4",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
   "topo": "abd490d1d42d11879845d640b480b7b2",
