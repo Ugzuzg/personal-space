@@ -1,69 +1,81 @@
 {
-  "id": 653657,
-  "name": "Dark Green",
+  "id": 660424,
+  "name": "Black",
   "notes": null,
-  "difficulty": "3+",
-  "grade": "vl-5",
+  "difficulty": "3",
+  "grade": "vl-4",
   "grading_system": "font",
   "steepness": 3,
   "style": null,
-  "updated_at": "2026-03-16 12:06:57 +0000",
-  "created_at": "2026-02-10 13:40:00 +0000",
-  "set_at": "2026-02-10 13:39:48 +0000",
+  "updated_at": "2026-03-16 17:03:54 +0000",
+  "created_at": "2026-03-16 17:03:54 +0000",
+  "set_at": "2026-03-16 17:03:45 +0000",
   "expiration_date": null,
   "path": [
     [
-      508,
-      187
+      121,
+      188
     ],
     [
-      689,
-      184
-    ],
-    [
-      847,
+      232,
       182
     ],
     [
-      931,
-      514
+      444,
+      185
+    ],
+    [
+      506,
+      184
+    ],
+    [
+      514,
+      311
     ],
     [
       470,
-      491
+      489
     ],
     [
-      515,
-      312
+      235,
+      479
     ],
     [
-      508,
-      186
+      138,
+      504
+    ],
+    [
+      143,
+      350
+    ],
+    [
+      121,
+      189
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41800.3.",
-  "color_1": "#008000",
+  "line_number": 4,
+  "topo_num": "41800.4.1",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 219,
-  "archived": true,
+  "archived": false,
   "hold_manufacturer": null,
   "gym_wall_id": 734,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 2,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +110,16 @@
     "s": 0
   },
   "gym": {
-    "id": 653657,
-    "name": "Dark Green"
+    "id": 660424,
+    "name": "Black"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/e9daa7a5131f6802dd10571ff0dffbbd",
-  "route_card_label": "B3.",
+  "share_url": "https://zlag.vertical-life.info/en/routes/afa299236d084494582e1658cf305b02",
+  "route_card_label": "B4.1",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
   "topo": "e6411c2ffc69fdad028b8408b295e45c",
-  "route_setter": "James Thanawat",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
