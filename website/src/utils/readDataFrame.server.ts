@@ -171,7 +171,7 @@ export async function readDataFrameOfUser(userId: string) {
       rightOn: 'ascendable_id',
     });
 
-  const now = new Date();
+  const now = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const completionHistoryRecords = [];
   for (let d = new Date(start); d <= now; d.setDate(d.getDate() + 1)) {
     const activeBoulders = completionHistory.filter(
