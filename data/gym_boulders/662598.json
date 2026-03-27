@@ -1,0 +1,244 @@
+{
+  "id": 662598,
+  "name": "Yellow",
+  "notes": null,
+  "difficulty": "6B+",
+  "grade": "vl-19",
+  "grading_system": "font",
+  "steepness": 15,
+  "style": null,
+  "updated_at": "2026-03-26 08:51:17 +0000",
+  "created_at": "2026-03-26 08:51:17 +0000",
+  "set_at": "2026-03-26 08:51:06 +0000",
+  "expiration_date": "2026-05-10 07:51:06 +0000",
+  "path": [
+    [
+      48,
+      152
+    ],
+    [
+      16,
+      292
+    ],
+    [
+      79,
+      529
+    ],
+    [
+      74,
+      565
+    ],
+    [
+      162,
+      548
+    ],
+    [
+      352,
+      525
+    ],
+    [
+      355,
+      497
+    ],
+    [
+      383,
+      386
+    ],
+    [
+      423,
+      228
+    ],
+    [
+      254,
+      205
+    ]
+  ],
+  "reference_width": 971,
+  "line_number": 7,
+  "topo_num": "41063.7.4",
+  "color_1": "#ffe55b",
+  "color_2": null,
+  "two_start_holds": null,
+  "sit_down_start": null,
+  "traverse": false,
+  "sector_name": "Bouldering",
+  "sector_id": 203,
+  "archived": false,
+  "hold_manufacturer": null,
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
+  "stats": {
+    "video_count": 0,
+    "zlag_count": 0,
+    "comment_count": 0,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
+    "onsight": 0,
+    "flash": 0,
+    "toprope": 0,
+    "go": 0,
+    "safety": 0,
+    "slab": 0,
+    "vertical": 0,
+    "overhanging": 0,
+    "roof": 0,
+    "hard_count": 0,
+    "soft_count": 0,
+    "zlaggable_height_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0
+    },
+    "safety_issues_count": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "8": 0,
+      "16": 0,
+      "32": 0,
+      "64": 0
+    },
+    "t": 0,
+    "f": 0,
+    "b": 0,
+    "e": 0,
+    "c": 0,
+    "s": 0
+  },
+  "gym": {
+    "id": 662598,
+    "name": "Yellow"
+  },
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/en/routes/5af8e97eddc2ab88aff6abbfe0a9a62c",
+  "route_card_label": "A7.4",
+  "parent_name": "Bouldering, A Sektionen",
+  "virtual": false,
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Jonas Wahlgren",
+  "display_route_setter": true,
+  "item_type": "gym_boulder",
+  "gallery": [],
+  "grade_proposals": [
+    [
+      "vl-1",
+      "2"
+    ],
+    [
+      "vl-2",
+      "2+"
+    ],
+    [
+      "vl-3",
+      "3-"
+    ],
+    [
+      "vl-4",
+      "3"
+    ],
+    [
+      "vl-5",
+      "3+"
+    ],
+    [
+      "vl-6",
+      "4-"
+    ],
+    [
+      "vl-7",
+      "4"
+    ],
+    [
+      "vl-8",
+      "4+"
+    ],
+    [
+      "vl-9",
+      "5-"
+    ],
+    [
+      "vl-12",
+      "5"
+    ],
+    [
+      "vl-14",
+      "5+"
+    ],
+    [
+      "vl-16",
+      "6A"
+    ],
+    [
+      "vl-17",
+      "6A+"
+    ],
+    [
+      "vl-18",
+      "6B"
+    ],
+    [
+      "vl-19",
+      "6B+"
+    ],
+    [
+      "vl-21",
+      "6C"
+    ],
+    [
+      "vl-22",
+      "6C+"
+    ],
+    [
+      "vl-23",
+      "7A"
+    ],
+    [
+      "vl-24",
+      "7A+"
+    ],
+    [
+      "vl-25",
+      "7B"
+    ],
+    [
+      "vl-26",
+      "7B+"
+    ],
+    [
+      "vl-27",
+      "7C"
+    ],
+    [
+      "vl-28",
+      "7C+"
+    ],
+    [
+      "vl-29",
+      "8A"
+    ],
+    [
+      "vl-30",
+      "8A+"
+    ],
+    [
+      "vl-31",
+      "8B"
+    ],
+    [
+      "vl-32",
+      "8B+"
+    ],
+    [
+      "vl-33",
+      "8C"
+    ],
+    [
+      "vl-34",
+      "8C+"
+    ]
+  ]
+}

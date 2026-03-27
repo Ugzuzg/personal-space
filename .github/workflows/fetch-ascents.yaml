@@ -24,7 +24,7 @@ jobs:
         run: |
           printf '%s' '${{ secrets.TOKEN_JSON }}' > token.json
 
-          node --experimental-strip-types main.ts
+          ./main.ts
 
       #- name: Update secret
       #  env:

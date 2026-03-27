@@ -3,6 +3,8 @@ import fsSync from 'node:fs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+const akalla = 59;
+const solna = 69;
 const me = 230474;
 const wilhelm = 56689;
 
@@ -88,10 +90,29 @@ const fetchBoulders = async (token: string, ids: number[]) => {
   process.stdout.write('\n');
 };
 
-async function fetchDataForUser(user: number) {
-  const newToken = await getAccessToken();
-  await fs.writeFile('token.json', JSON.stringify(newToken, null, 2));
+async function fetchDataForGym(token: string, gym: number) {
+  console.log(`Fetching gym #${gym} boulders`);
+  const response = await fetch(
+    `https://vlcapi.vertical-life.info/gyms/${gym}/zlaggables?zlaggable_type=GymBoulder`,
+    {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    },
+  );
+  if (!response.ok) {
+    console.log(await response.json());
+    throw new Error('Failed to get gym boulder');
+  }
+  const result = await response.json();
+  await fetchBoulders(
+    token,
+    result.map((b) => b.id),
+  );
+}
 
+async function fetchDataForUser(token: string, user: number) {
   const limit = 150;
   let offset = 0;
   let singleReponse = [];
@@ -103,7 +124,7 @@ async function fetchDataForUser(user: number) {
       {
         method: 'GET',
         headers: {
-          Authorization: `Bearer ${newToken.access_token}`,
+          Authorization: `Bearer ${token}`,
         },
       },
     );
@@ -121,30 +142,9 @@ async function fetchDataForUser(user: number) {
   ascentsStream.close();
 
   await fetchBoulders(
-    newToken.access_token,
+    token,
     ascents.map((a) => a.ascendable_id),
   );
-
-  await (async () => {
-    const response = await fetch(
-      `https://vlcapi.vertical-life.info/gyms/69/zlaggables?zlaggable_type=GymBoulder`,
-      {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${newToken.access_token}`,
-        },
-      },
-    );
-    if (!response.ok) {
-      console.log(await response.json());
-      throw new Error('Failed to get gym boulder');
-    }
-    const result = await response.json();
-    await fetchBoulders(
-      newToken.access_token,
-      result.map((b) => b.id),
-    );
-  })();
 
   const bouldersStream = fsSync.createWriteStream('./data/gym_boulders.jsonl');
   const allBoulderFiles = await fs.readdir('./data/gym_boulders');
@@ -159,7 +159,7 @@ async function fetchDataForUser(user: number) {
     const stats = await fs.stat(gymBoulderPath);
 
     if (!gymBoulder.archived && Date.now() - stats.mtimeMs > 20 * 60 * 1000) {
-      gymBoulder = await fetchBoulder(newToken.access_token, gymBoulder.id);
+      gymBoulder = await fetchBoulder(token, gymBoulder.id);
 
       await fs.writeFile(gymBoulderPath, JSON.stringify(gymBoulder, null, 2));
     }
@@ -173,6 +173,11 @@ async function fetchDataForUser(user: number) {
 }
 
 (async () => {
-  await fetchDataForUser(me);
-  await fetchDataForUser(wilhelm);
+  const newToken = await getAccessToken();
+  await fs.writeFile('token.json', JSON.stringify(newToken, null, 2));
+
+  await fetchDataForGym(newToken.access_token, solna);
+  await fetchDataForGym(newToken.access_token, akalla);
+  await fetchDataForUser(newToken.access_token, me);
+  await fetchDataForUser(newToken.access_token, wilhelm);
 })();
