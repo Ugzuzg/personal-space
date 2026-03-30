@@ -126,7 +126,18 @@
   "route_setter": "Sebastian Dahlgren ",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 60183,
+      "user_id": 439783,
+      "user_name": "Marie Distinguin",
+      "date": "2026-03-30 20:12:48 +0000",
+      "item_type": "ascent",
+      "item_id": 8486939,
+      "item_name": "Klättercentret Solna, Bouldering • Yellow (6C)",
+      "path": "1811d18d91bca53a70318986b1dbf0dd"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",

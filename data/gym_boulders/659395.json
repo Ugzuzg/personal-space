@@ -114,7 +114,18 @@
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 60180,
+      "user_id": 439783,
+      "user_name": "Marie Distinguin",
+      "date": "2026-03-30 20:05:52 +0000",
+      "item_type": "ascent",
+      "item_id": 8486920,
+      "item_name": "Klättercentret Solna, Bouldering • White high start (7A)",
+      "path": "a10facba8cb64a7eca2394f3084d743c"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",

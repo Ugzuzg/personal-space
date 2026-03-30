@@ -102,7 +102,18 @@
   "route_setter": "Stina Dorwarth",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 60181,
+      "user_id": 439783,
+      "user_name": "Marie Distinguin",
+      "date": "2026-03-30 20:08:20 +0000",
+      "item_type": "ascent",
+      "item_id": 8486924,
+      "item_name": "Klättercentret Solna, Bouldering • Blue (6C+)",
+      "path": "c371916790bfb4c470570bf7cc7ac94a"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
