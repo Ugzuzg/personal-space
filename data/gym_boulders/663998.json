@@ -1,69 +1,81 @@
 {
-  "id": 663843,
-  "name": "Magenta",
+  "id": 663998,
+  "name": "Black",
   "notes": null,
-  "difficulty": "6B+",
-  "grade": "vl-19",
+  "difficulty": "3+",
+  "grade": "vl-5",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-03-31 20:14:28 +0000",
-  "created_at": "2026-03-31 20:14:28 +0000",
-  "set_at": "2026-03-31 20:14:18 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-04-01 14:42:41 +0000",
+  "created_at": "2026-04-01 14:42:41 +0000",
+  "set_at": "2026-04-01 14:42:31 +0000",
+  "expiration_date": "2026-05-16 14:42:31 +0000",
   "path": [
     [
-      734,
-      183
+      48,
+      152
     ],
     [
-      721,
-      489
+      16,
+      292
     ],
     [
-      723,
-      527
+      79,
+      529
     ],
     [
-      916,
-      553
+      74,
+      565
     ],
     [
-      915,
-      509
+      162,
+      548
     ],
     [
-      915,
-      165
+      352,
+      525
     ],
     [
-      734,
-      184
+      355,
+      497
+    ],
+    [
+      383,
+      386
+    ],
+    [
+      423,
+      228
+    ],
+    [
+      254,
+      205
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41797.3.5",
-  "color_1": "#f912f3",
+  "line_number": 7,
+  "topo_num": "41063.7.9",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
+  "gym_wall_id": 671,
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 0,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +110,16 @@
     "s": 0
   },
   "gym": {
-    "id": 663843,
-    "name": "Magenta"
+    "id": 663998,
+    "name": "Black"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/626db0b5fb26ed4d59b99416baea69b9",
-  "route_card_label": "A3.5",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/en/routes/010cdfb9a03b1f334af451b4a4718f39",
+  "route_card_label": "A7.9",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "e56970f2e4e002f62f72f0061adfa987",
-  "route_setter": "Anton Cuevas",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Daniele Stucchi",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
