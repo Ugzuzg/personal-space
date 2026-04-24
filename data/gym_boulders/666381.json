@@ -134,7 +134,18 @@
   "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 60659,
+      "user_id": 432157,
+      "user_name": "Adde M",
+      "date": "2026-04-24 20:22:00 +0000",
+      "item_type": "ascent",
+      "item_id": 8557704,
+      "item_name": "Klättercentret Akalla, Bouldering • Black (6C)",
+      "path": "37e7ac7c2e81858a5dd7bdd575c2f403"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
