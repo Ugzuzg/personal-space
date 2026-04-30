@@ -105,7 +105,7 @@ export function Cpr({ data }) {
             },
             style: {
               fontFamily: 'Inter',
-              fontSize: 'var(--step--1)',
+              fontSize: 'var(--size-step--1)',
             },
             marginLeft: 50,
             marginRight: 50,

@@ -3,7 +3,6 @@ import { Plural, Trans } from '@lingui/react/macro';
 import { useLingui } from '@lingui/react';
 import { languageToLocale } from 'locales';
 import { readTheSheet } from '~/utils/readTheSheet.functions';
-import { defineMessage, plural } from '@lingui/core/macro';
 
 export const Route = createFileRoute('/$lang/resoling')({
   loader: async () => await readTheSheet(),

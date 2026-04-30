@@ -79,7 +79,7 @@ export function Bar({ data }) {
                 }),
                 style: {
                   fontFamily: 'Inter',
-                  fontSize: 'var(--step--1)',
+                  fontSize: 'var(--size-step--1)',
                 },
                 marginLeft: 80,
                 marginRight: 80,

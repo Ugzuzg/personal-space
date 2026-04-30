@@ -1,0 +1,288 @@
+/* Shamelessly taken from Piccalilli */
+
+:root {
+  --color-grey-1: #252323;
+  --color-grey-2: #312f2f;
+  --color-grey-3: #3e3c3b;
+  --color-grey-4: #4a4847;
+  --color-grey-5: #575554;
+  --color-grey-6: #636260;
+  --color-grey-7: #706e6c;
+  --color-grey-8: #7c7b78;
+  --color-grey-9: #898784;
+  --color-grey-10: #959490;
+  --color-grey-11: #a2a09c;
+  --color-grey-12: #aeada8;
+  --color-grey-13: #bbbab5;
+  --color-grey-14: #c7c6c1;
+  --color-grey-15: #d4d3cd;
+  --color-grey-16: #e0dfd9;
+  --color-dark: #170a05;
+  --color-dark-glare: #170505;
+  --color-dark-shade: #0e0e0e;
+  --color-dark-rgb: 24, 22, 23;
+  --color-dark-glare-rgb: 57, 51, 54;
+  --color-mid: var(--color-grey-5);
+  --color-mid-glare: var(--color-grey-16);
+  --color-mid-shade: #858480;
+  --color-mid-dark: var(--color-grey-4);
+  --color-light: #f3e6d2;
+  --color-light-glare: #f9f2e8;
+  --color-light-shade: #b0afa9;
+  --color-light-rgb: 237, 236, 229;
+  --color-primary: #ffd800;
+  --color-primary-glare: #f9e159;
+  --color-primary-pale: #eeeac8;
+  --color-primary-shade: #9e8600;
+  --color-primary-rgb: 246, 210, 0;
+  --color-secondary: #ff5151;
+  --color-secondary-glare: #f85a4f;
+  --color-secondary-shade: #b0180d;
+}
+:root {
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+  --leading: 1.4;
+  --leading-short: 1.3;
+  --leading-slim: 1.2;
+  --leading-fine: 1.1;
+  --leading-flat: 1;
+  --leading-mini: 0.9;
+  --leading-micro: 0.8;
+  --kerning: normal;
+  --kerning-tight: -0.04ch;
+  --kerning-loose: 0.1ch;
+  --heading-kerning: -0.015em;
+  --heading-line-height: var(--leading-fine);
+  --heading-font-family: var(--font-display);
+  --heading-font-weight: var(--font-bold);
+  /*
+  --font-base: 'Rosart', 'Georgia Pro', Georgia, serif;
+  --font-display: 'Moderat', serif;
+  --font-accent:
+    'Family', 'Georgia Pro', Georgia, 'URW Bookman', 'URW Bookman L', serif;
+  --font-mono: 'Moderat Mono', ui-monospace, monospace;
+  --font-system:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    */
+  --space-2xs: clamp(0.375rem, 0.3414rem + 0.1678vi, 0.5rem);
+  --space-xs: clamp(0.5625rem, 0.5122rem + 0.2517vi, 0.75rem);
+  --space-s: clamp(0.75rem, 0.6829rem + 0.3356vi, 1rem);
+  --space-m: clamp(1.125rem, 1.0243rem + 0.5034vi, 1.5rem);
+  --space-l: clamp(1.5rem, 1.3658rem + 0.6711vi, 2rem);
+  --space-xl: clamp(1.875rem, 1.7072rem + 0.8389vi, 2.5rem);
+  --space-2xl: clamp(3rem, 2.7315rem + 1.3423vi, 4rem);
+  --space-3xl: clamp(3.75rem, 3.4144rem + 1.6779vi, 5rem);
+  --space-4xl: clamp(5.625rem, 5.1216rem + 2.5168vi, 7.5rem);
+  --space-5xl: clamp(7.5rem, 6.8289rem + 3.3557vi, 10rem);
+  --space-2xs-xs: clamp(0.375rem, 0.2743rem + 0.5034vi, 0.75rem);
+  --space-xs-s: clamp(0.5625rem, 0.4451rem + 0.5872vi, 1rem);
+  --space-s-m: clamp(0.75rem, 0.5487rem + 1.0067vi, 1.5rem);
+  --space-m-l: clamp(1.125rem, 0.8901rem + 1.1745vi, 2rem);
+  --space-l-xl: clamp(1.5rem, 1.2315rem + 1.3423vi, 2.5rem);
+  --space-xl-2xl: clamp(1.875rem, 1.3045rem + 2.8523vi, 4rem);
+  --space-2xl-3xl: clamp(3rem, 2.4631rem + 2.6846vi, 5rem);
+  --space-3xl-4xl: clamp(3.75rem, 2.7433rem + 5.0336vi, 7.5rem);
+  --space-4xl-5xl: clamp(5.625rem, 4.4505rem + 5.8725vw, 10rem);
+  --space-s-l: clamp(0.75rem, 0.4144rem + 1.6779vi, 2rem);
+  --space-s-xl: clamp(0.75rem, 0.2802rem + 2.349vi, 2.5rem);
+  --space-m-3xl: clamp(1.125rem, 0.0847rem + 5.2013vw, 5rem);
+  --space-l-3xl: clamp(1.5rem, 0.5604rem + 4.6779vi, 5rem);
+  --size-step-9: clamp(2.625rem, -0.7643rem + 16.9463vi, 15.25rem);
+  --size-step-8: clamp(2.3125rem, 0.1313rem + 10.906vi, 10.4375rem);
+  --size-step-7: clamp(2.0625rem, 1.0055rem + 5.2852vw, 6rem);
+  --size-step-6: clamp(1.8125rem, 1.0742rem + 3.6913vi, 4.5625rem);
+  --size-step-5: clamp(1.6875rem, 1.2177rem + 2.349vi, 3.4375rem);
+  --size-step-4: clamp(1.5625rem, 1.2773rem + 1.4262vi, 2.625rem);
+  --size-step-3: clamp(1.4375rem, 1.2865rem + 0.755vi, 2rem);
+  --size-step-2: clamp(1.3125rem, 1.1951rem + 0.5872vi, 1.75rem);
+  --size-step-1: clamp(1.1875rem, 1.1036rem + 0.4195vi, 1.5rem);
+  --size-step-0: clamp(1.0625rem, 0.9954rem + 0.3356vi, 1.3125rem);
+  --size-step--1: clamp(1rem, 0.9664rem + 0.1678vi, 1.125rem);
+  --size-step--2: clamp(0.875rem, 0.8414rem + 0.1678vi, 1rem);
+  --size-step--3: clamp(0.8125rem, 0.7957rem + 0.0839vi, 0.875rem);
+  --size-step--4: clamp(0.625rem, 0.7043rem + -0.0839vi, 0.6875rem);
+  --radius: 0.5em;
+  --radius-full: 50%;
+  --radius-l: 2em;
+  --radius-m: 1em;
+  --radius-s: 0.25em;
+  --measure: 65ch;
+  --measure-xs: 20ch;
+  --measure-s: 35ch;
+  --measure-m: 45ch;
+  --measure-l: 75ch;
+  --text-size-base: var(--size-step--2);
+  --text-size-lede: var(--size-step-1);
+  --text-size-meta: var(--size-step--1);
+  --text-size-heading-1: var(--size-step-5);
+  --text-size-heading-2: var(--size-step-4);
+  --text-size-heading-3: var(--size-step-3);
+  --text-size-heading-4: var(--size-step-2);
+  --text-size-prose: var(--text-size-base);
+  --gutter: var(--space-s-m);
+  --gutter-column: var(--gutter);
+  --gutter-row: var(--gutter);
+  --space-gutter: var(--space-m);
+  --space-gutter-s: var(--space-s);
+  --space-gutter-l: var(--space-l);
+  --space-regions: var(--space-xl);
+  --region-space: var(--space-regions);
+  --wrapper-max-width: 1680px;
+  --flow-space: var(--space-m);
+  --color-global-bg: var(--color-light);
+  --color-global-text: var(--color-dark);
+  --color-surface-bg: var(--color-mid);
+  --color-surface-bg-interact: var(--color-mid-dark);
+  --color-surface-text: var(--color-dark);
+  --color-surface-text-interact: var(--color-dark);
+  --color-selection-bg: var(--color-dark);
+  --color-selection-text: var(--color-light);
+  --color-disabled: var(--color-mid);
+  --color-accent: currentColor;
+  --color-error: #c8484f;
+  --color-warning: #f5a03c;
+  --color-success: #92a056;
+  --color-status-success: #8cd039;
+  --color-status-success-shade: #5f951d;
+  --color-status-success-glare: #acd877;
+  --color-status-warning: #f6d200;
+  --color-status-warning-shade: #b99d00;
+  --color-status-warning-glare: #f9e159;
+  --color-status-error: #f8473b;
+  --color-status-error-shade: #b0180d;
+  --color-status-error-glare: #f85a4f;
+  --stroke-weight-light: 1px;
+  --stroke-weight-medium: 3px;
+  --stroke-weight-heavy: 6px;
+  --stroke: var(--stroke-weight-light) solid var(--stroke-color, currentColor);
+  --stroke-mid: var(--stroke-weight-light) solid
+    var(--stroke-mid-color, var(--color-mid));
+  --text-decoration-thickness: 2px;
+  --text-decoration-color: var(--color-secondary);
+  --text-decoration-offset: 0.2ex;
+  --focus-ring-width: 2px;
+  --focus-ring-color: currentColor;
+  --focus-ring-offset: 0.25lh;
+  --focus-ring-style: solid;
+  --small-screen: 1;
+  --square-image-clamp: clamp(12rem, 30%, 25rem);
+  --global-style-text-box-trim: trim-both cap alphabetic;
+  --global-style-blockquote-block-space: var(
+    --blockquote-block-space,
+    var(--space-3xl) var(--space-s)
+  );
+  --global-style-blockquote-gutter: var(--blockquote-gutter, var(--gutter));
+  --global-style-blockquote-flow-space: var(
+    --blockquote-flow-space,
+    var(--gutter)
+  );
+  --global-style-blockquote-font-size: var(
+    --blockquote-font-size,
+    var(--size-step-2)
+  );
+  --global-style-blockquote-font-family: var(
+    --blockquote-font-family,
+    var(--font-base)
+  );
+  --global-style-blockquote-font-style: var(--blockquote-font-style, normal);
+  --global-style-blockquote-decor-font-size: var(
+    --blockquote-decor-font-size,
+    clamp(5rem, 4.4966rem + 2.5168vw, 6.875rem)
+  );
+  --global-style-blockquote-decor-font-family: var(
+    --blockquote-decor-font-family,
+    var(--heading-font-family)
+  );
+  --global-style-blockquote-decor-opacity: var(--blockquote-decor-opacity, 1);
+  --global-style-scroll-margin: 3lh;
+  --global-style-table-th-font-family: var(
+    --table-th-font-family,
+    var(--font-display)
+  );
+  --global-style-table-th-font-size: var(
+    --table-th-font-size,
+    var(--size-step--1)
+  );
+  --global-style-table-th-font-weight: var(
+    --table-th-font-weight,
+    var(--font-bold)
+  );
+  --global-style-table-th-leading: var(--table-th-leading, var(--leading-fine));
+  --global-style-table-th-text-transform: var(
+    --table-th-text-transform,
+    uppercase
+  );
+  --global-style-table-th-padding: var(
+    --table-th-padding,
+    var(--space-xs) var(--space-s)
+  );
+  --global-style-table-td-padding: var(--table-td-padding, var(--space-s));
+  --global-style-table-td-font-family: var(
+    --table-td-font-family,
+    var(--font-display)
+  );
+  --global-style-table-td-font-size: var(
+    --table-td-font-size,
+    var(--text-size-base)
+  );
+  --global-style-table-td-font-weight: var(
+    --table-td-font-weight,
+    var(--font-normal)
+  );
+  --global-style-table-td-leading: var(--table-td-leading, var(--leading-fine));
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-global-text: var(--color-light);
+    --color-global-bg: var(--color-dark);
+  }
+}
+@media (min-width: 600px) {
+  :root {
+    --gutter: var(--space-xl);
+    --small-screen: 0;
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width);
+  padding-inline: var(--gutter-wrapper-inline, var(--gutter));
+  position: relative;
+}
+.wrapper[data-wrapper-type='inner'] {
+  min-width: 100%;
+  padding-block: var(--gutter-wrapper-inner-block, var(--gutter));
+  padding-inline: var(--gutter-wrapper-inner-inline, var(--gutter));
+}
+
+img,
+picture {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+img[src*='.svg'] {
+  width: 100%;
+}
+picture {
+  width: max-content;
+}
+figure {
+  margin: var(--figure-margin, 0);
+}
+caption,
+figcaption {
+  font-size: var(--text-size-meta);
+  padding-block-start: 0.5em;
+}

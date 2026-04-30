@@ -71,7 +71,7 @@ function LanguagePicker() {
           right: 0,
           listStyleType: 'none',
           padding: 0,
-          background: 'var(--color-background)',
+          background: 'var(--color-global-bg)',
         }}
       >
         <li>
@@ -135,6 +135,7 @@ function Home() {
               padding: 0,
               listStyleType: 'none',
               gap: '8px',
+              overflowY: 'auto',
             }}
           >
             <li>
@@ -145,6 +146,15 @@ function Home() {
                 activeOptions={{ exact: true }}
               >
                 <Trans>Home</Trans>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/$lang/journal"
+                params={{ lang }}
+                activeProps={{ className: 'font-bold' }}
+              >
+                <Trans>Journal</Trans>
               </Link>
             </li>
             <li>

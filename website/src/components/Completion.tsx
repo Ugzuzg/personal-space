@@ -43,7 +43,7 @@ export function Completion({ data }) {
             color: { scheme: 'YlGn' },
             style: {
               fontFamily: 'Inter',
-              fontSize: 'var(--step--1)',
+              fontSize: 'var(--size-step--1)',
             },
             marks: [
               Plot.barX(data, {

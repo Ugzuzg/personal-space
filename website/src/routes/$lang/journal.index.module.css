@@ -1,0 +1,13 @@
+.journal-index {
+  ol {
+    padding: unset;
+  }
+  li {
+    list-style: none;
+  }
+
+  .entry-heading {
+    font-size: var(--size-step-4);
+    margin-block-end: var(--space-s);
+  }
+}

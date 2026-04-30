@@ -20,7 +20,7 @@ export function CompletionHistory({ data }) {
             marginBottom: 50,
             style: {
               fontFamily: 'Inter',
-              fontSize: 'var(--step--1)',
+              fontSize: 'var(--size-step--1)',
             },
             marks: [
               Plot.ruleY([0, 140]),
