@@ -10,6 +10,8 @@ import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary';
 import { NotFound } from '~/components/NotFound';
 import appCss from '~/styles/app.css?url';
 import schemeCss from '~/styles/scheme.css?url';
+import globalCss from '~/styles/global.css?url';
+import articleCss from '~/styles/article.css?url';
 import { seo } from '~/utils/seo';
 
 export const Route = createRootRoute({
@@ -30,6 +32,8 @@ export const Route = createRootRoute({
     links: [
       { rel: 'stylesheet', href: schemeCss },
       { rel: 'stylesheet', href: appCss },
+      { rel: 'stylesheet', href: globalCss },
+      { rel: 'stylesheet', href: articleCss },
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',

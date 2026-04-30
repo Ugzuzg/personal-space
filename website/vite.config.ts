@@ -4,6 +4,7 @@ import tsConfigPaths from 'vite-tsconfig-paths';
 import viteReact from '@vitejs/plugin-react';
 import { lingui } from '@lingui/vite-plugin';
 import { nitro } from 'nitro/vite';
+import contentCollections from '@content-collections/vite';
 
 export default defineConfig({
   server: {
@@ -14,6 +15,7 @@ export default defineConfig({
   },
   optimizeDeps: { exclude: ['nodejs-polars'] },
   plugins: [
+    contentCollections(),
     tsConfigPaths({
       projects: ['./tsconfig.json'],
     }),

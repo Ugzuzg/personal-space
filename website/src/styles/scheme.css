@@ -1,24 +1,183 @@
-:root {
-  --color-main: #170a05;
-  --color-background: #f3e6d2;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-main: #f3e6d2;
-    --color-background: #170a05;
+    --color-global-bg: var(--color-dark);
+    --color-global-text: var(--color-light);
+    --stroke-color: var(--color-light);
+    --text-decoration-color: var(--color-primary);
+    --code-color: var(--color-secondary-glare);
+    --code-bg: var(--color-dark-glare);
+    --pre-code-color: var(--color-light);
+    --color-selection-text: var(--color-dark);
+    --color-selection-bg: var(--color-primary-glare);
+    --table-header-bg: var(--color-dark-glare);
+    --input-select-color: var(--color-dark);
+    --article-text-decoration-color: var(--color-secondary-glare);
+    --article-text-decoration-hover-color: var(--color-secondary-glare);
+    --article-img-border: var(--stroke);
+    --article-video-border: var(--stroke);
+    --article-dfn-abbr-decoration-color: var(--color-secondary-glare);
+    --button-dark-bg: var(--color-light);
+    --button-dark-text: var(--color-dark);
+    --button-dark-border-color: var(--color-light);
+    --button-dark-hover-bg: transparent;
+    --button-dark-hover-text: var(--color-light);
+    --button-dark-hover-border-color: var(--color-mid-glare);
+    --button-light-bg: var(--color-dark);
+    --button-light-text: var(--color-light);
+    --button-light-border-color: var(--color-dark);
+    --button-light-hover-bg: transparent;
+    --button-light-hover-text: var(--color-dark);
+    --button-light-hover-border-color: var(--color-dark);
+    --button-ghost-dark-bg: transparent;
+    --button-ghost-dark-text: var(--color-light);
+    --button-ghost-dark-border-color: var(--color-light);
+    --button-ghost-dark-hover-bg: var(--color-light);
+    --button-ghost-dark-hover-text: var(--color-dark);
+    --button-ghost-dark-hover-border-color: var(--color-light);
+    --button-ghost-light-bg: transparent;
+    --button-ghost-light-text: var(--color-dark);
+    --button-ghost-light-border-color: var(--color-dark);
+    --button-ghost-light-hover-bg: var(--color-dark);
+    --button-ghost-light-hover-text: var(--color-light);
+    --button-ghost-light-hover-border-color: var(--color-dark);
+    --button-svg-color: var(--color-primary);
+    --mark-bg: linear-gradient(
+      0deg,
+      transparent 20%,
+      rgba(var(--color-dark-glare-rgb), 1) 20%,
+      rgba(var(--color-dark-glare-rgb), 1) 84%,
+      transparent 84%
+    );
+    --del-color: var(--color-grey-10);
+    --badge-color: var(--text-light);
+    --badge-hover-bg: var(--color-light);
+    --badge-hover-color: var(--color-dark);
+    --badge-hover-border-color: var(--color-light);
+    --badge-dark-variant-bg: var(--color-light);
+    --badge-dark-variant-color: var(--color-dark);
+    --badge-dark-variant-hover-bg: var(--color-light-shade);
+    --badge-dark-variant-hover-border-color: var(--color-light-shade);
+    --banner-color: var(--color-dark);
+    --banner-bg: var(--color-light);
+    --banner-promo-color: var(--color-light-shade);
+    --banner-selection-text: var(--color-light);
+    --banner-selection-bg: var(--color-dark);
+    --checkbox-color: var(--color-dark);
+    --compact-post-heading-underline-color: var(--color-primary);
+    --fyi-unit-bg: var(--color-dark-glare);
+    --icon-link-text-decoration-color: var(--text-decoration-color);
+    --icon-link-hidden-label-bg: var(--color-dark);
+    --icon-link-hidden-label-color: var(--color-light);
+    --icon-link-hidden-label-bg-hover: var(--color-light);
+    --icon-link-hidden-label-color-hover: var(--color-dark);
+    --pagination-item-bg-hover: var(--color-light);
+    --pagination-item-text-hover: var(--color-dark);
+    --topics-list-scroll-bar-track-color: var(--color-grey-1);
+    --topics-list-scroll-bar-thumb-color: var(--color-grey-5);
+    --topics-list-bg: var(--color-dark-glare);
+    --code-block-header-button-bg: var(--color-dark);
+    --code-block-header-button-bg-hover: var(--color-light);
+    --code-block-header-button-text: var(--color-light);
+    --code-block-header-button-text-hover: var(--color-dark);
+    --code-block-alert-bg: var(--color-light);
+    --code-block-alert-text: var(--color-dark);
+    --code-block-code-bg: var(--color-dark-glare);
+    --praise-bg: var(--color-dark-glare);
+    --preview-frame-bg: var(--color-dark);
+    --preview-frame-text: var(--color-light);
+    --preview-frame-header-button-bg: var(--color-dark);
+    --preview-frame-header-button-bg-hover: var(--color-light);
+    --preview-frame-header-button-text: var(--color-light);
+    --preview-frame-header-button-text-hover: var(--color-dark);
+    --post-heading-text-decoration-color: var(--color-primary);
+    --flow-cta-bg: var(--color-dark-glare);
+    --instruction-background: var(--color-dark-glare);
+    --instruction-border-left: var(--stroke-weight-heavy) solid
+      var(--color-primary);
+    --instruction-font-size: var(--size-step-1);
+    --instruction-code-background: var(--color-dark);
+    --pay-wall-bg: var(--color-dark-glare);
+    --pay-wall-icon-color: var(--color-light);
+    --block-action-bg: var(--color-dark-glare);
+    --block-action-hover-bg: var(--color-dark-shade);
+    --block-action-ghost-hover-bg: var(--color-dark-glare);
+    --quick-links-hover-svg-fill: var(--color-primary);
+    --off-screen-menu-panel-background: var(--color-dark);
+    --off-screen-menu-summary-button-hover-background: var(--color-light);
+    --off-screen-menu-summary-button-hover-color: var(--color-dark);
+    --off-screen-menu-sub-nav-before-background: var(--color-light);
+    --off-screen-menu-user-actions-button-bg-hover: var(--color-light);
+    --off-screen-menu-user-actions-button-text-hover: var(--color-dark);
+    --off-screen-menu-user-actions-button-border-color-hover: var(
+      --color-light
+    );
+    --scrollable-image-frame-bg: var(--color-dark);
+    --scrollable-image-frame-text: var(--color-light);
+    --scrollable-image-frame-header-button-bg: var(--color-dark);
+    --scrollable-image-frame-header-button-text: var(--color-light);
+    --scrollable-image-frame-header-button-bg-hover: var(--color-light);
+    --scrollable-image-frame-header-button-text-hover: var(--color-dark);
+    --overflow-scroll-bar-track-color: var(--color-mid);
+    --overflow-scroll-bar-thumb-color: var(--color-mid-glare);
+    --product-details-filled-item-bg: var(--color-dark-glare);
+    --split-pair-highlight-bg: var(--color-dark-glare);
+    --side-note-bg: var(--color-dark-glare);
+    --side-note-decorator-color: var(--color-light);
+    --console-logger-bg: var(--color-dark-glare);
+    --console-logger-border: var(--stroke);
+    --select-bg: var(--color-dark-glare);
+    --select-bg-hover: var(--color-dark);
+    --select-color: var(--color-light);
+    --select-option-bg: var(--color-dark-glare);
+    --select-option-color: var(--color-light);
+    --select-option-bg-hover: var(--color-dark);
+    --select-option-bg-checked: var(--color-dark-shade);
+    --select-option-checkmark-bg: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0VERUNFNSIgZD0ibTMuNTY1IDEyLjI0Ni4wMDUtLjAwNUwuMTcyIDguODUzIDIuMDY0IDYuOTZsMy4zOTQgMy4zOTIgOC40ODYtOC40ODYgMS44ODIgMS44ODItOC40ODYgOC40ODUuMDA1LjAwOC0xLjQxOSAxLjQwNi0uNDczLjQ3M3YuMDEzeiIvPjwvc3ZnPg==');
+    --select-option-border: none;
+    --promotion-card-price-del-color: var(--color-secondary-glare);
+    --logo-grid-image-filter: invert(0.9);
+    --footer-color: var(--color-light);
+    --footer-bg: var(--color-dark-glare);
+    --headline-light-bg: var(--color-dark-glare);
+    --closing-cta-bg: var(--color-dark-glare);
+    --closing-cta-badge-filter: invert(1) grayscale(1);
+    --closing-cta-flow-cta-bg: var(--color-dark);
+    --block-cta-color: var(--color-dark);
+    --the-index-hero-logo-bg: var(--color-dark-glare);
+    --the-index-hero-logo-color: var(--color-light);
+    --the-index-promo-surface-bg: var(--color-dark-glare);
+    --hero-muted-button-ghost-dark-bg-hover: var(--color-light);
+    --hero-muted-button-ghost-dark-text-hover: var(--color-dark);
+    --hero-muted-button-ghost-dark-border-color-hover: var(--color-light);
+    --bookend-bg: var(--color-dark);
+    --bookend-color: var(--color-light);
+    --roundel-text-fill: var(--color-light);
+    --bookend-flow-cta-hover-bg: var(--color-dark-glare);
+    --linear-grid-content-bg: var(--color-dark-glare);
+    --linear-grid-content-color: var(--color-light);
+    --linear-grid-ender-stroke-color: var(--color-light);
+    --linear-grid-ender-fill: var(--color-dark);
+    --linear-grid-divider-bg: var(--color-light);
+    --faq-item-bg: var(--color-dark-glare);
+    --split-groups-bg: var(--color-dark-glare);
+    --typed-hero-bg: var(--color-dark-shade);
+    --typed-hero-color: var(--color-mid-dark);
+    --stripe-cta-del-color: var(--color-mid-shade);
+    --split-callout-bg: var(--color-dark-glare);
+    --split-callout-color: var(--color-light);
+    --split-cta-del-color: var(--color-grey-11);
   }
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-main);
+  background: var(--color-global-bg);
+  color: var(--color-global-text);
 }
 
 a {
-  color: var(--color-main);
+  color: var(--color-global-text);
 }
 
 hr {
-  color: var(--color-main);
+  color: var(--color-global-text);
 }

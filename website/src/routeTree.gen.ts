@@ -13,7 +13,9 @@ import { Route as LangRouteImport } from './routes/$lang'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LangIndexRouteImport } from './routes/$lang/index'
 import { Route as LangResolingRouteImport } from './routes/$lang/resoling'
+import { Route as LangJournalIndexRouteImport } from './routes/$lang/journal.index'
 import { Route as LangClimbingIndexRouteImport } from './routes/$lang/climbing/index'
+import { Route as LangJournalSlugRouteImport } from './routes/$lang/journal.$slug'
 import { Route as LangClimbingUserIdRouteImport } from './routes/$lang/climbing/$userId'
 
 const LangRoute = LangRouteImport.update({
@@ -36,9 +38,19 @@ const LangResolingRoute = LangResolingRouteImport.update({
   path: '/resoling',
   getParentRoute: () => LangRoute,
 } as any)
+const LangJournalIndexRoute = LangJournalIndexRouteImport.update({
+  id: '/journal/',
+  path: '/journal/',
+  getParentRoute: () => LangRoute,
+} as any)
 const LangClimbingIndexRoute = LangClimbingIndexRouteImport.update({
   id: '/climbing/',
   path: '/climbing/',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangJournalSlugRoute = LangJournalSlugRouteImport.update({
+  id: '/journal/$slug',
+  path: '/journal/$slug',
   getParentRoute: () => LangRoute,
 } as any)
 const LangClimbingUserIdRoute = LangClimbingUserIdRouteImport.update({
@@ -53,14 +65,18 @@ export interface FileRoutesByFullPath {
   '/$lang/resoling': typeof LangResolingRoute
   '/$lang/': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
+  '/$lang/journal/$slug': typeof LangJournalSlugRoute
   '/$lang/climbing/': typeof LangClimbingIndexRoute
+  '/$lang/journal/': typeof LangJournalIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$lang/resoling': typeof LangResolingRoute
   '/$lang': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
+  '/$lang/journal/$slug': typeof LangJournalSlugRoute
   '/$lang/climbing': typeof LangClimbingIndexRoute
+  '/$lang/journal': typeof LangJournalIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -69,7 +85,9 @@ export interface FileRoutesById {
   '/$lang/resoling': typeof LangResolingRoute
   '/$lang/': typeof LangIndexRoute
   '/$lang/climbing/$userId': typeof LangClimbingUserIdRoute
+  '/$lang/journal/$slug': typeof LangJournalSlugRoute
   '/$lang/climbing/': typeof LangClimbingIndexRoute
+  '/$lang/journal/': typeof LangJournalIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -79,14 +97,18 @@ export interface FileRouteTypes {
     | '/$lang/resoling'
     | '/$lang/'
     | '/$lang/climbing/$userId'
+    | '/$lang/journal/$slug'
     | '/$lang/climbing/'
+    | '/$lang/journal/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/$lang/resoling'
     | '/$lang'
     | '/$lang/climbing/$userId'
+    | '/$lang/journal/$slug'
     | '/$lang/climbing'
+    | '/$lang/journal'
   id:
     | '__root__'
     | '/'
@@ -94,7 +116,9 @@ export interface FileRouteTypes {
     | '/$lang/resoling'
     | '/$lang/'
     | '/$lang/climbing/$userId'
+    | '/$lang/journal/$slug'
     | '/$lang/climbing/'
+    | '/$lang/journal/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,11 +156,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangResolingRouteImport
       parentRoute: typeof LangRoute
     }
+    '/$lang/journal/': {
+      id: '/$lang/journal/'
+      path: '/journal'
+      fullPath: '/$lang/journal/'
+      preLoaderRoute: typeof LangJournalIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
     '/$lang/climbing/': {
       id: '/$lang/climbing/'
       path: '/climbing'
       fullPath: '/$lang/climbing/'
       preLoaderRoute: typeof LangClimbingIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/journal/$slug': {
+      id: '/$lang/journal/$slug'
+      path: '/journal/$slug'
+      fullPath: '/$lang/journal/$slug'
+      preLoaderRoute: typeof LangJournalSlugRouteImport
       parentRoute: typeof LangRoute
     }
     '/$lang/climbing/$userId': {
@@ -153,14 +191,18 @@ interface LangRouteChildren {
   LangResolingRoute: typeof LangResolingRoute
   LangIndexRoute: typeof LangIndexRoute
   LangClimbingUserIdRoute: typeof LangClimbingUserIdRoute
+  LangJournalSlugRoute: typeof LangJournalSlugRoute
   LangClimbingIndexRoute: typeof LangClimbingIndexRoute
+  LangJournalIndexRoute: typeof LangJournalIndexRoute
 }
 
 const LangRouteChildren: LangRouteChildren = {
   LangResolingRoute: LangResolingRoute,
   LangIndexRoute: LangIndexRoute,
   LangClimbingUserIdRoute: LangClimbingUserIdRoute,
+  LangJournalSlugRoute: LangJournalSlugRoute,
   LangClimbingIndexRoute: LangClimbingIndexRoute,
+  LangJournalIndexRoute: LangJournalIndexRoute,
 }
 
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)

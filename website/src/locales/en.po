@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. placeholder {0}: languages.length
-#: src/routes/$lang.tsx:56
+#: src/routes/$lang.tsx:60
 msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0language} other {#\\u00A0languages}}"
 
@@ -26,12 +26,12 @@ msgstr "{0, plural, one {#\\u00A0language} other {#\\u00A0languages}}"
 msgid "All time"
 msgstr "All time"
 
-#: src/routes/$lang.tsx:161
-#: src/routes/$lang/resoling.tsx:37
+#: src/routes/$lang.tsx:174
+#: src/routes/$lang/resoling.tsx:36
 msgid "Are we resoling yet?"
 msgstr "Are we resoling yet?"
 
-#: src/routes/$lang/resoling.tsx:64
+#: src/routes/$lang/resoling.tsx:63
 msgid "Awaiting to be shipped."
 msgstr "Awaiting to be shipped."
 
@@ -43,7 +43,7 @@ msgstr "Boulder progress at Klättercentret Solna"
 msgid "By year"
 msgstr "By year"
 
-#: src/routes/$lang.tsx:152
+#: src/routes/$lang.tsx:165
 #: src/routes/$lang/climbing/$userId.tsx:34
 msgid "Climbing"
 msgstr "Climbing"
@@ -61,9 +61,14 @@ msgstr "difficulty"
 msgid "Hallo!"
 msgstr "Hallo!"
 
-#: src/routes/$lang.tsx:143
+#: src/routes/$lang.tsx:147
 msgid "Home"
 msgstr "Home"
+
+#: src/routes/$lang.tsx:156
+#: src/routes/$lang/journal.index.tsx:24
+msgid "Journal"
+msgstr "Journal"
 
 #. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
 #. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
@@ -77,16 +82,16 @@ msgid "Poor man's CPR"
 msgstr "Poor man's CPR"
 
 #. placeholder {0}: data.shippedBackOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:76
+#: src/routes/$lang/resoling.tsx:75
 msgid "Shipped back on {0}"
 msgstr "Shipped back on {0}"
 
 #. placeholder {0}: data.shippedThereOn.toLocaleDateString(locale)
-#: src/routes/$lang/resoling.tsx:69
+#: src/routes/$lang/resoling.tsx:68
 msgid "Shipped there on {0}"
 msgstr "Shipped there on {0}"
 
-#: src/routes/$lang/resoling.tsx:54
+#: src/routes/$lang/resoling.tsx:53
 msgid "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgstr "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 
@@ -94,7 +99,7 @@ msgstr "Shoes collected: <0>{shoesCollected} / {shoesToSend}</0>"
 msgid "Solna completion history"
 msgstr "Solna completion history"
 
-#: src/routes/$lang.tsx:174
+#: src/routes/$lang.tsx:191
 msgid "Source"
 msgstr "Source"
 
@@ -102,7 +107,7 @@ msgstr "Source"
 msgid "Timeline"
 msgstr "Timeline"
 
-#: src/routes/$lang/resoling.tsx:40
+#: src/routes/$lang/resoling.tsx:39
 msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {We have no shoes to send.} one {We have #\\u00A0pair of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.} other {We have #\\u00A0pairs of shoes to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way.}}"
 

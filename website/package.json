@@ -10,6 +10,7 @@
     "extract": "lingui extract"
   },
   "dependencies": {
+    "@content-collections/core": "^0.15.0",
     "@googleapis/sheets": "^13.0.1",
     "@lingui/core": "^5.7.0",
     "@lingui/react": "^5.7.0",
@@ -24,6 +25,8 @@
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "@content-collections/mdx": "^0.2.2",
+    "@content-collections/vite": "^0.3.0",
     "@lingui/babel-plugin-lingui-macro": "^5.7.0",
     "@lingui/cli": "^5.7.0",
     "@lingui/vite-plugin": "^5.7.0",
@@ -33,10 +36,12 @@
     "@vitejs/plugin-react": "^5.1.2",
     "autoprefixer": "^10.4.23",
     "baseline-browser-mapping": "^2.10.0",
+    "gray-matter": "^4.0.3",
     "nitro": "npm:nitro-nightly@3.0.1-20260205-091341-0a64068f",
     "postcss": "^8.5.6",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
-    "vite-tsconfig-paths": "^6.0.3"
+    "vite-tsconfig-paths": "^6.0.3",
+    "zod": "^4.4.1"
   }
 }
