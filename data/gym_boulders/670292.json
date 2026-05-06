@@ -1,85 +1,69 @@
 {
-  "id": 668772,
-  "name": "Orange",
+  "id": 670292,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-04-28 15:50:02 +0000",
-  "created_at": "2026-04-28 15:50:02 +0000",
-  "set_at": "2026-04-28 15:49:53 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-05-06 15:16:42 +0000",
+  "created_at": "2026-05-06 15:16:42 +0000",
+  "set_at": "2026-05-06 15:16:33 +0000",
+  "expiration_date": "2026-06-20 15:16:33 +0000",
   "path": [
     [
-      475,
-      188
+      16,
+      166
     ],
     [
-      538,
-      302
+      11,
+      323
     ],
     [
-      466,
-      472
+      106,
+      497
     ],
     [
-      465,
-      507
+      105,
+      556
     ],
     [
-      524,
-      501
+      259,
+      505
     ],
     [
-      756,
-      526
+      260,
+      485
     ],
     [
-      755,
-      487
-    ],
-    [
-      738,
-      372
-    ],
-    [
-      715,
-      177
-    ],
-    [
-      624,
-      177
-    ],
-    [
-      476,
-      188
+      282,
+      269
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41798.6.3",
-  "color_1": "#ffa500",
+  "line_number": 11,
+  "topo_num": "41064.11.4",
+  "color_1": "#1033ea",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
+  "gym_wall_id": 671,
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 7,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -87,7 +71,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -114,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 668772,
-    "name": "Orange"
+    "id": 670292,
+    "name": "Blue"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/d84f29f31fc6fb5ab395d4a6fa78a539",
-  "route_card_label": "A6.3",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/en/routes/c21814ad928ef3500d7abcbbda1b6b45",
+  "route_card_label": "A11.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Stina Dorwarth",
+  "topo": "87f77e66c2d032637a9009c0b797fed4",
+  "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],

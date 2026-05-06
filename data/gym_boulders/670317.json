@@ -1,85 +1,89 @@
 {
-  "id": 668772,
-  "name": "Orange",
+  "id": 670317,
+  "name": "Terracotta high",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "7B",
+  "grade": "vl-25",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-04-28 15:50:02 +0000",
-  "created_at": "2026-04-28 15:50:02 +0000",
-  "set_at": "2026-04-28 15:49:53 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-05-06 17:00:03 +0000",
+  "created_at": "2026-05-06 17:00:03 +0000",
+  "set_at": "2026-05-06 16:59:49 +0000",
+  "expiration_date": "2026-06-20 16:59:49 +0000",
   "path": [
     [
-      475,
-      188
+      479,
+      217
     ],
     [
-      538,
-      302
+      669,
+      182
     ],
     [
-      466,
-      472
+      734,
+      195
     ],
     [
-      465,
-      507
-    ],
-    [
-      524,
-      501
-    ],
-    [
-      756,
-      526
-    ],
-    [
-      755,
-      487
-    ],
-    [
-      738,
-      372
-    ],
-    [
-      715,
-      177
+      625,
+      432
     ],
     [
       624,
-      177
+      451
     ],
     [
-      476,
-      188
+      599,
+      454
+    ],
+    [
+      542,
+      448
+    ],
+    [
+      515,
+      449
+    ],
+    [
+      517,
+      431
+    ],
+    [
+      511,
+      391
+    ],
+    [
+      522,
+      343
+    ],
+    [
+      522,
+      343
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41798.6.3",
-  "color_1": "#ffa500",
+  "line_number": 3,
+  "topo_num": "41065.3.11",
+  "color_1": "#eeac6e",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 672,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 8,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 7,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -87,7 +91,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -114,16 +118,16 @@
     "s": 0
   },
   "gym": {
-    "id": 668772,
-    "name": "Orange"
+    "id": 670317,
+    "name": "Terracotta high"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/d84f29f31fc6fb5ab395d4a6fa78a539",
-  "route_card_label": "A6.3",
-  "parent_name": "Bouldering, A Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/en/routes/e5f88c9304ecb8d2535d3cf411eae3ba",
+  "route_card_label": "B3.11",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Stina Dorwarth",
+  "topo": "700f4d07630ff171422cf5e87f95b8be",
+  "route_setter": "Lars Nilsson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
