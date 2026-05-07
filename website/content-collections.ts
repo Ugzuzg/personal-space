@@ -10,6 +10,7 @@ const entries = defineCollection({
     title: z.string(),
     published: z.iso.date(),
     description: z.string().optional(),
+    coverImage: z.string().optional(),
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);

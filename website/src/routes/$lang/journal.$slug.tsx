@@ -14,6 +14,22 @@ export const Route = createFileRoute('/$lang/journal/$slug')({
     }
     return entry;
   },
+  head: ({ loaderData }) => {
+    if (!loaderData) {
+      return {};
+    }
+    return {
+      meta: [
+        { title: `${loaderData.title} - Jaryk's personal space` },
+        { name: 'description', content: loaderData.description },
+
+        { property: 'og:title', content: loaderData.title },
+        { property: 'og:description', content: loaderData.description },
+        { property: 'og:image', content: loaderData.coverImage },
+        { property: 'og:type', content: 'article' },
+      ],
+    };
+  },
   component: JournalEntry,
 });
 
