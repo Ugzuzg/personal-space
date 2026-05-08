@@ -49,11 +49,11 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 6,
     "comment_count": 0,
-    "rating": 3.7,
-    "ratings_count": 3,
-    "redpoint": 4,
+    "rating": 4,
+    "ratings_count": 5,
+    "redpoint": 6,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -102,7 +102,18 @@
   "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 60934,
+      "user_id": 342376,
+      "user_name": "Eevee ⠀",
+      "date": "2026-05-08 18:41:49 +0000",
+      "item_type": "ascent",
+      "item_id": 8603868,
+      "item_name": "Klättercentret Solna, Bouldering • Yellow (7A+)",
+      "path": "f433b6741fd64648c49dc1321b6ef5f1"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
