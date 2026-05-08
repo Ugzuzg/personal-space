@@ -23,7 +23,7 @@ export function CompletionHistory({ data }) {
               fontSize: 'var(--size-step--1)',
             },
             marks: [
-              Plot.ruleY([0, 140]),
+              Plot.ruleY([0, 160]),
               Plot.lineY(data, {
                 x: 'date',
                 y: 'sentToTheDay',
