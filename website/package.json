@@ -34,11 +34,10 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^4.3.0",
-    "autoprefixer": "^10.4.23",
+    "autoprefixer": "^10.5.0",
     "baseline-browser-mapping": "^2.10.0",
-    "gray-matter": "^4.0.3",
     "nitro": "npm:nitro-nightly@3.0.1-20260205-091341-0a64068f",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.14",
     "typescript": "^6.0.3",
     "vite": "^8.0.11",
     "zod": "^4.4.1"
