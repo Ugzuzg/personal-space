@@ -19,7 +19,7 @@ export default defineConfig({
     lingui(),
     tanstackStart({
       prerender: {
-        enabled: process.env.PRERENDER === 'true',
+        enabled: true,
         crawlLinks: true,
         failOnError: true,
       },
@@ -31,15 +31,6 @@ export default defineConfig({
     viteReact({
       plugins: [['@lingui/swc-plugin', {}]],
     }),
-    nitro({
-      publicAssets: [
-        // this is a temporary fix to https://github.com/TanStack/router/issues/5368
-        {
-          maxAge: 60_000,
-          dir: 'dist/client/__tsr',
-          baseURL: '/__tsr',
-        },
-      ],
-    }),
+    nitro(),
   ],
 });

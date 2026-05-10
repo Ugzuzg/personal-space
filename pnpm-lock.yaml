@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@tanstack/start-static-server-functions':
-    hash: 6a2497cf089fefc86b051dcbc71b80fc0d426ed19d57dfaeb2e1550965216b77
+    hash: d2b25fbe838eb5a870cc1a8c8706aae9fc6631e9d9ac365484ec91738dad1ea3
     path: patches/@tanstack__start-static-server-functions.patch
 
 importers:
@@ -41,7 +41,7 @@ importers:
         version: 1.167.65(crossws@0.4.4(srvx@0.11.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.11(@types/node@24.10.4)(esbuild@0.25.12)(jiti@2.7.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.3))(webpack@5.99.8(esbuild@0.25.12)(postcss@8.5.14))
       '@tanstack/start-static-server-functions':
         specifier: ^1.166.41
-        version: 1.166.41(patch_hash=6a2497cf089fefc86b051dcbc71b80fc0d426ed19d57dfaeb2e1550965216b77)(@tanstack/react-start@1.167.65(crossws@0.4.4(srvx@0.11.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.11(@types/node@24.10.4)(esbuild@0.25.12)(jiti@2.7.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.3))(webpack@5.99.8(esbuild@0.25.12)(postcss@8.5.14)))
+        version: 1.166.41(patch_hash=d2b25fbe838eb5a870cc1a8c8706aae9fc6631e9d9ac365484ec91738dad1ea3)(@tanstack/react-start@1.167.65(crossws@0.4.4(srvx@0.11.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.11(@types/node@24.10.4)(esbuild@0.25.12)(jiti@2.7.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.3))(webpack@5.99.8(esbuild@0.25.12)(postcss@8.5.14)))
       d3:
         specifier: ^7.9.0
         version: 7.9.0
@@ -4428,7 +4428,7 @@ snapshots:
     transitivePeerDependencies:
       - crossws
 
-  '@tanstack/start-static-server-functions@1.166.41(patch_hash=6a2497cf089fefc86b051dcbc71b80fc0d426ed19d57dfaeb2e1550965216b77)(@tanstack/react-start@1.167.65(crossws@0.4.4(srvx@0.11.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.11(@types/node@24.10.4)(esbuild@0.25.12)(jiti@2.7.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.3))(webpack@5.99.8(esbuild@0.25.12)(postcss@8.5.14)))':
+  '@tanstack/start-static-server-functions@1.166.41(patch_hash=d2b25fbe838eb5a870cc1a8c8706aae9fc6631e9d9ac365484ec91738dad1ea3)(@tanstack/react-start@1.167.65(crossws@0.4.4(srvx@0.11.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.11(@types/node@24.10.4)(esbuild@0.25.12)(jiti@2.7.0)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.3))(webpack@5.99.8(esbuild@0.25.12)(postcss@8.5.14)))':
     dependencies:
       '@tanstack/start-client-core': 1.168.2
       seroval: 1.5.4
