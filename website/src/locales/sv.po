@@ -18,11 +18,11 @@ msgstr ""
 msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0språk} other {#\\u00A0språk}}"
 
-#: src/components/Bar.tsx:15
+#: src/components/Bar.tsx:16
 msgid "All time"
 msgstr "Genom tiderna"
 
-#: src/routes/$lang.tsx:174
+#: src/routes/$lang.tsx:175
 #: src/routes/$lang/resoling.tsx:36
 msgid "Are we resoling yet?"
 msgstr "Sular vi om än?"
@@ -31,25 +31,25 @@ msgstr "Sular vi om än?"
 msgid "Awaiting to be shipped."
 msgstr "Väntar på att skickas."
 
-#: src/components/Completion.tsx:15
+#: src/components/Completion.tsx:33
 msgid "Boulder progress at Klättercentret Solna"
 msgstr "Avklarade problem på Klättercentret Solna"
 
-#: src/components/Bar.tsx:19
+#: src/components/Bar.tsx:20
 msgid "By year"
 msgstr "Per år"
 
-#: src/routes/$lang.tsx:165
+#: src/routes/$lang.tsx:166
 #: src/routes/$lang/climbing/$userId.tsx:34
 msgid "Climbing"
 msgstr "Klättring"
 
-#: src/components/Bar.tsx:62
+#: src/components/Bar.tsx:68
 msgid "count"
 msgstr "antal"
 
-#: src/components/Bar.tsx:65
-#: src/components/Completion.tsx:66
+#: src/components/Bar.tsx:71
+#: src/components/Completion.tsx:74
 msgid "difficulty"
 msgstr "svårighetsgrad"
 
@@ -57,19 +57,19 @@ msgstr "svårighetsgrad"
 msgid "Hallo!"
 msgstr "Hej!"
 
-#: src/routes/$lang.tsx:147
+#: src/routes/$lang.tsx:148
 msgid "Home"
 msgstr "Hem"
 
-#: src/routes/$lang.tsx:156
+#: src/routes/$lang.tsx:157
 #: src/routes/$lang/journal.index.tsx:24
 msgid "Journal"
 msgstr "Dagbok"
 
-#. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
-#. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
-#. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
-#: src/components/Completion.tsx:18
+#. placeholder {0}: numberFormatter.format(allSent)
+#. placeholder {1}: numberFormatter.format(allBoulders)
+#. placeholder {2}: percentFormatter.format(allSent / allBoulders)
+#: src/components/Completion.tsx:36
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Övergripande framsteg: {0} / {1} ({2})"
 
@@ -95,7 +95,7 @@ msgstr "Skor insamlade: <0>{shoesCollected} / {shoesToSend}</0>"
 msgid "Solna completion history"
 msgstr "Historik över avklarade problem i Solna"
 
-#: src/routes/$lang.tsx:191
+#: src/routes/$lang.tsx:192
 msgid "Source"
 msgstr "Källkod"
 
@@ -107,6 +107,6 @@ msgstr "Tidslinje"
 msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {Vi har inga skor att skicka.} other {Vi har #\\u00A0par skor att skicka, med en totalvikt på {totalWeight} och en beräknad fraktkostnad på {estimatedShippingCost}, vilket i genomsnitt blir {costPerPair} per par enkel väg.}}"
 
-#: src/components/Bar.tsx:22
+#: src/components/Bar.tsx:23
 msgid "year"
 msgstr "år"

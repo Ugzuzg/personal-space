@@ -18,11 +18,11 @@ msgstr ""
 msgid "{0, plural, one {# language} other {# languages}}"
 msgstr "{0, plural, one {#\\u00A0мова} few {#\\u00A0мовы} many {#\\u00A0моў} other {#\\u00A0мовы}}"
 
-#: src/components/Bar.tsx:15
+#: src/components/Bar.tsx:16
 msgid "All time"
 msgstr "За ўвесь час"
 
-#: src/routes/$lang.tsx:174
+#: src/routes/$lang.tsx:175
 #: src/routes/$lang/resoling.tsx:36
 msgid "Are we resoling yet?"
 msgstr "Ці мы ўжо мяняем падэшвы?"
@@ -31,25 +31,25 @@ msgstr "Ці мы ўжо мяняем падэшвы?"
 msgid "Awaiting to be shipped."
 msgstr "Чакае адпраўлення."
 
-#: src/components/Completion.tsx:15
+#: src/components/Completion.tsx:33
 msgid "Boulder progress at Klättercentret Solna"
 msgstr "Валуны ў Klättercentret Solna"
 
-#: src/components/Bar.tsx:19
+#: src/components/Bar.tsx:20
 msgid "By year"
 msgstr "Па гадах"
 
-#: src/routes/$lang.tsx:165
+#: src/routes/$lang.tsx:166
 #: src/routes/$lang/climbing/$userId.tsx:34
 msgid "Climbing"
 msgstr "Скалалажанне"
 
-#: src/components/Bar.tsx:62
+#: src/components/Bar.tsx:68
 msgid "count"
 msgstr "колькасць"
 
-#: src/components/Bar.tsx:65
-#: src/components/Completion.tsx:66
+#: src/components/Bar.tsx:71
+#: src/components/Completion.tsx:74
 msgid "difficulty"
 msgstr "цяжкасць"
 
@@ -57,19 +57,19 @@ msgstr "цяжкасць"
 msgid "Hallo!"
 msgstr "Вітаю!"
 
-#: src/routes/$lang.tsx:147
+#: src/routes/$lang.tsx:148
 msgid "Home"
 msgstr "Галоўная"
 
-#: src/routes/$lang.tsx:156
+#: src/routes/$lang.tsx:157
 #: src/routes/$lang/journal.index.tsx:24
 msgid "Journal"
 msgstr "Дзённік"
 
-#. placeholder {0}: i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })
-#. placeholder {1}: i18n.number(allBoulders, { style: 'decimal', maximumFractionDigits: 0, })
-#. placeholder {2}: i18n.number(allSent / allBoulders, { style: 'percent', minimumFractionDigits: 2, })
-#: src/components/Completion.tsx:18
+#. placeholder {0}: numberFormatter.format(allSent)
+#. placeholder {1}: numberFormatter.format(allBoulders)
+#. placeholder {2}: percentFormatter.format(allSent / allBoulders)
+#: src/components/Completion.tsx:36
 msgid "Overall progress: {0} / {1} ({2})"
 msgstr "Агульны прагрэс: {0} / {1} ({2})"
 
@@ -95,7 +95,7 @@ msgstr "Сабрана абутку: <0>{shoesCollected} / {shoesToSend}</0>"
 msgid "Solna completion history"
 msgstr "Гісторыя праходжання ў Сольне"
 
-#: src/routes/$lang.tsx:191
+#: src/routes/$lang.tsx:192
 msgid "Source"
 msgstr "Зыходны код"
 
@@ -107,6 +107,6 @@ msgstr "Храналогія"
 msgid "We have {shoesToSend, plural, one {# pair of shoes} other {# pairs of shoes}} to send, with a total weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to {costPerPair} per pair one way."
 msgstr "{shoesToSend, plural, =0 {У нас няма абутку для адпраўлення.} one {У нас ёсць #\\u00A0пара абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} few {У нас ёсць #\\u00A0пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} many {У нас ёсць #\\u00A0пар абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.} other {У нас ёсць #\\u00A0пары абутку для адпраўкі, агульнай вагой {totalWeight} і прыблізным коштам дастаўкі {estimatedShippingCost}, што складае ў сярэднім {costPerPair} за пару ў адзін бок.}}"
 
-#: src/components/Bar.tsx:22
+#: src/components/Bar.tsx:23
 msgid "year"
 msgstr "год"

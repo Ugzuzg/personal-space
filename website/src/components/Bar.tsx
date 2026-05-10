@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import * as Plot from '@observablehq/plot';
 import { useLingui } from '@lingui/react/macro';
 
@@ -40,6 +41,11 @@ export function Bar({ data }) {
     */
   ];
 
+  const dateFormatter = useMemo(
+    () => new Intl.DateTimeFormat(i18n.locale, { year: 'numeric' }),
+    [i18n.locale],
+  );
+
   return (
     <article>
       <h2>Bar</h2>
@@ -70,11 +76,8 @@ export function Bar({ data }) {
                   fy: {
                     label: grouping.label,
                     reverse: true,
-                    tickFormat: (v) => {
-                      return i18n.date(new Date(Date.UTC(v)), {
-                        year: 'numeric',
-                      });
-                    },
+                    tickFormat: (v) =>
+                      dateFormatter.format(new Date(Date.UTC(v))),
                   },
                 }),
                 style: {

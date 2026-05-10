@@ -12,8 +12,8 @@
   "dependencies": {
     "@content-collections/core": "^0.15.0",
     "@googleapis/sheets": "^13.0.1",
-    "@lingui/core": "^5.7.0",
-    "@lingui/react": "^5.7.0",
+    "@lingui/core": "^6.0.1",
+    "@lingui/react": "^6.0.1",
     "@observablehq/plot": "^0.6.17",
     "@tanstack/react-router": "^1.158.1",
     "@tanstack/react-router-devtools": "^1.158.1",
@@ -27,9 +27,9 @@
   "devDependencies": {
     "@content-collections/mdx": "^0.2.2",
     "@content-collections/vite": "^0.3.0",
-    "@lingui/babel-plugin-lingui-macro": "^5.7.0",
-    "@lingui/cli": "^5.7.0",
-    "@lingui/vite-plugin": "^5.7.0",
+    "@lingui/babel-plugin-lingui-macro": "^6.0.1",
+    "@lingui/cli": "^6.0.1",
+    "@lingui/vite-plugin": "^6.0.1",
     "@types/node": "^24.1.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",

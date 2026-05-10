@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import * as Plot from '@observablehq/plot';
 import { Trans } from '@lingui/react/macro';
 import { useLingui } from '@lingui/react/macro';
@@ -9,6 +10,23 @@ export function Completion({ data }) {
   const allSent = data.map((v) => v.sent).reduce((a, b) => a + b, 0);
   const allBoulders = data.map((v) => v.all).reduce((a, b) => a + b, 0);
 
+  const numberFormatter = useMemo(
+    () =>
+      new Intl.NumberFormat(i18n.locale, {
+        style: 'decimal',
+        maximumFractionDigits: 0,
+      }),
+    [i18n.locale],
+  );
+  const percentFormatter = useMemo(
+    () =>
+      new Intl.NumberFormat(i18n.locale, {
+        style: 'percent',
+        minimumFractionDigits: 2,
+      }),
+    [i18n.locale],
+  );
+
   return (
     <article>
       <h2>
@@ -16,19 +34,9 @@ export function Completion({ data }) {
       </h2>
       <p>
         <Trans>
-          Overall progress:{' '}
-          {i18n.number(allSent, { style: 'decimal', maximumFractionDigits: 0 })}{' '}
-          /{' '}
-          {i18n.number(allBoulders, {
-            style: 'decimal',
-            maximumFractionDigits: 0,
-          })}{' '}
-          (
-          {i18n.number(allSent / allBoulders, {
-            style: 'percent',
-            minimumFractionDigits: 2,
-          })}
-          )
+          Overall progress: {numberFormatter.format(allSent)} /{' '}
+          {numberFormatter.format(allBoulders)} (
+          {percentFormatter.format(allSent / allBoulders)})
         </Trans>
       </p>
       <p>
