@@ -5,6 +5,7 @@ packages:
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
+  - '@swc/core'
 
 patchedDependencies:
   '@tanstack/start-static-server-functions': patches/@tanstack__start-static-server-functions.patch

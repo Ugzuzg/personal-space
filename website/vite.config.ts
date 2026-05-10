@@ -1,7 +1,6 @@
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import { defineConfig } from 'vite';
-import tsConfigPaths from 'vite-tsconfig-paths';
-import viteReact from '@vitejs/plugin-react';
+import viteReact from '@vitejs/plugin-react-swc';
 import { lingui } from '@lingui/vite-plugin';
 import { nitro } from 'nitro/vite';
 import contentCollections from '@content-collections/vite';
@@ -11,14 +10,12 @@ export default defineConfig({
     port: 3000,
   },
   resolve: {
+    tsconfigPaths: true,
     external: ['nodejs-polars'],
   },
   optimizeDeps: { exclude: ['nodejs-polars'] },
   plugins: [
     contentCollections(),
-    tsConfigPaths({
-      projects: ['./tsconfig.json'],
-    }),
     lingui(),
     tanstackStart({
       prerender: {
@@ -32,9 +29,7 @@ export default defineConfig({
       },
     }),
     viteReact({
-      babel: {
-        plugins: ['@lingui/babel-plugin-lingui-macro'],
-      },
+      plugins: [['@lingui/swc-plugin', {}]],
     }),
     nitro({
       publicAssets: [
