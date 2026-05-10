@@ -1,4 +1,4 @@
-import sheets from '@googleapis/sheets';
+import * as sheets from '@googleapis/sheets';
 
 function optional<A, T>(fn: (a: A) => T): (a: A) => T | null {
   return (a: A | null | undefined) => {
