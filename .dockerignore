@@ -9,3 +9,4 @@ website/node_modules
 .env
 **/dist
 **/.output
+.content-collections
