@@ -6,6 +6,7 @@ import { nitro } from 'nitro/vite';
 import contentCollections from '@content-collections/vite';
 
 export default defineConfig({
+  preview: { host: '127.0.0.1' },
   server: {
     port: 3000,
   },
@@ -28,9 +29,9 @@ export default defineConfig({
         host: 'https://me.jaryk.xyz',
       },
     }),
+    nitro({}),
     viteReact({
       plugins: [['@lingui/swc-plugin', {}]],
     }),
-    nitro(),
   ],
 });
