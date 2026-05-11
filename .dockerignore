@@ -1,12 +1,11 @@
-node_modules
+**/node_modules
 token.json
 .git
 .github
 .jj
 .vscode
 website/Dockerfile
-website/node_modules
-.env
+**/.env
 **/dist
 **/.output
-.content-collections
+**/.content-collections
