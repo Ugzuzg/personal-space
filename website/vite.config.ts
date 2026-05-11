@@ -29,7 +29,9 @@ export default defineConfig({
         host: 'https://me.jaryk.xyz',
       },
     }),
-    nitro({}),
+    nitro({
+      serveStatic: true,
+    }),
     viteReact({
       plugins: [['@lingui/swc-plugin', {}]],
     }),
