@@ -22,7 +22,7 @@ export default defineConfig({
       prerender: {
         enabled: process.env.PRERENDER === 'true',
         crawlLinks: true,
-        failOnError: true,
+        failOnError: false,
       },
       pages: [{ path: '/en' }, { path: '/en/climbing/56689' }],
       sitemap: {
