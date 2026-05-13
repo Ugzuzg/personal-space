@@ -1,13 +1,13 @@
 {
   "id": 671605,
-  "name": "Pink",
+  "name": "Pink left start",
   "notes": null,
   "difficulty": "6C+",
   "grade": "vl-22",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-12 15:18:08 +0000",
+  "updated_at": "2026-05-13 11:50:06 +0000",
   "created_at": "2026-05-12 15:18:08 +0000",
   "set_at": "2026-05-12 15:17:30 +0000",
   "expiration_date": "2026-06-26 15:17:30 +0000",
@@ -111,10 +111,10 @@
   },
   "gym": {
     "id": 671605,
-    "name": "Pink"
+    "name": "Pink left start"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/1830f40af068fd629fa86f2c33500871",
+  "share_url": "https://zlag.vertical-life.info/en/routes/af13f854d49dc54d4414b6585843c196",
   "route_card_label": "A2.2",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,

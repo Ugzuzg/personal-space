@@ -1,13 +1,13 @@
 {
   "id": 671606,
-  "name": "Turquoise",
+  "name": "Turquoise left start",
   "notes": null,
   "difficulty": "7A",
   "grade": "vl-23",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-12 15:18:24 +0000",
+  "updated_at": "2026-05-13 11:49:59 +0000",
   "created_at": "2026-05-12 15:18:24 +0000",
   "set_at": "2026-05-12 15:18:12 +0000",
   "expiration_date": "2026-06-26 15:18:12 +0000",
@@ -69,11 +69,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 2,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 0,
+    "redpoint": 2,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -111,10 +111,10 @@
   },
   "gym": {
     "id": 671606,
-    "name": "Turquoise"
+    "name": "Turquoise left start"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/b78ec693dc88ddb3cbc69fa9c525b248",
+  "share_url": "https://zlag.vertical-life.info/en/routes/0284dbee6983af6a4d3b09d35b592bd3",
   "route_card_label": "A2.3",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
