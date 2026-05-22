@@ -1,98 +1,58 @@
 {
-  "id": 670296,
-  "name": "White",
+  "id": 673360,
+  "name": "Black",
   "notes": null,
-  "difficulty": "3+",
-  "grade": "vl-5",
+  "difficulty": "8A+",
+  "grade": "vl-30",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-06 15:18:04 +0000",
-  "created_at": "2026-05-06 15:18:04 +0000",
-  "set_at": "2026-05-06 15:17:55 +0000",
-  "expiration_date": "2026-06-20 15:17:55 +0000",
+  "updated_at": "2026-05-22 13:46:12 +0000",
+  "created_at": "2026-05-22 13:46:12 +0000",
+  "set_at": "2026-05-22 13:46:05 +0000",
+  "expiration_date": "2026-07-06 13:46:05 +0000",
   "path": [
     [
-      490,
-      262
+      425,
+      230
     ],
     [
-      631,
-      246
+      512,
+      195
     ],
     [
-      669,
-      233
+      635,
+      200
     ],
     [
-      698,
-      235
+      663,
+      490
     ],
     [
-      710,
-      240
+      663,
+      515
     ],
     [
-      790,
-      258
+      526,
+      517
     ],
     [
-      815,
-      266
+      510,
+      515
     ],
     [
-      889,
-      264
+      352,
+      525
     ],
     [
-      907,
-      273
-    ],
-    [
-      935,
-      454
-    ],
-    [
-      937,
-      522
-    ],
-    [
-      919,
-      505
-    ],
-    [
-      742,
-      500
-    ],
-    [
-      709,
-      519
-    ],
-    [
-      700,
-      523
-    ],
-    [
-      668,
-      529
-    ],
-    [
-      656,
-      531
-    ],
-    [
-      453,
-      509
-    ],
-    [
-      450,
-      485
+      383,
+      383
     ]
   ],
   "reference_width": 971,
-  "line_number": 13,
-  "topo_num": "41064.13.7",
-  "color_1": "#FFFFFF",
+  "line_number": 8,
+  "topo_num": "41063.8.8",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -105,13 +65,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 0,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -146,16 +106,16 @@
     "s": 0
   },
   "gym": {
-    "id": 670296,
-    "name": "White"
+    "id": 673360,
+    "name": "Black"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/739a3e853a54992916351609dad3dc21",
-  "route_card_label": "A13.7",
+  "share_url": "https://zlag.vertical-life.info/en/routes/2d443f6d5ab6fe9af511083db7244d32",
+  "route_card_label": "A8.8",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "87f77e66c2d032637a9009c0b797fed4",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
