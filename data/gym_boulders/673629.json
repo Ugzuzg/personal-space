@@ -1,13 +1,13 @@
 {
   "id": 673629,
-  "name": "Magenta",
+  "name": "Magenta stand",
   "notes": null,
-  "difficulty": "7C",
-  "grade": "vl-27",
+  "difficulty": "7B+",
+  "grade": "vl-26",
   "grading_system": "font",
   "steepness": 7,
   "style": null,
-  "updated_at": "2026-05-25 19:04:39 +0000",
+  "updated_at": "2026-05-28 19:41:58 +0000",
   "created_at": "2026-05-25 19:04:39 +0000",
   "set_at": "2026-05-25 19:04:31 +0000",
   "expiration_date": null,
@@ -111,10 +111,10 @@
   },
   "gym": {
     "id": 673629,
-    "name": "Magenta"
+    "name": "Magenta stand"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/d7690c5379dcb94fb49a46d785a71dde",
+  "share_url": "https://zlag.vertical-life.info/en/routes/06e22955d5aa5dc30d8b747c872e922d",
   "route_card_label": "A2.9",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
