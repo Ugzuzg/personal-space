@@ -57,11 +57,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 3,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 2,
     "toprope": 0,
@@ -110,7 +110,18 @@
   "route_setter": "Lars Nilsson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 61397,
+      "user_id": 446413,
+      "user_name": "Klaus Magnusson",
+      "date": "2026-05-29 09:34:10 +0000",
+      "item_type": "ascent",
+      "item_id": 8664592,
+      "item_name": "Klättercentret Akalla, Bouldering • Purple (6A)",
+      "path": "c471b27b4fe23ac6b17df631090d22b5"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
