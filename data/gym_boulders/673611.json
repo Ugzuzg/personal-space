@@ -1,61 +1,65 @@
 {
-  "id": 672613,
-  "name": "Magenta",
+  "id": 673611,
+  "name": "Green",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "6A",
+  "grade": "vl-16",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-19 14:18:54 +0000",
-  "created_at": "2026-05-19 14:18:54 +0000",
-  "set_at": "2026-05-19 14:18:37 +0000",
+  "updated_at": "2026-05-25 14:50:17 +0000",
+  "created_at": "2026-05-25 14:50:17 +0000",
+  "set_at": "2026-05-25 14:50:06 +0000",
   "expiration_date": null,
   "path": [
     [
-      39,
-      175
+      432,
+      182
     ],
     [
-      422,
-      183
+      452,
+      460
     ],
     [
-      456,
-      589
+      671,
+      434
     ],
     [
-      77,
-      584
+      678,
+      418
     ],
     [
-      40,
-      175
+      612,
+      329
+    ],
+    [
+      589,
+      191
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.10",
-  "color_1": "#f912f3",
+  "line_number": 2,
+  "topo_num": "101079.2.3",
+  "color_1": "#18d617",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 222,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 6962,
+  "gym_wall_name": "Gallerian, C Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 3,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 2,
-    "redpoint": 0,
+    "rating": 2,
+    "ratings_count": 1,
+    "redpoint": 2,
     "onsight": 0,
-    "flash": 4,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -90,16 +94,16 @@
     "s": 0
   },
   "gym": {
-    "id": 672613,
-    "name": "Magenta"
+    "id": 673611,
+    "name": "Green"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/c1eca36513fe04a62349e57ef4ffc7e1",
-  "route_card_label": "B6.10",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 68,
+  "share_url": "https://zlag.vertical-life.info/en/routes/bffc0e1ecc4671820f7998894344029a",
+  "route_card_label": "C10.3",
+  "parent_name": "Bouldering, Gallerian, C Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "22b42eaac0ec3030184faa6744f697c6",
+  "route_setter": "anton linden",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],

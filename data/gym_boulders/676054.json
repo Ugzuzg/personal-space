@@ -1,61 +1,85 @@
 {
-  "id": 672613,
-  "name": "Magenta",
+  "id": 676054,
+  "name": "Neon green",
   "notes": null,
-  "difficulty": "6A+",
-  "grade": "vl-17",
+  "difficulty": "4",
+  "grade": "vl-7",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-19 14:18:54 +0000",
-  "created_at": "2026-05-19 14:18:54 +0000",
-  "set_at": "2026-05-19 14:18:37 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-06-05 14:21:22 +0000",
+  "created_at": "2026-06-05 14:21:22 +0000",
+  "set_at": "2026-06-05 14:21:12 +0000",
+  "expiration_date": "2026-07-20 14:21:12 +0000",
   "path": [
     [
-      39,
-      175
+      15,
+      489
     ],
     [
-      422,
-      183
+      196,
+      476
     ],
     [
-      456,
-      589
+      334,
+      479
     ],
     [
-      77,
-      584
+      334,
+      458
     ],
     [
-      40,
-      175
+      339,
+      379
+    ],
+    [
+      209,
+      259
+    ],
+    [
+      202,
+      211
+    ],
+    [
+      192,
+      219
+    ],
+    [
+      181,
+      218
+    ],
+    [
+      9,
+      398
+    ],
+    [
+      17,
+      489
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.10",
-  "color_1": "#f912f3",
+  "line_number": 3,
+  "topo_num": "41062.3.11",
+  "color_1": "#00f900",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 2,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 4,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -90,16 +114,16 @@
     "s": 0
   },
   "gym": {
-    "id": 672613,
-    "name": "Magenta"
+    "id": 676054,
+    "name": "Neon green"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/c1eca36513fe04a62349e57ef4ffc7e1",
-  "route_card_label": "B6.10",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/en/routes/2afae96c32334aff1293c131358f6ed7",
+  "route_card_label": "A3.11",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "b818aad184eedcc57ca311c2f8e257f7",
+  "route_setter": "David Höglund",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
