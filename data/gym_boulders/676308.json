@@ -1,83 +1,79 @@
 {
-  "id": 675697,
-  "name": "Magenta",
+  "id": 676308,
+  "name": "Orange stand start",
   "notes": null,
-  "difficulty": "6B",
-  "grade": "vl-18",
+  "difficulty": "5+",
+  "grade": "vl-14",
   "grading_system": "font",
-  "steepness": 15,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2026-06-04 15:33:20 +0000",
-  "created_at": "2026-06-04 12:23:06 +0000",
-  "set_at": "2026-06-04 12:22:56 +0000",
-  "expiration_date": "2026-07-19 12:22:56 +0000",
+  "updated_at": "2026-06-08 14:51:38 +0000",
+  "created_at": "2026-06-08 14:51:38 +0000",
+  "set_at": "2026-06-08 14:51:27 +0000",
+  "expiration_date": null,
   "path": [
     [
-      15,
+      121,
+      188
+    ],
+    [
+      232,
+      182
+    ],
+    [
+      444,
+      185
+    ],
+    [
+      506,
+      184
+    ],
+    [
+      514,
+      311
+    ],
+    [
+      470,
       489
     ],
     [
-      196,
-      476
-    ],
-    [
-      334,
+      235,
       479
     ],
     [
-      334,
-      458
+      138,
+      504
     ],
     [
-      339,
-      379
+      143,
+      350
     ],
     [
-      209,
-      259
-    ],
-    [
-      202,
-      211
-    ],
-    [
-      192,
-      219
-    ],
-    [
-      181,
-      218
-    ],
-    [
-      9,
-      398
-    ],
-    [
-      17,
-      489
+      121,
+      189
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41062.3.8",
-  "color_1": "#c3257f",
+  "line_number": 4,
+  "topo_num": "41800.4.1",
+  "color_1": "#ffa500",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 203,
+  "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 671,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 734,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 1,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -87,7 +83,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -114,16 +110,16 @@
     "s": 0
   },
   "gym": {
-    "id": 675697,
-    "name": "Magenta"
+    "id": 676308,
+    "name": "Orange stand start"
   },
-  "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/dfcfd7ba557f7e51ae495a5364ca281c",
-  "route_card_label": "A3.8",
-  "parent_name": "Bouldering, A Sektionen",
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/en/routes/1e0f33031f7d475c1027e6b359027d07",
+  "route_card_label": "B4.1",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "b818aad184eedcc57ca311c2f8e257f7",
-  "route_setter": "David Höglund",
+  "topo": "e6411c2ffc69fdad028b8408b295e45c",
+  "route_setter": "Anton Cuevas",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
