@@ -43,10 +43,8 @@ function JournalEntry() {
         <time dateTime={entry.published}>{entry.published}</time>
       </header>
       <div className="article">
-        <div className="wrapper">
-          <div className="master-grid flow prose">
-            <MDXContent code={entry.mdx} />
-          </div>
+        <div className="master-grid flow prose">
+          <MDXContent code={entry.mdx} />
         </div>
       </div>
     </article>

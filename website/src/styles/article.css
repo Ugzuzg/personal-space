@@ -204,7 +204,7 @@
   );
   --calculated-master-grid-content-max-width: var(
     --master-grid-content-max-width,
-    75ch
+    80ch
   );
   --calculated-master-grid-popout-extra-distance: var(
     --master-grid-popout-extra-distance,
@@ -217,14 +217,15 @@
   --padding-inline: var(--calculated-master-grid-padding-inline);
   --content-max-width: var(--calculated-master-grid-content-max-width);
   --popout-extra-distance: var(--calculated-master-grid-popout-extra-distance);
+  --content-width: min(
+    var(--content-max-width),
+    100% - var(--padding-inline) * 2
+  );
   display: grid;
   grid-template-columns:
     [full-width-start] minmax(var(--padding-inline), 1fr)
     [popout-start] minmax(0, var(--popout-extra-distance))
-    [content-start] min(
-      var(--content-max-width),
-      100% - var(--padding-inline) * 2
-    )
+    [content-start] var(--content-width)
     [content-end] minmax(0, var(--popout-extra-distance)) [popout-end] minmax(
       var(--padding-inline),
       1fr
@@ -258,6 +259,7 @@
 .master-grid > .stripe-cta,
 .master-grid > figure:has(.video-player),
 .master-grid > figure:has(video),
+.master-grid > .reel,
 .master-grid > iframe,
 .master-grid > video {
   grid-column: full-width;
@@ -500,51 +502,33 @@
 }
 .reel {
   --reel-calculated-space: var(--reel-space, var(--gutter, 2rem));
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  --item-width: min(
+    calc(var(--content-width) + (var(--popout-extra-distance) * 2)),
+    calc(100vw - (var(--padding-inline) * 2))
+  );
+  grid-auto-columns: var(--item-width);
+  gap: var(--reel-calculated-space);
+  padding-inline: calc((100% - var(--item-width)) / 2);
   height: auto;
-  margin-inline: auto;
-  max-width: 100%;
   overflow-x: auto;
-  padding: 0 0 var(--scroll-bar-offset) 0;
   -webkit-overflow-scrolling: touch;
 }
-.reel > * {
-  flex-basis: var(
-    --reel-item-width,
-    calc(33.333% - var(--reel-calculated-space))
-  );
-  flex-shrink: 0;
-}
-.reel > * + * {
-  margin-inline-start: var(--reel-calculated-space);
-}
-.reel::-webkit-scrollbar {
-  block-size: var(--scroll-bar-size);
-}
-.reel::-webkit-scrollbar-track {
-  background-color: var(--scroll-bar-track-color);
-}
-.reel::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-bar-thumb-color);
+@supports selector(::-webkit-scrollbar-track) {
+  .reel::-webkit-scrollbar {
+    block-size: 2px;
+  }
+  .reel::-webkit-scrollbar-track {
+    background-color: var(--color-global-bg);
+  }
+  .reel::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+  }
 }
 .reel[data-scroll='snap'] {
   scroll-snap-type: x mandatory;
 }
 .reel[data-scroll='snap'] > * {
-  scroll-snap-align: start;
-}
-
-@keyframes hint {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(calc(var(--space-4xl) * -1));
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.reel > * {
-  animation: hint 1s ease-in-out;
+  scroll-snap-align: center;
 }
