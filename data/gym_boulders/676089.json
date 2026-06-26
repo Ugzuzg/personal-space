@@ -1,93 +1,77 @@
 {
-  "id": 677292,
-  "name": "Turquoise",
+  "id": 676089,
+  "name": "Pink",
   "notes": null,
-  "difficulty": "3",
-  "grade": "vl-4",
+  "difficulty": "6A+",
+  "grade": "vl-17",
   "grading_system": "font",
   "steepness": 7,
   "style": null,
-  "updated_at": "2026-06-12 09:06:39 +0000",
-  "created_at": "2026-06-12 09:06:39 +0000",
-  "set_at": "2026-06-12 09:06:29 +0000",
+  "updated_at": "2026-06-05 14:45:45 +0000",
+  "created_at": "2026-06-05 14:45:45 +0000",
+  "set_at": "2026-06-05 14:45:37 +0000",
   "expiration_date": null,
   "path": [
     [
-      31,
-      186
+      244,
+      540
     ],
     [
-      17,
-      521
+      245,
+      512
     ],
     [
-      142,
-      506
+      253,
+      448
     ],
     [
-      268,
-      496
+      313,
+      249
     ],
     [
-      335,
-      500
+      329,
+      157
     ],
     [
-      336,
-      420
+      594,
+      169
     ],
     [
-      335,
-      392
+      461,
+      511
     ],
     [
-      327,
-      340
+      461,
+      541
     ],
     [
-      346,
-      253
-    ],
-    [
-      312,
-      177
-    ],
-    [
-      217,
-      180
-    ],
-    [
-      86,
-      191
-    ],
-    [
-      31,
-      187
+      245,
+      540
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41798.8.6",
-  "color_1": "#87ccc6",
+  "line_number": 5,
+  "topo_num": "41865.5.3",
+  "color_1": "#ff69da",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 222,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 747,
+  "gym_wall_name": "Tävlingsväggen, B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 3,
     "comment_count": 0,
     "rating": 2,
     "ratings_count": 1,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 3,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -122,16 +106,16 @@
     "s": 0
   },
   "gym": {
-    "id": 677292,
-    "name": "Turquoise"
+    "id": 676089,
+    "name": "Pink"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/38f7098b1b49f5b6c160c6b0567a82e5",
-  "route_card_label": "A8.6",
-  "parent_name": "Bouldering, A Sektionen",
+  "gym_id": 68,
+  "share_url": "https://zlag.vertical-life.info/en/routes/94ab01e44f66629037405f2e147f3cf2",
+  "route_card_label": "B5.3",
+  "parent_name": "Bouldering, Tävlingsväggen, B Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Anton Cuevas",
+  "topo": "e6cfbc42d224cf9694fc0e20aa2dc58b",
+  "route_setter": "N.N.",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
