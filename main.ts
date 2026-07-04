@@ -9,7 +9,7 @@ const me = 230474;
 const wilhelm = 56689;
 const rasmus = 340682;
 
-const fileExists = async (path) => {
+const fileExists = async (path: string) => {
   try {
     await fs.access(path, fs.constants.F_OK);
     return true;
@@ -68,7 +68,7 @@ const fetchBoulder = async (token: string, id: number) => {
 const fetchBoulders = async (token: string, ids: number[]) => {
   for (let i = 0; i < ids.length; i++) {
     const id = ids[i];
-    process.stdout?.clearLine?.();
+    process.stdout?.clearLine?.(0);
     process.stdout?.cursorTo?.(0);
     process.stdout.write(`Progress: ${i + 1} / ${ids.length}`);
 
@@ -109,7 +109,7 @@ async function fetchDataForGym(token: string, gym: number) {
   const result = await response.json();
   await fetchBoulders(
     token,
-    result.map((b) => b.id),
+    result.map((b: { id: number }) => b.id),
   );
 }
 
@@ -150,7 +150,7 @@ async function fetchDataForUser(token: string, user: number) {
   const bouldersStream = fsSync.createWriteStream('./data/gym_boulders.jsonl');
   const allBoulderFiles = await fs.readdir('./data/gym_boulders');
   for (const [i, p] of allBoulderFiles.entries()) {
-    process.stdout?.clearLine?.();
+    process.stdout?.clearLine?.(0);
     process.stdout?.cursorTo?.(0);
     process.stdout.write(`Progress: ${i + 1} / ${allBoulderFiles.length}`);
 

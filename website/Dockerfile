@@ -3,7 +3,7 @@
 # =============================================================================
 # BASE STAGE
 # Output: Common env vars and `tini` entrypoint app
-FROM node:24-alpine AS base
+FROM node:26-alpine AS base
 
 ENV NODE_ENV=production
 ENV TMPDIR=/tmp/personal-space
