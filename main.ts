@@ -7,6 +7,7 @@ const akalla = 59;
 const solna = 69;
 const me = 230474;
 const wilhelm = 56689;
+const rasmus = 340682;
 
 const fileExists = async (path) => {
   try {
@@ -180,4 +181,5 @@ async function fetchDataForUser(token: string, user: number) {
   await fetchDataForGym(newToken.access_token, akalla);
   await fetchDataForUser(newToken.access_token, me);
   await fetchDataForUser(newToken.access_token, wilhelm);
+  await fetchDataForUser(newToken.access_token, rasmus);
 })();
