@@ -57,11 +57,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 2,
     "comment_count": 0,
     "rating": 3,
     "ratings_count": 1,
-    "redpoint": 1,
+    "redpoint": 2,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -102,7 +102,7 @@
     "name": "Blue"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/e210c6948b690dd67aa9b11194275bd6",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/680803/ascents",
   "route_card_label": "A3.7",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,

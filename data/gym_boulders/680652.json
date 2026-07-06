@@ -57,11 +57,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
-    "redpoint": 1,
+    "rating": 5,
+    "ratings_count": 1,
+    "redpoint": 2,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -71,7 +71,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 0,
+    "hard_count": 1,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -90,7 +90,7 @@
       "32": 0,
       "64": 0
     },
-    "t": 1,
+    "t": 2,
     "f": 0,
     "b": 0,
     "e": 0,
@@ -102,7 +102,7 @@
     "name": "Black"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/fa09184e35f0b7a1b55fcdd16a82fdf7",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/680652/ascents",
   "route_card_label": "A12.3",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,

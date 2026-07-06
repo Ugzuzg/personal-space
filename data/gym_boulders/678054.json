@@ -81,11 +81,11 @@
   "gym_wall_name": "Balkongen, A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 5,
     "comment_count": 0,
     "rating": 2,
     "ratings_count": 1,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 4,
     "toprope": 0,
@@ -126,7 +126,7 @@
     "name": "Black"
   },
   "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/en/routes/190c42672a2f77d1dd219f5999016427",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-telefonplan/zlaggables/bouldering/678054/ascents",
   "route_card_label": "A3.4",
   "parent_name": "Bouldering, Balkongen, A Sektionen",
   "virtual": false,

@@ -57,11 +57,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 0,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -102,7 +102,7 @@
     "name": "Magenta"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/en/routes/a63d88a2169a864a794d036d6dd055ed",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/680804/ascents",
   "route_card_label": "A3.8",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,

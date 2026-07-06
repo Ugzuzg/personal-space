@@ -61,11 +61,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 3,
     "comment_count": 0,
     "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 0,
+    "ratings_count": 2,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 2,
     "toprope": 0,
@@ -106,7 +106,7 @@
     "name": "Neon green"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/en/routes/c44c8491f21705aa391c132e13201985",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/679768/ascents",
   "route_card_label": "A6.5",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
