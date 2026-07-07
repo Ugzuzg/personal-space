@@ -1,63 +1,67 @@
 {
-  "id": 670771,
-  "name": "Yellow",
+  "id": 681801,
+  "name": "Blue master of moves",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "2",
+  "grade": "vl-1",
   "grading_system": "font",
-  "steepness": 9,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2026-07-07 13:58:21 +0000",
-  "created_at": "2026-05-08 11:32:35 +0000",
-  "set_at": "2026-05-08 11:32:21 +0000",
+  "updated_at": "2026-07-07 17:22:17 +0000",
+  "created_at": "2026-07-07 17:22:17 +0000",
+  "set_at": "2026-07-07 17:22:05 +0000",
   "expiration_date": null,
   "path": [
     [
-      268,
-      474
+      49,
+      118
     ],
     [
-      242,
-      340
+      163,
+      579
     ],
     [
-      255,
-      212
+      162,
+      638
     ],
     [
-      521,
-      216
+      511,
+      651
     ],
     [
-      488,
-      439
+      513,
+      588
     ],
     [
-      409,
-      446
+      512,
+      71
+    ],
+    [
+      51,
+      120
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "89193.1.",
-  "color_1": "#fbff00",
+  "line_number": 5,
+  "topo_num": "41799.5.2",
+  "color_1": "#0000ff",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 222,
-  "archived": true,
+  "sector_id": 219,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 6515,
-  "gym_wall_name": "Garaget, D Sektionen",
+  "gym_wall_id": 733,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -94,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 670771,
-    "name": "Yellow"
+    "id": 681801,
+    "name": "Blue master of moves"
   },
-  "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-telefonplan/zlaggables/bouldering/670771/ascents",
-  "route_card_label": "D4.",
-  "parent_name": "Bouldering, Garaget, D Sektionen",
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/681801/ascents",
+  "route_card_label": "A5.2",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "78a9b7f87c749f6d48d0e70409474c94",
-  "route_setter": "Axel Malmström",
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
