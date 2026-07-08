@@ -1,50 +1,70 @@
 {
-  "id": 673366,
-  "name": "Dark Green",
+  "id": 682009,
+  "name": "White Right",
   "notes": null,
-  "difficulty": "3+",
-  "grade": "vl-5",
+  "difficulty": "7B",
+  "grade": "vl-25",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-05-22 13:47:08 +0000",
-  "created_at": "2026-05-22 13:47:08 +0000",
-  "set_at": "2026-05-22 13:47:00 +0000",
-  "expiration_date": "2026-07-06 13:47:00 +0000",
+  "updated_at": "2026-07-08 16:10:40 +0000",
+  "created_at": "2026-07-08 16:10:03 +0000",
+  "set_at": "2026-07-08 16:09:53 +0000",
+  "expiration_date": "2026-08-22 16:09:53 +0000",
   "path": [
     [
-      704,
-      153
+      479,
+      217
     ],
     [
-      697,
-      308
+      669,
+      182
     ],
     [
-      720,
-      488
+      734,
+      195
     ],
     [
-      720,
-      549
+      625,
+      432
     ],
     [
-      662,
-      514
+      624,
+      451
     ],
     [
-      663,
-      491
+      599,
+      454
     ],
     [
-      635,
-      199
+      542,
+      448
+    ],
+    [
+      515,
+      449
+    ],
+    [
+      517,
+      431
+    ],
+    [
+      511,
+      391
+    ],
+    [
+      522,
+      343
+    ],
+    [
+      522,
+      343
     ]
   ],
   "reference_width": 971,
-  "line_number": 9,
-  "topo_num": "41063.9.4",
-  "color_1": "#00781e",
+  "line_number": 3,
+  "topo_num": "41065.3.7",
+  "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -53,17 +73,17 @@
   "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 671,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 672,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 4,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -71,7 +91,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -98,16 +118,16 @@
     "s": 0
   },
   "gym": {
-    "id": 673366,
-    "name": "Dark Green"
+    "id": 682009,
+    "name": "White Right"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/673366/ascents",
-  "route_card_label": "A9.4",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/682009/ascents",
+  "route_card_label": "B3.7",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "8ef6c381b63e55f29ff7e0317997acac",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "700f4d07630ff171422cf5e87f95b8be",
+  "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
