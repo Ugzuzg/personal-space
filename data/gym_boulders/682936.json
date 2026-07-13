@@ -1,65 +1,49 @@
 {
-  "id": 678660,
-  "name": "Yellow",
+  "id": 682936,
+  "name": "Yellow master of moves",
   "notes": null,
-  "difficulty": "6C+",
-  "grade": "vl-22",
+  "difficulty": "2",
+  "grade": "vl-1",
   "grading_system": "font",
   "steepness": 7,
   "style": null,
-  "updated_at": "2026-06-18 17:36:10 +0000",
-  "created_at": "2026-06-18 17:36:10 +0000",
-  "set_at": "2026-06-18 17:36:02 +0000",
+  "updated_at": "2026-07-13 17:06:42 +0000",
+  "created_at": "2026-07-13 17:06:42 +0000",
+  "set_at": "2026-07-13 17:06:21 +0000",
   "expiration_date": null,
   "path": [
     [
-      475,
-      188
+      513,
+      71
     ],
     [
-      538,
-      302
+      513,
+      587
     ],
     [
-      466,
-      472
+      513,
+      650
     ],
     [
-      465,
-      507
+      879,
+      639
     ],
     [
-      524,
-      501
+      878,
+      580
     ],
     [
-      756,
-      526
+      919,
+      108
     ],
     [
-      755,
-      487
-    ],
-    [
-      738,
-      372
-    ],
-    [
-      715,
-      177
-    ],
-    [
-      624,
-      177
-    ],
-    [
-      476,
-      188
+      514,
+      70
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41798.6.6",
+  "line_number": 4,
+  "topo_num": "41799.4.2",
   "color_1": "#ffd700",
   "color_2": null,
   "two_start_holds": null,
@@ -73,11 +57,11 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -114,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 678660,
-    "name": "Yellow"
+    "id": 682936,
+    "name": "Yellow master of moves"
   },
   "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/678660/ascents",
-  "route_card_label": "A6.6",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/682936/ascents",
+  "route_card_label": "A4.2",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
+  "route_setter": "Sebastian Dahlgren ",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
