@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tangled.org/stevedylan.dev/sequoia/raw/main/sequoia.schema.json",
+  "siteUrl": "https://me.jaryk.xyz",
+  "contentDir": "src/journal",
+  "imagesDir": "public",
+  "pathPrefix": "/en/journal",
+  "pathTemplate": "/{language}/journal/{slugg}",
+  "publicationUri": "at://did:plc:ocxjv5zgpagjilxs5vz2fulm/site.standard.publication/3mqwbv3tij22u",
+  "frontmatter": {
+    "publishDate": "published",
+    "coverImage": "coverImage"
+  },
+  "publishContent": true
+}

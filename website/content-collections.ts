@@ -11,6 +11,8 @@ const entries = defineCollection({
     published: z.iso.date(),
     description: z.string().optional(),
     coverImage: z.string().optional(),
+    atUri: z.string().optional(),
+    language: z.enum(['be', 'en', 'sv']),
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);

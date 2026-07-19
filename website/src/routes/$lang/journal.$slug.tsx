@@ -28,6 +28,16 @@ export const Route = createFileRoute('/$lang/journal/$slug')({
         { property: 'og:image', content: loaderData.coverImage },
         { property: 'og:type', content: 'article' },
       ],
+      links: [
+        loaderData.atUri && {
+          rel: 'site.standard.document',
+          href: loaderData.atUri,
+        },
+        {
+          rel: 'site.standard.publication',
+          href: 'at://did:plc:ocxjv5zgpagjilxs5vz2fulm/site.standard.publication/3mqwbv3tij22u',
+        },
+      ].filter(Boolean),
     };
   },
   component: JournalEntry,
