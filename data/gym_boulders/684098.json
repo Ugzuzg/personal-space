@@ -1,61 +1,77 @@
 {
-  "id": 679956,
-  "name": "Red",
+  "id": 684098,
+  "name": "Terracotta",
   "notes": null,
-  "difficulty": "6B",
-  "grade": "vl-18",
+  "difficulty": "7B+",
+  "grade": "vl-26",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-06-25 14:47:12 +0000",
-  "created_at": "2026-06-25 14:47:12 +0000",
-  "set_at": "2026-06-25 14:47:04 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-07-22 07:32:09 +0000",
+  "created_at": "2026-07-22 07:32:09 +0000",
+  "set_at": "2026-07-22 07:31:56 +0000",
+  "expiration_date": "2026-09-05 07:31:56 +0000",
   "path": [
     [
-      39,
-      175
+      425,
+      230
     ],
     [
-      422,
-      183
+      512,
+      195
     ],
     [
-      456,
-      589
+      635,
+      200
     ],
     [
-      77,
-      584
+      663,
+      490
     ],
     [
-      40,
-      175
+      663,
+      515
+    ],
+    [
+      526,
+      517
+    ],
+    [
+      510,
+      515
+    ],
+    [
+      352,
+      525
+    ],
+    [
+      383,
+      383
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.5",
-  "color_1": "#ff0000",
+  "line_number": 8,
+  "topo_num": "41063.8.1",
+  "color_1": "#eeac6e",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 7,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 3,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -90,16 +106,16 @@
     "s": 0
   },
   "gym": {
-    "id": 679956,
-    "name": "Red"
+    "id": 684098,
+    "name": "Terracotta"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/679956/ascents",
-  "route_card_label": "B6.5",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/684098/ascents",
+  "route_card_label": "A8.1",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Anton Cuevas",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],

@@ -1,61 +1,69 @@
 {
-  "id": 679956,
-  "name": "Red",
+  "id": 684342,
+  "name": "White",
   "notes": null,
   "difficulty": "6B",
   "grade": "vl-18",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-06-25 14:47:12 +0000",
-  "created_at": "2026-06-25 14:47:12 +0000",
-  "set_at": "2026-06-25 14:47:04 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-07-22 15:44:11 +0000",
+  "created_at": "2026-07-22 15:44:11 +0000",
+  "set_at": "2026-07-22 15:43:58 +0000",
+  "expiration_date": "2026-09-05 15:43:58 +0000",
   "path": [
     [
-      39,
-      175
+      704,
+      153
     ],
     [
-      422,
-      183
+      697,
+      308
     ],
     [
-      456,
-      589
+      720,
+      488
     ],
     [
-      77,
-      584
+      720,
+      549
     ],
     [
-      40,
-      175
+      662,
+      514
+    ],
+    [
+      663,
+      491
+    ],
+    [
+      635,
+      199
     ]
   ],
   "reference_width": 971,
-  "line_number": 6,
-  "topo_num": "41802.6.5",
-  "color_1": "#ff0000",
+  "line_number": 9,
+  "topo_num": "41063.9.2",
+  "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 7,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 3,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -90,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 679956,
-    "name": "Red"
+    "id": 684342,
+    "name": "White"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/679956/ascents",
-  "route_card_label": "B6.5",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/684342/ascents",
+  "route_card_label": "A9.2",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Anton Cuevas",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
