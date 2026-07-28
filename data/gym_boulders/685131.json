@@ -1,67 +1,75 @@
 {
-  "id": 682936,
-  "name": "Yellow master of moves",
+  "id": 685131,
+  "name": "Black",
   "notes": null,
-  "difficulty": "2",
-  "grade": "vl-1",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-07-28 07:35:36 +0000",
-  "created_at": "2026-07-13 17:06:42 +0000",
-  "set_at": "2026-07-13 17:06:21 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-07-28 09:13:11 +0000",
+  "created_at": "2026-07-28 09:13:11 +0000",
+  "set_at": "2026-07-28 09:12:59 +0000",
+  "expiration_date": "2026-09-11 09:12:59 +0000",
   "path": [
     [
-      513,
-      71
+      705,
+      151
     ],
     [
-      513,
-      587
+      943,
+      143
     ],
     [
-      513,
-      650
+      943,
+      269
     ],
     [
-      879,
-      639
+      940,
+      303
     ],
     [
-      878,
-      580
+      872,
+      490
     ],
     [
-      919,
-      108
+      873,
+      554
     ],
     [
-      514,
-      70
+      721,
+      549
+    ],
+    [
+      721,
+      488
+    ],
+    [
+      698,
+      305
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41799.4.",
-  "color_1": "#ffd700",
+  "line_number": 10,
+  "topo_num": "41063.10.6",
+  "color_1": "#000000",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": true,
+  "sector_id": 203,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
+  "gym_wall_id": 671,
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 0,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
-    "redpoint": 1,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
@@ -98,16 +106,16 @@
     "s": 0
   },
   "gym": {
-    "id": 682936,
-    "name": "Yellow master of moves"
+    "id": 685131,
+    "name": "Black"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/682936/ascents",
-  "route_card_label": "A4.",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/685131/ascents",
+  "route_card_label": "A10.6",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
-  "route_setter": "Sebastian Dahlgren ",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
