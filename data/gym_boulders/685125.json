@@ -1,13 +1,13 @@
 {
   "id": 685125,
-  "name": "White",
+  "name": "White (Pinchy Mc,Crimpface)",
   "notes": null,
   "difficulty": "8A",
   "grade": "vl-29",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-07-28 09:12:21 +0000",
+  "updated_at": "2026-07-29 12:23:48 +0000",
   "created_at": "2026-07-28 09:12:21 +0000",
   "set_at": "2026-07-28 09:12:07 +0000",
   "expiration_date": "2026-09-11 09:12:07 +0000",
@@ -107,7 +107,7 @@
   },
   "gym": {
     "id": 685125,
-    "name": "White"
+    "name": "White (Pinchy Mc,Crimpface)"
   },
   "gym_id": 59,
   "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/685125/ascents",
