@@ -1,69 +1,85 @@
 {
-  "id": 681370,
-  "name": "Turquoise",
+  "id": 686400,
+  "name": "Red (Mixed Messages)",
   "notes": null,
-  "difficulty": "6A",
-  "grade": "vl-16",
+  "difficulty": "6C+",
+  "grade": "vl-22",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-04 12:52:24 +0000",
-  "created_at": "2026-07-03 12:05:15 +0000",
-  "set_at": "2026-07-03 12:05:08 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-08-04 16:02:48 +0000",
+  "created_at": "2026-08-04 13:45:32 +0000",
+  "set_at": "2026-08-04 13:45:23 +0000",
+  "expiration_date": "2026-09-18 13:45:23 +0000",
   "path": [
     [
-      4,
-      150
+      15,
+      489
     ],
     [
-      164,
-      170
+      196,
+      476
     ],
     [
-      381,
-      190
+      334,
+      479
     ],
     [
-      383,
-      542
+      334,
+      458
     ],
     [
-      219,
-      571
+      339,
+      379
     ],
     [
-      2,
-      609
+      209,
+      259
     ],
     [
-      6,
-      152
+      202,
+      211
+    ],
+    [
+      192,
+      219
+    ],
+    [
+      181,
+      218
+    ],
+    [
+      9,
+      398
+    ],
+    [
+      17,
+      489
     ]
   ],
   "reference_width": 971,
-  "line_number": 2,
-  "topo_num": "41801.2.",
-  "color_1": "#87ccc6",
+  "line_number": 3,
+  "topo_num": "41062.3.2",
+  "color_1": "#f02828",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": true,
+  "sector_id": 203,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 0,
     "comment_count": 0,
     "rating": 0,
     "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +114,16 @@
     "s": 0
   },
   "gym": {
-    "id": 681370,
-    "name": "Turquoise"
+    "id": 686400,
+    "name": "Red (Mixed Messages)"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/681370/ascents",
-  "route_card_label": "B2.",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/686400/ascents",
+  "route_card_label": "A3.2",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
-  "route_setter": "Sebastian Dahlgren ",
+  "topo": "b818aad184eedcc57ca311c2f8e257f7",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
