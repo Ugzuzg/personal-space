@@ -1,50 +1,66 @@
 {
-  "id": 685278,
-  "name": "Blue",
+  "id": 686625,
+  "name": "Turquoise (Knävecket)",
   "notes": null,
-  "difficulty": "6A",
-  "grade": "vl-16",
+  "difficulty": "6A+",
+  "grade": "vl-17",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-07-28 17:40:04 +0000",
-  "created_at": "2026-07-28 17:40:04 +0000",
-  "set_at": "2026-07-28 17:39:55 +0000",
-  "expiration_date": "2026-09-11 17:39:55 +0000",
+  "updated_at": "2026-08-05 13:41:56 +0000",
+  "created_at": "2026-08-05 13:41:56 +0000",
+  "set_at": "2026-08-05 13:40:56 +0000",
+  "expiration_date": "2026-09-19 13:40:56 +0000",
   "path": [
     [
-      625,
-      451
+      15,
+      489
     ],
     [
-      625,
-      431
+      196,
+      476
     ],
     [
-      734,
-      196
+      334,
+      479
     ],
     [
-      877,
-      189
+      334,
+      458
     ],
     [
-      938,
-      436
+      339,
+      379
     ],
     [
-      940,
-      457
+      209,
+      259
     ],
     [
-      940,
-      457
+      202,
+      211
+    ],
+    [
+      192,
+      219
+    ],
+    [
+      181,
+      218
+    ],
+    [
+      9,
+      398
+    ],
+    [
+      17,
+      489
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41065.4.7",
-  "color_1": "#1033ea",
+  "line_number": 3,
+  "topo_num": "41062.3.3",
+  "color_1": "#87cac1",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -53,17 +69,17 @@
   "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 672,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +114,16 @@
     "s": 0
   },
   "gym": {
-    "id": 685278,
-    "name": "Blue"
+    "id": 686625,
+    "name": "Turquoise (Knävecket)"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/685278/ascents",
-  "route_card_label": "B4.7",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/686625/ascents",
+  "route_card_label": "A3.3",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "700f4d07630ff171422cf5e87f95b8be",
-  "route_setter": "Lars Nilsson",
+  "topo": "b818aad184eedcc57ca311c2f8e257f7",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
