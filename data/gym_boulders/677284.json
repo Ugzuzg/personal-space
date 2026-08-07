@@ -1,13 +1,13 @@
 {
   "id": 677284,
-  "name": "Orange",
+  "name": "Orange (Schizofreni)",
   "notes": null,
   "difficulty": "6A",
   "grade": "vl-16",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-06-12 06:28:36 +0000",
+  "updated_at": "2026-08-06 15:43:35 +0000",
   "created_at": "2026-06-12 06:28:36 +0000",
   "set_at": "2026-06-12 06:28:29 +0000",
   "expiration_date": "2026-07-27 06:28:29 +0000",
@@ -123,7 +123,7 @@
   },
   "gym": {
     "id": 677284,
-    "name": "Orange"
+    "name": "Orange (Schizofreni)"
   },
   "gym_id": 59,
   "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/677284/ascents",

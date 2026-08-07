@@ -1,101 +1,69 @@
 {
-  "id": 683446,
-  "name": "White (Saraswati)",
+  "id": 686958,
+  "name": "White",
   "notes": null,
-  "difficulty": "6B",
-  "grade": "vl-18",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
-  "steepness": 15,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2026-08-06 15:50:59 +0000",
-  "created_at": "2026-07-16 14:23:20 +0000",
-  "set_at": "2026-07-16 14:23:08 +0000",
-  "expiration_date": "2026-08-30 14:23:08 +0000",
+  "updated_at": "2026-08-06 14:32:58 +0000",
+  "created_at": "2026-08-06 14:32:58 +0000",
+  "set_at": "2026-08-06 14:32:48 +0000",
+  "expiration_date": null,
   "path": [
     [
-      108,
-      447
+      4,
+      150
     ],
     [
-      115,
-      327
+      164,
+      170
     ],
     [
-      108,
-      326
+      381,
+      190
     ],
     [
-      110,
-      314
+      383,
+      542
     ],
     [
-      148,
-      279
+      219,
+      571
     ],
     [
-      263,
-      270
+      2,
+      609
     ],
     [
-      326,
-      260
-    ],
-    [
-      306,
-      294
-    ],
-    [
-      305,
-      336
-    ],
-    [
-      309,
-      368
-    ],
-    [
-      304,
-      383
-    ],
-    [
-      299,
-      445
-    ],
-    [
-      172,
-      442
-    ],
-    [
-      115,
-      448
-    ],
-    [
-      115,
-      448
+      6,
+      152
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "41065.1.1",
+  "line_number": 2,
+  "topo_num": "41801.2.7",
   "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 203,
+  "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 672,
+  "gym_wall_id": 734,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 3,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -130,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 683446,
-    "name": "White (Saraswati)"
+    "id": 686958,
+    "name": "White"
   },
-  "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/683446/ascents",
-  "route_card_label": "B1.1",
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/686958/ascents",
+  "route_card_label": "B2.7",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "700f4d07630ff171422cf5e87f95b8be",
-  "route_setter": "Oliver Sjödin",
+  "topo": "1e2bd49546a1ab26033e6eca6a575fad",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
