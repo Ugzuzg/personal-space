@@ -1,77 +1,69 @@
 {
-  "id": 685542,
-  "name": "Purple",
+  "id": 688870,
+  "name": "Bright Pink",
   "notes": null,
-  "difficulty": "5",
-  "grade": "vl-12",
+  "difficulty": "6A+",
+  "grade": "vl-17",
   "grading_system": "font",
-  "steepness": 15,
+  "steepness": 3,
   "style": null,
-  "updated_at": "2026-07-29 15:18:39 +0000",
-  "created_at": "2026-07-29 15:18:39 +0000",
-  "set_at": "2026-07-29 15:18:28 +0000",
-  "expiration_date": "2026-09-12 15:18:28 +0000",
+  "updated_at": "2026-08-19 06:04:59 +0000",
+  "created_at": "2026-08-19 06:04:59 +0000",
+  "set_at": "2026-08-19 06:04:37 +0000",
+  "expiration_date": null,
   "path": [
     [
-      214,
-      77
+      508,
+      187
     ],
     [
-      266,
-      650
+      689,
+      184
     ],
     [
-      271,
-      648
+      847,
+      182
     ],
     [
-      753,
-      590
+      931,
+      514
     ],
     [
-      911,
-      646
+      470,
+      491
     ],
     [
-      921,
-      455
+      515,
+      312
     ],
     [
-      780,
-      85
-    ],
-    [
-      749,
-      87
-    ],
-    [
-      212,
-      81
+      508,
+      186
     ]
   ],
   "reference_width": 971,
-  "line_number": 1,
-  "topo_num": "89644.1.6",
-  "color_1": "#9706d5",
+  "line_number": 3,
+  "topo_num": "41800.3.12",
+  "color_1": "#ff00a9",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 203,
+  "sector_id": 219,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 672,
+  "gym_wall_id": 734,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 7,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3.7,
-    "ratings_count": 3,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -106,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 685542,
-    "name": "Purple"
+    "id": 688870,
+    "name": "Bright Pink"
   },
-  "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/685542/ascents",
-  "route_card_label": "B9.6",
+  "gym_id": 69,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/688870/ascents",
+  "route_card_label": "B3.12",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "52e1e3dc245ed0cd70fd17084c10dc65",
-  "route_setter": "Lars Nilsson",
+  "topo": "e6411c2ffc69fdad028b8408b295e45c",
+  "route_setter": "James Thanawat",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
