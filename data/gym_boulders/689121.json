@@ -1,69 +1,89 @@
 {
-  "id": 673605,
-  "name": "Orange",
+  "id": 689121,
+  "name": "Dark Green",
   "notes": null,
-  "difficulty": "6C",
-  "grade": "vl-21",
+  "difficulty": "7A",
+  "grade": "vl-23",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-20 06:39:04 +0000",
-  "created_at": "2026-05-25 14:49:09 +0000",
-  "set_at": "2026-05-25 14:49:01 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-08-20 12:32:14 +0000",
+  "created_at": "2026-08-20 12:32:14 +0000",
+  "set_at": "2026-08-20 12:31:23 +0000",
+  "expiration_date": "2026-10-04 12:31:23 +0000",
   "path": [
     [
-      77,
-      526
+      82,
+      619
     ],
     [
-      69,
-      514
+      84,
+      617
     ],
     [
-      147,
-      281
+      85,
+      342
     ],
     [
-      177,
-      155
+      129,
+      232
     ],
     [
-      433,
-      179
+      160,
+      120
+    ],
+    [
+      314,
+      122
     ],
     [
       453,
-      458
+      126
     ],
     [
-      196,
-      507
+      643,
+      521
+    ],
+    [
+      643,
+      555
+    ],
+    [
+      312,
+      577
+    ],
+    [
+      124,
+      584
+    ],
+    [
+      81,
+      618
     ]
   ],
   "reference_width": 971,
   "line_number": 1,
-  "topo_num": "101079.1.",
-  "color_1": "#ff9d00",
+  "topo_num": "41061.1.5",
+  "color_1": "#00781e",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 222,
-  "archived": true,
+  "sector_id": 203,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 6962,
-  "gym_wall_name": "Gallerian, C Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 13,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.3,
-    "ratings_count": 6,
-    "redpoint": 7,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +118,16 @@
     "s": 0
   },
   "gym": {
-    "id": 673605,
-    "name": "Orange"
+    "id": 689121,
+    "name": "Dark Green"
   },
-  "gym_id": 68,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-telefonplan/zlaggables/bouldering/673605/ascents",
-  "route_card_label": "C9.",
-  "parent_name": "Bouldering, Gallerian, C Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/689121/ascents",
+  "route_card_label": "A1.5",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "22b42eaac0ec3030184faa6744f697c6",
-  "route_setter": "Zac Chattaway",
+  "topo": "fc0bcf3b07d7919450daec3410293975",
+  "route_setter": "Jonas Wahlgren",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
