@@ -1,89 +1,73 @@
 {
-  "id": 675893,
-  "name": "White",
+  "id": 690042,
+  "name": "Blue",
   "notes": null,
-  "difficulty": "6B+",
-  "grade": "vl-19",
+  "difficulty": "6C",
+  "grade": "vl-21",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-25 07:37:35 +0000",
-  "created_at": "2026-06-04 17:57:13 +0000",
-  "set_at": "2026-06-04 17:56:58 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-08-25 16:01:33 +0000",
+  "created_at": "2026-08-25 16:01:33 +0000",
+  "set_at": "2026-08-25 16:01:22 +0000",
+  "expiration_date": "2026-10-09 16:01:22 +0000",
   "path": [
     [
-      313,
-      177
+      943,
+      222
     ],
     [
-      348,
-      252
+      886,
+      222
     ],
     [
-      328,
-      339
+      817,
+      222
     ],
     [
-      336,
-      391
+      814,
+      231
     ],
     [
-      336,
-      420
+      791,
+      310
     ],
     [
-      337,
-      500
+      848,
+      441
     ],
     [
-      418,
-      506
+      847,
+      485
     ],
     [
-      464,
-      508
-    ],
-    [
-      465,
-      471
-    ],
-    [
-      538,
-      302
-    ],
-    [
-      474,
-      188
-    ],
-    [
-      314,
-      177
+      942,
+      486
     ]
   ],
   "reference_width": 971,
-  "line_number": 7,
-  "topo_num": "41798.7.",
-  "color_1": "#FFFFFF",
+  "line_number": 6,
+  "topo_num": "41062.6.4",
+  "color_1": "#1033ea",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
-  "archived": true,
+  "sector_id": 203,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
+  "gym_wall_id": 671,
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2.7,
-    "ratings_count": 3,
-    "redpoint": 2,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 3,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -91,7 +75,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 1,
+    "hard_count": 0,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -118,16 +102,16 @@
     "s": 0
   },
   "gym": {
-    "id": 675893,
-    "name": "White"
+    "id": 690042,
+    "name": "Blue"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/675893/ascents",
-  "route_card_label": "A7.",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/690042/ascents",
+  "route_card_label": "A6.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "5c34763248de2c434a96e3fd1bd72118",
-  "route_setter": "Anton Cuevas",
+  "topo": "b818aad184eedcc57ca311c2f8e257f7",
+  "route_setter": "Rasmus Eriksson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
