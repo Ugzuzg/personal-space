@@ -1,69 +1,97 @@
 {
-  "id": 689432,
-  "name": "Yellow",
+  "id": 690211,
+  "name": "White (Svampinjonen)",
   "notes": null,
-  "difficulty": "2",
-  "grade": "vl-1",
+  "difficulty": "7A+",
+  "grade": "vl-24",
   "grading_system": "font",
-  "steepness": 7,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-21 14:07:14 +0000",
-  "created_at": "2026-08-21 14:07:14 +0000",
-  "set_at": "2026-08-17 12:00:00 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-08-26 13:44:10 +0000",
+  "created_at": "2026-08-26 13:44:10 +0000",
+  "set_at": "2026-08-26 13:43:46 +0000",
+  "expiration_date": "2026-10-10 13:43:46 +0000",
   "path": [
     [
-      49,
-      118
+      325,
+      260
     ],
     [
-      163,
-      579
+      375,
+      255
     ],
     [
-      162,
-      638
+      385,
+      226
     ],
     [
-      511,
-      651
+      477,
+      221
     ],
     [
-      513,
-      588
+      522,
+      342
     ],
     [
       512,
-      71
+      390
     ],
     [
-      51,
-      120
+      516,
+      430
+    ],
+    [
+      516,
+      450
+    ],
+    [
+      358,
+      447
+    ],
+    [
+      299,
+      444
+    ],
+    [
+      303,
+      384
+    ],
+    [
+      310,
+      367
+    ],
+    [
+      305,
+      294
+    ],
+    [
+      305,
+      294
     ]
   ],
   "reference_width": 971,
-  "line_number": 5,
-  "topo_num": "41799.5.3",
-  "color_1": "#ffd700",
+  "line_number": 2,
+  "topo_num": "41065.2.4",
+  "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 733,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 672,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 2,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +126,16 @@
     "s": 0
   },
   "gym": {
-    "id": 689432,
-    "name": "Yellow"
+    "id": 690211,
+    "name": "White (Svampinjonen)"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/689432/ascents",
-  "route_card_label": "A5.3",
-  "parent_name": "Bouldering, A Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/690211/ascents",
+  "route_card_label": "B2.4",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "9ba3d48c8e121f154d4f49754e525ba8",
-  "route_setter": "David Höglund",
+  "topo": "700f4d07630ff171422cf5e87f95b8be",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
