@@ -1,77 +1,81 @@
 {
-  "id": 684099,
-  "name": "White (Kött Tjuven)",
+  "id": 679891,
+  "name": "Orange",
   "notes": null,
-  "difficulty": "7A+",
-  "grade": "vl-24",
+  "difficulty": "6A",
+  "grade": "vl-16",
   "grading_system": "font",
-  "steepness": 15,
+  "steepness": 7,
   "style": null,
-  "updated_at": "2026-08-27 14:27:22 +0000",
-  "created_at": "2026-07-22 07:32:22 +0000",
-  "set_at": "2026-07-22 07:32:10 +0000",
-  "expiration_date": "2026-09-05 07:32:10 +0000",
+  "updated_at": "2026-06-25 12:16:45 +0000",
+  "created_at": "2026-06-25 12:13:55 +0000",
+  "set_at": "2026-06-25 12:13:40 +0000",
+  "expiration_date": null,
   "path": [
     [
-      425,
-      230
+      680,
+      542
     ],
     [
-      512,
-      195
+      680,
+      511
     ],
     [
-      635,
-      200
-    ],
-    [
-      663,
-      490
+      676,
+      415
     ],
     [
       663,
-      515
+      179
     ],
     [
-      526,
-      517
+      802,
+      182
     ],
     [
-      510,
-      515
+      908,
+      173
     ],
     [
-      352,
-      525
+      931,
+      535
     ],
     [
-      383,
-      383
+      934,
+      569
+    ],
+    [
+      849,
+      543
+    ],
+    [
+      681,
+      540
     ]
   ],
   "reference_width": 971,
-  "line_number": 8,
-  "topo_num": "41063.8.2",
-  "color_1": "#FFFFFF",
+  "line_number": 7,
+  "topo_num": "41865.7.1",
+  "color_1": "#ff9d00",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 203,
+  "sector_id": 222,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 671,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 747,
+  "gym_wall_name": "Tävlingsväggen, B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 5,
     "comment_count": 0,
-    "rating": 2,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 1,
     "onsight": 0,
-    "flash": 1,
+    "flash": 4,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -106,16 +110,16 @@
     "s": 0
   },
   "gym": {
-    "id": 684099,
-    "name": "White (Kött Tjuven)"
+    "id": 679891,
+    "name": "Orange"
   },
-  "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/684099/ascents",
-  "route_card_label": "A8.2",
-  "parent_name": "Bouldering, A Sektionen",
+  "gym_id": 68,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-telefonplan/zlaggables/bouldering/679891/ascents",
+  "route_card_label": "B7.1",
+  "parent_name": "Bouldering, Tävlingsväggen, B Sektionen",
   "virtual": false,
-  "topo": "8ef6c381b63e55f29ff7e0317997acac",
-  "route_setter": "Oliver Sjödin",
+  "topo": "e6cfbc42d224cf9694fc0e20aa2dc58b",
+  "route_setter": "Felipe Ignacio Palma Hernandez",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
