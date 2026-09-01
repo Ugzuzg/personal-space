@@ -1,81 +1,101 @@
 {
-  "id": 688892,
-  "name": "Turquoise",
+  "id": 691082,
+  "name": "White (Hundkex)",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "6C+",
+  "grade": "vl-22",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-19 09:09:02 +0000",
-  "created_at": "2026-08-19 09:09:02 +0000",
-  "set_at": "2026-08-19 09:08:43 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-09-01 17:54:35 +0000",
+  "created_at": "2026-09-01 17:54:35 +0000",
+  "set_at": "2026-09-01 17:52:59 +0000",
+  "expiration_date": "2026-10-16 17:52:59 +0000",
   "path": [
     [
-      121,
-      188
+      108,
+      447
     ],
     [
-      232,
-      182
+      115,
+      327
     ],
     [
-      444,
-      185
+      108,
+      326
     ],
     [
-      506,
-      184
+      110,
+      314
     ],
     [
-      514,
-      311
+      148,
+      279
     ],
     [
-      470,
-      489
+      263,
+      270
     ],
     [
-      235,
-      479
+      326,
+      260
     ],
     [
-      138,
-      504
+      306,
+      294
     ],
     [
-      143,
-      350
+      305,
+      336
     ],
     [
-      121,
-      189
+      309,
+      368
+    ],
+    [
+      304,
+      383
+    ],
+    [
+      299,
+      445
+    ],
+    [
+      172,
+      442
+    ],
+    [
+      115,
+      448
+    ],
+    [
+      115,
+      448
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41800.4.1",
-  "color_1": "#87ccc6",
+  "line_number": 1,
+  "topo_num": "41065.1.10",
+  "color_1": "#FFFFFF",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
+  "gym_wall_id": 672,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -110,16 +130,16 @@
     "s": 0
   },
   "gym": {
-    "id": 688892,
-    "name": "Turquoise"
+    "id": 691082,
+    "name": "White (Hundkex)"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/688892/ascents",
-  "route_card_label": "B4.1",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/691082/ascents",
+  "route_card_label": "B1.10",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "e6411c2ffc69fdad028b8408b295e45c",
-  "route_setter": "James Thanawat",
+  "topo": "700f4d07630ff171422cf5e87f95b8be",
+  "route_setter": "David Höglund",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],

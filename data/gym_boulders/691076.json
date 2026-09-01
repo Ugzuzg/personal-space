@@ -1,81 +1,97 @@
 {
-  "id": 688892,
-  "name": "Turquoise",
+  "id": 691076,
+  "name": "Orange (Gullhorn)",
   "notes": null,
-  "difficulty": "4+",
-  "grade": "vl-8",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-08-19 09:09:02 +0000",
-  "created_at": "2026-08-19 09:09:02 +0000",
-  "set_at": "2026-08-19 09:08:43 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-09-01 17:41:52 +0000",
+  "created_at": "2026-09-01 17:41:52 +0000",
+  "set_at": "2026-09-01 17:40:48 +0000",
+  "expiration_date": "2026-10-16 17:40:48 +0000",
   "path": [
     [
-      121,
-      188
+      325,
+      260
     ],
     [
-      232,
-      182
+      375,
+      255
     ],
     [
-      444,
-      185
+      385,
+      226
     ],
     [
-      506,
-      184
+      477,
+      221
     ],
     [
-      514,
-      311
+      522,
+      342
     ],
     [
-      470,
-      489
+      512,
+      390
     ],
     [
-      235,
-      479
+      516,
+      430
     ],
     [
-      138,
-      504
+      516,
+      450
     ],
     [
-      143,
-      350
+      358,
+      447
     ],
     [
-      121,
-      189
+      299,
+      444
+    ],
+    [
+      303,
+      384
+    ],
+    [
+      310,
+      367
+    ],
+    [
+      305,
+      294
+    ],
+    [
+      305,
+      294
     ]
   ],
   "reference_width": 971,
-  "line_number": 4,
-  "topo_num": "41800.4.1",
-  "color_1": "#87ccc6",
+  "line_number": 2,
+  "topo_num": "41065.2.6",
+  "color_1": "#ff8509",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
+  "gym_wall_id": 672,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 5,
+    "zlag_count": 1,
     "comment_count": 0,
     "rating": 3,
     "ratings_count": 1,
-    "redpoint": 0,
+    "redpoint": 1,
     "onsight": 0,
-    "flash": 5,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -83,7 +99,7 @@
     "vertical": 0,
     "overhanging": 0,
     "roof": 0,
-    "hard_count": 0,
+    "hard_count": 1,
     "soft_count": 0,
     "zlaggable_height_count": {
       "1": 0,
@@ -110,16 +126,16 @@
     "s": 0
   },
   "gym": {
-    "id": 688892,
-    "name": "Turquoise"
+    "id": 691076,
+    "name": "Orange (Gullhorn)"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/688892/ascents",
-  "route_card_label": "B4.1",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/691076/ascents",
+  "route_card_label": "B2.6",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "e6411c2ffc69fdad028b8408b295e45c",
-  "route_setter": "James Thanawat",
+  "topo": "700f4d07630ff171422cf5e87f95b8be",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
