@@ -1,69 +1,49 @@
 {
-  "id": 682013,
-  "name": "Turquoise Right",
+  "id": 691758,
+  "name": "Turquoise",
   "notes": null,
-  "difficulty": "5",
-  "grade": "vl-12",
+  "difficulty": "6A",
+  "grade": "vl-16",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-09-04 14:45:48 +0000",
-  "created_at": "2026-07-08 16:10:56 +0000",
-  "set_at": "2026-07-08 16:10:45 +0000",
-  "expiration_date": "2026-08-22 16:10:45 +0000",
+  "updated_at": "2026-09-04 14:48:25 +0000",
+  "created_at": "2026-09-04 14:48:25 +0000",
+  "set_at": "2026-09-04 14:48:17 +0000",
+  "expiration_date": "2026-10-19 14:48:17 +0000",
   "path": [
     [
-      479,
-      217
+      16,
+      166
     ],
     [
-      669,
-      182
+      11,
+      323
     ],
     [
-      734,
-      195
+      106,
+      497
     ],
     [
-      625,
-      432
+      105,
+      556
     ],
     [
-      624,
-      451
+      259,
+      505
     ],
     [
-      599,
-      454
+      260,
+      485
     ],
     [
-      542,
-      448
-    ],
-    [
-      515,
-      449
-    ],
-    [
-      517,
-      431
-    ],
-    [
-      511,
-      391
-    ],
-    [
-      522,
-      343
-    ],
-    [
-      522,
-      343
+      282,
+      269
     ]
   ],
   "reference_width": 971,
-  "line_number": 3,
-  "topo_num": "41065.3.",
+  "line_number": 11,
+  "topo_num": "41064.11.9",
   "color_1": "#87cac1",
   "color_2": null,
   "two_start_holds": null,
@@ -71,19 +51,19 @@
   "traverse": false,
   "sector_name": "Bouldering",
   "sector_id": 203,
-  "archived": true,
+  "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 672,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 6,
+    "zlag_count": 1,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
+    "rating": 5,
+    "ratings_count": 1,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 6,
+    "flash": 1,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -118,16 +98,16 @@
     "s": 0
   },
   "gym": {
-    "id": 682013,
-    "name": "Turquoise Right"
+    "id": 691758,
+    "name": "Turquoise"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/682013/ascents",
-  "route_card_label": "B3.",
-  "parent_name": "Bouldering, B Sektionen",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/691758/ascents",
+  "route_card_label": "A11.9",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "700f4d07630ff171422cf5e87f95b8be",
-  "route_setter": "Rasmus Eriksson",
+  "topo": "87f77e66c2d032637a9009c0b797fed4",
+  "route_setter": "Lars Nilsson",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
