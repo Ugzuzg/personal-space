@@ -1,50 +1,62 @@
 {
-  "id": 691490,
-  "name": "Turquoise",
+  "id": 692662,
+  "name": "Neon green (MP)",
   "notes": null,
-  "difficulty": "5",
-  "grade": "vl-12",
+  "difficulty": "6B+",
+  "grade": "vl-19",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-09-04 14:47:57 +0000",
-  "created_at": "2026-09-03 15:28:08 +0000",
-  "set_at": "2026-09-03 15:27:46 +0000",
-  "expiration_date": "2026-10-18 15:27:46 +0000",
+  "updated_at": "2026-09-09 14:48:09 +0000",
+  "created_at": "2026-09-09 14:48:09 +0000",
+  "set_at": "2026-09-09 14:47:43 +0000",
+  "expiration_date": "2026-10-24 14:47:43 +0000",
   "path": [
     [
+      48,
+      152
+    ],
+    [
       16,
-      166
+      292
     ],
     [
-      11,
-      323
+      79,
+      529
     ],
     [
-      106,
+      74,
+      565
+    ],
+    [
+      162,
+      548
+    ],
+    [
+      352,
+      525
+    ],
+    [
+      355,
       497
     ],
     [
-      105,
-      556
+      383,
+      386
     ],
     [
-      259,
-      505
+      423,
+      228
     ],
     [
-      260,
-      485
-    ],
-    [
-      282,
-      269
+      254,
+      205
     ]
   ],
   "reference_width": 971,
-  "line_number": 11,
-  "topo_num": "41064.11.5",
-  "color_1": "#87cac1",
+  "line_number": 7,
+  "topo_num": "41063.7.4",
+  "color_1": "#00f900",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -57,13 +69,13 @@
   "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 3,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 5,
-    "ratings_count": 1,
-    "redpoint": 1,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
-    "flash": 2,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +110,16 @@
     "s": 0
   },
   "gym": {
-    "id": 691490,
-    "name": "Turquoise"
+    "id": 692662,
+    "name": "Neon green (MP)"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/691490/ascents",
-  "route_card_label": "A11.5",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/692662/ascents",
+  "route_card_label": "A7.4",
   "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "87f77e66c2d032637a9009c0b797fed4",
-  "route_setter": "Lars Nilsson",
+  "topo": "8ef6c381b63e55f29ff7e0317997acac",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
