@@ -57,11 +57,11 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 2,
+    "zlag_count": 3,
     "comment_count": 0,
     "rating": 4,
-    "ratings_count": 1,
-    "redpoint": 0,
+    "ratings_count": 2,
+    "redpoint": 1,
     "onsight": 0,
     "flash": 2,
     "toprope": 0,
@@ -110,7 +110,18 @@
   "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 64646,
+      "user_id": 109910,
+      "user_name": "Marcus Löwgren",
+      "date": "2026-09-10 17:24:45 +0000",
+      "item_type": "ascent",
+      "item_id": 8929185,
+      "item_name": "Klättercentret Akalla, Bouldering • Terracotta (Kinesiska Muren) (6C)",
+      "path": "5c2e4894aeb9a8e0f70708da5f2907c0"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
