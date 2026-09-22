@@ -1,75 +1,103 @@
 {
-  "id": 693268,
-  "name": "White",
+  "id": 695198,
+  "name": "Neon green",
   "notes": null,
-  "difficulty": "7A",
-  "grade": "vl-23",
+  "difficulty": "6A",
+  "grade": "vl-16",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-09-11 14:38:27 +0000",
-  "created_at": "2026-09-11 14:38:27 +0000",
-  "set_at": "2026-09-11 14:38:15 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-09-22 17:25:12 +0000",
+  "created_at": "2026-09-22 17:25:12 +0000",
+  "set_at": "2026-09-22 17:24:58 +0000",
+  "expiration_date": "2026-11-06 18:24:58 +0000",
   "path": [
     [
-      423,
-      185
+      203,
+      209
     ],
     [
-      697,
-      176
+      201,
+      209
     ],
     [
-      944,
-      165
+      460,
+      215
     ],
     [
-      884,
-      385
+      566,
+      210
     ],
     [
-      782,
-      584
+      565,
+      227
     ],
     [
-      585,
-      582
+      462,
+      374
     ],
     [
-      456,
-      589
+      476,
+      452
     ],
     [
-      423,
-      186
+      476,
+      503
+    ],
+    [
+      409,
+      491
+    ],
+    [
+      333,
+      479
+    ],
+    [
+      340,
+      378
+    ],
+    [
+      208,
+      259
+    ],
+    [
+      203,
+      212
+    ],
+    [
+      203,
+      212
+    ],
+    [
+      202,
+      211
     ]
   ],
   "reference_width": 971,
-  "line_number": 5,
-  "topo_num": "41802.5.5",
-  "color_1": "#FFFFFF",
+  "line_number": 4,
+  "topo_num": "41062.4.2",
+  "color_1": "#00f900",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
-  "gym_wall_name": "B Sektionen",
+  "gym_wall_id": 671,
+  "gym_wall_name": "A Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
-    "redpoint": 3,
+    "rating": 0,
+    "ratings_count": 0,
+    "redpoint": 0,
     "onsight": 0,
     "flash": 0,
     "toprope": 0,
-    "go": 1,
+    "go": 0,
     "safety": 0,
     "slab": 0,
     "vertical": 0,
@@ -102,16 +130,16 @@
     "s": 0
   },
   "gym": {
-    "id": 693268,
-    "name": "White"
+    "id": 695198,
+    "name": "Neon green"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/693268/ascents",
-  "route_card_label": "B5.5",
-  "parent_name": "Bouldering, B Sektionen",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/695198/ascents",
+  "route_card_label": "A4.2",
+  "parent_name": "Bouldering, A Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Jonas Wahlgren",
+  "topo": "b818aad184eedcc57ca311c2f8e257f7",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
