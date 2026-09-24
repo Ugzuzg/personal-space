@@ -1,13 +1,13 @@
 {
   "id": 695197,
-  "name": "White",
+  "name": "White (Falla,fel)",
   "notes": null,
   "difficulty": "7B",
   "grade": "vl-25",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-09-22 17:24:56 +0000",
+  "updated_at": "2026-09-24 16:54:08 +0000",
   "created_at": "2026-09-22 17:24:56 +0000",
   "set_at": "2026-09-22 17:24:46 +0000",
   "expiration_date": "2026-11-06 18:24:46 +0000",
@@ -131,7 +131,7 @@
   },
   "gym": {
     "id": 695197,
-    "name": "White"
+    "name": "White (Falla,fel)"
   },
   "gym_id": 59,
   "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/695197/ascents",
