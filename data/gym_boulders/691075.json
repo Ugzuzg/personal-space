@@ -85,15 +85,15 @@
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 4,
+    "zlag_count": 5,
     "comment_count": 0,
-    "rating": 3.5,
-    "ratings_count": 2,
+    "rating": 3.3,
+    "ratings_count": 3,
     "redpoint": 2,
     "onsight": 0,
     "flash": 2,
     "toprope": 0,
-    "go": 0,
+    "go": 1,
     "safety": 0,
     "slab": 0,
     "vertical": 0,
@@ -138,7 +138,18 @@
   "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
-  "gallery": [],
+  "gallery": [
+    {
+      "id": 65648,
+      "user_id": 109910,
+      "user_name": "Marcus Löwgren",
+      "date": "2026-10-01 16:51:49 +0000",
+      "item_type": "ascent",
+      "item_id": 8987892,
+      "item_name": "Klättercentret Akalla, Bouldering • Purple (Ametistskivling) (6C)",
+      "path": "04d8b33d150b5f728f5be39ee256a6a0"
+    }
+  ],
   "grade_proposals": [
     [
       "vl-1",
