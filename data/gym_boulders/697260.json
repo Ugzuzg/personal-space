@@ -1,73 +1,77 @@
 {
-  "id": 696985,
-  "name": "Magenta",
+  "id": 697260,
+  "name": "Neon yellow (Bongo Song)",
   "notes": null,
   "difficulty": "6C",
   "grade": "vl-21",
   "grading_system": "font",
-  "steepness": 3,
+  "steepness": 15,
   "style": null,
-  "updated_at": "2026-10-01 16:38:13 +0000",
-  "created_at": "2026-10-01 16:38:13 +0000",
-  "set_at": "2026-10-01 16:38:04 +0000",
-  "expiration_date": null,
+  "updated_at": "2026-10-03 09:23:49 +0000",
+  "created_at": "2026-10-03 09:21:53 +0000",
+  "set_at": "2026-10-03 09:21:39 +0000",
+  "expiration_date": "2026-11-17 10:21:39 +0000",
   "path": [
     [
-      423,
-      185
+      80,
+      150
     ],
     [
-      697,
-      176
+      289,
+      123
     ],
     [
-      944,
-      165
+      457,
+      392
     ],
     [
-      884,
-      385
+      402,
+      420
     ],
     [
-      782,
-      584
+      405,
+      551
     ],
     [
-      585,
-      582
+      403,
+      603
     ],
     [
-      456,
-      589
+      138,
+      592
     ],
     [
-      423,
-      186
+      141,
+      563
+    ],
+    [
+      151,
+      476
     ]
   ],
   "reference_width": 971,
-  "line_number": 5,
-  "topo_num": "41802.5.4",
-  "color_1": "#f912f3",
+  "line_number": 6,
+  "topo_num": "41066.6.15",
+  "color_1": "#ffff00",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
   "traverse": false,
   "sector_name": "Bouldering",
-  "sector_id": 219,
+  "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 734,
+  "gym_wall_id": 672,
   "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 0,
     "comment_count": 0,
-    "rating": 4,
-    "ratings_count": 1,
+    "rating": 0,
+    "ratings_count": 0,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 0,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -102,16 +106,16 @@
     "s": 0
   },
   "gym": {
-    "id": 696985,
-    "name": "Magenta"
+    "id": 697260,
+    "name": "Neon yellow (Bongo Song)"
   },
-  "gym_id": 69,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-solna/zlaggables/bouldering/696985/ascents",
-  "route_card_label": "B5.4",
+  "gym_id": 59,
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/697260/ascents",
+  "route_card_label": "B6.15",
   "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "abd490d1d42d11879845d640b480b7b2",
-  "route_setter": "Anton Cuevas",
+  "topo": "d963737ce0ac0412b5c7ccfea80b2353",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
