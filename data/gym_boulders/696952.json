@@ -1,13 +1,13 @@
 {
   "id": 696952,
-  "name": "Red right",
+  "name": "Red right (Caixa de Guerra)",
   "notes": null,
   "difficulty": "7B+",
   "grade": "vl-26",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-10-01 15:07:23 +0000",
+  "updated_at": "2026-10-02 16:00:21 +0000",
   "created_at": "2026-10-01 15:07:23 +0000",
   "set_at": "2026-10-01 15:06:15 +0000",
   "expiration_date": "2026-11-15 16:06:15 +0000",
@@ -107,7 +107,7 @@
   },
   "gym": {
     "id": 696952,
-    "name": "Red right"
+    "name": "Red right (Caixa de Guerra)"
   },
   "gym_id": 59,
   "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/696952/ascents",
