@@ -13,6 +13,7 @@ const entries = defineCollection({
     coverImage: z.string().optional(),
     atUri: z.string().optional(),
     language: z.enum(['be', 'en', 'sv']),
+    content: z.string(),
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);

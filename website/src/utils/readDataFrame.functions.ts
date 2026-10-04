@@ -4,7 +4,7 @@ import { createServerFn } from '@tanstack/react-start';
 
 export const readDataFrame = createServerFn({ method: 'GET' })
   .middleware([staticFunctionMiddleware])
-  .inputValidator((userId: number) => userId)
+  .validator((userId: number) => userId)
   .handler(async (ctx) => {
     return await readDataFrameOfUser(String(ctx.data));
   });
