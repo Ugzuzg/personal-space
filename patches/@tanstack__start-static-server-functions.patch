@@ -1,23 +1,25 @@
 diff --git a/dist/esm/staticFunctionMiddleware.js b/dist/esm/staticFunctionMiddleware.js
-index c6fecf9ebb3ce93e574642f49bf66495bc62d9a0..de31551c0251f0e43859d8da83c5790ad3a5e56e 100644
+index 3f9b7db31b55634034ac348ef8812b62aa0ff922..458489e3a381c2751227752d12abe6b9762e2e54 100644
 --- a/dist/esm/staticFunctionMiddleware.js
 +++ b/dist/esm/staticFunctionMiddleware.js
-@@ -56,12 +56,22 @@ var fetchItem = async ({ data, functionId }) => {
- 		functionId,
- 		hash: jsonToFilenameSafeString(data)
- 	});
--	let result = staticClientCache?.get(url);
--	result = await fetch(url, { method: "GET" }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
--	return result;
+@@ -49,14 +49,22 @@ async function addItemToCache({ functionId, data, response }) {
+ 	await fs.writeFile(filePath, stringifiedResult, "utf-8");
+ }
+ var fetchItem = async ({ data, functionId }) => {
+-	const url = await getStaticCacheUrl({
+-		functionId,
+-		hash: jsonToFilenameSafeString(data)
+-	});
+-	return fetch(url, { method: "GET" }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getSerovalPlugins(defaultSerovalDeserializerPlugins) }));
++  const url = await getStaticCacheUrl({
++    functionId,
++    hash: jsonToFilenameSafeString(data)
++  });
 +  if (typeof document !== "undefined") {
-+    let result = staticClientCache?.get(url);
-+    result = await fetch(url, {
-+      method: "GET"
-+    }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
-+    return result;
++    return fetch(url, { method: "GET" }).then((r) => r.json()).then((d) => fromJSON(d, { plugins: getSerovalPlugins(defaultSerovalDeserializerPlugins) }));
 +  } else {
 +    try {
-+      return await fs.readFile(path.join('./public', url), 'utf-8').then(v => JSON.parse(v)).then((d) => fromJSON(d, { plugins: getDefaultSerovalPlugins() }));
++      return await fs.readFile(path.join('./public', url), 'utf-8').then(v => JSON.parse(v)).then((d) => fromJSON(d, { plugins: getSerovalPlugins(defaultSerovalDeserializerPlugins) }));
 +    } catch {
 +      return null;
 +    }
