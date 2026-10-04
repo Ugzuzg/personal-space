@@ -1,9 +1,10 @@
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import { defineConfig } from 'vite';
-import viteReact from '@vitejs/plugin-react-swc';
-import { lingui } from '@lingui/vite-plugin';
+import viteReact from '@vitejs/plugin-react';
+import { lingui, linguiTransformerBabelPreset } from '@lingui/vite-plugin';
 import { nitro } from 'nitro/vite';
 import contentCollections from '@content-collections/vite';
+import babel from '@rolldown/plugin-babel';
 
 export default defineConfig({
   preview: { host: '127.0.0.1' },
@@ -17,7 +18,6 @@ export default defineConfig({
   optimizeDeps: { exclude: ['nodejs-polars'] },
   plugins: [
     contentCollections(),
-    lingui(),
     tanstackStart({
       prerender: {
         enabled: process.env.PRERENDER === 'true',
@@ -29,6 +29,10 @@ export default defineConfig({
         host: 'https://me.jaryk.xyz',
       },
     }),
+    viteReact(),
+    lingui(),
+    // Lingui macroTransform doesn't work with tanstack, so babel is still needed.
+    babel({ presets: [linguiTransformerBabelPreset()] }),
     process.env.PRERENDER === 'true'
       ? null
       : nitro({
@@ -41,8 +45,5 @@ export default defineConfig({
             },
           ],
         }),
-    viteReact({
-      plugins: [['@lingui/swc-plugin', {}]],
-    }),
   ],
 });
