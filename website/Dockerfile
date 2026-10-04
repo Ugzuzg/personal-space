@@ -12,7 +12,7 @@ ENV PATH="$PNPM_HOME:$PATH"
 
 RUN mkdir -p $TMPDIR && chown node:node -R $TMPDIR && chmod -R 775 $TMPDIR
 
-RUN npm install --global corepack@latest && corepack enable
+RUN npm install -g pnpm@12.9.0 --allow-scripts=pnpm
 RUN apk add --no-cache tini && \
   apk --no-cache add ca-certificates && update-ca-certificates
 
