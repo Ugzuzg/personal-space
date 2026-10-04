@@ -278,11 +278,19 @@ img[src*='.svg'] {
 picture {
   width: max-content;
 }
-figure {
-  margin: var(--figure-margin, 0);
-}
 caption,
 figcaption {
   font-size: var(--text-size-meta);
   padding-block-start: 0.5em;
+}
+nav.top-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media print {
+  nav.top-menu,
+  footer {
+    display: none;
+  }
 }

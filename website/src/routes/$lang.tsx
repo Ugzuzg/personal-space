@@ -121,13 +121,7 @@ function Home() {
   return (
     <LinguiClientProvider locale={lang} initialMessages={i18n.messages}>
       <div lang={lang}>
-        <nav
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            position: 'relative',
-          }}
-        >
+        <nav className="top-menu">
           <ul
             style={{
               display: 'flex',

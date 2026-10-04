@@ -1,3 +1,11 @@
+article {
+  header {
+    h1 {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
 .article {
   --calculated-article-space: var(--article-space, var(--space-2xl-3xl));
   --calculated-article-font-size: var(--article-font-size, var(--size-step-2));
@@ -294,7 +302,7 @@
 .master-grid > .codepen-wrapper,
 .master-grid > .console-logger-wrapper,
 .master-grid > .disclosure,
-.master-grid > .fyi-unit,
+.master-grid > .fyi-unit:not(:first-child),
 .master-grid > .instruction,
 .master-grid > .overflow,
 .master-grid > .preview-frame-wrapper,
@@ -302,7 +310,7 @@
 .master-grid > .resources,
 .master-grid > .scrollable-image-frame-wrapper,
 .master-grid > .stripe-cta,
-.master-grid > aside,
+.master-grid > aside:not(:first-child),
 .master-grid > figure:not(:first-child),
 .master-grid > hr,
 .master-grid > iframe,
@@ -531,4 +539,11 @@
 }
 .reel[data-scroll='snap'] > * {
   scroll-snap-align: center;
+}
+@media print {
+  .reel {
+    display: block;
+    height: unset;
+    overflow-x: unset;
+  }
 }
