@@ -1,50 +1,42 @@
 {
-  "id": 698091,
-  "name": "Yellow",
+  "id": 698265,
+  "name": "Neon green",
   "notes": null,
-  "difficulty": "5+",
-  "grade": "vl-14",
+  "difficulty": "6A",
+  "grade": "vl-16",
   "grading_system": "font",
   "steepness": 15,
   "style": null,
-  "updated_at": "2026-10-07 15:18:03 +0000",
-  "created_at": "2026-10-07 15:18:03 +0000",
-  "set_at": "2026-10-07 15:17:09 +0000",
-  "expiration_date": "2026-11-21 16:17:09 +0000",
+  "updated_at": "2026-10-08 14:02:35 +0000",
+  "created_at": "2026-10-08 14:02:35 +0000",
+  "set_at": "2026-10-08 14:02:25 +0000",
+  "expiration_date": "2026-11-22 15:02:25 +0000",
   "path": [
     [
-      280,
-      269
+      704,
+      227
     ],
     [
-      435,
-      259
+      878,
+      214
     ],
     [
-      492,
-      262
+      905,
+      626
     ],
     [
-      452,
-      488
+      659,
+      609
     ],
     [
-      453,
-      509
-    ],
-    [
-      377,
-      511
-    ],
-    [
-      257,
-      505
+      658,
+      577
     ]
   ],
   "reference_width": 971,
-  "line_number": 12,
-  "topo_num": "41064.12.4",
-  "color_1": "#ffe55b",
+  "line_number": 8,
+  "topo_num": "41066.8.8",
+  "color_1": "#00f900",
   "color_2": null,
   "two_start_holds": null,
   "sit_down_start": null,
@@ -53,17 +45,17 @@
   "sector_id": 203,
   "archived": false,
   "hold_manufacturer": null,
-  "gym_wall_id": 671,
-  "gym_wall_name": "A Sektionen",
+  "gym_wall_id": 672,
+  "gym_wall_name": "B Sektionen",
   "stats": {
     "video_count": 0,
-    "zlag_count": 1,
+    "zlag_count": 2,
     "comment_count": 0,
-    "rating": 0,
-    "ratings_count": 0,
+    "rating": 2,
+    "ratings_count": 1,
     "redpoint": 0,
     "onsight": 0,
-    "flash": 1,
+    "flash": 2,
     "toprope": 0,
     "go": 0,
     "safety": 0,
@@ -98,16 +90,16 @@
     "s": 0
   },
   "gym": {
-    "id": 698091,
-    "name": "Yellow"
+    "id": 698265,
+    "name": "Neon green"
   },
   "gym_id": 59,
-  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/698091/ascents",
-  "route_card_label": "A12.4",
-  "parent_name": "Bouldering, A Sektionen",
+  "share_url": "https://zlag.vertical-life.info/gyms/klattercentret-akalla/zlaggables/bouldering/698265/ascents",
+  "route_card_label": "B8.8",
+  "parent_name": "Bouldering, B Sektionen",
   "virtual": false,
-  "topo": "87f77e66c2d032637a9009c0b797fed4",
-  "route_setter": "Rasmus Eriksson",
+  "topo": "d963737ce0ac0412b5c7ccfea80b2353",
+  "route_setter": "Oliver Sjödin",
   "display_route_setter": true,
   "item_type": "gym_boulder",
   "gallery": [],
