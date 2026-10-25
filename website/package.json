@@ -42,6 +42,7 @@
     "typescript": "npm:@typescript/typescript6@^6.0.0",
     "typescript-7": "npm:typescript@^7.0.2",
     "vite": "^8.3.2",
+    "vite-imagetools": "^12.0.1",
     "zod": "^4.4.1"
   }
 }

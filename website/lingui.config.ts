@@ -1,6 +1,6 @@
 import { defineConfig } from '@lingui/cli';
 
-import { languages } from './locales';
+import { languages } from './src/locales';
 
 export default defineConfig({
   sourceLocale: 'en',

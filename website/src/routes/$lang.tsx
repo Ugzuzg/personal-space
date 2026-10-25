@@ -6,11 +6,12 @@ import { useState } from 'react';
 
 import { getI18nInstance } from '~/catalogs';
 import { LinguiClientProvider } from '~/components/LinguiClientProvider';
-import be from '~/img/be-gpt.png?url';
-import en from '~/img/en-gpt.png?url';
-import sv from '~/img/sv-gpt.png?url';
+import { Picture } from '~/components/Picture';
+import BeImages from '~/img/be-gpt.png?format=webp;avif;png&as=picture';
+import EnImages from '~/img/en-gpt.png?format=webp;avif;png&as=picture';
+import SvImages from '~/img/sv-gpt.png?format=webp;avif;png&as=picture';
 
-import { languages, languageToLocale } from '../../locales';
+import { languages, languageToLocale } from '../locales';
 
 export const Route = createFileRoute('/$lang')({
   head: (ctx) => ({
@@ -68,7 +69,7 @@ function LanguagePicker() {
             style={{ display: 'inline-flex', alignItems: 'center' }}
             onClick={() => setIsOpen(false)}
           >
-            <img src={en} style={{ height: '4em', width: 'auto' }} />
+            <Picture pic={EnImages} alt="English" className="language-picture" />
             <span lang="en">English</span>
           </Link>
         </li>
@@ -79,7 +80,7 @@ function LanguagePicker() {
             style={{ display: 'inline-flex', alignItems: 'center' }}
             onClick={() => setIsOpen(false)}
           >
-            <img src={be} style={{ height: '4em', width: 'auto' }} />
+            <Picture pic={BeImages} alt="Беларуская" className="language-picture" />
             <span lang="be">Беларуская</span>
           </Link>
         </li>
@@ -90,7 +91,7 @@ function LanguagePicker() {
             style={{ display: 'inline-flex', alignItems: 'center' }}
             onClick={() => setIsOpen(false)}
           >
-            <img src={sv} style={{ height: '4em', width: 'auto' }} />
+            <Picture pic={SvImages} alt="Svenska" className="language-picture" />
             <span lang="sv">Svenska</span>
           </Link>
         </li>

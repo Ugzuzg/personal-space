@@ -159,7 +159,8 @@
   --stroke-weight-medium: 3px;
   --stroke-weight-heavy: 6px;
   --stroke: var(--stroke-weight-light) solid var(--stroke-color, currentColor);
-  --stroke-mid: var(--stroke-weight-light) solid var(--stroke-mid-color, var(--color-mid));
+  --stroke-mid: var(--stroke-weight-light) solid
+    var(--stroke-mid-color, var(--color-mid));
   --text-decoration-thickness: 2px;
   --text-decoration-color: var(--color-secondary);
   --text-decoration-offset: 0.2ex;
@@ -170,29 +171,68 @@
   --small-screen: 1;
   --square-image-clamp: clamp(12rem, 30%, 25rem);
   --global-style-text-box-trim: trim-both cap alphabetic;
-  --global-style-blockquote-block-space: var(--blockquote-block-space, var(--space-3xl) var(--space-s));
+  --global-style-blockquote-block-space: var(
+    --blockquote-block-space,
+    var(--space-3xl) var(--space-s)
+  );
   --global-style-blockquote-gutter: var(--blockquote-gutter, var(--gutter));
-  --global-style-blockquote-flow-space: var(--blockquote-flow-space, var(--gutter));
-  --global-style-blockquote-font-size: var(--blockquote-font-size, var(--size-step-2));
-  --global-style-blockquote-font-family: var(--blockquote-font-family, var(--font-base));
+  --global-style-blockquote-flow-space: var(
+    --blockquote-flow-space,
+    var(--gutter)
+  );
+  --global-style-blockquote-font-size: var(
+    --blockquote-font-size,
+    var(--size-step-2)
+  );
+  --global-style-blockquote-font-family: var(
+    --blockquote-font-family,
+    var(--font-base)
+  );
   --global-style-blockquote-font-style: var(--blockquote-font-style, normal);
   --global-style-blockquote-decor-font-size: var(
     --blockquote-decor-font-size,
     clamp(5rem, 4.4966rem + 2.5168vw, 6.875rem)
   );
-  --global-style-blockquote-decor-font-family: var(--blockquote-decor-font-family, var(--heading-font-family));
+  --global-style-blockquote-decor-font-family: var(
+    --blockquote-decor-font-family,
+    var(--heading-font-family)
+  );
   --global-style-blockquote-decor-opacity: var(--blockquote-decor-opacity, 1);
   --global-style-scroll-margin: 3lh;
-  --global-style-table-th-font-family: var(--table-th-font-family, var(--font-display));
-  --global-style-table-th-font-size: var(--table-th-font-size, var(--size-step--1));
-  --global-style-table-th-font-weight: var(--table-th-font-weight, var(--font-bold));
+  --global-style-table-th-font-family: var(
+    --table-th-font-family,
+    var(--font-display)
+  );
+  --global-style-table-th-font-size: var(
+    --table-th-font-size,
+    var(--size-step--1)
+  );
+  --global-style-table-th-font-weight: var(
+    --table-th-font-weight,
+    var(--font-bold)
+  );
   --global-style-table-th-leading: var(--table-th-leading, var(--leading-fine));
-  --global-style-table-th-text-transform: var(--table-th-text-transform, uppercase);
-  --global-style-table-th-padding: var(--table-th-padding, var(--space-xs) var(--space-s));
+  --global-style-table-th-text-transform: var(
+    --table-th-text-transform,
+    uppercase
+  );
+  --global-style-table-th-padding: var(
+    --table-th-padding,
+    var(--space-xs) var(--space-s)
+  );
   --global-style-table-td-padding: var(--table-td-padding, var(--space-s));
-  --global-style-table-td-font-family: var(--table-td-font-family, var(--font-display));
-  --global-style-table-td-font-size: var(--table-td-font-size, var(--text-size-base));
-  --global-style-table-td-font-weight: var(--table-td-font-weight, var(--font-normal));
+  --global-style-table-td-font-family: var(
+    --table-td-font-family,
+    var(--font-display)
+  );
+  --global-style-table-td-font-size: var(
+    --table-td-font-size,
+    var(--text-size-base)
+  );
+  --global-style-table-td-font-weight: var(
+    --table-td-font-weight,
+    var(--font-normal)
+  );
   --global-style-table-td-leading: var(--table-td-leading, var(--leading-fine));
 }
 @media (prefers-color-scheme: dark) {
@@ -220,7 +260,7 @@
   padding-inline: var(--gutter-wrapper-inline, var(--gutter));
   position: relative;
 }
-.wrapper[data-wrapper-type='inner'] {
+.wrapper[data-wrapper-type="inner"] {
   min-width: 100%;
   padding-block: var(--gutter-wrapper-inner-block, var(--gutter));
   padding-inline: var(--gutter-wrapper-inner-inline, var(--gutter));
@@ -232,7 +272,7 @@ picture {
   height: auto;
   max-width: 100%;
 }
-img[src*='.svg'] {
+img[src*=".svg"] {
   width: 100%;
 }
 picture {
@@ -253,4 +293,9 @@ nav.top-menu {
   footer {
     display: none;
   }
+}
+
+.language-picture img {
+  height: 4em;
+  width: auto;
 }

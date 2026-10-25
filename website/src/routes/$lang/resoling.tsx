@@ -1,8 +1,8 @@
 import { useLingui } from '@lingui/react';
 import { Plural, Trans } from '@lingui/react/macro';
 import { createFileRoute } from '@tanstack/react-router';
-import { languageToLocale } from 'locales';
 
+import { languageToLocale } from '~/locales';
 import { readTheSheet } from '~/utils/readTheSheet.functions';
 
 export const Route = createFileRoute('/$lang/resoling')({

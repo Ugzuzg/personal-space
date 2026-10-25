@@ -1,6 +1,6 @@
 import { I18n, Messages, setupI18n } from '@lingui/core';
 
-import { languages } from '../locales';
+import { languages } from './locales';
 
 type SupportedLocales = (typeof languages)[number];
 

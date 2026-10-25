@@ -5,6 +5,7 @@ import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import viteReact from '@vitejs/plugin-react';
 import { nitro } from 'nitro/vite';
 import { defineConfig } from 'vite';
+import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
   preview: { host: '127.0.0.1' },
@@ -17,6 +18,7 @@ export default defineConfig({
   },
   optimizeDeps: { exclude: ['nodejs-polars'] },
   plugins: [
+    imagetools(),
     contentCollections(),
     tanstackStart({
       prerender: {
