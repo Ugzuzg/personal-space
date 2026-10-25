@@ -10,51 +10,21 @@ article {
   --calculated-article-space: var(--article-space, var(--space-2xl-3xl));
   --calculated-article-font-size: var(--article-font-size, var(--size-step-2));
   --calculated-article-leading: var(--article-leading, 1.5);
-  --calculated-article-heading-font-family: var(
-    --article-heading-font-family,
-    var(--font-accent)
-  );
-  --calculated-article-checkbox-bg: var(
-    --article-checkbox-bg,
-    var(--color-light)
-  );
-  --calculated-article-inline-code-font-size: var(
-    --article-inline-code-font-size,
-    0.97em
-  );
-  --calculated-article-inline-code-font-weight: var(
-    --article-inline-code-font-weight,
-    var(--font-normal)
-  );
+  --calculated-article-heading-font-family: var(--article-heading-font-family, var(--font-accent));
+  --calculated-article-checkbox-bg: var(--article-checkbox-bg, var(--color-light));
+  --calculated-article-inline-code-font-size: var(--article-inline-code-font-size, 0.97em);
+  --calculated-article-inline-code-font-weight: var(--article-inline-code-font-weight, var(--font-normal));
   --calculated-article-flow-space: var(--article-flow-space, var(--space-xl));
-  --calculated-article-flow-space-small: var(
-    --article-flow-space-small,
-    var(--space-l)
-  );
-  --calculated-article-flow-space-large: var(
-    --article-flow-space-large,
-    var(--space-xl-2xl)
-  );
-  --calculated-article-list-item-space: var(
-    --article-list-item-space,
-    var(--space-m)
-  );
+  --calculated-article-flow-space-small: var(--article-flow-space-small, var(--space-l));
+  --calculated-article-flow-space-large: var(--article-flow-space-large, var(--space-xl-2xl));
+  --calculated-article-list-item-space: var(--article-list-item-space, var(--space-m));
   --calculated-article-img-border: var(--article-img-border, none);
   --calculated-article-video-border: var(--article-video-border, none);
-  --calculated-article-figcaption-font-size: var(
-    --article-figcaption-font-size,
-    var(--size-step--1)
-  );
-  --calculated-article-figcaption-font-style: var(
-    --article-figcaption-font-style,
-    italic
-  );
+  --calculated-article-figcaption-font-size: var(--article-figcaption-font-size, var(--size-step--1));
+  --calculated-article-figcaption-font-style: var(--article-figcaption-font-style, italic);
   --global-ul-padding: var(--article-list-inline-padding, 1.45ch);
   --fyi-unit-paragraph-font-size: var(--calculated-article-font-size);
-  --calculated-article-dfn-abbr-decoration-color: var(
-    --article-dfn-abbr-decoration-color,
-    var(--color-secondary)
-  );
+  --calculated-article-dfn-abbr-decoration-color: var(--article-dfn-abbr-decoration-color, var(--color-secondary));
   padding-block-start: var(--calculated-article-space);
   --text-size-heading-1: var(--size-step-6);
   --text-size-heading-2: var(--size-step-5);
@@ -81,9 +51,7 @@ article {
   }
   > :is(p, ul, ol, blockquote, hr) + :is(h1, h2, h3, h4, h5, h6),
   > :is(ul, ol, figure) + :is(p:not(:empty), ul, ol, blockquote),
-  > :is(ul, ol, figure)
-    + :is(p:not(:empty), ul, ol, blockquote, aside)
-    + aside {
+  > :is(ul, ol, figure) + :is(p:not(:empty), ul, ol, blockquote, aside) + aside {
     --flow-space: var(--calculated-article-flow-space-large);
   }
   > :is(h1, h2, h3, h4, h5, h6) + :is(p, ul, ol, blockquote),
@@ -147,12 +115,7 @@ article {
     width: 1px;
   }
   > form #message_desc,
-  > form
-    label
-    + :is(
-      input:not([type='checkbox'], [type='radio'], [type='color']),
-      textarea
-    ) {
+  > form label + :is(input:not([type='checkbox'], [type='radio'], [type='color']), textarea) {
     margin-block-start: var(--space-s);
   }
 }
@@ -173,23 +136,12 @@ article {
 }
 .article
   .prose
-  a:not(
-    [data-button-variant='ghost-dark'],
-    [data-button-variant='primary'],
-    [data-button-variant='dark'],
-    .flow-cta
-  ) {
+  a:not([data-button-variant='ghost-dark'], [data-button-variant='primary'], [data-button-variant='dark'], .flow-cta) {
   color: inherit;
-  text-decoration-color: var(
-    --article-text-decoration-color,
-    var(--color-secondary)
-  );
+  text-decoration-color: var(--article-text-decoration-color, var(--color-secondary));
 }
 .article .prose a:hover {
-  text-decoration-color: var(
-    --article-text-decoration-hover-color,
-    var(--color-dark)
-  );
+  text-decoration-color: var(--article-text-decoration-hover-color, var(--color-dark));
 }
 .article .prose abbr,
 .article .prose dfn {
@@ -206,14 +158,8 @@ article {
   border: none;
 }
 .master-grid {
-  --calculated-master-grid-padding-inline: var(
-    --master-grid-padding-inline,
-    var(--gutter)
-  );
-  --calculated-master-grid-content-max-width: var(
-    --master-grid-content-max-width,
-    80ch
-  );
+  --calculated-master-grid-padding-inline: var(--master-grid-padding-inline, var(--gutter));
+  --calculated-master-grid-content-max-width: var(--master-grid-content-max-width, 80ch);
   --calculated-master-grid-popout-extra-distance: var(
     --master-grid-popout-extra-distance,
     calc(var(--padding-inline) * 1.5)
@@ -225,19 +171,13 @@ article {
   --padding-inline: var(--calculated-master-grid-padding-inline);
   --content-max-width: var(--calculated-master-grid-content-max-width);
   --popout-extra-distance: var(--calculated-master-grid-popout-extra-distance);
-  --content-width: min(
-    var(--content-max-width),
-    100% - var(--padding-inline) * 2
-  );
+  --content-width: min(var(--content-max-width), 100% - var(--padding-inline) * 2);
   display: grid;
   grid-template-columns:
     [full-width-start] minmax(var(--padding-inline), 1fr)
     [popout-start] minmax(0, var(--popout-extra-distance))
     [content-start] var(--content-width)
-    [content-end] minmax(0, var(--popout-extra-distance)) [popout-end] minmax(
-      var(--padding-inline),
-      1fr
-    )
+    [content-end] minmax(0, var(--popout-extra-distance)) [popout-end] minmax(var(--padding-inline), 1fr)
     [full-width-end];
 }
 .master-grid > * {
@@ -348,10 +288,7 @@ article {
 }
 .master-grid > figure:has(.video-player):first-child {
   + :is(h1, h2, h3, h4, h5, h6, ul, ol, p:not(:empty), blockquote, aside) {
-    margin-block-start: var(
-      --master-grid-media-breathing-space,
-      var(--space-3xl-4xl)
-    );
+    margin-block-start: var(--master-grid-media-breathing-space, var(--space-3xl-4xl));
   }
 }
 .master-grid > .instruction {
@@ -368,47 +305,19 @@ article {
 .side-note {
   --calculated-side-note-padding: var(--side-note-padding, var(--space-s));
   --calculated-side-note-bg: var(--side-note-bg, var(--color-light-glare));
-  --calculated-side-note-font-size: var(
-    --side-note-font-size,
-    var(--size-step--2)
-  );
-  --calculated-side-note-font-family: var(
-    --side-note-font-family,
-    var(--font-display)
-  );
+  --calculated-side-note-font-size: var(--side-note-font-size, var(--size-step--2));
+  --calculated-side-note-font-family: var(--side-note-font-family, var(--font-display));
   --calculated-side-note-border: var(--side-note-border, var(--stroke));
   --calculated-side-note-color: var(--side-note-color, currentColor);
-  --calculated-side-note-heading-font-size: var(
-    --side-note-heading-font-size,
-    var(--size-step--2)
-  );
-  --calculated-side-note-heading-font-family: var(
-    --side-note-heading-font-family,
-    var(--font-display)
-  );
-  --calculated-side-note-heading-text-transform: var(
-    --side-note-heading-text-transform,
-    uppercase
-  );
-  --calculated-side-note-decorator-thickness: var(
-    --side-note-decorator-thickness,
-    1px
-  );
-  --calculated-side-note-decorator-color: var(
-    --side-note-decorator-color,
-    var(--color-dark)
-  );
-  --calculated-side-note-decorator-size-short: var(
-    --side-note-decorator-size-short,
-    var(--space-m-l)
-  );
-  --calculated-side-note-decorator-size-long: var(
-    --side-note-decorator-size-long,
-    var(--space-xl)
-  );
+  --calculated-side-note-heading-font-size: var(--side-note-heading-font-size, var(--size-step--2));
+  --calculated-side-note-heading-font-family: var(--side-note-heading-font-family, var(--font-display));
+  --calculated-side-note-heading-text-transform: var(--side-note-heading-text-transform, uppercase);
+  --calculated-side-note-decorator-thickness: var(--side-note-decorator-thickness, 1px);
+  --calculated-side-note-decorator-color: var(--side-note-decorator-color, var(--color-dark));
+  --calculated-side-note-decorator-size-short: var(--side-note-decorator-size-short, var(--space-m-l));
+  --calculated-side-note-decorator-size-long: var(--side-note-decorator-size-long, var(--space-xl));
   padding-block-start: calc(
-    var(--calculated-side-note-decorator-size-short) -
-      var(--calculated-side-note-decorator-thickness)
+    var(--calculated-side-note-decorator-size-short) - var(--calculated-side-note-decorator-thickness)
   );
   position: relative;
 }
@@ -477,14 +386,8 @@ article {
 
 .fyi-unit {
   --stroke-color: var(--color-primary);
-  --gutter-wrapper-inner-block: var(
-    --fyi-unit-gutter-wrapper-inner-block,
-    var(--space-m)
-  );
-  --gutter-wrapper-inner-inline: var(
-    --fyi-unit-gutter-wrapper-inner-inline,
-    var(--global-gutter-wrapper-inner-inline)
-  );
+  --gutter-wrapper-inner-block: var(--fyi-unit-gutter-wrapper-inner-block, var(--space-m));
+  --gutter-wrapper-inner-inline: var(--fyi-unit-gutter-wrapper-inner-inline, var(--global-gutter-wrapper-inner-inline));
   --calculated-fyi-unit-bg: var(--fyi-unit-bg, var(--color-light-glare));
   --calculated-fyi-unit-color: var(--fyi-unit-color, currentColor);
   border: var(--fyi-unit-border, var(--stroke));

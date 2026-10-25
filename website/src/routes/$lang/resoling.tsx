@@ -1,7 +1,8 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { Plural, Trans } from '@lingui/react/macro';
 import { useLingui } from '@lingui/react';
+import { Plural, Trans } from '@lingui/react/macro';
+import { createFileRoute } from '@tanstack/react-router';
 import { languageToLocale } from 'locales';
+
 import { readTheSheet } from '~/utils/readTheSheet.functions';
 
 export const Route = createFileRoute('/$lang/resoling')({
@@ -19,14 +20,14 @@ function RouteComponent() {
     style: 'unit',
     unit: 'gram',
   });
-  const estimatedShippingCost = data.estimatedShippingCost.toLocaleString(
-    locale,
-    { style: 'currency', currency: 'SEK' },
-  );
-  const costPerPair = (data.estimatedShippingCost / shoesToSend).toLocaleString(
-    locale,
-    { style: 'currency', currency: 'SEK' },
-  );
+  const estimatedShippingCost = data.estimatedShippingCost.toLocaleString(locale, {
+    style: 'currency',
+    currency: 'SEK',
+  });
+  const costPerPair = (data.estimatedShippingCost / shoesToSend).toLocaleString(locale, {
+    style: 'currency',
+    currency: 'SEK',
+  });
 
   const allCollected = shoesToSend > 0 && shoesCollected >= shoesToSend;
 
@@ -37,14 +38,8 @@ function RouteComponent() {
       </h1>
       <p>
         <Trans>
-          We have{' '}
-          <Plural
-            value={shoesToSend}
-            one="# pair of shoes"
-            other="# pairs of shoes"
-          />{' '}
-          to send, with a total weight of {totalWeight} and an estimated
-          shipping cost of {estimatedShippingCost}, which averages to{' '}
+          We have <Plural value={shoesToSend} one="# pair of shoes" other="# pairs of shoes" /> to send, with a total
+          weight of {totalWeight} and an estimated shipping cost of {estimatedShippingCost}, which averages to{' '}
           {costPerPair} per pair one way.
         </Trans>
       </p>
@@ -65,16 +60,12 @@ function RouteComponent() {
       )}
       {data.shippedThereOn && (
         <p>
-          <Trans>
-            Shipped there on {data.shippedThereOn.toLocaleDateString(locale)}
-          </Trans>
+          <Trans>Shipped there on {data.shippedThereOn.toLocaleDateString(locale)}</Trans>
         </p>
       )}
       {data.shippedBackOn && (
         <p>
-          <Trans>
-            Shipped back on {data.shippedBackOn.toLocaleDateString(locale)}
-          </Trans>
+          <Trans>Shipped back on {data.shippedBackOn.toLocaleDateString(locale)}</Trans>
         </p>
       )}
     </section>

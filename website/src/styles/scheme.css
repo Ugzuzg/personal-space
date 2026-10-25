@@ -92,8 +92,7 @@
     --post-heading-text-decoration-color: var(--color-primary);
     --flow-cta-bg: var(--color-dark-glare);
     --instruction-background: var(--color-dark-glare);
-    --instruction-border-left: var(--stroke-weight-heavy) solid
-      var(--color-primary);
+    --instruction-border-left: var(--stroke-weight-heavy) solid var(--color-primary);
     --instruction-font-size: var(--size-step-1);
     --instruction-code-background: var(--color-dark);
     --pay-wall-bg: var(--color-dark-glare);
@@ -108,9 +107,7 @@
     --off-screen-menu-sub-nav-before-background: var(--color-light);
     --off-screen-menu-user-actions-button-bg-hover: var(--color-light);
     --off-screen-menu-user-actions-button-text-hover: var(--color-dark);
-    --off-screen-menu-user-actions-button-border-color-hover: var(
-      --color-light
-    );
+    --off-screen-menu-user-actions-button-border-color-hover: var(--color-light);
     --scrollable-image-frame-bg: var(--color-dark);
     --scrollable-image-frame-text: var(--color-light);
     --scrollable-image-frame-header-button-bg: var(--color-dark);

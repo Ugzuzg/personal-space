@@ -35,23 +35,11 @@ export async function readTheSheetServer() {
     valueRenderOption: 'UNFORMATTED_VALUE',
   });
   return {
-    shoesToSend:
-      sheetsValues.data.valueRanges?.[0].values
-        ?.flat()
-        .filter((v) => v === true).length ?? 0,
-    shoesCollected:
-      sheetsValues.data.valueRanges?.[1]?.values
-        ?.flat()
-        .filter((v) => v === true).length ?? 0,
-    totalWeight:
-      (sheetsValues.data.valueRanges?.[2].values?.[0]?.[0] as number) ?? 0,
-    estimatedShippingCost:
-      (sheetsValues.data.valueRanges?.[3].values?.[0]?.[0] as number) ?? 0,
-    shippedThereOn: optional(excelDateToJsDate)(
-      sheetsValues.data.valueRanges?.[4].values?.[0]?.[0],
-    ),
-    shippedBackOn: optional(excelDateToJsDate)(
-      sheetsValues.data.valueRanges?.[5].values?.[0]?.[0],
-    ),
+    shoesToSend: sheetsValues.data.valueRanges?.[0].values?.flat().filter((v) => v === true).length ?? 0,
+    shoesCollected: sheetsValues.data.valueRanges?.[1]?.values?.flat().filter((v) => v === true).length ?? 0,
+    totalWeight: (sheetsValues.data.valueRanges?.[2].values?.[0]?.[0] as number) ?? 0,
+    estimatedShippingCost: (sheetsValues.data.valueRanges?.[3].values?.[0]?.[0] as number) ?? 0,
+    shippedThereOn: optional(excelDateToJsDate)(sheetsValues.data.valueRanges?.[4].values?.[0]?.[0]),
+    shippedBackOn: optional(excelDateToJsDate)(sheetsValues.data.valueRanges?.[5].values?.[0]?.[0]),
   };
 }

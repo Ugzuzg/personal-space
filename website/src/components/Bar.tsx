@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import * as Plot from '@observablehq/plot';
 import { useLingui } from '@lingui/react/macro';
+import * as Plot from '@observablehq/plot';
+import { useMemo } from 'react';
 
 import PlotFigure from './PlotFigure';
 
@@ -41,10 +41,7 @@ export function Bar({ data }) {
     */
   ];
 
-  const dateFormatter = useMemo(
-    () => new Intl.DateTimeFormat(i18n.locale, { year: 'numeric' }),
-    [i18n.locale],
-  );
+  const dateFormatter = useMemo(() => new Intl.DateTimeFormat(i18n.locale, { year: 'numeric' }), [i18n.locale]);
 
   return (
     <article>
@@ -76,8 +73,7 @@ export function Bar({ data }) {
                   fy: {
                     label: grouping.label,
                     reverse: true,
-                    tickFormat: (v) =>
-                      dateFormatter.format(new Date(Date.UTC(v))),
+                    tickFormat: (v) => dateFormatter.format(new Date(Date.UTC(v))),
                   },
                 }),
                 style: {
@@ -88,13 +84,7 @@ export function Bar({ data }) {
                 marginRight: 80,
                 marginBottom: 50,
                 marks: [
-                  Plot.barX(
-                    data,
-                    Plot.groupY(
-                      { x: 'count' },
-                      { ...grouping, y: 'difficulty', title: 'type' },
-                    ),
-                  ),
+                  Plot.barX(data, Plot.groupY({ x: 'count' }, { ...grouping, y: 'difficulty', title: 'type' })),
                   Plot.frame(),
                 ],
               }}

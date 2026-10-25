@@ -1,10 +1,10 @@
-import { tanstackStart } from '@tanstack/react-start/plugin/vite';
-import { defineConfig } from 'vite';
-import viteReact from '@vitejs/plugin-react';
-import { lingui, linguiTransformerBabelPreset } from '@lingui/vite-plugin';
-import { nitro } from 'nitro/vite';
 import contentCollections from '@content-collections/vite';
+import { lingui, linguiTransformerBabelPreset } from '@lingui/vite-plugin';
 import babel from '@rolldown/plugin-babel';
+import { tanstackStart } from '@tanstack/react-start/plugin/vite';
+import viteReact from '@vitejs/plugin-react';
+import { nitro } from 'nitro/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   preview: { host: '127.0.0.1' },

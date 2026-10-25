@@ -21,17 +21,14 @@ export const allMessages = catalogs.reduce((acc, oneCatalog) => {
 
 type AllI18nInstances = { [K in SupportedLocales]: I18n };
 
-export const allI18nInstances: AllI18nInstances = languages.reduce(
-  (acc, locale) => {
-    const messages = allMessages[locale] ?? {};
-    const i18n = setupI18n({
-      locale,
-      messages: { [locale]: messages },
-    });
-    return { ...acc, [locale]: i18n };
-  },
-  {} as AllI18nInstances,
-);
+export const allI18nInstances: AllI18nInstances = languages.reduce((acc, locale) => {
+  const messages = allMessages[locale] ?? {};
+  const i18n = setupI18n({
+    locale,
+    messages: { [locale]: messages },
+  });
+  return { ...acc, [locale]: i18n };
+}, {} as AllI18nInstances);
 
 export const getI18nInstance = (locale: SupportedLocales): I18n => {
   if (!allI18nInstances[locale]) {

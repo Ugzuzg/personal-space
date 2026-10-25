@@ -1,5 +1,5 @@
-import * as Plot from '@observablehq/plot';
 import { Trans, useLingui } from '@lingui/react/macro';
+import * as Plot from '@observablehq/plot';
 
 import PlotFigure from './PlotFigure';
 
@@ -27,9 +27,7 @@ export function Timeline({ data }) {
                 return i18n
                   .date(d, {
                     month: 'short',
-                    ...(i === 0 || d.getUTCMonth() === 0
-                      ? { year: 'numeric' }
-                      : {}),
+                    ...(i === 0 || d.getUTCMonth() === 0 ? { year: 'numeric' } : {}),
                   })
                   .replace(/\s+/g, '\n');
               },
@@ -84,13 +82,7 @@ export function Timeline({ data }) {
                     }, {}),
                   )
                     .toSorted((a, b) => a[0].localeCompare(b[0]))
-                    .reduce(
-                      (acc, ascents) => [
-                        ...acc,
-                        `${ascents[0]} x${ascents[1]}`,
-                      ],
-                      [] as string[],
-                    )
+                    .reduce((acc, ascents) => [...acc, `${ascents[0]} x${ascents[1]}`], [] as string[])
                     .join('; '),
               }),
             ],

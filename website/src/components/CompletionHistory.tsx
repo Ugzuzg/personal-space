@@ -1,5 +1,6 @@
-import * as Plot from '@observablehq/plot';
 import { Trans } from '@lingui/react/macro';
+import * as Plot from '@observablehq/plot';
+
 import PlotFigure from './PlotFigure';
 
 export function CompletionHistory({ data }) {

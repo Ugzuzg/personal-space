@@ -1,11 +1,11 @@
-import { createFileRoute } from '@tanstack/react-router';
 import { Trans } from '@lingui/react/macro';
+import { createFileRoute } from '@tanstack/react-router';
 
 import { Bar } from '~/components/Bar';
 import { Completion } from '~/components/Completion';
+import { CompletionHistory } from '~/components/CompletionHistory';
 import { Cpr } from '~/components/Cpr';
 import { Timeline } from '~/components/Timeline';
-import { CompletionHistory } from '~/components/CompletionHistory';
 import { readDataFrame } from '~/utils/readDataFrame.functions';
 
 export const Route = createFileRoute('/$lang/climbing/$userId')({
@@ -43,16 +43,9 @@ export function Climbing({
 }
 
 function RouteClimbing() {
-  const { cpr, timeline, bar, completion, completionHistory } =
-    Route.useLoaderData();
+  const { cpr, timeline, bar, completion, completionHistory } = Route.useLoaderData();
 
   return (
-    <Climbing
-      cpr={cpr}
-      timeline={timeline}
-      bar={bar}
-      completion={completion}
-      completionHistory={completionHistory}
-    />
+    <Climbing cpr={cpr} timeline={timeline} bar={bar} completion={completion} completionHistory={completionHistory} />
   );
 }

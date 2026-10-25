@@ -4,13 +4,7 @@ import { createElement as h, ReactElement } from 'react';
 // For client-side rendering, see https://codesandbox.io/s/plot-react-csr-p4cr7t?file=/src/PlotFigure.jsx
 // Based on https://github.com/observablehq/plot/blob/main/docs/components/PlotRender.js
 
-export default function PlotFigure({
-  width,
-  options,
-}: {
-  width: number | undefined;
-  options: Plot.PlotOptions;
-}) {
+export default function PlotFigure({ width, options }: { width: number | undefined; options: Plot.PlotOptions }) {
   return (
     <div style={{ overflow: 'auto' }}>
       <div style={{ width, margin: '0 auto' }}>
@@ -124,9 +118,7 @@ class ServerElement {
   }
   append(...children: ServerElement[]) {
     for (const child of children) {
-      this.appendChild(
-        child?.ownerDocument ? child : this.ownerDocument.createTextNode(child),
-      );
+      this.appendChild(child?.ownerDocument ? child : this.ownerDocument.createTextNode(child));
     }
   }
   appendChild(child: ServerElement) {

@@ -1,19 +1,13 @@
-import {
-  Link,
-  Outlet,
-  createFileRoute,
-  notFound,
-} from '@tanstack/react-router';
-import { setI18n } from '@lingui/react/server';
-import { Trans, useLingui } from '@lingui/react/macro';
-import { useState } from 'react';
 import { defineMessage, plural } from '@lingui/core/macro';
+import { Trans, useLingui } from '@lingui/react/macro';
+import { setI18n } from '@lingui/react/server';
+import { Link, Outlet, createFileRoute, notFound } from '@tanstack/react-router';
+import { useState } from 'react';
 
 import { getI18nInstance } from '~/catalogs';
 import { LinguiClientProvider } from '~/components/LinguiClientProvider';
-
-import en from '~/img/en-gpt.png?url';
 import be from '~/img/be-gpt.png?url';
+import en from '~/img/en-gpt.png?url';
 import sv from '~/img/sv-gpt.png?url';
 
 import { languages, languageToLocale } from '../../locales';
@@ -32,10 +26,7 @@ export const Route = createFileRoute('/$lang')({
 
 function LanguageIcon() {
   return (
-    <svg
-      viewBox="0 0 20 20"
-      style={{ marginRight: '4px', width: '1.2em', height: '1.2em' }}
-    >
+    <svg viewBox="0 0 20 20" style={{ marginRight: '4px', width: '1.2em', height: '1.2em' }}>
       <title>language</title>
       <g fill="currentColor">
         <path d="M20 18h-1.44a.6.6 0 0 1-.4-.12.8.8 0 0 1-.23-.31L17 15h-5l-1 2.54a.8.8 0 0 1-.22.3.6.6 0 0 1-.4.14H9l4.55-11.47h1.89zm-3.53-4.31L14.89 9.5a12 12 0 0 1-.39-1.24q-.09.37-.19.69l-.19.56-1.58 4.19zm-6.3-1.58a13.4 13.4 0 0 1-2.91-1.41 11.46 11.46 0 0 0 2.81-5.37H12V4H7.31a4 4 0 0 0-.2-.56C6.87 2.79 6.6 2 6.6 2l-1.47.5s.4.89.6 1.5H0v1.33h2.15A11.23 11.23 0 0 0 5 10.7a17.2 17.2 0 0 1-5 2.1q.56.82.87 1.38a23.3 23.3 0 0 0 5.22-2.51 15.6 15.6 0 0 0 3.56 1.77zM3.63 5.33h4.91a8.1 8.1 0 0 1-2.45 4.45 9.1 9.1 0 0 1-2.46-4.45" />
@@ -49,11 +40,7 @@ function LanguagePicker() {
   const { i18n } = useLingui();
 
   return (
-    <details
-      open={isOpen}
-      onToggle={(e) => setIsOpen(e.currentTarget.open)}
-      style={{ cursor: 'pointer' }}
-    >
+    <details open={isOpen} onToggle={(e) => setIsOpen(e.currentTarget.open)} style={{ cursor: 'pointer' }}>
       <summary style={{ display: 'inline-flex', alignItems: 'center' }}>
         <LanguageIcon />
         {i18n._(
@@ -143,29 +130,17 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link
-                to="/$lang/journal"
-                params={{ lang }}
-                activeProps={{ className: 'font-bold' }}
-              >
+              <Link to="/$lang/journal" params={{ lang }} activeProps={{ className: 'font-bold' }}>
                 <Trans>Journal</Trans>
               </Link>
             </li>
             <li>
-              <Link
-                to="/$lang/climbing"
-                params={{ lang }}
-                activeProps={{ className: 'font-bold' }}
-              >
+              <Link to="/$lang/climbing" params={{ lang }} activeProps={{ className: 'font-bold' }}>
                 <Trans>Climbing</Trans>
               </Link>
             </li>
             <li>
-              <Link
-                to="/$lang/resoling"
-                params={{ lang }}
-                activeProps={{ className: 'font-bold' }}
-              >
+              <Link to="/$lang/resoling" params={{ lang }} activeProps={{ className: 'font-bold' }}>
                 <Trans>Are we resoling yet?</Trans>
               </Link>
             </li>
@@ -178,11 +153,7 @@ function Home() {
         </main>
         <footer>
           <hr />
-          <a
-            href="https://github.com/Ugzuzg/personal-space"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/Ugzuzg/personal-space" target="_blank" rel="noopener noreferrer">
             <Trans>Source</Trans>
           </a>
         </footer>

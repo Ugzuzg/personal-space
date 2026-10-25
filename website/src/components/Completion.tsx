@@ -1,7 +1,7 @@
-import { useMemo } from 'react';
-import * as Plot from '@observablehq/plot';
 import { Trans } from '@lingui/react/macro';
 import { useLingui } from '@lingui/react/macro';
+import * as Plot from '@observablehq/plot';
+import { useMemo } from 'react';
 
 import PlotFigure from './PlotFigure';
 
@@ -34,8 +34,7 @@ export function Completion({ data }) {
       </h2>
       <p>
         <Trans>
-          Overall progress: {numberFormatter.format(allSent)} /{' '}
-          {numberFormatter.format(allBoulders)} (
+          Overall progress: {numberFormatter.format(allSent)} / {numberFormatter.format(allBoulders)} (
           {percentFormatter.format(allSent / allBoulders)})
         </Trans>
       </p>

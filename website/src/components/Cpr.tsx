@@ -1,5 +1,5 @@
-import * as Plot from '@observablehq/plot';
 import { Trans, useLingui } from '@lingui/react/macro';
+import * as Plot from '@observablehq/plot';
 import { useEffect, useState } from 'react';
 
 import PlotFigure from './PlotFigure';
@@ -52,10 +52,7 @@ export function Cpr({ data }) {
   };
 
   const maxDifficulty = data.reduce(
-    (currentMax, datapoint) =>
-      datapoint.difficultyMax > currentMax
-        ? datapoint.difficultyMax
-        : currentMax,
+    (currentMax, datapoint) => (datapoint.difficultyMax > currentMax ? datapoint.difficultyMax : currentMax),
     '2',
   );
 
@@ -84,9 +81,7 @@ export function Cpr({ data }) {
                 return i18n
                   .date(d, {
                     month: 'short',
-                    ...(i === 0 || d.getUTCMonth() === 0
-                      ? { year: 'numeric' }
-                      : {}),
+                    ...(i === 0 || d.getUTCMonth() === 0 ? { year: 'numeric' } : {}),
                   })
                   .replace(/\s+/g, '\n');
               },
@@ -94,11 +89,8 @@ export function Cpr({ data }) {
               tickRotate: isSmallScreen ? 90 : 0,
             },
             [isSmallScreen ? 'x' : 'y']: {
-              ticks: boulderScores
-                .filter((grade) => grade.font <= maxDifficulty)
-                .map((grade) => grade.score),
-              tickFormat: (v) =>
-                boulderScores.find(({ score }) => v === score)?.font,
+              ticks: boulderScores.filter((grade) => grade.font <= maxDifficulty).map((grade) => grade.score),
+              tickFormat: (v) => boulderScores.find(({ score }) => v === score)?.font,
               label: null,
               tickRotate: isSmallScreen ? 90 : 0,
               ...(isSmallScreen && { axis: 'top' }),
@@ -121,8 +113,7 @@ export function Cpr({ data }) {
                 fill: 'type',
 
                 title: (d) => {
-                  if (d.difficultyMin === d.difficultyMax)
-                    return d.difficultyMin;
+                  if (d.difficultyMin === d.difficultyMax) return d.difficultyMin;
                   return `${d.difficultyMin} - ${d.difficultyMax}`;
                 },
 

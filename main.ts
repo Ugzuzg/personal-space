@@ -38,15 +38,12 @@ const getAccessToken = async () => {
 };
 
 const fetchBoulder = async (token: string, id: number) => {
-  const response = await fetch(
-    `https://vlcapi.vertical-life.info/gym_boulders/${id}`,
-    {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+  const response = await fetch(`https://vlcapi.vertical-life.info/gym_boulders/${id}`, {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer ${token}`,
     },
-  );
+  });
 
   if (!response.ok) {
     console.log(await response.json());
@@ -93,15 +90,12 @@ const fetchBoulders = async (token: string, ids: number[]) => {
 
 async function fetchDataForGym(token: string, gym: number) {
   console.log(`Fetching gym #${gym} boulders`);
-  const response = await fetch(
-    `https://vlcapi.vertical-life.info/gyms/${gym}/zlaggables?zlaggable_type=GymBoulder`,
-    {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+  const response = await fetch(`https://vlcapi.vertical-life.info/gyms/${gym}/zlaggables?zlaggable_type=GymBoulder`, {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer ${token}`,
     },
-  );
+  });
   if (!response.ok) {
     console.log(await response.json());
     throw new Error('Failed to get gym boulder');
@@ -133,9 +127,7 @@ async function fetchDataForUser(token: string, user: number) {
     offset += limit;
     ascents.push(...singleReponse);
   } while (singleReponse.length > 0);
-  const ascentsStream = fsSync.createWriteStream(
-    `./data/ascents_${user}.jsonl`,
-  );
+  const ascentsStream = fsSync.createWriteStream(`./data/ascents_${user}.jsonl`);
   for (const ascent of ascents) {
     ascentsStream.write(JSON.stringify(ascent));
     ascentsStream.write('\n');

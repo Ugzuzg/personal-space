@@ -1,16 +1,14 @@
+import { Trans } from '@lingui/react/macro';
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { allEntries } from 'content-collections';
+
 import styles from './journal.index.module.css';
-import { Trans } from '@lingui/react/macro';
 
 export const Route = createFileRoute('/$lang/journal/')({
   loader: ({ params }) => {
     return allEntries
       .filter((entry) => entry._meta.directory === params.lang)
-      .toSorted(
-        (a, b) =>
-          new Date(b.published).getTime() - new Date(a.published).getTime(),
-      );
+      .toSorted((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
   },
   component: JournalIndex,
 });

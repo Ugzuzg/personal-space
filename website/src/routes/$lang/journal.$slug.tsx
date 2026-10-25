@@ -1,13 +1,11 @@
+import { MDXContent } from '@content-collections/mdx/react';
 import { createFileRoute, notFound } from '@tanstack/react-router';
 import { allEntries } from 'content-collections';
-import { MDXContent } from '@content-collections/mdx/react';
 
 export const Route = createFileRoute('/$lang/journal/$slug')({
   loader: ({ params }) => {
     const entry = allEntries.find(
-      (e) =>
-        e._meta.directory === params.lang &&
-        e._meta.fileName === `${params.slug}.mdx`,
+      (e) => e._meta.directory === params.lang && e._meta.fileName === `${params.slug}.mdx`,
     );
     if (!entry) {
       throw notFound();

@@ -1,5 +1,8 @@
 {
-  "packageManager": "pnpm@12.9.0",
   "name": "root",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "oxfmt": "^0.74.0"
+  },
+  "packageManager": "pnpm@12.9.0"
 }

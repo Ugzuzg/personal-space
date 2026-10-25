@@ -1,6 +1,6 @@
+import { notFound } from '@tanstack/react-router';
 import fs from 'node:fs/promises';
 import pl from 'nodejs-polars';
-import { notFound } from '@tanstack/react-router';
 
 const boulderScores = [
   { score: 12, v: 'VB', font: '2' },
@@ -46,14 +46,8 @@ export async function readDataFrameOfUser(userId: string) {
 
   ascents = ascents
     .withColumns(
-      ascents
-        .getColumn('created_at')
-        .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
-        .cast(pl.Datetime('ms')),
-      ascents
-        .getColumn('updated_at')
-        .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
-        .cast(pl.Datetime('ms')),
+      ascents.getColumn('created_at').str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z').cast(pl.Datetime('ms')),
+      ascents.getColumn('updated_at').str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z').cast(pl.Datetime('ms')),
       ascents
         .getColumn('date')
         .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
@@ -61,11 +55,7 @@ export async function readDataFrameOfUser(userId: string) {
         .alias('sent_at'),
       ascents.getColumn('ascendable_type').cast(pl.Categorical),
       ascents.getColumn('grading_system').cast(pl.Categorical),
-      pl
-        .col('difficulty')
-        .replace({ old: gradeToNumber })
-        .cast(pl.Float32)
-        .alias('numberDifficulty'),
+      pl.col('difficulty').replace({ old: gradeToNumber }).cast(pl.Float32).alias('numberDifficulty'),
       pl.col('type').replace(['f', 'rp'], ['flash', 'redpoint']),
     )
     .withColumns(pl.col('created_at').date.year().alias('year'))
@@ -81,10 +71,7 @@ export async function readDataFrameOfUser(userId: string) {
     })
     .withColumns(
       pl.col('route_card_label').str.slice(0, 3),
-      pl
-        .col('set_at')
-        .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
-        .cast(pl.Datetime('ms')),
+      pl.col('set_at').str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z').cast(pl.Datetime('ms')),
       pl.col('id').alias('nid'),
       pl
         .col('created_at')
@@ -136,9 +123,7 @@ export async function readDataFrameOfUser(userId: string) {
     )
     .toRecords();
 
-  const bar = detailedAscents
-    .select('difficulty', 'year', 'type', 'parent_name', 'route_setter')
-    .toRecords();
+  const bar = detailedAscents.select('difficulty', 'year', 'type', 'parent_name', 'route_setter').toRecords();
 
   const solnaBoulders = boulders.filter(pl.col('gym_id').eq(pl.lit(69)));
 
@@ -153,23 +138,16 @@ export async function readDataFrameOfUser(userId: string) {
     .agg(
       pl.col('type').count().alias('sent'),
       pl.col('id').count().alias('all'),
-      pl
-        .col('type')
-        .count()
-        .cast(pl.Float64)
-        .div(pl.col('id').count())
-        .alias('completion'),
+      pl.col('type').count().cast(pl.Float64).div(pl.col('id').count()).alias('completion'),
     )
     .toRecords();
 
   const start = new Date(2025, 2, 1);
-  const completionHistory = solnaBoulders
-    .filter(pl.col('gym_id').eq(pl.lit(69)))
-    .join(ascents, {
-      how: 'left',
-      leftOn: 'nid',
-      rightOn: 'ascendable_id',
-    });
+  const completionHistory = solnaBoulders.filter(pl.col('gym_id').eq(pl.lit(69))).join(ascents, {
+    how: 'left',
+    leftOn: 'nid',
+    rightOn: 'ascendable_id',
+  });
 
   const now = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const completionHistoryRecords = [];
@@ -178,17 +156,10 @@ export async function readDataFrameOfUser(userId: string) {
       pl
         .col('boulder_created_at')
         .ltEq(pl.lit(d))
-        .and(
-          pl
-            .col('boulder_archived_at')
-            .gtEq(pl.lit(d))
-            .or(pl.col('boulder_archived_at').isNull()),
-        ),
+        .and(pl.col('boulder_archived_at').gtEq(pl.lit(d)).or(pl.col('boulder_archived_at').isNull())),
     );
     const totalOnTheDay = activeBoulders.shape.height;
-    const sentToTheDay = activeBoulders.filter(
-      pl.col('sent_at').ltEq(pl.lit(d)),
-    ).shape.height;
+    const sentToTheDay = activeBoulders.filter(pl.col('sent_at').ltEq(pl.lit(d))).shape.height;
     completionHistoryRecords.push({
       date: new Date(d),
       totalOnTheDay,
