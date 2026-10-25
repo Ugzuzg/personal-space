@@ -64,6 +64,8 @@ RUN --mount=type=secret,id=env,target=/usr/src/website/.env cd website && \
 FROM base AS release
 
 COPY --from=build /usr/src/website/.output ./
+# HACK: copy sitemap.xml from prerendered build
+COPY --from=build /usr/src/website/dist/client/sitemap.xml ./public/sitemap.xml
 
 USER 1000
 
