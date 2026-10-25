@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "customConditions": ["@workspace/source-types"],
+    "rootDir": "${configDir}"
+  },
+  "include": [
+    "${configDir}/package.json",
+    "${configDir}/src",
+    "${configDir}/eslint.config.ts",
+    "${configDir}/drizzle.config.ts",
+    "${configDir}/vitest.config.ts"
+  ],
+  "exclude": []
+}

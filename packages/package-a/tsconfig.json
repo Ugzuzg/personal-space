@@ -1,0 +1,4 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": ["./tsconfig.build.json", "@workspace/tsconfig/ide.json"]
+}

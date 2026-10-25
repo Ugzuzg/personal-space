@@ -1,0 +1,34 @@
+{
+  "name": "@workspace/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "files": [
+    "src/*",
+    "dist/*"
+  ],
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "@workspace/source-types": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint .",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "catalog:eslint",
+    "typescript-eslint": "^8.71.2"
+  },
+  "devDependencies": {
+    "@workspace/tsconfig": "workspace:*"
+  }
+}

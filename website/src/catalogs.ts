@@ -1,4 +1,4 @@
-import { I18n, Messages, setupI18n } from '@lingui/core';
+import { I18n, type Messages, setupI18n } from '@lingui/core';
 
 import { languages } from './locales';
 

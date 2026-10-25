@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1.7-labs
+# syntax=docker/dockerfile:labs
 
 # =============================================================================
 # BASE STAGE
@@ -52,7 +52,9 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install \
   --filter=website...
 COPY . ./
 
-RUN --mount=type=secret,id=env,target=/usr/src/website/.env cd website && \
+RUN --mount=type=secret,id=env,target=/usr/src/website/.env \
+  --mount=type=cache,id=content-collections,target=/usr/src/website/.content-collections/cache \
+  cd website && \
   # the same bug causes the prerenderd pages not to be copied into the output by nitro
   PRERENDER=true pnpm build && \
   # rebuild after prerendering to ensure the prerendered pages are included in the output
@@ -73,4 +75,4 @@ EXPOSE 4000
 
 ENTRYPOINT ["tini", "--"]
 
-CMD node ./server/index.mjs
+CMD ["node", "./server/index.mjs"]

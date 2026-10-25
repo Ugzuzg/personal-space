@@ -1,0 +1,22 @@
+{
+  "name": "@workspace/tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "files": [
+    "build.json",
+    "node.json",
+    "ide.json",
+    "vite-react.json"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@tsconfig/node26": "^26.0.1",
+    "@tsconfig/strictest": "^2.0.8",
+    "@tsconfig/vite-react": "^8.1.1"
+  }
+}
