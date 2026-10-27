@@ -48,17 +48,13 @@ export async function readDataFrameOfUser(userId: string) {
     .withColumns(
       ascents.getColumn('created_at').str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z').cast(pl.Datetime('ms')),
       ascents.getColumn('updated_at').str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z').cast(pl.Datetime('ms')),
-      ascents
-        .getColumn('date')
-        .str.strptime(pl.Datetime, '%Y-%m-%d %H:%M:%S %z')
-        .cast(pl.Datetime('ms'))
-        .alias('sent_at'),
+      ascents.getColumn('date').str.strptime(pl.Date, '%Y-%m-%d').cast(pl.Datetime('ms')).alias('sent_at'),
       ascents.getColumn('ascendable_type').cast(pl.Categorical),
       ascents.getColumn('grading_system').cast(pl.Categorical),
       pl.col('difficulty').replace({ old: gradeToNumber }).cast(pl.Float32).alias('numberDifficulty'),
       pl.col('type').replace(['f', 'rp'], ['flash', 'redpoint']),
     )
-    .withColumns(pl.col('created_at').date.year().alias('year'))
+    .withColumns(pl.col('created_at').dt.year().alias('year'))
     // remove repeat ascents
     .unique({ subset: 'ascendable_id', keep: 'first' })
     // remove colored grades
@@ -99,7 +95,7 @@ export async function readDataFrameOfUser(userId: string) {
     .sort(pl.col('created_at'));
 
   const cpr = detailedAscents
-    .groupBy(pl.col('created_at').date.strftime('%Y-%U').alias('week'), 'type')
+    .groupBy(pl.col('created_at').dt.strftime('%Y-%U').alias('week'), 'type')
     .agg(
       pl.col('created_at').first(),
       pl.col('difficulty').min().alias('difficultyMin'),
@@ -111,12 +107,12 @@ export async function readDataFrameOfUser(userId: string) {
     .toRecords();
 
   const timeline = detailedAscents
-    .groupBy(pl.col('created_at').date.strftime('%Y-%U').alias('grouped'))
+    .groupBy(pl.col('created_at').dt.strftime('%Y-%U').alias('grouped'))
     .agg(
       pl.col('created_at').first().cast(pl.Date).alias('date'),
-      pl.col('created_at').first().date.year().alias('year'),
-      pl.col('created_at').first().date.week().alias('week'),
-      pl.col('created_at').first().date.month().alias('month'),
+      pl.col('created_at').first().dt.year().alias('year'),
+      pl.col('created_at').first().dt.week().alias('week'),
+      pl.col('created_at').first().dt.month().alias('month'),
       pl.col('numberDifficulty').sum().alias('totalNumberDifficulty'),
       pl.col('created_at').count().alias('count'),
       pl.col('difficulty'),
