@@ -10,6 +10,8 @@ import globalCss from '~/styles/global.css?url';
 import schemeCss from '~/styles/scheme.css?url';
 import { seo } from '~/utils/seo';
 
+const css = String.raw;
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -74,6 +76,26 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <style>
+          {css`
+            :root {
+              --color-dark: #170a05;
+              --color-light: #f3e6d2;
+              --color-global-text: var(--color-dark);
+              --color-global-bg: var(--color-light);
+            }
+            @media (prefers-color-scheme: dark) {
+              :root {
+                --color-global-text: var(--color-light);
+                --color-global-bg: var(--color-dark);
+              }
+            }
+            body {
+              background: var(--color-global-bg);
+              color: var(--color-global-text);
+            }
+          `}
+        </style>
         <HeadContent />
       </head>
       <body>
